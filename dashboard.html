@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard — English Hub</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="dashboard.html" class="nav-brand">
+      <i class="fa-solid fa-graduation-cap"></i>
+      <span>English Hub</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="dashboard.html" class="active"><i class="fa-solid fa-house"></i> Trang chủ</a></li>
+      <li><a href="vocabulary/index.html"><i class="fa-solid fa-book-open"></i> Từ Vựng</a></li>
+      <li><a href="grammar/index.html"><i class="fa-solid fa-pen-nib"></i> Ngữ Pháp (30 Ngày)</a></li>
+      <li><a href="stats/index.html"><i class="fa-solid fa-chart-line"></i> Thống Kê</a></li>
+      <li><a href="sources.html"><i class="fa-solid fa-link"></i> Nguồn Crawl</a></li>
+    </ul>
+    <div id="nav-user-badge" class="user-profile-badge"></div>
+  </nav>
+
+  <div class="container">
+    <!-- Welcome Header -->
+    <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); color: white; border-radius: var(--radius-lg); padding: 2.2rem; margin-bottom: 2rem; box-shadow: var(--shadow-md); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem;">
+      <div>
+        <span class="badge" style="background: rgba(255,255,255,0.2); color: white; margin-bottom: 0.6rem;">Lộ trình học chuẩn IELTS</span>
+        <h1 id="welcome-title" style="font-size: 2rem; font-weight: 800; margin-bottom: 0.4rem;">Chào mừng trở lại!</h1>
+        <p style="opacity: 0.9; font-size: 1rem;">Hôm nay bạn muốn nâng cao vốn từ vựng hay chinh phục bài ngữ pháp mới?</p>
+      </div>
+      <div style="display: flex; gap: 0.75rem;">
+        <a href="vocabulary/learn.html" class="btn" style="background: white; color: var(--primary);">
+          <i class="fa-solid fa-bolt"></i> Học từ vựng ngay
+        </a>
+        <a href="grammar/index.html" class="btn btn-outline" style="color: white; border-color: rgba(255,255,255,0.4);">
+          <i class="fa-solid fa-calendar-check"></i> 30 Ngày Ngữ Pháp
+        </a>
+      </div>
+    </div>
+
+    <!-- Quick Stats Cards -->
+    <div class="grid-cols-4" style="margin-bottom: 2.5rem;">
+      <div class="card">
+        <div style="display: flex; align-items: center; gap: 1rem;">
+          <div style="width: 48px; height: 48px; border-radius: var(--radius-sm); background: var(--primary-light); color: var(--primary); display: flex; align-items: center; justify-content: center; font-size: 1.4rem;">
+            <i class="fa-solid fa-book"></i>
+          </div>
+          <div>
+            <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">Từ vựng đã học</div>
+            <div id="stat-words" style="font-size: 1.5rem; font-weight: 800; color: var(--text-main);">0 / 1020</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div style="display: flex; align-items: center; gap: 1rem;">
+          <div style="width: 48px; height: 48px; border-radius: var(--radius-sm); background: var(--success-light); color: var(--success); display: flex; align-items: center; justify-content: center; font-size: 1.4rem;">
+            <i class="fa-solid fa-check-circle"></i>
+          </div>
+          <div>
+            <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">Bài ngữ pháp xong</div>
+            <div id="stat-grammar" style="font-size: 1.5rem; font-weight: 800; color: var(--text-main);">0 / 30</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div style="display: flex; align-items: center; gap: 1rem;">
+          <div style="width: 48px; height: 48px; border-radius: var(--radius-sm); background: rgba(76, 201, 240, 0.15); color: var(--accent); display: flex; align-items: center; justify-content: center; font-size: 1.4rem;">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <div>
+            <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">Bài kiểm tra đã làm</div>
+            <div id="stat-tests" style="font-size: 1.5rem; font-weight: 800; color: var(--text-main);">0</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div style="display: flex; align-items: center; gap: 1rem;">
+          <div style="width: 48px; height: 48px; border-radius: var(--radius-sm); background: var(--danger-light); color: var(--danger); display: flex; align-items: center; justify-content: center; font-size: 1.4rem;">
+            <i class="fa-solid fa-rotate-left"></i>
+          </div>
+          <div>
+            <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">Cần làm lại (câu sai)</div>
+            <div id="stat-mistakes" style="font-size: 1.5rem; font-weight: 800; color: var(--danger);">0 câu</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature Modules Grid -->
+    <h2 style="font-size: 1.4rem; font-weight: 800; margin-bottom: 1.2rem;">Chương Trình Học Tập</h2>
+    <div class="grid-cols-3" style="margin-bottom: 3rem;">
+      <!-- Module 1: Từ Vựng -->
+      <div class="card card-hover" style="display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <div style="font-size: 2.2rem; color: var(--primary); margin-bottom: 1rem;"><i class="fa-solid fa-images"></i></div>
+          <h3 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 0.5rem;">Từ Vựng Hình Ảnh</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.5; margin-bottom: 1.2rem;">
+            1000+ từ vựng phong phú được crawl từ LanguageGuide & TiengAnh123 kèm hình ảnh sinh động, phiên âm IPA, audio chuẩn và bài tập trắc nghiệm 4 dạng.
+          </p>
+        </div>
+        <div style="display: flex; gap: 0.5rem;">
+          <a href="vocabulary/learn.html" class="btn btn-primary" style="flex: 1;"><i class="fa-solid fa-layer-group"></i> Flashcard</a>
+          <a href="vocabulary/quiz.html" class="btn btn-outline"><i class="fa-solid fa-puzzle-piece"></i> Quiz</a>
+        </div>
+      </div>
+
+      <!-- Module 2: Ngữ Pháp -->
+      <div class="card card-hover" style="display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <div style="font-size: 2.2rem; color: var(--secondary); margin-bottom: 1rem;"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h3 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 0.5rem;">30 Ngày Ngữ Pháp IELTS</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.5; margin-bottom: 1.2rem;">
+            Lộ trình 30 ngày bao phủ toàn diện 8 thì cơ bản, từ loại, câu bị động, mệnh đề quan hệ, điều kiện và ngữ pháp chuyên đề IELTS 7.0+.
+          </p>
+        </div>
+        <div style="display: flex; gap: 0.5rem;">
+          <a href="grammar/index.html" class="btn btn-primary" style="flex: 1;"><i class="fa-solid fa-list-ol"></i> 30 Ngày</a>
+          <a href="grammar/lesson.html?day=1" class="btn btn-outline"><i class="fa-solid fa-play"></i> Day 1</a>
+        </div>
+      </div>
+
+      <!-- Module 3: Luyện Nói (Coming soon / placeholder) -->
+      <div class="card card-hover" style="display:flex; flex-direction:column; justify-content:space-between; opacity: 0.9;">
+        <div>
+          <div style="font-size: 2.2rem; color: var(--accent); margin-bottom: 1rem;"><i class="fa-solid fa-microphone-lines"></i></div>
+          <div style="display: flex; align-items:center; gap:0.5rem; margin-bottom: 0.5rem;">
+            <h3 style="font-size: 1.25rem; font-weight: 800;">Luyện Nói & Phát Âm</h3>
+            <span class="badge" style="background:#fef3c7; color:#b45309;">Update Sau</span>
+          </div>
+          <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.5; margin-bottom: 1.2rem;">
+            Nhận diện giọng nói AI và phản xạ đàm thoại tiếng Anh thực tế (đang được hoàn thiện theo lộ trình).
+          </p>
+        </div>
+        <button class="btn btn-outline" disabled style="cursor: not-allowed; opacity: 0.6;">
+          <i class="fa-solid fa-lock"></i> Đang phát triển
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    English Hub © 2026 — Thiết kế tối ưu cho học viên IELTS & Tiếng Anh giao tiếp.
+  </footer>
+
+  <script src="js/firebase-config.js"></script>
+  <script src="js/db.js"></script>
+  <script src="js/auth.js"></script>
+  <script>
+    const user = Auth.requireAuth();
+    Auth.updateNavbar();
+
+    if (user) {
+      document.getElementById('welcome-title').innerText = `Chào mừng trở lại, ${user.displayName}!`;
+      
+      const stats = DB.getStats(user.username);
+      document.getElementById('stat-words').innerText = `${stats.totalLearnedVocab} / 1020`;
+      document.getElementById('stat-grammar').innerText = `${stats.totalGrammarDone} / 30`;
+      document.getElementById('stat-tests').innerText = stats.totalQuizzes;
+      document.getElementById('stat-mistakes').innerText = `${stats.mistakesCount} câu`;
+    }
+  </script>
+</body>
+</html>

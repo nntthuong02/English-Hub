@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lý Thuyết Ngữ Pháp — English Hub</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="../dashboard.html" class="nav-brand">
+      <i class="fa-solid fa-graduation-cap"></i>
+      <span>English Hub</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../dashboard.html"><i class="fa-solid fa-house"></i> Trang chủ</a></li>
+      <li><a href="../vocabulary/index.html"><i class="fa-solid fa-book-open"></i> Từ Vựng</a></li>
+      <li><a href="index.html" class="active"><i class="fa-solid fa-pen-nib"></i> Ngữ Pháp</a></li>
+      <li><a href="../stats/index.html"><i class="fa-solid fa-chart-line"></i> Thống Kê</a></li>
+      <li><a href="../sources.html"><i class="fa-solid fa-link"></i> Nguồn Crawl</a></li>
+    </ul>
+    <div id="nav-user-badge" class="user-profile-badge"></div>
+  </nav>
+
+  <div class="container" style="max-width: 900px;">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1.5rem;">
+      <a href="index.html" class="btn btn-outline"><i class="fa-solid fa-arrow-left"></i> Trở về 30 ngày</a>
+      <a id="start-quiz-btn" href="quiz.html?day=1" class="btn btn-primary"><i class="fa-solid fa-pen"></i> Làm bài tập ngay</a>
+    </div>
+
+    <div class="card" style="padding:2.5rem; margin-bottom:2rem;">
+      <div style="display:flex; gap:0.5rem; align-items:center; margin-bottom:0.8rem;">
+        <span class="badge badge-primary" id="lesson-day">DAY 01</span>
+        <span class="badge badge-success" id="lesson-level">A1-A2</span>
+      </div>
+      <h1 id="lesson-title" style="font-size:2.2rem; font-weight:800; color:var(--primary); margin-bottom:0.3rem;">Present Simple Tense</h1>
+      <h2 id="lesson-title-vi" style="font-size:1.25rem; font-weight:600; color:var(--text-muted); margin-bottom:1.5rem;">Thì Hiện tại đơn</h2>
+
+      <hr style="border:0; border-top:1px solid var(--surface-border); margin-bottom:1.5rem;">
+
+      <!-- Overview -->
+      <div style="margin-bottom:2rem;">
+        <h3 style="font-size:1.2rem; font-weight:700; margin-bottom:0.5rem;"><i class="fa-solid fa-circle-info" style="color:var(--primary);"></i> Tổng Quan</h3>
+        <p id="lesson-overview" style="line-height:1.6; color:var(--text-main); font-size:1rem;"></p>
+      </div>
+
+      <!-- Formulas Table -->
+      <div style="margin-bottom:2rem;">
+        <h3 style="font-size:1.2rem; font-weight:700; margin-bottom:0.8rem;"><i class="fa-solid fa-table-list" style="color:var(--primary);"></i> Cấu Trúc & Công Thức</h3>
+        <div id="formulas-list" style="display:flex; flex-direction:column; gap:0.75rem;"></div>
+      </div>
+
+      <!-- Rules -->
+      <div style="margin-bottom:2rem;">
+        <h3 style="font-size:1.2rem; font-weight:700; margin-bottom:0.8rem;"><i class="fa-solid fa-lightbulb" style="color:var(--warning);"></i> Quy Tắc Trọng Tâm</h3>
+        <ul id="rules-list" style="padding-left:1.5rem; line-height:1.8; color:var(--text-main);"></ul>
+      </div>
+
+      <!-- Examples -->
+      <div style="margin-bottom:2rem;">
+        <h3 style="font-size:1.2rem; font-weight:700; margin-bottom:0.8rem;"><i class="fa-solid fa-quote-left" style="color:var(--success);"></i> Ví Dụ Minh Họa Chuẩn IELTS</h3>
+        <div id="examples-list" style="display:flex; flex-direction:column; gap:0.75rem;"></div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    English Hub © 2026 — Kiến thức chuẩn hóa phục vụ bài thi IELTS.
+  </footer>
+
+  <script src="../js/firebase-config.js"></script>
+  <script src="../js/db.js"></script>
+  <script src="../js/auth.js"></script>
+  <script>
+    Auth.requireAuth();
+    Auth.updateNavbar();
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const day = parseInt(urlParams.get('day') || '1');
+
+    fetch('../data/grammar.json')
+      .then(res => res.json())
+      .then(days => {
+        const item = days.find(d => d.day === day) || days[0];
+        renderLesson(item);
+      });
+
+    function renderLesson(item) {
+      document.getElementById('lesson-day').innerText = `DAY ${item.day < 10 ? '0' + item.day : item.day}`;
+      document.getElementById('lesson-level').innerText = item.level;
+      document.getElementById('lesson-title').innerText = item.title;
+      document.getElementById('lesson-title-vi').innerText = item.titleVi;
+      document.getElementById('start-quiz-btn').href = `quiz.html?day=${item.day}`;
+      document.getElementById('lesson-overview').innerText = item.theory.overview;
+
+      const fList = document.getElementById('formulas-list');
+      fList.innerHTML = item.theory.formulas.map(f => `
+        <div style="background:var(--bg); border:1px solid var(--surface-border); border-radius:var(--radius-sm); padding:1rem;">
+          <div style="font-weight:700; color:var(--primary); margin-bottom:0.2rem;">${f.type}:</div>
+          <div style="font-family:monospace; font-size:1.05rem; font-weight:700; background:var(--surface); padding:0.4rem 0.8rem; border-radius:4px; border:1px dashed var(--primary); margin-bottom:0.4rem; display:inline-block;">${f.rule}</div>
+          <div style="color:var(--text-muted); font-size:0.9rem;"><strong>Ví dụ:</strong> ${f.example}</div>
+        </div>
+      `).join('');
+
+      const rList = document.getElementById('rules-list');
+      rList.innerHTML = item.theory.rules.map(r => `<li>${r}</li>`).join('');
+
+      const eList = document.getElementById('examples-list');
+      eList.innerHTML = item.theory.examples.map(ex => `
+        <div style="background:var(--success-light); border-left:4px solid var(--success); padding:0.8rem 1.2rem; border-radius:0 var(--radius-sm) var(--radius-sm) 0;">
+          <div style="font-weight:700; color:var(--text-main);">${ex.en}</div>
+          <div style="color:var(--text-muted); font-size:0.9rem;">${ex.vi}</div>
+        </div>
+      `).join('');
+    }
+  </script>
+</body>
+</html>

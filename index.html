@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng Nhập — English Hub</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container" style="display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 85vh;">
+    <div style="text-align: center; margin-bottom: 2rem;">
+      <div style="font-size: 3rem; color: var(--primary); margin-bottom: 0.5rem;"><i class="fa-solid fa-graduation-cap"></i></div>
+      <h1 style="font-size: 2.2rem; font-weight: 800; color: var(--primary);">English Hub</h1>
+      <p style="color: var(--text-muted); font-size: 1.05rem;">Nền tảng học tiếng Anh trực quan: Từ Vựng Hình Ảnh & 30 Ngày Ngữ Pháp IELTS</p>
+    </div>
+
+    <div class="card" style="width: 100%; max-width: 520px; box-shadow: var(--shadow-lg); padding: 2.2rem;">
+      <h2 style="font-size: 1.3rem; margin-bottom: 1.5rem; text-align: center;">Chọn nhanh tài khoản để học tập</h2>
+      
+      <div id="quick-accounts" class="grid-cols-4" style="grid-template-columns: repeat(2, 1fr); gap: 0.75rem; margin-bottom: 1.5rem; max-height: 250px; overflow-y: auto; padding-right: 4px;">
+        <!-- Filled by JS -->
+      </div>
+
+      <div style="position: relative; text-align: center; margin: 1.2rem 0;">
+        <hr style="border: 0; border-top: 1px solid var(--surface-border);">
+        <span style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); background: var(--surface); padding: 0 0.8rem; font-size: 0.85rem; color: var(--text-muted);">hoặc nhập thủ công</span>
+      </div>
+
+      <form id="login-form" onsubmit="handleManualLogin(event)">
+        <div style="margin-bottom: 1rem;">
+          <label style="display: block; font-weight: 600; font-size: 0.9rem; margin-bottom: 0.4rem;">Tên đăng nhập (user01 - user10):</label>
+          <input type="text" id="username" class="btn btn-outline" style="width: 100%; text-align: left; background: var(--bg);" placeholder="vd: user01" required>
+        </div>
+        <div style="margin-bottom: 1.5rem;">
+          <label style="display: block; font-weight: 600; font-size: 0.9rem; margin-bottom: 0.4rem;">Mật khẩu (pass01 - pass10):</label>
+          <input type="password" id="password" class="btn btn-outline" style="width: 100%; text-align: left; background: var(--bg);" placeholder="vd: pass01" required>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.85rem; font-size: 1rem;">
+          <i class="fa-solid fa-right-to-bracket"></i> Đăng Nhập
+        </button>
+      </form>
+      <div id="login-err" style="color: var(--danger); font-size: 0.9rem; margin-top: 0.8rem; text-align: center; display: none;"></div>
+    </div>
+  </div>
+
+  <footer>
+    English Hub © 2026 — Thiết kế tối ưu cho học viên IELTS & Tiếng Anh giao tiếp.
+  </footer>
+
+  <script src="js/firebase-config.js"></script>
+  <script src="js/db.js"></script>
+  <script src="js/auth.js"></script>
+  <script>
+    // Populate 10 fast-login buttons
+    const container = document.getElementById('quick-accounts');
+    ACCOUNTS.forEach(acc => {
+      const btn = document.createElement('button');
+      btn.className = 'btn btn-outline card-hover';
+      btn.style.padding = '0.6rem';
+      btn.style.display = 'flex';
+      btn.style.alignItems = 'center';
+      btn.style.gap = '0.5rem';
+      btn.style.fontSize = '0.85rem';
+      btn.innerHTML = `
+        <div class="avatar-circle" style="width:24px;height:24px;font-size:0.7rem;">${acc.avatar}</div>
+        <div style="text-align:left;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">
+          <strong>${acc.username}</strong>
+        </div>
+      `;
+      btn.onclick = () => {
+        Auth.login(acc.username, acc.password);
+        window.location.href = 'dashboard.html';
+      };
+      container.appendChild(btn);
+    });
+
+    function handleManualLogin(e) {
+      e.preventDefault();
+      const u = document.getElementById('username').value.trim();
+      const p = document.getElementById('password').value.trim();
+      const res = Auth.login(u, p);
+      if (res.success) {
+        window.location.href = 'dashboard.html';
+      } else {
+        const err = document.getElementById('login-err');
+        err.innerText = res.message;
+        err.style.display = 'block';
+      }
+    }
+
+    // Auto redirect if already logged in
+    if (Auth.getCurrentUser()) {
+      window.location.href = 'dashboard.html';
+    }
+  </script>
+</body>
+</html>

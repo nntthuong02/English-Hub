@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flashcard Học Từ Vựng — English Hub</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="../dashboard.html" class="nav-brand">
+      <i class="fa-solid fa-graduation-cap"></i>
+      <span>English Hub</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../dashboard.html"><i class="fa-solid fa-house"></i> Trang chủ</a></li>
+      <li><a href="index.html" class="active"><i class="fa-solid fa-book-open"></i> Từ Vựng</a></li>
+      <li><a href="../grammar/index.html"><i class="fa-solid fa-pen-nib"></i> Ngữ Pháp</a></li>
+      <li><a href="../stats/index.html"><i class="fa-solid fa-chart-line"></i> Thống Kê</a></li>
+      <li><a href="../sources.html"><i class="fa-solid fa-link"></i> Nguồn Crawl</a></li>
+    </ul>
+    <div id="nav-user-badge" class="user-profile-badge"></div>
+  </nav>
+
+  <div class="container" style="max-width: 800px; text-align: center;">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1.5rem;">
+      <a href="index.html" class="btn btn-outline"><i class="fa-solid fa-arrow-left"></i> Danh sách chủ đề</a>
+      <div id="deck-progress" style="font-weight:700; color:var(--text-muted);">1 / 1000</div>
+      <button class="btn btn-outline" onclick="shuffleDeck()"><i class="fa-solid fa-shuffle"></i> Xáo trộn</button>
+    </div>
+
+    <!-- FLASHCARD COMPONENT -->
+    <div class="flashcard-wrapper" onclick="flipCard()">
+      <div class="flashcard-inner" id="card-inner">
+        <!-- FRONT -->
+        <div class="flashcard-front">
+          <span class="badge badge-primary" id="card-category" style="margin-bottom:0.8rem;">Category</span>
+          <div class="vocab-image-box">
+            <img id="card-img" src="" alt="Vocabulary Image" onerror="this.src='https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80'">
+          </div>
+          <h2 id="card-word" style="font-size: 2.2rem; font-weight:800; color:var(--primary); margin-bottom:0.3rem;">Word</h2>
+          <div style="display:flex; align-items:center; gap:0.5rem; color:var(--text-muted); font-size:1.1rem; margin-bottom:0.8rem;">
+            <span id="card-phonetic">/ˈwɜːd/</span>
+            <button class="btn btn-outline" style="border-radius:50%; width:36px; height:36px; padding:0;" onclick="event.stopPropagation(); speakWord()">
+              <i class="fa-solid fa-volume-high"></i>
+            </button>
+          </div>
+          <div style="font-size:0.85rem; color:var(--text-muted);"><i class="fa-solid fa-rotate"></i> Chạm / Click để xem nghĩa & ví dụ</div>
+        </div>
+
+        <!-- BACK -->
+        <div class="flashcard-back">
+          <span class="badge badge-success" style="margin-bottom:0.8rem;">Ý nghĩa & Ví dụ</span>
+          <h2 id="card-meaning" style="font-size: 1.8rem; font-weight:800; color:var(--text-main); margin-bottom:1rem;">Nghĩa tiếng Việt</h2>
+          
+          <div style="background:var(--surface); border:1px solid var(--surface-border); border-radius:var(--radius-sm); padding:1rem; text-align:left; width:100%; margin-bottom:1.5rem;">
+            <div style="font-weight:700; color:var(--primary); margin-bottom:0.3rem;" id="card-example-en">"Example sentence here."</div>
+            <div style="color:var(--text-muted); font-size:0.9rem;" id="card-example-vi">"Bản dịch câu ví dụ."</div>
+          </div>
+          
+          <div style="font-size:0.85rem; color:var(--text-muted);"><i class="fa-solid fa-rotate"></i> Chạm / Click để quay lại mặt trước</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ACTION CONTROLS -->
+    <div style="display:flex; justify-content:center; gap:1rem; margin-bottom:2rem;">
+      <button class="btn btn-outline" style="padding:0.8rem 1.4rem;" onclick="prevCard()"><i class="fa-solid fa-chevron-left"></i> Từ trước</button>
+      <button class="btn btn-danger" style="padding:0.8rem 1.4rem;" onclick="markStatus(false)"><i class="fa-solid fa-xmark"></i> Cần ôn lại</button>
+      <button class="btn btn-success" style="padding:0.8rem 1.4rem;" onclick="markStatus(true)"><i class="fa-solid fa-check"></i> Đã thuộc</button>
+      <button class="btn btn-outline" style="padding:0.8rem 1.4rem;" onclick="nextCard()">Từ tiếp theo <i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+  </div>
+
+  <footer>
+    English Hub © 2026 — Flashcard thông minh hỗ trợ phát âm Audio Speech Synthesis.
+  </footer>
+
+  <script src="../js/firebase-config.js"></script>
+  <script src="../js/db.js"></script>
+  <script src="../js/auth.js"></script>
+  <script>
+    const user = Auth.requireAuth();
+    Auth.updateNavbar();
+
+    let words = [];
+    let currentIndex = 0;
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const catFilter = urlParams.get('cat');
+
+    fetch('../data/vocabulary.json')
+      .then(res => res.json())
+      .then(data => {
+        words = catFilter ? data.filter(w => w.category === catFilter) : data;
+        if (words.length === 0) words = data;
+        renderCard();
+      });
+
+    function renderCard() {
+      const w = words[currentIndex];
+      if (!w) return;
+
+      document.getElementById('card-inner').classList.remove('flipped');
+      document.getElementById('deck-progress').innerText = `${currentIndex + 1} / ${words.length}`;
+      document.getElementById('card-category').innerText = w.categoryLabel || w.category;
+      document.getElementById('card-img').src = w.imageUrl;
+      document.getElementById('card-word').innerText = w.word;
+      document.getElementById('card-phonetic').innerText = w.phonetic || '';
+      document.getElementById('card-meaning').innerText = w.meaning_vi;
+      document.getElementById('card-example-en').innerText = `"${w.exampleSentence}"`;
+      document.getElementById('card-example-vi').innerText = `"${w.exampleTranslation}"`;
+    }
+
+    function flipCard() {
+      document.getElementById('card-inner').classList.toggle('flipped');
+    }
+
+    function nextCard() {
+      if (currentIndex < words.length - 1) {
+        currentIndex++;
+        renderCard();
+      }
+    }
+
+    function prevCard() {
+      if (currentIndex > 0) {
+        currentIndex--;
+        renderCard();
+      }
+    }
+
+    function shuffleDeck() {
+      for (let i = words.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [words[i], words[j]] = [words[j], words[i]];
+      }
+      currentIndex = 0;
+      renderCard();
+    }
+
+    function markStatus(isLearned) {
+      const w = words[currentIndex];
+      DB.saveVocabProgress(user.username, w.id, isLearned);
+      nextCard();
+    }
+
+    function speakWord() {
+      const w = words[currentIndex];
+      if ('speechSynthesis' in window) {
+        const utterance = new SpeechSynthesisUtterance(w.word);
+        utterance.lang = 'en-US';
+        window.speechSynthesis.speak(utterance);
+      }
+    }
+  </script>
+</body>
+</html>

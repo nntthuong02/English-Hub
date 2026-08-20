@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luyện Tập Quiz Từ Vựng — English Hub</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="../dashboard.html" class="nav-brand">
+      <i class="fa-solid fa-graduation-cap"></i>
+      <span>English Hub</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../dashboard.html"><i class="fa-solid fa-house"></i> Trang chủ</a></li>
+      <li><a href="index.html" class="active"><i class="fa-solid fa-book-open"></i> Từ Vựng</a></li>
+      <li><a href="../grammar/index.html"><i class="fa-solid fa-pen-nib"></i> Ngữ Pháp</a></li>
+      <li><a href="../stats/index.html"><i class="fa-solid fa-chart-line"></i> Thống Kê</a></li>
+      <li><a href="../sources.html"><i class="fa-solid fa-link"></i> Nguồn Crawl</a></li>
+    </ul>
+    <div id="nav-user-badge" class="user-profile-badge"></div>
+  </nav>
+
+  <div class="container" style="max-width: 800px;">
+    <!-- Header -->
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1.5rem;">
+      <a href="index.html" class="btn btn-outline"><i class="fa-solid fa-arrow-left"></i> Trở lại</a>
+      <div id="quiz-header-status" style="font-weight:700; color:var(--text-muted);">Câu hỏi 1 / 10</div>
+    </div>
+
+    <!-- Quiz Card Box -->
+    <div id="quiz-card" class="quiz-box">
+      <!-- Injected by JS -->
+    </div>
+
+    <!-- Result Screen -->
+    <div id="result-card" class="quiz-box" style="display:none; text-align:center;">
+      <div style="font-size:3.5rem; color:var(--success); margin-bottom:1rem;"><i class="fa-solid fa-trophy"></i></div>
+      <h2 style="font-size:2rem; font-weight:800; margin-bottom:0.5rem;">Hoàn Thành Bài Kiểm Tra!</h2>
+      <p style="color:var(--text-muted); font-size:1.1rem; margin-bottom:1.5rem;" id="score-text">Bạn đã đạt 8 / 10 điểm (80%)</p>
+      
+      <div id="mistakes-review-box" style="text-align:left; margin-bottom:2rem; display:none;">
+        <h3 style="font-size:1.1rem; color:var(--danger); margin-bottom:0.8rem;"><i class="fa-solid fa-triangle-exclamation"></i> Các câu trả lời sai:</h3>
+        <div id="mistakes-list"></div>
+      </div>
+
+      <div style="display:flex; gap:1rem; justify-content:center;">
+        <button class="btn btn-primary" onclick="restartQuiz()"><i class="fa-solid fa-rotate-right"></i> Làm lại đề mới</button>
+        <a href="../stats/index.html" class="btn btn-outline"><i class="fa-solid fa-chart-pie"></i> Xem thống kê</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    English Hub © 2026 — Kiểm tra & chấm điểm tự động.
+  </footer>
+
+  <script src="../js/firebase-config.js"></script>
+  <script src="../js/db.js"></script>
+  <script src="../js/auth.js"></script>
+  <script>
+    const user = Auth.requireAuth();
+    Auth.updateNavbar();
+
+    let allWords = [];
+    let quizQuestions = [];
+    let currentIndex = 0;
+    let score = 0;
+    let mistakes = [];
+
+    fetch('../data/vocabulary.json')
+      .then(res => res.json())
+      .then(data => {
+        allWords = data;
+        generateQuiz();
+        renderQuestion();
+      });
+
+    function generateQuiz() {
+      // Pick 10 random words
+      const shuffled = [...allWords].sort(() => 0.5 - Math.random());
+      const selected = shuffled.slice(0, 10);
+      quizQuestions = selected.map((targetWord, idx) => {
+        // Pick 3 wrong choices
+        const wrongChoices = allWords.filter(w => w.id !== targetWord.id).sort(() => 0.5 - Math.random()).slice(0, 3);
+        const choices = [...wrongChoices.map(w => w.meaning_vi), targetWord.meaning_vi].sort(() => 0.5 - Math.random());
+        return {
+          word: targetWord,
+          choices: choices,
+          correct: targetWord.meaning_vi
+        };
+      });
+      currentIndex = 0;
+      score = 0;
+      mistakes = [];
+    }
+
+    function renderQuestion() {
+      const q = quizQuestions[currentIndex];
+      if (!q) return showResults();
+
+      document.getElementById('quiz-header-status').innerText = `Câu hỏi ${currentIndex + 1} / ${quizQuestions.length}`;
+      const box = document.getElementById('quiz-card');
+      
+      box.innerHTML = `
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1.5rem;">
+          <span class="badge badge-primary">${q.word.categoryLabel || q.word.category}</span>
+          <button class="btn btn-outline" style="border-radius:50%; width:36px; height:36px; padding:0;" onclick="speakCurrentWord('${q.word.word}')">
+            <i class="fa-solid fa-volume-high"></i>
+          </button>
+        </div>
+
+        <div style="display:flex; align-items:center; gap:1.5rem; margin-bottom:1.5rem;">
+          <div style="width:90px; height:90px; border-radius:var(--radius-md); overflow:hidden; background:#e2e8f0; flex-shrink:0;">
+            <img src="${q.word.imageUrl}" style="width:100%; height:100%; object-fit:cover;">
+          </div>
+          <div>
+            <div style="font-size:1.8rem; font-weight:800; color:var(--primary);">${q.word.word}</div>
+            <div style="color:var(--text-muted); font-size:1rem;">${q.word.phonetic || ''}</div>
+          </div>
+        </div>
+
+        <p style="font-weight:600; margin-bottom:1.2rem;">Chọn nghĩa tiếng Việt chính xác của từ trên:</p>
+
+        <div id="choices-container">
+          ${q.choices.map((choice, i) => `
+            <button class="choice-btn" onclick="submitAnswer(this, '${choice.replace(/'/g, "\\'")}', '${q.correct.replace(/'/g, "\\'")}')">
+              <span><strong>${String.fromCharCode(65 + i)}.</strong></span>
+              <span>${choice}</span>
+            </button>
+          `).join('')}
+        </div>
+      `;
+    }
+
+    function submitAnswer(btn, selected, correct) {
+      // Disable all choices
+      const allBtns = document.querySelectorAll('.choice-btn');
+      allBtns.forEach(b => b.disabled = true);
+
+      const q = quizQuestions[currentIndex];
+      const isCorrect = (selected === correct);
+
+      if (isCorrect) {
+        btn.classList.add('correct');
+        score++;
+        DB.saveVocabProgress(user.username, q.word.id, null, true);
+      } else {
+        btn.classList.add('wrong');
+        allBtns.forEach(b => {
+          if (b.innerText.includes(correct)) b.classList.add('correct');
+        });
+        mistakes.push(q.word);
+        DB.saveVocabProgress(user.username, q.word.id, null, false);
+      }
+
+      setTimeout(() => {
+        currentIndex++;
+        if (currentIndex < quizQuestions.length) {
+          renderQuestion();
+        } else {
+          showResults();
+        }
+      }, 1000);
+    }
+
+    function showResults() {
+      document.getElementById('quiz-card').style.display = 'none';
+      const resCard = document.getElementById('result-card');
+      resCard.style.display = 'block';
+
+      const percent = Math.round((score / quizQuestions.length) * 100);
+      document.getElementById('score-text').innerText = `Bạn đã trả lời đúng ${score} / ${quizQuestions.length} câu (${percent}%)`;
+
+      // Save to quiz history
+      DB.addQuizResult(user.username, 'vocabulary', 'Tổng hợp từ vựng', score, quizQuestions.length, mistakes);
+
+      if (mistakes.length > 0) {
+        const mBox = document.getElementById('mistakes-review-box');
+        const mList = document.getElementById('mistakes-list');
+        mBox.style.display = 'block';
+        mList.innerHTML = mistakes.map(m => `
+          <div style="background:var(--bg); border:1px solid var(--surface-border); border-radius:var(--radius-sm); padding:0.8rem 1rem; margin-bottom:0.5rem; display:flex; justify-content:space-between; align-items:center;">
+            <div>
+              <strong>${m.word}</strong> <span style="color:var(--text-muted);">(${m.phonetic})</span>: ${m.meaning_vi}
+            </div>
+          </div>
+        `).join('');
+      }
+    }
+
+    function restartQuiz() {
+      document.getElementById('result-card').style.display = 'none';
+      document.getElementById('quiz-card').style.display = 'block';
+      generateQuiz();
+      renderQuestion();
+    }
+
+    function speakCurrentWord(text) {
+      if ('speechSynthesis' in window) {
+        const u = new SpeechSynthesisUtterance(text);
+        u.lang = 'en-US';
+        window.speechSynthesis.speak(u);
+      }
+    }
+  </script>
+</body>
+</html>

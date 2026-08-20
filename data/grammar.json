@@ -1,0 +1,3092 @@
+[
+  {
+    "day": 1,
+    "title": "Present simple tense",
+    "titleVi": "Thì Hiện tại đơn",
+    "level": "A1-A2",
+    "description": "Thói quen, sự thật hiển nhiên, lịch trình cố định",
+    "theory": {
+      "overview": "Bài học Present simple tense (Thì Hiện tại đơn) là một trong những phần cốt lõi của giáo trình 30 Ngày Phủ Xanh IELTS, giúp bạn nắm vững cấu trúc và ứng dụng chính xác trong các bài thi IELTS Speaking & Writing.",
+      "formulas": [
+        {
+          "type": "Khẳng định (Affirmative)",
+          "rule": "S + V(s/es)",
+          "example": "She studies English diligently every single day."
+        },
+        {
+          "type": "Phủ định (Negative)",
+          "rule": "S + do/does + not + V",
+          "example": "They do not hesitate to ask questions in class."
+        },
+        {
+          "type": "Nghi vấn (Interrogative)",
+          "rule": "Do/Does + S + V?",
+          "example": "Do you practice English speaking regularly?"
+        }
+      ],
+      "rules": [
+        "Nguyên tắc 1: Nắm chắc Thói quen, sự thật hiển nhiên, lịch trình cố định.",
+        "Nguyên tắc 2: Chú ý sự hòa hợp giữa chủ ngữ và động từ.",
+        "Nguyên tắc 3: Nhận biết nhanh qua các từ nhận biết (signal words) trong câu."
+      ],
+      "examples": [
+        {
+          "en": "Regular practice leads to remarkable academic success.",
+          "vi": "Luyện tập thường xuyên mang lại thành công học tập vượt bậc."
+        },
+        {
+          "en": "Understanding grammar rules boosts your IELTS score significantly.",
+          "vi": "Hiểu rõ các quy tắc ngữ pháp sẽ nâng cao đáng kể điểm số IELTS của bạn."
+        }
+      ]
+    },
+    "exercises": [
+      {
+        "id": "g_d1_q1",
+        "type": "multiple_choice",
+        "question": "Chọn đáp án đúng nhất cho câu ứng dụng bài Present simple tense:",
+        "sentence": "Every morning, John _____ (wake) up at 6 AM to review his English lessons.",
+        "choices": [
+          "wakes",
+          "woke",
+          "waking",
+          "is waking"
+        ],
+        "answer": "wakes",
+        "explanation": "Dấu hiệu 'Every morning' chỉ thói quen lặp đi lặp lại. Chủ ngữ 'John' là ngôi thứ 3 số ít nên động từ thêm 's'."
+      },
+      {
+        "id": "g_d1_q2",
+        "type": "multiple_choice",
+        "question": "Chọn câu chính xác về mặt ngữ pháp:",
+        "sentence": "Neither the teacher nor the students _____ present at yesterday's seminar.",
+        "choices": [
+          "was",
+          "were",
+          "is",
+          "are"
+        ],
+        "answer": "were",
+        "explanation": "Quy tắc Neither...nor: Động từ chia theo chủ ngữ gần nó nhất (the students - danh từ số nhiều) và thời điểm quá khứ (yesterday)."
+      },
+      {
+        "id": "g_d1_q3",
+        "type": "fill_blank",
+        "question": "Điền dạng đúng của động từ trong ngoặc:",
+        "sentence": "By the time we arrived, the train _____ (already / leave).",
+        "answer": "had already left",
+        "hint": "Hành động xảy ra trước một hành động khác trong quá khứ chia thì Quá khứ hoàn thành (Past Perfect)."
+      },
+      {
+        "id": "g_d1_q4",
+        "type": "fill_blank",
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has lived in this vibrant city _____ 2018.",
+        "answer": "since",
+        "hint": "Dùng 'since' trước mốc thời gian xác định trong thì Hiện tại hoàn thành."
+      },
+      {
+        "id": "g_d1_q5",
+        "type": "word_order",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh và đúng ngữ pháp:",
+        "words": [
+          "English",
+          "she",
+          "fluently",
+          "speaks",
+          "every",
+          "day"
+        ],
+        "answer": "she speaks English fluently every day",
+        "explanation": "Cấu trúc chuẩn: Chủ ngữ (she) + Động từ (speaks) + Tân ngữ (English) + Trạng từ chỉ cách thức (fluently) + Trạng từ chỉ thời gian (every day)."
+      }
+    ]
+  },
+  {
+    "day": 2,
+    "title": "Present continuous tense",
+    "titleVi": "Thì Hiện tại tiếp diễn",
+    "level": "A2",
+    "description": "Hành động đang diễn ra tại thời điểm nói hoặc xu hướng",
+    "theory": {
+      "overview": "Bài học Present continuous tense (Thì Hiện tại tiếp diễn) là một trong những phần cốt lõi của giáo trình 30 Ngày Phủ Xanh IELTS, giúp bạn nắm vững cấu trúc và ứng dụng chính xác trong các bài thi IELTS Speaking & Writing.",
+      "formulas": [
+        {
+          "type": "Khẳng định (Affirmative)",
+          "rule": "S + am/is/are + V-ing",
+          "example": "She studies English diligently every single day."
+        },
+        {
+          "type": "Phủ định (Negative)",
+          "rule": "S + am/is/are + not + V-ing",
+          "example": "They do not hesitate to ask questions in class."
+        },
+        {
+          "type": "Nghi vấn (Interrogative)",
+          "rule": "Am/Is/Are + S + V-ing?",
+          "example": "Do you practice English speaking regularly?"
+        }
+      ],
+      "rules": [
+        "Nguyên tắc 1: Nắm chắc Hành động đang diễn ra tại thời điểm nói hoặc xu hướng.",
+        "Nguyên tắc 2: Chú ý sự hòa hợp giữa chủ ngữ và động từ.",
+        "Nguyên tắc 3: Nhận biết nhanh qua các từ nhận biết (signal words) trong câu."
+      ],
+      "examples": [
+        {
+          "en": "Regular practice leads to remarkable academic success.",
+          "vi": "Luyện tập thường xuyên mang lại thành công học tập vượt bậc."
+        },
+        {
+          "en": "Understanding grammar rules boosts your IELTS score significantly.",
+          "vi": "Hiểu rõ các quy tắc ngữ pháp sẽ nâng cao đáng kể điểm số IELTS của bạn."
+        }
+      ]
+    },
+    "exercises": [
+      {
+        "id": "g_d2_q1",
+        "type": "multiple_choice",
+        "question": "Chọn đáp án đúng nhất cho câu ứng dụng bài Present continuous tense:",
+        "sentence": "Every morning, John _____ (wake) up at 6 AM to review his English lessons.",
+        "choices": [
+          "wakes",
+          "woke",
+          "waking",
+          "is waking"
+        ],
+        "answer": "wakes",
+        "explanation": "Dấu hiệu 'Every morning' chỉ thói quen lặp đi lặp lại. Chủ ngữ 'John' là ngôi thứ 3 số ít nên động từ thêm 's'."
+      },
+      {
+        "id": "g_d2_q2",
+        "type": "multiple_choice",
+        "question": "Chọn câu chính xác về mặt ngữ pháp:",
+        "sentence": "Neither the teacher nor the students _____ present at yesterday's seminar.",
+        "choices": [
+          "was",
+          "were",
+          "is",
+          "are"
+        ],
+        "answer": "were",
+        "explanation": "Quy tắc Neither...nor: Động từ chia theo chủ ngữ gần nó nhất (the students - danh từ số nhiều) và thời điểm quá khứ (yesterday)."
+      },
+      {
+        "id": "g_d2_q3",
+        "type": "fill_blank",
+        "question": "Điền dạng đúng của động từ trong ngoặc:",
+        "sentence": "By the time we arrived, the train _____ (already / leave).",
+        "answer": "had already left",
+        "hint": "Hành động xảy ra trước một hành động khác trong quá khứ chia thì Quá khứ hoàn thành (Past Perfect)."
+      },
+      {
+        "id": "g_d2_q4",
+        "type": "fill_blank",
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has lived in this vibrant city _____ 2018.",
+        "answer": "since",
+        "hint": "Dùng 'since' trước mốc thời gian xác định trong thì Hiện tại hoàn thành."
+      },
+      {
+        "id": "g_d2_q5",
+        "type": "word_order",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh và đúng ngữ pháp:",
+        "words": [
+          "English",
+          "she",
+          "fluently",
+          "speaks",
+          "every",
+          "day"
+        ],
+        "answer": "she speaks English fluently every day",
+        "explanation": "Cấu trúc chuẩn: Chủ ngữ (she) + Động từ (speaks) + Tân ngữ (English) + Trạng từ chỉ cách thức (fluently) + Trạng từ chỉ thời gian (every day)."
+      }
+    ]
+  },
+  {
+    "day": 3,
+    "title": "Present perfect tense",
+    "titleVi": "Thì Hiện tại hoàn thành",
+    "level": "B1",
+    "description": "Hành động bắt đầu trong quá khứ kéo dài đến hiện tại hoặc vừa mới xảy ra",
+    "theory": {
+      "overview": "Bài học Present perfect tense (Thì Hiện tại hoàn thành) là một trong những phần cốt lõi của giáo trình 30 Ngày Phủ Xanh IELTS, giúp bạn nắm vững cấu trúc và ứng dụng chính xác trong các bài thi IELTS Speaking & Writing.",
+      "formulas": [
+        {
+          "type": "Khẳng định (Affirmative)",
+          "rule": "S + have/has + V3/ed",
+          "example": "She studies English diligently every single day."
+        },
+        {
+          "type": "Phủ định (Negative)",
+          "rule": "S + have/has + not + V3/ed",
+          "example": "They do not hesitate to ask questions in class."
+        },
+        {
+          "type": "Nghi vấn (Interrogative)",
+          "rule": "Have/Has + S + V3/ed?",
+          "example": "Do you practice English speaking regularly?"
+        }
+      ],
+      "rules": [
+        "Nguyên tắc 1: Nắm chắc Hành động bắt đầu trong quá khứ kéo dài đến hiện tại hoặc vừa mới xảy ra.",
+        "Nguyên tắc 2: Chú ý sự hòa hợp giữa chủ ngữ và động từ.",
+        "Nguyên tắc 3: Nhận biết nhanh qua các từ nhận biết (signal words) trong câu."
+      ],
+      "examples": [
+        {
+          "en": "Regular practice leads to remarkable academic success.",
+          "vi": "Luyện tập thường xuyên mang lại thành công học tập vượt bậc."
+        },
+        {
+          "en": "Understanding grammar rules boosts your IELTS score significantly.",
+          "vi": "Hiểu rõ các quy tắc ngữ pháp sẽ nâng cao đáng kể điểm số IELTS của bạn."
+        }
+      ]
+    },
+    "exercises": [
+      {
+        "id": "g_d3_q1",
+        "type": "multiple_choice",
+        "question": "Chọn đáp án đúng nhất cho câu ứng dụng bài Present perfect tense:",
+        "sentence": "Every morning, John _____ (wake) up at 6 AM to review his English lessons.",
+        "choices": [
+          "wakes",
+          "woke",
+          "waking",
+          "is waking"
+        ],
+        "answer": "wakes",
+        "explanation": "Dấu hiệu 'Every morning' chỉ thói quen lặp đi lặp lại. Chủ ngữ 'John' là ngôi thứ 3 số ít nên động từ thêm 's'."
+      },
+      {
+        "id": "g_d3_q2",
+        "type": "multiple_choice",
+        "question": "Chọn câu chính xác về mặt ngữ pháp:",
+        "sentence": "Neither the teacher nor the students _____ present at yesterday's seminar.",
+        "choices": [
+          "was",
+          "were",
+          "is",
+          "are"
+        ],
+        "answer": "were",
+        "explanation": "Quy tắc Neither...nor: Động từ chia theo chủ ngữ gần nó nhất (the students - danh từ số nhiều) và thời điểm quá khứ (yesterday)."
+      },
+      {
+        "id": "g_d3_q3",
+        "type": "fill_blank",
+        "question": "Điền dạng đúng của động từ trong ngoặc:",
+        "sentence": "By the time we arrived, the train _____ (already / leave).",
+        "answer": "had already left",
+        "hint": "Hành động xảy ra trước một hành động khác trong quá khứ chia thì Quá khứ hoàn thành (Past Perfect)."
+      },
+      {
+        "id": "g_d3_q4",
+        "type": "fill_blank",
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has lived in this vibrant city _____ 2018.",
+        "answer": "since",
+        "hint": "Dùng 'since' trước mốc thời gian xác định trong thì Hiện tại hoàn thành."
+      },
+      {
+        "id": "g_d3_q5",
+        "type": "word_order",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh và đúng ngữ pháp:",
+        "words": [
+          "English",
+          "she",
+          "fluently",
+          "speaks",
+          "every",
+          "day"
+        ],
+        "answer": "she speaks English fluently every day",
+        "explanation": "Cấu trúc chuẩn: Chủ ngữ (she) + Động từ (speaks) + Tân ngữ (English) + Trạng từ chỉ cách thức (fluently) + Trạng từ chỉ thời gian (every day)."
+      }
+    ]
+  },
+  {
+    "day": 4,
+    "title": "Past simple tense",
+    "titleVi": "Thì Quá khứ đơn",
+    "level": "A2",
+    "description": "Hành động đã xảy ra và chấm dứt hoàn toàn trong quá khứ",
+    "theory": {
+      "overview": "Bài học Past simple tense (Thì Quá khứ đơn) là một trong những phần cốt lõi của giáo trình 30 Ngày Phủ Xanh IELTS, giúp bạn nắm vững cấu trúc và ứng dụng chính xác trong các bài thi IELTS Speaking & Writing.",
+      "formulas": [
+        {
+          "type": "Khẳng định (Affirmative)",
+          "rule": "S + V2/ed",
+          "example": "She studies English diligently every single day."
+        },
+        {
+          "type": "Phủ định (Negative)",
+          "rule": "S + did not + V",
+          "example": "They do not hesitate to ask questions in class."
+        },
+        {
+          "type": "Nghi vấn (Interrogative)",
+          "rule": "Did + S + V?",
+          "example": "Do you practice English speaking regularly?"
+        }
+      ],
+      "rules": [
+        "Nguyên tắc 1: Nắm chắc Hành động đã xảy ra và chấm dứt hoàn toàn trong quá khứ.",
+        "Nguyên tắc 2: Chú ý sự hòa hợp giữa chủ ngữ và động từ.",
+        "Nguyên tắc 3: Nhận biết nhanh qua các từ nhận biết (signal words) trong câu."
+      ],
+      "examples": [
+        {
+          "en": "Regular practice leads to remarkable academic success.",
+          "vi": "Luyện tập thường xuyên mang lại thành công học tập vượt bậc."
+        },
+        {
+          "en": "Understanding grammar rules boosts your IELTS score significantly.",
+          "vi": "Hiểu rõ các quy tắc ngữ pháp sẽ nâng cao đáng kể điểm số IELTS của bạn."
+        }
+      ]
+    },
+    "exercises": [
+      {
+        "id": "g_d4_q1",
+        "type": "multiple_choice",
+        "question": "Chọn đáp án đúng nhất cho câu ứng dụng bài Past simple tense:",
+        "sentence": "Every morning, John _____ (wake) up at 6 AM to review his English lessons.",
+        "choices": [
+          "wakes",
+          "woke",
+          "waking",
+          "is waking"
+        ],
+        "answer": "wakes",
+        "explanation": "Dấu hiệu 'Every morning' chỉ thói quen lặp đi lặp lại. Chủ ngữ 'John' là ngôi thứ 3 số ít nên động từ thêm 's'."
+      },
+      {
+        "id": "g_d4_q2",
+        "type": "multiple_choice",
+        "question": "Chọn câu chính xác về mặt ngữ pháp:",
+        "sentence": "Neither the teacher nor the students _____ present at yesterday's seminar.",
+        "choices": [
+          "was",
+          "were",
+          "is",
+          "are"
+        ],
+        "answer": "were",
+        "explanation": "Quy tắc Neither...nor: Động từ chia theo chủ ngữ gần nó nhất (the students - danh từ số nhiều) và thời điểm quá khứ (yesterday)."
+      },
+      {
+        "id": "g_d4_q3",
+        "type": "fill_blank",
+        "question": "Điền dạng đúng của động từ trong ngoặc:",
+        "sentence": "By the time we arrived, the train _____ (already / leave).",
+        "answer": "had already left",
+        "hint": "Hành động xảy ra trước một hành động khác trong quá khứ chia thì Quá khứ hoàn thành (Past Perfect)."
+      },
+      {
+        "id": "g_d4_q4",
+        "type": "fill_blank",
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has lived in this vibrant city _____ 2018.",
+        "answer": "since",
+        "hint": "Dùng 'since' trước mốc thời gian xác định trong thì Hiện tại hoàn thành."
+      },
+      {
+        "id": "g_d4_q5",
+        "type": "word_order",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh và đúng ngữ pháp:",
+        "words": [
+          "English",
+          "she",
+          "fluently",
+          "speaks",
+          "every",
+          "day"
+        ],
+        "answer": "she speaks English fluently every day",
+        "explanation": "Cấu trúc chuẩn: Chủ ngữ (she) + Động từ (speaks) + Tân ngữ (English) + Trạng từ chỉ cách thức (fluently) + Trạng từ chỉ thời gian (every day)."
+      }
+    ]
+  },
+  {
+    "day": 5,
+    "title": "Past continuous tense",
+    "titleVi": "Thì Quá khứ tiếp diễn",
+    "level": "B1",
+    "description": "Hành động đang diễn ra tại một thời điểm xác định trong quá khứ",
+    "theory": {
+      "overview": "Bài học Past continuous tense (Thì Quá khứ tiếp diễn) là một trong những phần cốt lõi của giáo trình 30 Ngày Phủ Xanh IELTS, giúp bạn nắm vững cấu trúc và ứng dụng chính xác trong các bài thi IELTS Speaking & Writing.",
+      "formulas": [
+        {
+          "type": "Khẳng định (Affirmative)",
+          "rule": "S + was/were + V-ing",
+          "example": "She studies English diligently every single day."
+        },
+        {
+          "type": "Phủ định (Negative)",
+          "rule": "S + was/were + not + V-ing",
+          "example": "They do not hesitate to ask questions in class."
+        },
+        {
+          "type": "Nghi vấn (Interrogative)",
+          "rule": "Was/Were + S + V-ing?",
+          "example": "Do you practice English speaking regularly?"
+        }
+      ],
+      "rules": [
+        "Nguyên tắc 1: Nắm chắc Hành động đang diễn ra tại một thời điểm xác định trong quá khứ.",
+        "Nguyên tắc 2: Chú ý sự hòa hợp giữa chủ ngữ và động từ.",
+        "Nguyên tắc 3: Nhận biết nhanh qua các từ nhận biết (signal words) trong câu."
+      ],
+      "examples": [
+        {
+          "en": "Regular practice leads to remarkable academic success.",
+          "vi": "Luyện tập thường xuyên mang lại thành công học tập vượt bậc."
+        },
+        {
+          "en": "Understanding grammar rules boosts your IELTS score significantly.",
+          "vi": "Hiểu rõ các quy tắc ngữ pháp sẽ nâng cao đáng kể điểm số IELTS của bạn."
+        }
+      ]
+    },
+    "exercises": [
+      {
+        "id": "g_d5_q1",
+        "type": "multiple_choice",
+        "question": "Chọn đáp án đúng nhất cho câu ứng dụng bài Past continuous tense:",
+        "sentence": "Every morning, John _____ (wake) up at 6 AM to review his English lessons.",
+        "choices": [
+          "wakes",
+          "woke",
+          "waking",
+          "is waking"
+        ],
+        "answer": "wakes",
+        "explanation": "Dấu hiệu 'Every morning' chỉ thói quen lặp đi lặp lại. Chủ ngữ 'John' là ngôi thứ 3 số ít nên động từ thêm 's'."
+      },
+      {
+        "id": "g_d5_q2",
+        "type": "multiple_choice",
+        "question": "Chọn câu chính xác về mặt ngữ pháp:",
+        "sentence": "Neither the teacher nor the students _____ present at yesterday's seminar.",
+        "choices": [
+          "was",
+          "were",
+          "is",
+          "are"
+        ],
+        "answer": "were",
+        "explanation": "Quy tắc Neither...nor: Động từ chia theo chủ ngữ gần nó nhất (the students - danh từ số nhiều) và thời điểm quá khứ (yesterday)."
+      },
+      {
+        "id": "g_d5_q3",
+        "type": "fill_blank",
+        "question": "Điền dạng đúng của động từ trong ngoặc:",
+        "sentence": "By the time we arrived, the train _____ (already / leave).",
+        "answer": "had already left",
+        "hint": "Hành động xảy ra trước một hành động khác trong quá khứ chia thì Quá khứ hoàn thành (Past Perfect)."
+      },
+      {
+        "id": "g_d5_q4",
+        "type": "fill_blank",
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has lived in this vibrant city _____ 2018.",
+        "answer": "since",
+        "hint": "Dùng 'since' trước mốc thời gian xác định trong thì Hiện tại hoàn thành."
+      },
+      {
+        "id": "g_d5_q5",
+        "type": "word_order",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh và đúng ngữ pháp:",
+        "words": [
+          "English",
+          "she",
+          "fluently",
+          "speaks",
+          "every",
+          "day"
+        ],
+        "answer": "she speaks English fluently every day",
+        "explanation": "Cấu trúc chuẩn: Chủ ngữ (she) + Động từ (speaks) + Tân ngữ (English) + Trạng từ chỉ cách thức (fluently) + Trạng từ chỉ thời gian (every day)."
+      }
+    ]
+  },
+  {
+    "day": 6,
+    "title": "Past perfect tense",
+    "titleVi": "Thì Quá khứ hoàn thành",
+    "level": "B1-B2",
+    "description": "Hành động xảy ra trước một hành động khác trong quá khứ",
+    "theory": {
+      "overview": "Bài học Past perfect tense (Thì Quá khứ hoàn thành) là một trong những phần cốt lõi của giáo trình 30 Ngày Phủ Xanh IELTS, giúp bạn nắm vững cấu trúc và ứng dụng chính xác trong các bài thi IELTS Speaking & Writing.",
+      "formulas": [
+        {
+          "type": "Khẳng định (Affirmative)",
+          "rule": "S + had + V3/ed",
+          "example": "She studies English diligently every single day."
+        },
+        {
+          "type": "Phủ định (Negative)",
+          "rule": "S + had not + V3/ed",
+          "example": "They do not hesitate to ask questions in class."
+        },
+        {
+          "type": "Nghi vấn (Interrogative)",
+          "rule": "Had + S + V3/ed?",
+          "example": "Do you practice English speaking regularly?"
+        }
+      ],
+      "rules": [
+        "Nguyên tắc 1: Nắm chắc Hành động xảy ra trước một hành động khác trong quá khứ.",
+        "Nguyên tắc 2: Chú ý sự hòa hợp giữa chủ ngữ và động từ.",
+        "Nguyên tắc 3: Nhận biết nhanh qua các từ nhận biết (signal words) trong câu."
+      ],
+      "examples": [
+        {
+          "en": "Regular practice leads to remarkable academic success.",
+          "vi": "Luyện tập thường xuyên mang lại thành công học tập vượt bậc."
+        },
+        {
+          "en": "Understanding grammar rules boosts your IELTS score significantly.",
+          "vi": "Hiểu rõ các quy tắc ngữ pháp sẽ nâng cao đáng kể điểm số IELTS của bạn."
+        }
+      ]
+    },
+    "exercises": [
+      {
+        "id": "g_d6_q1",
+        "type": "multiple_choice",
+        "question": "Chọn đáp án đúng nhất cho câu ứng dụng bài Past perfect tense:",
+        "sentence": "Every morning, John _____ (wake) up at 6 AM to review his English lessons.",
+        "choices": [
+          "wakes",
+          "woke",
+          "waking",
+          "is waking"
+        ],
+        "answer": "wakes",
+        "explanation": "Dấu hiệu 'Every morning' chỉ thói quen lặp đi lặp lại. Chủ ngữ 'John' là ngôi thứ 3 số ít nên động từ thêm 's'."
+      },
+      {
+        "id": "g_d6_q2",
+        "type": "multiple_choice",
+        "question": "Chọn câu chính xác về mặt ngữ pháp:",
+        "sentence": "Neither the teacher nor the students _____ present at yesterday's seminar.",
+        "choices": [
+          "was",
+          "were",
+          "is",
+          "are"
+        ],
+        "answer": "were",
+        "explanation": "Quy tắc Neither...nor: Động từ chia theo chủ ngữ gần nó nhất (the students - danh từ số nhiều) và thời điểm quá khứ (yesterday)."
+      },
+      {
+        "id": "g_d6_q3",
+        "type": "fill_blank",
+        "question": "Điền dạng đúng của động từ trong ngoặc:",
+        "sentence": "By the time we arrived, the train _____ (already / leave).",
+        "answer": "had already left",
+        "hint": "Hành động xảy ra trước một hành động khác trong quá khứ chia thì Quá khứ hoàn thành (Past Perfect)."
+      },
+      {
+        "id": "g_d6_q4",
+        "type": "fill_blank",
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has lived in this vibrant city _____ 2018.",
+        "answer": "since",
+        "hint": "Dùng 'since' trước mốc thời gian xác định trong thì Hiện tại hoàn thành."
+      },
+      {
+        "id": "g_d6_q5",
+        "type": "word_order",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh và đúng ngữ pháp:",
+        "words": [
+          "English",
+          "she",
+          "fluently",
+          "speaks",
+          "every",
+          "day"
+        ],
+        "answer": "she speaks English fluently every day",
+        "explanation": "Cấu trúc chuẩn: Chủ ngữ (she) + Động từ (speaks) + Tân ngữ (English) + Trạng từ chỉ cách thức (fluently) + Trạng từ chỉ thời gian (every day)."
+      }
+    ]
+  },
+  {
+    "day": 7,
+    "title": "Future simple tense",
+    "titleVi": "Thì Tương lai đơn",
+    "level": "A2",
+    "description": "Quyết định đưa ra ngay lúc nói hoặc dự đoán không có căn cứ",
+    "theory": {
+      "overview": "Bài học Future simple tense (Thì Tương lai đơn) là một trong những phần cốt lõi của giáo trình 30 Ngày Phủ Xanh IELTS, giúp bạn nắm vững cấu trúc và ứng dụng chính xác trong các bài thi IELTS Speaking & Writing.",
+      "formulas": [
+        {
+          "type": "Khẳng định (Affirmative)",
+          "rule": "S + will + V",
+          "example": "She studies English diligently every single day."
+        },
+        {
+          "type": "Phủ định (Negative)",
+          "rule": "S + will not (won't) + V",
+          "example": "They do not hesitate to ask questions in class."
+        },
+        {
+          "type": "Nghi vấn (Interrogative)",
+          "rule": "Will + S + V?",
+          "example": "Do you practice English speaking regularly?"
+        }
+      ],
+      "rules": [
+        "Nguyên tắc 1: Nắm chắc Quyết định đưa ra ngay lúc nói hoặc dự đoán không có căn cứ.",
+        "Nguyên tắc 2: Chú ý sự hòa hợp giữa chủ ngữ và động từ.",
+        "Nguyên tắc 3: Nhận biết nhanh qua các từ nhận biết (signal words) trong câu."
+      ],
+      "examples": [
+        {
+          "en": "Regular practice leads to remarkable academic success.",
+          "vi": "Luyện tập thường xuyên mang lại thành công học tập vượt bậc."
+        },
+        {
+          "en": "Understanding grammar rules boosts your IELTS score significantly.",
+          "vi": "Hiểu rõ các quy tắc ngữ pháp sẽ nâng cao đáng kể điểm số IELTS của bạn."
+        }
+      ]
+    },
+    "exercises": [
+      {
+        "id": "g_d7_q1",
+        "type": "multiple_choice",
+        "question": "Chọn đáp án đúng nhất cho câu ứng dụng bài Future simple tense:",
+        "sentence": "Every morning, John _____ (wake) up at 6 AM to review his English lessons.",
+        "choices": [
+          "wakes",
+          "woke",
+          "waking",
+          "is waking"
+        ],
+        "answer": "wakes",
+        "explanation": "Dấu hiệu 'Every morning' chỉ thói quen lặp đi lặp lại. Chủ ngữ 'John' là ngôi thứ 3 số ít nên động từ thêm 's'."
+      },
+      {
+        "id": "g_d7_q2",
+        "type": "multiple_choice",
+        "question": "Chọn câu chính xác về mặt ngữ pháp:",
+        "sentence": "Neither the teacher nor the students _____ present at yesterday's seminar.",
+        "choices": [
+          "was",
+          "were",
+          "is",
+          "are"
+        ],
+        "answer": "were",
+        "explanation": "Quy tắc Neither...nor: Động từ chia theo chủ ngữ gần nó nhất (the students - danh từ số nhiều) và thời điểm quá khứ (yesterday)."
+      },
+      {
+        "id": "g_d7_q3",
+        "type": "fill_blank",
+        "question": "Điền dạng đúng của động từ trong ngoặc:",
+        "sentence": "By the time we arrived, the train _____ (already / leave).",
+        "answer": "had already left",
+        "hint": "Hành động xảy ra trước một hành động khác trong quá khứ chia thì Quá khứ hoàn thành (Past Perfect)."
+      },
+      {
+        "id": "g_d7_q4",
+        "type": "fill_blank",
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has lived in this vibrant city _____ 2018.",
+        "answer": "since",
+        "hint": "Dùng 'since' trước mốc thời gian xác định trong thì Hiện tại hoàn thành."
+      },
+      {
+        "id": "g_d7_q5",
+        "type": "word_order",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh và đúng ngữ pháp:",
+        "words": [
+          "English",
+          "she",
+          "fluently",
+          "speaks",
+          "every",
+          "day"
+        ],
+        "answer": "she speaks English fluently every day",
+        "explanation": "Cấu trúc chuẩn: Chủ ngữ (she) + Động từ (speaks) + Tân ngữ (English) + Trạng từ chỉ cách thức (fluently) + Trạng từ chỉ thời gian (every day)."
+      }
+    ]
+  },
+  {
+    "day": 8,
+    "title": "Near future tense",
+    "titleVi": "Thì Tương lai gần",
+    "level": "A2",
+    "description": "Kế hoạch đã định trước hoặc dự đoán có bằng chứng cụ thể",
+    "theory": {
+      "overview": "Bài học Near future tense (Thì Tương lai gần) là một trong những phần cốt lõi của giáo trình 30 Ngày Phủ Xanh IELTS, giúp bạn nắm vững cấu trúc và ứng dụng chính xác trong các bài thi IELTS Speaking & Writing.",
+      "formulas": [
+        {
+          "type": "Khẳng định (Affirmative)",
+          "rule": "S + am/is/are + going to + V",
+          "example": "She studies English diligently every single day."
+        },
+        {
+          "type": "Phủ định (Negative)",
+          "rule": "S + am/is/are + not + going to + V",
+          "example": "They do not hesitate to ask questions in class."
+        },
+        {
+          "type": "Nghi vấn (Interrogative)",
+          "rule": "Am/Is/Are + S + going to + V?",
+          "example": "Do you practice English speaking regularly?"
+        }
+      ],
+      "rules": [
+        "Nguyên tắc 1: Nắm chắc Kế hoạch đã định trước hoặc dự đoán có bằng chứng cụ thể.",
+        "Nguyên tắc 2: Chú ý sự hòa hợp giữa chủ ngữ và động từ.",
+        "Nguyên tắc 3: Nhận biết nhanh qua các từ nhận biết (signal words) trong câu."
+      ],
+      "examples": [
+        {
+          "en": "Regular practice leads to remarkable academic success.",
+          "vi": "Luyện tập thường xuyên mang lại thành công học tập vượt bậc."
+        },
+        {
+          "en": "Understanding grammar rules boosts your IELTS score significantly.",
+          "vi": "Hiểu rõ các quy tắc ngữ pháp sẽ nâng cao đáng kể điểm số IELTS của bạn."
+        }
+      ]
+    },
+    "exercises": [
+      {
+        "id": "g_d8_q1",
+        "type": "multiple_choice",
+        "question": "Chọn đáp án đúng nhất cho câu ứng dụng bài Near future tense:",
+        "sentence": "Every morning, John _____ (wake) up at 6 AM to review his English lessons.",
+        "choices": [
+          "wakes",
+          "woke",
+          "waking",
+          "is waking"
+        ],
+        "answer": "wakes",
+        "explanation": "Dấu hiệu 'Every morning' chỉ thói quen lặp đi lặp lại. Chủ ngữ 'John' là ngôi thứ 3 số ít nên động từ thêm 's'."
+      },
+      {
+        "id": "g_d8_q2",
+        "type": "multiple_choice",
+        "question": "Chọn câu chính xác về mặt ngữ pháp:",
+        "sentence": "Neither the teacher nor the students _____ present at yesterday's seminar.",
+        "choices": [
+          "was",
+          "were",
+          "is",
+          "are"
+        ],
+        "answer": "were",
+        "explanation": "Quy tắc Neither...nor: Động từ chia theo chủ ngữ gần nó nhất (the students - danh từ số nhiều) và thời điểm quá khứ (yesterday)."
+      },
+      {
+        "id": "g_d8_q3",
+        "type": "fill_blank",
+        "question": "Điền dạng đúng của động từ trong ngoặc:",
+        "sentence": "By the time we arrived, the train _____ (already / leave).",
+        "answer": "had already left",
+        "hint": "Hành động xảy ra trước một hành động khác trong quá khứ chia thì Quá khứ hoàn thành (Past Perfect)."
+      },
+      {
+        "id": "g_d8_q4",
+        "type": "fill_blank",
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has lived in this vibrant city _____ 2018.",
+        "answer": "since",
+        "hint": "Dùng 'since' trước mốc thời gian xác định trong thì Hiện tại hoàn thành."
+      },
+      {
+        "id": "g_d8_q5",
+        "type": "word_order",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh và đúng ngữ pháp:",
+        "words": [
+          "English",
+          "she",
+          "fluently",
+          "speaks",
+          "every",
+          "day"
+        ],
+        "answer": "she speaks English fluently every day",
+        "explanation": "Cấu trúc chuẩn: Chủ ngữ (she) + Động từ (speaks) + Tân ngữ (English) + Trạng từ chỉ cách thức (fluently) + Trạng từ chỉ thời gian (every day)."
+      }
+    ]
+  },
+  {
+    "day": 9,
+    "title": "Verbs",
+    "titleVi": "Động từ & Phân loại",
+    "level": "A2-B1",
+    "description": "Nội động từ, ngoại động từ, trợ động từ và động từ khuyết thiếu (modal verbs)",
+    "theory": {
+      "overview": "Bài học Verbs (Động từ & Phân loại) là một trong những phần cốt lõi của giáo trình 30 Ngày Phủ Xanh IELTS, giúp bạn nắm vững cấu trúc và ứng dụng chính xác trong các bài thi IELTS Speaking & Writing.",
+      "formulas": [
+        {
+          "type": "Khẳng định (Affirmative)",
+          "rule": "Modal: S + modal + V_inf",
+          "example": "She studies English diligently every single day."
+        },
+        {
+          "type": "Phủ định (Negative)",
+          "rule": "S + modal + not + V_inf",
+          "example": "They do not hesitate to ask questions in class."
+        },
+        {
+          "type": "Nghi vấn (Interrogative)",
+          "rule": "Modal + S + V_inf?",
+          "example": "Do you practice English speaking regularly?"
+        }
+      ],
+      "rules": [
+        "Nguyên tắc 1: Nắm chắc Nội động từ, ngoại động từ, trợ động từ và động từ khuyết thiếu (modal verbs).",
+        "Nguyên tắc 2: Chú ý sự hòa hợp giữa chủ ngữ và động từ.",
+        "Nguyên tắc 3: Nhận biết nhanh qua các từ nhận biết (signal words) trong câu."
+      ],
+      "examples": [
+        {
+          "en": "Regular practice leads to remarkable academic success.",
+          "vi": "Luyện tập thường xuyên mang lại thành công học tập vượt bậc."
+        },
+        {
+          "en": "Understanding grammar rules boosts your IELTS score significantly.",
+          "vi": "Hiểu rõ các quy tắc ngữ pháp sẽ nâng cao đáng kể điểm số IELTS của bạn."
+        }
+      ]
+    },
+    "exercises": [
+      {
+        "id": "g_d9_q1",
+        "type": "multiple_choice",
+        "question": "Chọn đáp án đúng nhất cho câu ứng dụng bài Verbs:",
+        "sentence": "Every morning, John _____ (wake) up at 6 AM to review his English lessons.",
+        "choices": [
+          "wakes",
+          "woke",
+          "waking",
+          "is waking"
+        ],
+        "answer": "wakes",
+        "explanation": "Dấu hiệu 'Every morning' chỉ thói quen lặp đi lặp lại. Chủ ngữ 'John' là ngôi thứ 3 số ít nên động từ thêm 's'."
+      },
+      {
+        "id": "g_d9_q2",
+        "type": "multiple_choice",
+        "question": "Chọn câu chính xác về mặt ngữ pháp:",
+        "sentence": "Neither the teacher nor the students _____ present at yesterday's seminar.",
+        "choices": [
+          "was",
+          "were",
+          "is",
+          "are"
+        ],
+        "answer": "were",
+        "explanation": "Quy tắc Neither...nor: Động từ chia theo chủ ngữ gần nó nhất (the students - danh từ số nhiều) và thời điểm quá khứ (yesterday)."
+      },
+      {
+        "id": "g_d9_q3",
+        "type": "fill_blank",
+        "question": "Điền dạng đúng của động từ trong ngoặc:",
+        "sentence": "By the time we arrived, the train _____ (already / leave).",
+        "answer": "had already left",
+        "hint": "Hành động xảy ra trước một hành động khác trong quá khứ chia thì Quá khứ hoàn thành (Past Perfect)."
+      },
+      {
+        "id": "g_d9_q4",
+        "type": "fill_blank",
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has lived in this vibrant city _____ 2018.",
+        "answer": "since",
+        "hint": "Dùng 'since' trước mốc thời gian xác định trong thì Hiện tại hoàn thành."
+      },
+      {
+        "id": "g_d9_q5",
+        "type": "word_order",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh và đúng ngữ pháp:",
+        "words": [
+          "English",
+          "she",
+          "fluently",
+          "speaks",
+          "every",
+          "day"
+        ],
+        "answer": "she speaks English fluently every day",
+        "explanation": "Cấu trúc chuẩn: Chủ ngữ (she) + Động từ (speaks) + Tân ngữ (English) + Trạng từ chỉ cách thức (fluently) + Trạng từ chỉ thời gian (every day)."
+      }
+    ]
+  },
+  {
+    "day": 10,
+    "title": "Nouns",
+    "titleVi": "Danh từ (Đếm được & Không đếm được)",
+    "level": "A2",
+    "description": "Quy tắc thêm s/es, danh từ bất quy tắc, sở hữu cách",
+    "theory": {
+      "overview": "Bài học Nouns (Danh từ (Đếm được & Không đếm được)) là một trong những phần cốt lõi của giáo trình 30 Ngày Phủ Xanh IELTS, giúp bạn nắm vững cấu trúc và ứng dụng chính xác trong các bài thi IELTS Speaking & Writing.",
+      "formulas": [
+        {
+          "type": "Khẳng định (Affirmative)",
+          "rule": "Singular / Plural nouns",
+          "example": "She studies English diligently every single day."
+        },
+        {
+          "type": "Phủ định (Negative)",
+          "rule": "Countable / Uncountable",
+          "example": "They do not hesitate to ask questions in class."
+        },
+        {
+          "type": "Nghi vấn (Interrogative)",
+          "rule": "Much/Many/A lot of",
+          "example": "Do you practice English speaking regularly?"
+        }
+      ],
+      "rules": [
+        "Nguyên tắc 1: Nắm chắc Quy tắc thêm s/es, danh từ bất quy tắc, sở hữu cách.",
+        "Nguyên tắc 2: Chú ý sự hòa hợp giữa chủ ngữ và động từ.",
+        "Nguyên tắc 3: Nhận biết nhanh qua các từ nhận biết (signal words) trong câu."
+      ],
+      "examples": [
+        {
+          "en": "Regular practice leads to remarkable academic success.",
+          "vi": "Luyện tập thường xuyên mang lại thành công học tập vượt bậc."
+        },
+        {
+          "en": "Understanding grammar rules boosts your IELTS score significantly.",
+          "vi": "Hiểu rõ các quy tắc ngữ pháp sẽ nâng cao đáng kể điểm số IELTS của bạn."
+        }
+      ]
+    },
+    "exercises": [
+      {
+        "id": "g_d10_q1",
+        "type": "multiple_choice",
+        "question": "Chọn đáp án đúng nhất cho câu ứng dụng bài Nouns:",
+        "sentence": "Every morning, John _____ (wake) up at 6 AM to review his English lessons.",
+        "choices": [
+          "wakes",
+          "woke",
+          "waking",
+          "is waking"
+        ],
+        "answer": "wakes",
+        "explanation": "Dấu hiệu 'Every morning' chỉ thói quen lặp đi lặp lại. Chủ ngữ 'John' là ngôi thứ 3 số ít nên động từ thêm 's'."
+      },
+      {
+        "id": "g_d10_q2",
+        "type": "multiple_choice",
+        "question": "Chọn câu chính xác về mặt ngữ pháp:",
+        "sentence": "Neither the teacher nor the students _____ present at yesterday's seminar.",
+        "choices": [
+          "was",
+          "were",
+          "is",
+          "are"
+        ],
+        "answer": "were",
+        "explanation": "Quy tắc Neither...nor: Động từ chia theo chủ ngữ gần nó nhất (the students - danh từ số nhiều) và thời điểm quá khứ (yesterday)."
+      },
+      {
+        "id": "g_d10_q3",
+        "type": "fill_blank",
+        "question": "Điền dạng đúng của động từ trong ngoặc:",
+        "sentence": "By the time we arrived, the train _____ (already / leave).",
+        "answer": "had already left",
+        "hint": "Hành động xảy ra trước một hành động khác trong quá khứ chia thì Quá khứ hoàn thành (Past Perfect)."
+      },
+      {
+        "id": "g_d10_q4",
+        "type": "fill_blank",
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has lived in this vibrant city _____ 2018.",
+        "answer": "since",
+        "hint": "Dùng 'since' trước mốc thời gian xác định trong thì Hiện tại hoàn thành."
+      },
+      {
+        "id": "g_d10_q5",
+        "type": "word_order",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh và đúng ngữ pháp:",
+        "words": [
+          "English",
+          "she",
+          "fluently",
+          "speaks",
+          "every",
+          "day"
+        ],
+        "answer": "she speaks English fluently every day",
+        "explanation": "Cấu trúc chuẩn: Chủ ngữ (she) + Động từ (speaks) + Tân ngữ (English) + Trạng từ chỉ cách thức (fluently) + Trạng từ chỉ thời gian (every day)."
+      }
+    ]
+  },
+  {
+    "day": 11,
+    "title": "Articles",
+    "titleVi": "Mạo từ (A, An, The & Zero Article)",
+    "level": "A2-B1",
+    "description": "Cách dùng A/An với danh từ số ít chưa xác định, The với vật duy nhất",
+    "theory": {
+      "overview": "Bài học Articles (Mạo từ (A, An, The & Zero Article)) là một trong những phần cốt lõi của giáo trình 30 Ngày Phủ Xanh IELTS, giúp bạn nắm vững cấu trúc và ứng dụng chính xác trong các bài thi IELTS Speaking & Writing.",
+      "formulas": [
+        {
+          "type": "Khẳng định (Affirmative)",
+          "rule": "A/An + N(sing, count)",
+          "example": "She studies English diligently every single day."
+        },
+        {
+          "type": "Phủ định (Negative)",
+          "rule": "The + N(specific/unique)",
+          "example": "They do not hesitate to ask questions in class."
+        },
+        {
+          "type": "Nghi vấn (Interrogative)",
+          "rule": "Zero article (Ø) + N(general/uncount)",
+          "example": "Do you practice English speaking regularly?"
+        }
+      ],
+      "rules": [
+        "Nguyên tắc 1: Nắm chắc Cách dùng A/An với danh từ số ít chưa xác định, The với vật duy nhất.",
+        "Nguyên tắc 2: Chú ý sự hòa hợp giữa chủ ngữ và động từ.",
+        "Nguyên tắc 3: Nhận biết nhanh qua các từ nhận biết (signal words) trong câu."
+      ],
+      "examples": [
+        {
+          "en": "Regular practice leads to remarkable academic success.",
+          "vi": "Luyện tập thường xuyên mang lại thành công học tập vượt bậc."
+        },
+        {
+          "en": "Understanding grammar rules boosts your IELTS score significantly.",
+          "vi": "Hiểu rõ các quy tắc ngữ pháp sẽ nâng cao đáng kể điểm số IELTS của bạn."
+        }
+      ]
+    },
+    "exercises": [
+      {
+        "id": "g_d11_q1",
+        "type": "multiple_choice",
+        "question": "Chọn đáp án đúng nhất cho câu ứng dụng bài Articles:",
+        "sentence": "Every morning, John _____ (wake) up at 6 AM to review his English lessons.",
+        "choices": [
+          "wakes",
+          "woke",
+          "waking",
+          "is waking"
+        ],
+        "answer": "wakes",
+        "explanation": "Dấu hiệu 'Every morning' chỉ thói quen lặp đi lặp lại. Chủ ngữ 'John' là ngôi thứ 3 số ít nên động từ thêm 's'."
+      },
+      {
+        "id": "g_d11_q2",
+        "type": "multiple_choice",
+        "question": "Chọn câu chính xác về mặt ngữ pháp:",
+        "sentence": "Neither the teacher nor the students _____ present at yesterday's seminar.",
+        "choices": [
+          "was",
+          "were",
+          "is",
+          "are"
+        ],
+        "answer": "were",
+        "explanation": "Quy tắc Neither...nor: Động từ chia theo chủ ngữ gần nó nhất (the students - danh từ số nhiều) và thời điểm quá khứ (yesterday)."
+      },
+      {
+        "id": "g_d11_q3",
+        "type": "fill_blank",
+        "question": "Điền dạng đúng của động từ trong ngoặc:",
+        "sentence": "By the time we arrived, the train _____ (already / leave).",
+        "answer": "had already left",
+        "hint": "Hành động xảy ra trước một hành động khác trong quá khứ chia thì Quá khứ hoàn thành (Past Perfect)."
+      },
+      {
+        "id": "g_d11_q4",
+        "type": "fill_blank",
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has lived in this vibrant city _____ 2018.",
+        "answer": "since",
+        "hint": "Dùng 'since' trước mốc thời gian xác định trong thì Hiện tại hoàn thành."
+      },
+      {
+        "id": "g_d11_q5",
+        "type": "word_order",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh và đúng ngữ pháp:",
+        "words": [
+          "English",
+          "she",
+          "fluently",
+          "speaks",
+          "every",
+          "day"
+        ],
+        "answer": "she speaks English fluently every day",
+        "explanation": "Cấu trúc chuẩn: Chủ ngữ (she) + Động từ (speaks) + Tân ngữ (English) + Trạng từ chỉ cách thức (fluently) + Trạng từ chỉ thời gian (every day)."
+      }
+    ]
+  },
+  {
+    "day": 12,
+    "title": "Pronouns & Determiners",
+    "titleVi": "Đại từ, từ hạn định",
+    "level": "B1",
+    "description": "Đại từ nhân xưng, phản thân, sở hữu, đại từ bất định",
+    "theory": {
+      "overview": "Bài học Pronouns & Determiners (Đại từ, từ hạn định) là một trong những phần cốt lõi của giáo trình 30 Ngày Phủ Xanh IELTS, giúp bạn nắm vững cấu trúc và ứng dụng chính xác trong các bài thi IELTS Speaking & Writing.",
+      "formulas": [
+        {
+          "type": "Khẳng định (Affirmative)",
+          "rule": "Subject / Object pronouns",
+          "example": "She studies English diligently every single day."
+        },
+        {
+          "type": "Phủ định (Negative)",
+          "rule": "Possessive adjectives / Pronouns",
+          "example": "They do not hesitate to ask questions in class."
+        },
+        {
+          "type": "Nghi vấn (Interrogative)",
+          "rule": "Reflexive: myself, themselves",
+          "example": "Do you practice English speaking regularly?"
+        }
+      ],
+      "rules": [
+        "Nguyên tắc 1: Nắm chắc Đại từ nhân xưng, phản thân, sở hữu, đại từ bất định.",
+        "Nguyên tắc 2: Chú ý sự hòa hợp giữa chủ ngữ và động từ.",
+        "Nguyên tắc 3: Nhận biết nhanh qua các từ nhận biết (signal words) trong câu."
+      ],
+      "examples": [
+        {
+          "en": "Regular practice leads to remarkable academic success.",
+          "vi": "Luyện tập thường xuyên mang lại thành công học tập vượt bậc."
+        },
+        {
+          "en": "Understanding grammar rules boosts your IELTS score significantly.",
+          "vi": "Hiểu rõ các quy tắc ngữ pháp sẽ nâng cao đáng kể điểm số IELTS của bạn."
+        }
+      ]
+    },
+    "exercises": [
+      {
+        "id": "g_d12_q1",
+        "type": "multiple_choice",
+        "question": "Chọn đáp án đúng nhất cho câu ứng dụng bài Pronouns & Determiners:",
+        "sentence": "Every morning, John _____ (wake) up at 6 AM to review his English lessons.",
+        "choices": [
+          "wakes",
+          "woke",
+          "waking",
+          "is waking"
+        ],
+        "answer": "wakes",
+        "explanation": "Dấu hiệu 'Every morning' chỉ thói quen lặp đi lặp lại. Chủ ngữ 'John' là ngôi thứ 3 số ít nên động từ thêm 's'."
+      },
+      {
+        "id": "g_d12_q2",
+        "type": "multiple_choice",
+        "question": "Chọn câu chính xác về mặt ngữ pháp:",
+        "sentence": "Neither the teacher nor the students _____ present at yesterday's seminar.",
+        "choices": [
+          "was",
+          "were",
+          "is",
+          "are"
+        ],
+        "answer": "were",
+        "explanation": "Quy tắc Neither...nor: Động từ chia theo chủ ngữ gần nó nhất (the students - danh từ số nhiều) và thời điểm quá khứ (yesterday)."
+      },
+      {
+        "id": "g_d12_q3",
+        "type": "fill_blank",
+        "question": "Điền dạng đúng của động từ trong ngoặc:",
+        "sentence": "By the time we arrived, the train _____ (already / leave).",
+        "answer": "had already left",
+        "hint": "Hành động xảy ra trước một hành động khác trong quá khứ chia thì Quá khứ hoàn thành (Past Perfect)."
+      },
+      {
+        "id": "g_d12_q4",
+        "type": "fill_blank",
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has lived in this vibrant city _____ 2018.",
+        "answer": "since",
+        "hint": "Dùng 'since' trước mốc thời gian xác định trong thì Hiện tại hoàn thành."
+      },
+      {
+        "id": "g_d12_q5",
+        "type": "word_order",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh và đúng ngữ pháp:",
+        "words": [
+          "English",
+          "she",
+          "fluently",
+          "speaks",
+          "every",
+          "day"
+        ],
+        "answer": "she speaks English fluently every day",
+        "explanation": "Cấu trúc chuẩn: Chủ ngữ (she) + Động từ (speaks) + Tân ngữ (English) + Trạng từ chỉ cách thức (fluently) + Trạng từ chỉ thời gian (every day)."
+      }
+    ]
+  },
+  {
+    "day": 13,
+    "title": "Adjectives & Adverbs",
+    "titleVi": "Tính từ và Trạng từ",
+    "level": "A2-B1",
+    "description": "Vị trí tính từ, trật tự tính từ (OSASCOMP), so sánh hơn và nhất",
+    "theory": {
+      "overview": "Bài học Adjectives & Adverbs (Tính từ và Trạng từ) là một trong những phần cốt lõi của giáo trình 30 Ngày Phủ Xanh IELTS, giúp bạn nắm vững cấu trúc và ứng dụng chính xác trong các bài thi IELTS Speaking & Writing.",
+      "formulas": [
+        {
+          "type": "Khẳng định (Affirmative)",
+          "rule": "Adj + N / Linking Verb + Adj",
+          "example": "She studies English diligently every single day."
+        },
+        {
+          "type": "Phủ định (Negative)",
+          "rule": "Adv = Adj + ly",
+          "example": "They do not hesitate to ask questions in class."
+        },
+        {
+          "type": "Nghi vấn (Interrogative)",
+          "rule": "Comparative: -er/more; Superlative: -est/most",
+          "example": "Do you practice English speaking regularly?"
+        }
+      ],
+      "rules": [
+        "Nguyên tắc 1: Nắm chắc Vị trí tính từ, trật tự tính từ (OSASCOMP), so sánh hơn và nhất.",
+        "Nguyên tắc 2: Chú ý sự hòa hợp giữa chủ ngữ và động từ.",
+        "Nguyên tắc 3: Nhận biết nhanh qua các từ nhận biết (signal words) trong câu."
+      ],
+      "examples": [
+        {
+          "en": "Regular practice leads to remarkable academic success.",
+          "vi": "Luyện tập thường xuyên mang lại thành công học tập vượt bậc."
+        },
+        {
+          "en": "Understanding grammar rules boosts your IELTS score significantly.",
+          "vi": "Hiểu rõ các quy tắc ngữ pháp sẽ nâng cao đáng kể điểm số IELTS của bạn."
+        }
+      ]
+    },
+    "exercises": [
+      {
+        "id": "g_d13_q1",
+        "type": "multiple_choice",
+        "question": "Chọn đáp án đúng nhất cho câu ứng dụng bài Adjectives & Adverbs:",
+        "sentence": "Every morning, John _____ (wake) up at 6 AM to review his English lessons.",
+        "choices": [
+          "wakes",
+          "woke",
+          "waking",
+          "is waking"
+        ],
+        "answer": "wakes",
+        "explanation": "Dấu hiệu 'Every morning' chỉ thói quen lặp đi lặp lại. Chủ ngữ 'John' là ngôi thứ 3 số ít nên động từ thêm 's'."
+      },
+      {
+        "id": "g_d13_q2",
+        "type": "multiple_choice",
+        "question": "Chọn câu chính xác về mặt ngữ pháp:",
+        "sentence": "Neither the teacher nor the students _____ present at yesterday's seminar.",
+        "choices": [
+          "was",
+          "were",
+          "is",
+          "are"
+        ],
+        "answer": "were",
+        "explanation": "Quy tắc Neither...nor: Động từ chia theo chủ ngữ gần nó nhất (the students - danh từ số nhiều) và thời điểm quá khứ (yesterday)."
+      },
+      {
+        "id": "g_d13_q3",
+        "type": "fill_blank",
+        "question": "Điền dạng đúng của động từ trong ngoặc:",
+        "sentence": "By the time we arrived, the train _____ (already / leave).",
+        "answer": "had already left",
+        "hint": "Hành động xảy ra trước một hành động khác trong quá khứ chia thì Quá khứ hoàn thành (Past Perfect)."
+      },
+      {
+        "id": "g_d13_q4",
+        "type": "fill_blank",
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has lived in this vibrant city _____ 2018.",
+        "answer": "since",
+        "hint": "Dùng 'since' trước mốc thời gian xác định trong thì Hiện tại hoàn thành."
+      },
+      {
+        "id": "g_d13_q5",
+        "type": "word_order",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh và đúng ngữ pháp:",
+        "words": [
+          "English",
+          "she",
+          "fluently",
+          "speaks",
+          "every",
+          "day"
+        ],
+        "answer": "she speaks English fluently every day",
+        "explanation": "Cấu trúc chuẩn: Chủ ngữ (she) + Động từ (speaks) + Tân ngữ (English) + Trạng từ chỉ cách thức (fluently) + Trạng từ chỉ thời gian (every day)."
+      }
+    ]
+  },
+  {
+    "day": 14,
+    "title": "Subject – Verb agreement (1)",
+    "titleVi": "Sự hòa hợp Chủ - Vị (Phần 1)",
+    "level": "B1",
+    "description": "Chủ ngữ số ít đi với động từ số ít, chủ ngữ nối bằng AND, AS WELL AS",
+    "theory": {
+      "overview": "Bài học Subject – Verb agreement (1) (Sự hòa hợp Chủ - Vị (Phần 1)) là một trong những phần cốt lõi của giáo trình 30 Ngày Phủ Xanh IELTS, giúp bạn nắm vững cấu trúc và ứng dụng chính xác trong các bài thi IELTS Speaking & Writing.",
+      "formulas": [
+        {
+          "type": "Khẳng định (Affirmative)",
+          "rule": "S(sing) + V(sing)",
+          "example": "She studies English diligently every single day."
+        },
+        {
+          "type": "Phủ định (Negative)",
+          "rule": "S1 and S2 + V(plural)",
+          "example": "They do not hesitate to ask questions in class."
+        },
+        {
+          "type": "Nghi vấn (Interrogative)",
+          "rule": "Either S1 or S2 + V(chia theo S2)",
+          "example": "Do you practice English speaking regularly?"
+        }
+      ],
+      "rules": [
+        "Nguyên tắc 1: Nắm chắc Chủ ngữ số ít đi với động từ số ít, chủ ngữ nối bằng AND, AS WELL AS.",
+        "Nguyên tắc 2: Chú ý sự hòa hợp giữa chủ ngữ và động từ.",
+        "Nguyên tắc 3: Nhận biết nhanh qua các từ nhận biết (signal words) trong câu."
+      ],
+      "examples": [
+        {
+          "en": "Regular practice leads to remarkable academic success.",
+          "vi": "Luyện tập thường xuyên mang lại thành công học tập vượt bậc."
+        },
+        {
+          "en": "Understanding grammar rules boosts your IELTS score significantly.",
+          "vi": "Hiểu rõ các quy tắc ngữ pháp sẽ nâng cao đáng kể điểm số IELTS của bạn."
+        }
+      ]
+    },
+    "exercises": [
+      {
+        "id": "g_d14_q1",
+        "type": "multiple_choice",
+        "question": "Chọn đáp án đúng nhất cho câu ứng dụng bài Subject – Verb agreement (1):",
+        "sentence": "Every morning, John _____ (wake) up at 6 AM to review his English lessons.",
+        "choices": [
+          "wakes",
+          "woke",
+          "waking",
+          "is waking"
+        ],
+        "answer": "wakes",
+        "explanation": "Dấu hiệu 'Every morning' chỉ thói quen lặp đi lặp lại. Chủ ngữ 'John' là ngôi thứ 3 số ít nên động từ thêm 's'."
+      },
+      {
+        "id": "g_d14_q2",
+        "type": "multiple_choice",
+        "question": "Chọn câu chính xác về mặt ngữ pháp:",
+        "sentence": "Neither the teacher nor the students _____ present at yesterday's seminar.",
+        "choices": [
+          "was",
+          "were",
+          "is",
+          "are"
+        ],
+        "answer": "were",
+        "explanation": "Quy tắc Neither...nor: Động từ chia theo chủ ngữ gần nó nhất (the students - danh từ số nhiều) và thời điểm quá khứ (yesterday)."
+      },
+      {
+        "id": "g_d14_q3",
+        "type": "fill_blank",
+        "question": "Điền dạng đúng của động từ trong ngoặc:",
+        "sentence": "By the time we arrived, the train _____ (already / leave).",
+        "answer": "had already left",
+        "hint": "Hành động xảy ra trước một hành động khác trong quá khứ chia thì Quá khứ hoàn thành (Past Perfect)."
+      },
+      {
+        "id": "g_d14_q4",
+        "type": "fill_blank",
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has lived in this vibrant city _____ 2018.",
+        "answer": "since",
+        "hint": "Dùng 'since' trước mốc thời gian xác định trong thì Hiện tại hoàn thành."
+      },
+      {
+        "id": "g_d14_q5",
+        "type": "word_order",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh và đúng ngữ pháp:",
+        "words": [
+          "English",
+          "she",
+          "fluently",
+          "speaks",
+          "every",
+          "day"
+        ],
+        "answer": "she speaks English fluently every day",
+        "explanation": "Cấu trúc chuẩn: Chủ ngữ (she) + Động từ (speaks) + Tân ngữ (English) + Trạng từ chỉ cách thức (fluently) + Trạng từ chỉ thời gian (every day)."
+      }
+    ]
+  },
+  {
+    "day": 15,
+    "title": "Subject – Verb agreement (2)",
+    "titleVi": "Sự hòa hợp Chủ - Vị (Phần 2)",
+    "level": "B1-B2",
+    "description": "Quy tắc với đại từ bất định, danh từ tập hợp, phân số, khoảng cách",
+    "theory": {
+      "overview": "Bài học Subject – Verb agreement (2) (Sự hòa hợp Chủ - Vị (Phần 2)) là một trong những phần cốt lõi của giáo trình 30 Ngày Phủ Xanh IELTS, giúp bạn nắm vững cấu trúc và ứng dụng chính xác trong các bài thi IELTS Speaking & Writing.",
+      "formulas": [
+        {
+          "type": "Khẳng định (Affirmative)",
+          "rule": "Everyone/Each + V(sing)",
+          "example": "She studies English diligently every single day."
+        },
+        {
+          "type": "Phủ định (Negative)",
+          "rule": "The number of + V(sing)",
+          "example": "They do not hesitate to ask questions in class."
+        },
+        {
+          "type": "Nghi vấn (Interrogative)",
+          "rule": "A number of + V(plural)",
+          "example": "Do you practice English speaking regularly?"
+        }
+      ],
+      "rules": [
+        "Nguyên tắc 1: Nắm chắc Quy tắc với đại từ bất định, danh từ tập hợp, phân số, khoảng cách.",
+        "Nguyên tắc 2: Chú ý sự hòa hợp giữa chủ ngữ và động từ.",
+        "Nguyên tắc 3: Nhận biết nhanh qua các từ nhận biết (signal words) trong câu."
+      ],
+      "examples": [
+        {
+          "en": "Regular practice leads to remarkable academic success.",
+          "vi": "Luyện tập thường xuyên mang lại thành công học tập vượt bậc."
+        },
+        {
+          "en": "Understanding grammar rules boosts your IELTS score significantly.",
+          "vi": "Hiểu rõ các quy tắc ngữ pháp sẽ nâng cao đáng kể điểm số IELTS của bạn."
+        }
+      ]
+    },
+    "exercises": [
+      {
+        "id": "g_d15_q1",
+        "type": "multiple_choice",
+        "question": "Chọn đáp án đúng nhất cho câu ứng dụng bài Subject – Verb agreement (2):",
+        "sentence": "Every morning, John _____ (wake) up at 6 AM to review his English lessons.",
+        "choices": [
+          "wakes",
+          "woke",
+          "waking",
+          "is waking"
+        ],
+        "answer": "wakes",
+        "explanation": "Dấu hiệu 'Every morning' chỉ thói quen lặp đi lặp lại. Chủ ngữ 'John' là ngôi thứ 3 số ít nên động từ thêm 's'."
+      },
+      {
+        "id": "g_d15_q2",
+        "type": "multiple_choice",
+        "question": "Chọn câu chính xác về mặt ngữ pháp:",
+        "sentence": "Neither the teacher nor the students _____ present at yesterday's seminar.",
+        "choices": [
+          "was",
+          "were",
+          "is",
+          "are"
+        ],
+        "answer": "were",
+        "explanation": "Quy tắc Neither...nor: Động từ chia theo chủ ngữ gần nó nhất (the students - danh từ số nhiều) và thời điểm quá khứ (yesterday)."
+      },
+      {
+        "id": "g_d15_q3",
+        "type": "fill_blank",
+        "question": "Điền dạng đúng của động từ trong ngoặc:",
+        "sentence": "By the time we arrived, the train _____ (already / leave).",
+        "answer": "had already left",
+        "hint": "Hành động xảy ra trước một hành động khác trong quá khứ chia thì Quá khứ hoàn thành (Past Perfect)."
+      },
+      {
+        "id": "g_d15_q4",
+        "type": "fill_blank",
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has lived in this vibrant city _____ 2018.",
+        "answer": "since",
+        "hint": "Dùng 'since' trước mốc thời gian xác định trong thì Hiện tại hoàn thành."
+      },
+      {
+        "id": "g_d15_q5",
+        "type": "word_order",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh và đúng ngữ pháp:",
+        "words": [
+          "English",
+          "she",
+          "fluently",
+          "speaks",
+          "every",
+          "day"
+        ],
+        "answer": "she speaks English fluently every day",
+        "explanation": "Cấu trúc chuẩn: Chủ ngữ (she) + Động từ (speaks) + Tân ngữ (English) + Trạng từ chỉ cách thức (fluently) + Trạng từ chỉ thời gian (every day)."
+      }
+    ]
+  },
+  {
+    "day": 16,
+    "title": "Passive Voices",
+    "titleVi": "Câu bị động toàn tập",
+    "level": "B1",
+    "description": "Chuyển câu chủ động sang bị động theo các thì và động từ khuyết thiếu",
+    "theory": {
+      "overview": "Bài học Passive Voices (Câu bị động toàn tập) là một trong những phần cốt lõi của giáo trình 30 Ngày Phủ Xanh IELTS, giúp bạn nắm vững cấu trúc và ứng dụng chính xác trong các bài thi IELTS Speaking & Writing.",
+      "formulas": [
+        {
+          "type": "Khẳng định (Affirmative)",
+          "rule": "S + be + V3/ed (+ by O)",
+          "example": "She studies English diligently every single day."
+        },
+        {
+          "type": "Phủ định (Negative)",
+          "rule": "Continuous: S + be + being + V3/ed",
+          "example": "They do not hesitate to ask questions in class."
+        },
+        {
+          "type": "Nghi vấn (Interrogative)",
+          "rule": "Modal: S + modal + be + V3/ed",
+          "example": "Do you practice English speaking regularly?"
+        }
+      ],
+      "rules": [
+        "Nguyên tắc 1: Nắm chắc Chuyển câu chủ động sang bị động theo các thì và động từ khuyết thiếu.",
+        "Nguyên tắc 2: Chú ý sự hòa hợp giữa chủ ngữ và động từ.",
+        "Nguyên tắc 3: Nhận biết nhanh qua các từ nhận biết (signal words) trong câu."
+      ],
+      "examples": [
+        {
+          "en": "Regular practice leads to remarkable academic success.",
+          "vi": "Luyện tập thường xuyên mang lại thành công học tập vượt bậc."
+        },
+        {
+          "en": "Understanding grammar rules boosts your IELTS score significantly.",
+          "vi": "Hiểu rõ các quy tắc ngữ pháp sẽ nâng cao đáng kể điểm số IELTS của bạn."
+        }
+      ]
+    },
+    "exercises": [
+      {
+        "id": "g_d16_q1",
+        "type": "multiple_choice",
+        "question": "Chọn đáp án đúng nhất cho câu ứng dụng bài Passive Voices:",
+        "sentence": "Every morning, John _____ (wake) up at 6 AM to review his English lessons.",
+        "choices": [
+          "wakes",
+          "woke",
+          "waking",
+          "is waking"
+        ],
+        "answer": "wakes",
+        "explanation": "Dấu hiệu 'Every morning' chỉ thói quen lặp đi lặp lại. Chủ ngữ 'John' là ngôi thứ 3 số ít nên động từ thêm 's'."
+      },
+      {
+        "id": "g_d16_q2",
+        "type": "multiple_choice",
+        "question": "Chọn câu chính xác về mặt ngữ pháp:",
+        "sentence": "Neither the teacher nor the students _____ present at yesterday's seminar.",
+        "choices": [
+          "was",
+          "were",
+          "is",
+          "are"
+        ],
+        "answer": "were",
+        "explanation": "Quy tắc Neither...nor: Động từ chia theo chủ ngữ gần nó nhất (the students - danh từ số nhiều) và thời điểm quá khứ (yesterday)."
+      },
+      {
+        "id": "g_d16_q3",
+        "type": "fill_blank",
+        "question": "Điền dạng đúng của động từ trong ngoặc:",
+        "sentence": "By the time we arrived, the train _____ (already / leave).",
+        "answer": "had already left",
+        "hint": "Hành động xảy ra trước một hành động khác trong quá khứ chia thì Quá khứ hoàn thành (Past Perfect)."
+      },
+      {
+        "id": "g_d16_q4",
+        "type": "fill_blank",
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has lived in this vibrant city _____ 2018.",
+        "answer": "since",
+        "hint": "Dùng 'since' trước mốc thời gian xác định trong thì Hiện tại hoàn thành."
+      },
+      {
+        "id": "g_d16_q5",
+        "type": "word_order",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh và đúng ngữ pháp:",
+        "words": [
+          "English",
+          "she",
+          "fluently",
+          "speaks",
+          "every",
+          "day"
+        ],
+        "answer": "she speaks English fluently every day",
+        "explanation": "Cấu trúc chuẩn: Chủ ngữ (she) + Động từ (speaks) + Tân ngữ (English) + Trạng từ chỉ cách thức (fluently) + Trạng từ chỉ thời gian (every day)."
+      }
+    ]
+  },
+  {
+    "day": 17,
+    "title": "Relative clause",
+    "titleVi": "Mệnh đề quan hệ",
+    "level": "B1-B2",
+    "description": "Who, Whom, Whose, Which, That và mệnh đề rút gọn (V-ing / V3/ed)",
+    "theory": {
+      "overview": "Bài học Relative clause (Mệnh đề quan hệ) là một trong những phần cốt lõi của giáo trình 30 Ngày Phủ Xanh IELTS, giúp bạn nắm vững cấu trúc và ứng dụng chính xác trong các bài thi IELTS Speaking & Writing.",
+      "formulas": [
+        {
+          "type": "Khẳng định (Affirmative)",
+          "rule": "N(person) + WHO/WHOM + ...",
+          "example": "She studies English diligently every single day."
+        },
+        {
+          "type": "Phủ định (Negative)",
+          "rule": "N(thing) + WHICH + ...",
+          "example": "They do not hesitate to ask questions in class."
+        },
+        {
+          "type": "Nghi vấn (Interrogative)",
+          "rule": "N + WHOSE + N (sở hữu)",
+          "example": "Do you practice English speaking regularly?"
+        }
+      ],
+      "rules": [
+        "Nguyên tắc 1: Nắm chắc Who, Whom, Whose, Which, That và mệnh đề rút gọn (V-ing / V3/ed).",
+        "Nguyên tắc 2: Chú ý sự hòa hợp giữa chủ ngữ và động từ.",
+        "Nguyên tắc 3: Nhận biết nhanh qua các từ nhận biết (signal words) trong câu."
+      ],
+      "examples": [
+        {
+          "en": "Regular practice leads to remarkable academic success.",
+          "vi": "Luyện tập thường xuyên mang lại thành công học tập vượt bậc."
+        },
+        {
+          "en": "Understanding grammar rules boosts your IELTS score significantly.",
+          "vi": "Hiểu rõ các quy tắc ngữ pháp sẽ nâng cao đáng kể điểm số IELTS của bạn."
+        }
+      ]
+    },
+    "exercises": [
+      {
+        "id": "g_d17_q1",
+        "type": "multiple_choice",
+        "question": "Chọn đáp án đúng nhất cho câu ứng dụng bài Relative clause:",
+        "sentence": "Every morning, John _____ (wake) up at 6 AM to review his English lessons.",
+        "choices": [
+          "wakes",
+          "woke",
+          "waking",
+          "is waking"
+        ],
+        "answer": "wakes",
+        "explanation": "Dấu hiệu 'Every morning' chỉ thói quen lặp đi lặp lại. Chủ ngữ 'John' là ngôi thứ 3 số ít nên động từ thêm 's'."
+      },
+      {
+        "id": "g_d17_q2",
+        "type": "multiple_choice",
+        "question": "Chọn câu chính xác về mặt ngữ pháp:",
+        "sentence": "Neither the teacher nor the students _____ present at yesterday's seminar.",
+        "choices": [
+          "was",
+          "were",
+          "is",
+          "are"
+        ],
+        "answer": "were",
+        "explanation": "Quy tắc Neither...nor: Động từ chia theo chủ ngữ gần nó nhất (the students - danh từ số nhiều) và thời điểm quá khứ (yesterday)."
+      },
+      {
+        "id": "g_d17_q3",
+        "type": "fill_blank",
+        "question": "Điền dạng đúng của động từ trong ngoặc:",
+        "sentence": "By the time we arrived, the train _____ (already / leave).",
+        "answer": "had already left",
+        "hint": "Hành động xảy ra trước một hành động khác trong quá khứ chia thì Quá khứ hoàn thành (Past Perfect)."
+      },
+      {
+        "id": "g_d17_q4",
+        "type": "fill_blank",
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has lived in this vibrant city _____ 2018.",
+        "answer": "since",
+        "hint": "Dùng 'since' trước mốc thời gian xác định trong thì Hiện tại hoàn thành."
+      },
+      {
+        "id": "g_d17_q5",
+        "type": "word_order",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh và đúng ngữ pháp:",
+        "words": [
+          "English",
+          "she",
+          "fluently",
+          "speaks",
+          "every",
+          "day"
+        ],
+        "answer": "she speaks English fluently every day",
+        "explanation": "Cấu trúc chuẩn: Chủ ngữ (she) + Động từ (speaks) + Tân ngữ (English) + Trạng từ chỉ cách thức (fluently) + Trạng từ chỉ thời gian (every day)."
+      }
+    ]
+  },
+  {
+    "day": 18,
+    "title": "Conjunctions",
+    "titleVi": "Liên từ kết hợp & Phụ thuộc",
+    "level": "B1",
+    "description": "FANBOYS (For, And, Nor, But, Or, Yet, So), Although, Because, While",
+    "theory": {
+      "overview": "Bài học Conjunctions (Liên từ kết hợp & Phụ thuộc) là một trong những phần cốt lõi của giáo trình 30 Ngày Phủ Xanh IELTS, giúp bạn nắm vững cấu trúc và ứng dụng chính xác trong các bài thi IELTS Speaking & Writing.",
+      "formulas": [
+        {
+          "type": "Khẳng định (Affirmative)",
+          "rule": "Coordinate: FANBOYS",
+          "example": "She studies English diligently every single day."
+        },
+        {
+          "type": "Phủ định (Negative)",
+          "rule": "Subordinate: Although / Because / Since",
+          "example": "They do not hesitate to ask questions in class."
+        },
+        {
+          "type": "Nghi vấn (Interrogative)",
+          "rule": "Correlative: Both...and, Not only...but also",
+          "example": "Do you practice English speaking regularly?"
+        }
+      ],
+      "rules": [
+        "Nguyên tắc 1: Nắm chắc FANBOYS (For, And, Nor, But, Or, Yet, So), Although, Because, While.",
+        "Nguyên tắc 2: Chú ý sự hòa hợp giữa chủ ngữ và động từ.",
+        "Nguyên tắc 3: Nhận biết nhanh qua các từ nhận biết (signal words) trong câu."
+      ],
+      "examples": [
+        {
+          "en": "Regular practice leads to remarkable academic success.",
+          "vi": "Luyện tập thường xuyên mang lại thành công học tập vượt bậc."
+        },
+        {
+          "en": "Understanding grammar rules boosts your IELTS score significantly.",
+          "vi": "Hiểu rõ các quy tắc ngữ pháp sẽ nâng cao đáng kể điểm số IELTS của bạn."
+        }
+      ]
+    },
+    "exercises": [
+      {
+        "id": "g_d18_q1",
+        "type": "multiple_choice",
+        "question": "Chọn đáp án đúng nhất cho câu ứng dụng bài Conjunctions:",
+        "sentence": "Every morning, John _____ (wake) up at 6 AM to review his English lessons.",
+        "choices": [
+          "wakes",
+          "woke",
+          "waking",
+          "is waking"
+        ],
+        "answer": "wakes",
+        "explanation": "Dấu hiệu 'Every morning' chỉ thói quen lặp đi lặp lại. Chủ ngữ 'John' là ngôi thứ 3 số ít nên động từ thêm 's'."
+      },
+      {
+        "id": "g_d18_q2",
+        "type": "multiple_choice",
+        "question": "Chọn câu chính xác về mặt ngữ pháp:",
+        "sentence": "Neither the teacher nor the students _____ present at yesterday's seminar.",
+        "choices": [
+          "was",
+          "were",
+          "is",
+          "are"
+        ],
+        "answer": "were",
+        "explanation": "Quy tắc Neither...nor: Động từ chia theo chủ ngữ gần nó nhất (the students - danh từ số nhiều) và thời điểm quá khứ (yesterday)."
+      },
+      {
+        "id": "g_d18_q3",
+        "type": "fill_blank",
+        "question": "Điền dạng đúng của động từ trong ngoặc:",
+        "sentence": "By the time we arrived, the train _____ (already / leave).",
+        "answer": "had already left",
+        "hint": "Hành động xảy ra trước một hành động khác trong quá khứ chia thì Quá khứ hoàn thành (Past Perfect)."
+      },
+      {
+        "id": "g_d18_q4",
+        "type": "fill_blank",
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has lived in this vibrant city _____ 2018.",
+        "answer": "since",
+        "hint": "Dùng 'since' trước mốc thời gian xác định trong thì Hiện tại hoàn thành."
+      },
+      {
+        "id": "g_d18_q5",
+        "type": "word_order",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh và đúng ngữ pháp:",
+        "words": [
+          "English",
+          "she",
+          "fluently",
+          "speaks",
+          "every",
+          "day"
+        ],
+        "answer": "she speaks English fluently every day",
+        "explanation": "Cấu trúc chuẩn: Chủ ngữ (she) + Động từ (speaks) + Tân ngữ (English) + Trạng từ chỉ cách thức (fluently) + Trạng từ chỉ thời gian (every day)."
+      }
+    ]
+  },
+  {
+    "day": 19,
+    "title": "Conditional sentence",
+    "titleVi": "Câu điều kiện (Loại 0, 1, 2, 3 & Mixed)",
+    "level": "B1-B2",
+    "description": "Điều kiện có thật, không có thật ở hiện tại/quá khứ và câu ước WISH",
+    "theory": {
+      "overview": "Bài học Conditional sentence (Câu điều kiện (Loại 0, 1, 2, 3 & Mixed)) là một trong những phần cốt lõi của giáo trình 30 Ngày Phủ Xanh IELTS, giúp bạn nắm vững cấu trúc và ứng dụng chính xác trong các bài thi IELTS Speaking & Writing.",
+      "formulas": [
+        {
+          "type": "Khẳng định (Affirmative)",
+          "rule": "Type 1: If + V(pres), S + will + V",
+          "example": "She studies English diligently every single day."
+        },
+        {
+          "type": "Phủ định (Negative)",
+          "rule": "Type 2: If + V2/were, S + would + V",
+          "example": "They do not hesitate to ask questions in class."
+        },
+        {
+          "type": "Nghi vấn (Interrogative)",
+          "rule": "Type 3: If + had V3, S + would have V3",
+          "example": "Do you practice English speaking regularly?"
+        }
+      ],
+      "rules": [
+        "Nguyên tắc 1: Nắm chắc Điều kiện có thật, không có thật ở hiện tại/quá khứ và câu ước WISH.",
+        "Nguyên tắc 2: Chú ý sự hòa hợp giữa chủ ngữ và động từ.",
+        "Nguyên tắc 3: Nhận biết nhanh qua các từ nhận biết (signal words) trong câu."
+      ],
+      "examples": [
+        {
+          "en": "Regular practice leads to remarkable academic success.",
+          "vi": "Luyện tập thường xuyên mang lại thành công học tập vượt bậc."
+        },
+        {
+          "en": "Understanding grammar rules boosts your IELTS score significantly.",
+          "vi": "Hiểu rõ các quy tắc ngữ pháp sẽ nâng cao đáng kể điểm số IELTS của bạn."
+        }
+      ]
+    },
+    "exercises": [
+      {
+        "id": "g_d19_q1",
+        "type": "multiple_choice",
+        "question": "Chọn đáp án đúng nhất cho câu ứng dụng bài Conditional sentence:",
+        "sentence": "Every morning, John _____ (wake) up at 6 AM to review his English lessons.",
+        "choices": [
+          "wakes",
+          "woke",
+          "waking",
+          "is waking"
+        ],
+        "answer": "wakes",
+        "explanation": "Dấu hiệu 'Every morning' chỉ thói quen lặp đi lặp lại. Chủ ngữ 'John' là ngôi thứ 3 số ít nên động từ thêm 's'."
+      },
+      {
+        "id": "g_d19_q2",
+        "type": "multiple_choice",
+        "question": "Chọn câu chính xác về mặt ngữ pháp:",
+        "sentence": "Neither the teacher nor the students _____ present at yesterday's seminar.",
+        "choices": [
+          "was",
+          "were",
+          "is",
+          "are"
+        ],
+        "answer": "were",
+        "explanation": "Quy tắc Neither...nor: Động từ chia theo chủ ngữ gần nó nhất (the students - danh từ số nhiều) và thời điểm quá khứ (yesterday)."
+      },
+      {
+        "id": "g_d19_q3",
+        "type": "fill_blank",
+        "question": "Điền dạng đúng của động từ trong ngoặc:",
+        "sentence": "By the time we arrived, the train _____ (already / leave).",
+        "answer": "had already left",
+        "hint": "Hành động xảy ra trước một hành động khác trong quá khứ chia thì Quá khứ hoàn thành (Past Perfect)."
+      },
+      {
+        "id": "g_d19_q4",
+        "type": "fill_blank",
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has lived in this vibrant city _____ 2018.",
+        "answer": "since",
+        "hint": "Dùng 'since' trước mốc thời gian xác định trong thì Hiện tại hoàn thành."
+      },
+      {
+        "id": "g_d19_q5",
+        "type": "word_order",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh và đúng ngữ pháp:",
+        "words": [
+          "English",
+          "she",
+          "fluently",
+          "speaks",
+          "every",
+          "day"
+        ],
+        "answer": "she speaks English fluently every day",
+        "explanation": "Cấu trúc chuẩn: Chủ ngữ (she) + Động từ (speaks) + Tân ngữ (English) + Trạng từ chỉ cách thức (fluently) + Trạng từ chỉ thời gian (every day)."
+      }
+    ]
+  },
+  {
+    "day": 20,
+    "title": "Prepositions",
+    "titleVi": "Giới từ chỉ thời gian & nơi chốn",
+    "level": "A2-B1",
+    "description": "Quy tắc IN - ON - AT (Tam giác giới từ) và các cụm giới từ thông dụng",
+    "theory": {
+      "overview": "Bài học Prepositions (Giới từ chỉ thời gian & nơi chốn) là một trong những phần cốt lõi của giáo trình 30 Ngày Phủ Xanh IELTS, giúp bạn nắm vững cấu trúc và ứng dụng chính xác trong các bài thi IELTS Speaking & Writing.",
+      "formulas": [
+        {
+          "type": "Khẳng định (Affirmative)",
+          "rule": "IN: năm, tháng, mùa, thế kỷ",
+          "example": "She studies English diligently every single day."
+        },
+        {
+          "type": "Phủ định (Negative)",
+          "rule": "ON: thứ, ngày cụ thể, đường phố",
+          "example": "They do not hesitate to ask questions in class."
+        },
+        {
+          "type": "Nghi vấn (Interrogative)",
+          "rule": "AT: giờ chính xác, địa chỉ cụ thể",
+          "example": "Do you practice English speaking regularly?"
+        }
+      ],
+      "rules": [
+        "Nguyên tắc 1: Nắm chắc Quy tắc IN - ON - AT (Tam giác giới từ) và các cụm giới từ thông dụng.",
+        "Nguyên tắc 2: Chú ý sự hòa hợp giữa chủ ngữ và động từ.",
+        "Nguyên tắc 3: Nhận biết nhanh qua các từ nhận biết (signal words) trong câu."
+      ],
+      "examples": [
+        {
+          "en": "Regular practice leads to remarkable academic success.",
+          "vi": "Luyện tập thường xuyên mang lại thành công học tập vượt bậc."
+        },
+        {
+          "en": "Understanding grammar rules boosts your IELTS score significantly.",
+          "vi": "Hiểu rõ các quy tắc ngữ pháp sẽ nâng cao đáng kể điểm số IELTS của bạn."
+        }
+      ]
+    },
+    "exercises": [
+      {
+        "id": "g_d20_q1",
+        "type": "multiple_choice",
+        "question": "Chọn đáp án đúng nhất cho câu ứng dụng bài Prepositions:",
+        "sentence": "Every morning, John _____ (wake) up at 6 AM to review his English lessons.",
+        "choices": [
+          "wakes",
+          "woke",
+          "waking",
+          "is waking"
+        ],
+        "answer": "wakes",
+        "explanation": "Dấu hiệu 'Every morning' chỉ thói quen lặp đi lặp lại. Chủ ngữ 'John' là ngôi thứ 3 số ít nên động từ thêm 's'."
+      },
+      {
+        "id": "g_d20_q2",
+        "type": "multiple_choice",
+        "question": "Chọn câu chính xác về mặt ngữ pháp:",
+        "sentence": "Neither the teacher nor the students _____ present at yesterday's seminar.",
+        "choices": [
+          "was",
+          "were",
+          "is",
+          "are"
+        ],
+        "answer": "were",
+        "explanation": "Quy tắc Neither...nor: Động từ chia theo chủ ngữ gần nó nhất (the students - danh từ số nhiều) và thời điểm quá khứ (yesterday)."
+      },
+      {
+        "id": "g_d20_q3",
+        "type": "fill_blank",
+        "question": "Điền dạng đúng của động từ trong ngoặc:",
+        "sentence": "By the time we arrived, the train _____ (already / leave).",
+        "answer": "had already left",
+        "hint": "Hành động xảy ra trước một hành động khác trong quá khứ chia thì Quá khứ hoàn thành (Past Perfect)."
+      },
+      {
+        "id": "g_d20_q4",
+        "type": "fill_blank",
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has lived in this vibrant city _____ 2018.",
+        "answer": "since",
+        "hint": "Dùng 'since' trước mốc thời gian xác định trong thì Hiện tại hoàn thành."
+      },
+      {
+        "id": "g_d20_q5",
+        "type": "word_order",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh và đúng ngữ pháp:",
+        "words": [
+          "English",
+          "she",
+          "fluently",
+          "speaks",
+          "every",
+          "day"
+        ],
+        "answer": "she speaks English fluently every day",
+        "explanation": "Cấu trúc chuẩn: Chủ ngữ (she) + Động từ (speaks) + Tân ngữ (English) + Trạng từ chỉ cách thức (fluently) + Trạng từ chỉ thời gian (every day)."
+      }
+    ]
+  },
+  {
+    "day": 21,
+    "title": "People",
+    "titleVi": "Chủ đề: Con người & Tính cách IELTS",
+    "level": "B1-B2",
+    "description": "Từ vựng & cấu trúc mô tả ngoại hình, tính cách, vai trò xã hội",
+    "theory": {
+      "overview": "Bài học People (Chủ đề: Con người & Tính cách IELTS) là một trong những phần cốt lõi của giáo trình 30 Ngày Phủ Xanh IELTS, giúp bạn nắm vững cấu trúc và ứng dụng chính xác trong các bài thi IELTS Speaking & Writing.",
+      "formulas": [
+        {
+          "type": "Khẳng định (Affirmative)",
+          "rule": "Describe appearance & character",
+          "example": "She studies English diligently every single day."
+        },
+        {
+          "type": "Phủ định (Negative)",
+          "rule": "Collocations with personality",
+          "example": "They do not hesitate to ask questions in class."
+        },
+        {
+          "type": "Nghi vấn (Interrogative)",
+          "rule": "IELTS Speaking & Writing formulas",
+          "example": "Do you practice English speaking regularly?"
+        }
+      ],
+      "rules": [
+        "Nguyên tắc 1: Nắm chắc Từ vựng & cấu trúc mô tả ngoại hình, tính cách, vai trò xã hội.",
+        "Nguyên tắc 2: Chú ý sự hòa hợp giữa chủ ngữ và động từ.",
+        "Nguyên tắc 3: Nhận biết nhanh qua các từ nhận biết (signal words) trong câu."
+      ],
+      "examples": [
+        {
+          "en": "Regular practice leads to remarkable academic success.",
+          "vi": "Luyện tập thường xuyên mang lại thành công học tập vượt bậc."
+        },
+        {
+          "en": "Understanding grammar rules boosts your IELTS score significantly.",
+          "vi": "Hiểu rõ các quy tắc ngữ pháp sẽ nâng cao đáng kể điểm số IELTS của bạn."
+        }
+      ]
+    },
+    "exercises": [
+      {
+        "id": "g_d21_q1",
+        "type": "multiple_choice",
+        "question": "Chọn đáp án đúng nhất cho câu ứng dụng bài People:",
+        "sentence": "Every morning, John _____ (wake) up at 6 AM to review his English lessons.",
+        "choices": [
+          "wakes",
+          "woke",
+          "waking",
+          "is waking"
+        ],
+        "answer": "wakes",
+        "explanation": "Dấu hiệu 'Every morning' chỉ thói quen lặp đi lặp lại. Chủ ngữ 'John' là ngôi thứ 3 số ít nên động từ thêm 's'."
+      },
+      {
+        "id": "g_d21_q2",
+        "type": "multiple_choice",
+        "question": "Chọn câu chính xác về mặt ngữ pháp:",
+        "sentence": "Neither the teacher nor the students _____ present at yesterday's seminar.",
+        "choices": [
+          "was",
+          "were",
+          "is",
+          "are"
+        ],
+        "answer": "were",
+        "explanation": "Quy tắc Neither...nor: Động từ chia theo chủ ngữ gần nó nhất (the students - danh từ số nhiều) và thời điểm quá khứ (yesterday)."
+      },
+      {
+        "id": "g_d21_q3",
+        "type": "fill_blank",
+        "question": "Điền dạng đúng của động từ trong ngoặc:",
+        "sentence": "By the time we arrived, the train _____ (already / leave).",
+        "answer": "had already left",
+        "hint": "Hành động xảy ra trước một hành động khác trong quá khứ chia thì Quá khứ hoàn thành (Past Perfect)."
+      },
+      {
+        "id": "g_d21_q4",
+        "type": "fill_blank",
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has lived in this vibrant city _____ 2018.",
+        "answer": "since",
+        "hint": "Dùng 'since' trước mốc thời gian xác định trong thì Hiện tại hoàn thành."
+      },
+      {
+        "id": "g_d21_q5",
+        "type": "word_order",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh và đúng ngữ pháp:",
+        "words": [
+          "English",
+          "she",
+          "fluently",
+          "speaks",
+          "every",
+          "day"
+        ],
+        "answer": "she speaks English fluently every day",
+        "explanation": "Cấu trúc chuẩn: Chủ ngữ (she) + Động từ (speaks) + Tân ngữ (English) + Trạng từ chỉ cách thức (fluently) + Trạng từ chỉ thời gian (every day)."
+      }
+    ]
+  },
+  {
+    "day": 22,
+    "title": "Lifestyle",
+    "titleVi": "Chủ đề: Lối sống & Thói quen",
+    "level": "B1-B2",
+    "description": "Cấu trúc Used to, Be/Get used to, Healthy lifestyle, Work-life balance",
+    "theory": {
+      "overview": "Bài học Lifestyle (Chủ đề: Lối sống & Thói quen) là một trong những phần cốt lõi của giáo trình 30 Ngày Phủ Xanh IELTS, giúp bạn nắm vững cấu trúc và ứng dụng chính xác trong các bài thi IELTS Speaking & Writing.",
+      "formulas": [
+        {
+          "type": "Khẳng định (Affirmative)",
+          "rule": "Used to + V_inf (thói quen quá khứ)",
+          "example": "She studies English diligently every single day."
+        },
+        {
+          "type": "Phủ định (Negative)",
+          "rule": "Be used to + V-ing (đã quen với)",
+          "example": "They do not hesitate to ask questions in class."
+        },
+        {
+          "type": "Nghi vấn (Interrogative)",
+          "rule": "Get used to + V-ing (dần quen với)",
+          "example": "Do you practice English speaking regularly?"
+        }
+      ],
+      "rules": [
+        "Nguyên tắc 1: Nắm chắc Cấu trúc Used to, Be/Get used to, Healthy lifestyle, Work-life balance.",
+        "Nguyên tắc 2: Chú ý sự hòa hợp giữa chủ ngữ và động từ.",
+        "Nguyên tắc 3: Nhận biết nhanh qua các từ nhận biết (signal words) trong câu."
+      ],
+      "examples": [
+        {
+          "en": "Regular practice leads to remarkable academic success.",
+          "vi": "Luyện tập thường xuyên mang lại thành công học tập vượt bậc."
+        },
+        {
+          "en": "Understanding grammar rules boosts your IELTS score significantly.",
+          "vi": "Hiểu rõ các quy tắc ngữ pháp sẽ nâng cao đáng kể điểm số IELTS của bạn."
+        }
+      ]
+    },
+    "exercises": [
+      {
+        "id": "g_d22_q1",
+        "type": "multiple_choice",
+        "question": "Chọn đáp án đúng nhất cho câu ứng dụng bài Lifestyle:",
+        "sentence": "Every morning, John _____ (wake) up at 6 AM to review his English lessons.",
+        "choices": [
+          "wakes",
+          "woke",
+          "waking",
+          "is waking"
+        ],
+        "answer": "wakes",
+        "explanation": "Dấu hiệu 'Every morning' chỉ thói quen lặp đi lặp lại. Chủ ngữ 'John' là ngôi thứ 3 số ít nên động từ thêm 's'."
+      },
+      {
+        "id": "g_d22_q2",
+        "type": "multiple_choice",
+        "question": "Chọn câu chính xác về mặt ngữ pháp:",
+        "sentence": "Neither the teacher nor the students _____ present at yesterday's seminar.",
+        "choices": [
+          "was",
+          "were",
+          "is",
+          "are"
+        ],
+        "answer": "were",
+        "explanation": "Quy tắc Neither...nor: Động từ chia theo chủ ngữ gần nó nhất (the students - danh từ số nhiều) và thời điểm quá khứ (yesterday)."
+      },
+      {
+        "id": "g_d22_q3",
+        "type": "fill_blank",
+        "question": "Điền dạng đúng của động từ trong ngoặc:",
+        "sentence": "By the time we arrived, the train _____ (already / leave).",
+        "answer": "had already left",
+        "hint": "Hành động xảy ra trước một hành động khác trong quá khứ chia thì Quá khứ hoàn thành (Past Perfect)."
+      },
+      {
+        "id": "g_d22_q4",
+        "type": "fill_blank",
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has lived in this vibrant city _____ 2018.",
+        "answer": "since",
+        "hint": "Dùng 'since' trước mốc thời gian xác định trong thì Hiện tại hoàn thành."
+      },
+      {
+        "id": "g_d22_q5",
+        "type": "word_order",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh và đúng ngữ pháp:",
+        "words": [
+          "English",
+          "she",
+          "fluently",
+          "speaks",
+          "every",
+          "day"
+        ],
+        "answer": "she speaks English fluently every day",
+        "explanation": "Cấu trúc chuẩn: Chủ ngữ (she) + Động từ (speaks) + Tân ngữ (English) + Trạng từ chỉ cách thức (fluently) + Trạng từ chỉ thời gian (every day)."
+      }
+    ]
+  },
+  {
+    "day": 23,
+    "title": "Communication",
+    "titleVi": "Chủ đề: Giao tiếp & Mạng xã hội",
+    "level": "B1-B2",
+    "description": "Reported speech (Câu gián tiếp), Collocations về truyền thông",
+    "theory": {
+      "overview": "Bài học Communication (Chủ đề: Giao tiếp & Mạng xã hội) là một trong những phần cốt lõi của giáo trình 30 Ngày Phủ Xanh IELTS, giúp bạn nắm vững cấu trúc và ứng dụng chính xác trong các bài thi IELTS Speaking & Writing.",
+      "formulas": [
+        {
+          "type": "Khẳng định (Affirmative)",
+          "rule": "He said that + S + V(lùi thì)",
+          "example": "She studies English diligently every single day."
+        },
+        {
+          "type": "Phủ định (Negative)",
+          "rule": "Ask if/whether + S + V",
+          "example": "They do not hesitate to ask questions in class."
+        },
+        {
+          "type": "Nghi vấn (Interrogative)",
+          "rule": "Modern communication structures",
+          "example": "Do you practice English speaking regularly?"
+        }
+      ],
+      "rules": [
+        "Nguyên tắc 1: Nắm chắc Reported speech (Câu gián tiếp), Collocations về truyền thông.",
+        "Nguyên tắc 2: Chú ý sự hòa hợp giữa chủ ngữ và động từ.",
+        "Nguyên tắc 3: Nhận biết nhanh qua các từ nhận biết (signal words) trong câu."
+      ],
+      "examples": [
+        {
+          "en": "Regular practice leads to remarkable academic success.",
+          "vi": "Luyện tập thường xuyên mang lại thành công học tập vượt bậc."
+        },
+        {
+          "en": "Understanding grammar rules boosts your IELTS score significantly.",
+          "vi": "Hiểu rõ các quy tắc ngữ pháp sẽ nâng cao đáng kể điểm số IELTS của bạn."
+        }
+      ]
+    },
+    "exercises": [
+      {
+        "id": "g_d23_q1",
+        "type": "multiple_choice",
+        "question": "Chọn đáp án đúng nhất cho câu ứng dụng bài Communication:",
+        "sentence": "Every morning, John _____ (wake) up at 6 AM to review his English lessons.",
+        "choices": [
+          "wakes",
+          "woke",
+          "waking",
+          "is waking"
+        ],
+        "answer": "wakes",
+        "explanation": "Dấu hiệu 'Every morning' chỉ thói quen lặp đi lặp lại. Chủ ngữ 'John' là ngôi thứ 3 số ít nên động từ thêm 's'."
+      },
+      {
+        "id": "g_d23_q2",
+        "type": "multiple_choice",
+        "question": "Chọn câu chính xác về mặt ngữ pháp:",
+        "sentence": "Neither the teacher nor the students _____ present at yesterday's seminar.",
+        "choices": [
+          "was",
+          "were",
+          "is",
+          "are"
+        ],
+        "answer": "were",
+        "explanation": "Quy tắc Neither...nor: Động từ chia theo chủ ngữ gần nó nhất (the students - danh từ số nhiều) và thời điểm quá khứ (yesterday)."
+      },
+      {
+        "id": "g_d23_q3",
+        "type": "fill_blank",
+        "question": "Điền dạng đúng của động từ trong ngoặc:",
+        "sentence": "By the time we arrived, the train _____ (already / leave).",
+        "answer": "had already left",
+        "hint": "Hành động xảy ra trước một hành động khác trong quá khứ chia thì Quá khứ hoàn thành (Past Perfect)."
+      },
+      {
+        "id": "g_d23_q4",
+        "type": "fill_blank",
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has lived in this vibrant city _____ 2018.",
+        "answer": "since",
+        "hint": "Dùng 'since' trước mốc thời gian xác định trong thì Hiện tại hoàn thành."
+      },
+      {
+        "id": "g_d23_q5",
+        "type": "word_order",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh và đúng ngữ pháp:",
+        "words": [
+          "English",
+          "she",
+          "fluently",
+          "speaks",
+          "every",
+          "day"
+        ],
+        "answer": "she speaks English fluently every day",
+        "explanation": "Cấu trúc chuẩn: Chủ ngữ (she) + Động từ (speaks) + Tân ngữ (English) + Trạng từ chỉ cách thức (fluently) + Trạng từ chỉ thời gian (every day)."
+      }
+    ]
+  },
+  {
+    "day": 24,
+    "title": "History, Art, Culture",
+    "titleVi": "Chủ đề: Lịch sử, Nghệ thuật & Văn hóa",
+    "level": "B2",
+    "description": "Mệnh đề danh từ, đảo ngữ nhấn mạnh trong IELTS",
+    "theory": {
+      "overview": "Bài học History, Art, Culture (Chủ đề: Lịch sử, Nghệ thuật & Văn hóa) là một trong những phần cốt lõi của giáo trình 30 Ngày Phủ Xanh IELTS, giúp bạn nắm vững cấu trúc và ứng dụng chính xác trong các bài thi IELTS Speaking & Writing.",
+      "formulas": [
+        {
+          "type": "Khẳng định (Affirmative)",
+          "rule": "Not only... but also (Inversion)",
+          "example": "She studies English diligently every single day."
+        },
+        {
+          "type": "Phủ định (Negative)",
+          "rule": "It is believed that...",
+          "example": "They do not hesitate to ask questions in class."
+        },
+        {
+          "type": "Nghi vấn (Interrogative)",
+          "rule": "Historical analysis vocabulary",
+          "example": "Do you practice English speaking regularly?"
+        }
+      ],
+      "rules": [
+        "Nguyên tắc 1: Nắm chắc Mệnh đề danh từ, đảo ngữ nhấn mạnh trong IELTS.",
+        "Nguyên tắc 2: Chú ý sự hòa hợp giữa chủ ngữ và động từ.",
+        "Nguyên tắc 3: Nhận biết nhanh qua các từ nhận biết (signal words) trong câu."
+      ],
+      "examples": [
+        {
+          "en": "Regular practice leads to remarkable academic success.",
+          "vi": "Luyện tập thường xuyên mang lại thành công học tập vượt bậc."
+        },
+        {
+          "en": "Understanding grammar rules boosts your IELTS score significantly.",
+          "vi": "Hiểu rõ các quy tắc ngữ pháp sẽ nâng cao đáng kể điểm số IELTS của bạn."
+        }
+      ]
+    },
+    "exercises": [
+      {
+        "id": "g_d24_q1",
+        "type": "multiple_choice",
+        "question": "Chọn đáp án đúng nhất cho câu ứng dụng bài History, Art, Culture:",
+        "sentence": "Every morning, John _____ (wake) up at 6 AM to review his English lessons.",
+        "choices": [
+          "wakes",
+          "woke",
+          "waking",
+          "is waking"
+        ],
+        "answer": "wakes",
+        "explanation": "Dấu hiệu 'Every morning' chỉ thói quen lặp đi lặp lại. Chủ ngữ 'John' là ngôi thứ 3 số ít nên động từ thêm 's'."
+      },
+      {
+        "id": "g_d24_q2",
+        "type": "multiple_choice",
+        "question": "Chọn câu chính xác về mặt ngữ pháp:",
+        "sentence": "Neither the teacher nor the students _____ present at yesterday's seminar.",
+        "choices": [
+          "was",
+          "were",
+          "is",
+          "are"
+        ],
+        "answer": "were",
+        "explanation": "Quy tắc Neither...nor: Động từ chia theo chủ ngữ gần nó nhất (the students - danh từ số nhiều) và thời điểm quá khứ (yesterday)."
+      },
+      {
+        "id": "g_d24_q3",
+        "type": "fill_blank",
+        "question": "Điền dạng đúng của động từ trong ngoặc:",
+        "sentence": "By the time we arrived, the train _____ (already / leave).",
+        "answer": "had already left",
+        "hint": "Hành động xảy ra trước một hành động khác trong quá khứ chia thì Quá khứ hoàn thành (Past Perfect)."
+      },
+      {
+        "id": "g_d24_q4",
+        "type": "fill_blank",
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has lived in this vibrant city _____ 2018.",
+        "answer": "since",
+        "hint": "Dùng 'since' trước mốc thời gian xác định trong thì Hiện tại hoàn thành."
+      },
+      {
+        "id": "g_d24_q5",
+        "type": "word_order",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh và đúng ngữ pháp:",
+        "words": [
+          "English",
+          "she",
+          "fluently",
+          "speaks",
+          "every",
+          "day"
+        ],
+        "answer": "she speaks English fluently every day",
+        "explanation": "Cấu trúc chuẩn: Chủ ngữ (she) + Động từ (speaks) + Tân ngữ (English) + Trạng từ chỉ cách thức (fluently) + Trạng từ chỉ thời gian (every day)."
+      }
+    ]
+  },
+  {
+    "day": 25,
+    "title": "Entertainment, Art, Sports, Media",
+    "titleVi": "Chủ đề: Giải trí, Thể thao & Báo chí",
+    "level": "B1-B2",
+    "description": "Thể sai khiến (Causative form: Have/Get sth done), sở thích",
+    "theory": {
+      "overview": "Bài học Entertainment, Art, Sports, Media (Chủ đề: Giải trí, Thể thao & Báo chí) là một trong những phần cốt lõi của giáo trình 30 Ngày Phủ Xanh IELTS, giúp bạn nắm vững cấu trúc và ứng dụng chính xác trong các bài thi IELTS Speaking & Writing.",
+      "formulas": [
+        {
+          "type": "Khẳng định (Affirmative)",
+          "rule": "Have sb DO sth / Have sth DONE",
+          "example": "She studies English diligently every single day."
+        },
+        {
+          "type": "Phủ định (Negative)",
+          "rule": "Get sb TO DO sth / Get sth DONE",
+          "example": "They do not hesitate to ask questions in class."
+        },
+        {
+          "type": "Nghi vấn (Interrogative)",
+          "rule": "Prefer doing sth to doing sth",
+          "example": "Do you practice English speaking regularly?"
+        }
+      ],
+      "rules": [
+        "Nguyên tắc 1: Nắm chắc Thể sai khiến (Causative form: Have/Get sth done), sở thích.",
+        "Nguyên tắc 2: Chú ý sự hòa hợp giữa chủ ngữ và động từ.",
+        "Nguyên tắc 3: Nhận biết nhanh qua các từ nhận biết (signal words) trong câu."
+      ],
+      "examples": [
+        {
+          "en": "Regular practice leads to remarkable academic success.",
+          "vi": "Luyện tập thường xuyên mang lại thành công học tập vượt bậc."
+        },
+        {
+          "en": "Understanding grammar rules boosts your IELTS score significantly.",
+          "vi": "Hiểu rõ các quy tắc ngữ pháp sẽ nâng cao đáng kể điểm số IELTS của bạn."
+        }
+      ]
+    },
+    "exercises": [
+      {
+        "id": "g_d25_q1",
+        "type": "multiple_choice",
+        "question": "Chọn đáp án đúng nhất cho câu ứng dụng bài Entertainment, Art, Sports, Media:",
+        "sentence": "Every morning, John _____ (wake) up at 6 AM to review his English lessons.",
+        "choices": [
+          "wakes",
+          "woke",
+          "waking",
+          "is waking"
+        ],
+        "answer": "wakes",
+        "explanation": "Dấu hiệu 'Every morning' chỉ thói quen lặp đi lặp lại. Chủ ngữ 'John' là ngôi thứ 3 số ít nên động từ thêm 's'."
+      },
+      {
+        "id": "g_d25_q2",
+        "type": "multiple_choice",
+        "question": "Chọn câu chính xác về mặt ngữ pháp:",
+        "sentence": "Neither the teacher nor the students _____ present at yesterday's seminar.",
+        "choices": [
+          "was",
+          "were",
+          "is",
+          "are"
+        ],
+        "answer": "were",
+        "explanation": "Quy tắc Neither...nor: Động từ chia theo chủ ngữ gần nó nhất (the students - danh từ số nhiều) và thời điểm quá khứ (yesterday)."
+      },
+      {
+        "id": "g_d25_q3",
+        "type": "fill_blank",
+        "question": "Điền dạng đúng của động từ trong ngoặc:",
+        "sentence": "By the time we arrived, the train _____ (already / leave).",
+        "answer": "had already left",
+        "hint": "Hành động xảy ra trước một hành động khác trong quá khứ chia thì Quá khứ hoàn thành (Past Perfect)."
+      },
+      {
+        "id": "g_d25_q4",
+        "type": "fill_blank",
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has lived in this vibrant city _____ 2018.",
+        "answer": "since",
+        "hint": "Dùng 'since' trước mốc thời gian xác định trong thì Hiện tại hoàn thành."
+      },
+      {
+        "id": "g_d25_q5",
+        "type": "word_order",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh và đúng ngữ pháp:",
+        "words": [
+          "English",
+          "she",
+          "fluently",
+          "speaks",
+          "every",
+          "day"
+        ],
+        "answer": "she speaks English fluently every day",
+        "explanation": "Cấu trúc chuẩn: Chủ ngữ (she) + Động từ (speaks) + Tân ngữ (English) + Trạng từ chỉ cách thức (fluently) + Trạng từ chỉ thời gian (every day)."
+      }
+    ]
+  },
+  {
+    "day": 26,
+    "title": "Travel",
+    "titleVi": "Chủ đề: Du lịch & Giao thông",
+    "level": "B1-B2",
+    "description": "Modal verbs chỉ sự suy đoán (Must have, Can't have, Should have)",
+    "theory": {
+      "overview": "Bài học Travel (Chủ đề: Du lịch & Giao thông) là một trong những phần cốt lõi của giáo trình 30 Ngày Phủ Xanh IELTS, giúp bạn nắm vững cấu trúc và ứng dụng chính xác trong các bài thi IELTS Speaking & Writing.",
+      "formulas": [
+        {
+          "type": "Khẳng định (Affirmative)",
+          "rule": "Must have + V3 (chắc hẳn đã)",
+          "example": "She studies English diligently every single day."
+        },
+        {
+          "type": "Phủ định (Negative)",
+          "rule": "Can't have + V3 (không thể nào đã)",
+          "example": "They do not hesitate to ask questions in class."
+        },
+        {
+          "type": "Nghi vấn (Interrogative)",
+          "rule": "Should have + V3 (lẽ ra nên làm)",
+          "example": "Do you practice English speaking regularly?"
+        }
+      ],
+      "rules": [
+        "Nguyên tắc 1: Nắm chắc Modal verbs chỉ sự suy đoán (Must have, Can't have, Should have).",
+        "Nguyên tắc 2: Chú ý sự hòa hợp giữa chủ ngữ và động từ.",
+        "Nguyên tắc 3: Nhận biết nhanh qua các từ nhận biết (signal words) trong câu."
+      ],
+      "examples": [
+        {
+          "en": "Regular practice leads to remarkable academic success.",
+          "vi": "Luyện tập thường xuyên mang lại thành công học tập vượt bậc."
+        },
+        {
+          "en": "Understanding grammar rules boosts your IELTS score significantly.",
+          "vi": "Hiểu rõ các quy tắc ngữ pháp sẽ nâng cao đáng kể điểm số IELTS của bạn."
+        }
+      ]
+    },
+    "exercises": [
+      {
+        "id": "g_d26_q1",
+        "type": "multiple_choice",
+        "question": "Chọn đáp án đúng nhất cho câu ứng dụng bài Travel:",
+        "sentence": "Every morning, John _____ (wake) up at 6 AM to review his English lessons.",
+        "choices": [
+          "wakes",
+          "woke",
+          "waking",
+          "is waking"
+        ],
+        "answer": "wakes",
+        "explanation": "Dấu hiệu 'Every morning' chỉ thói quen lặp đi lặp lại. Chủ ngữ 'John' là ngôi thứ 3 số ít nên động từ thêm 's'."
+      },
+      {
+        "id": "g_d26_q2",
+        "type": "multiple_choice",
+        "question": "Chọn câu chính xác về mặt ngữ pháp:",
+        "sentence": "Neither the teacher nor the students _____ present at yesterday's seminar.",
+        "choices": [
+          "was",
+          "were",
+          "is",
+          "are"
+        ],
+        "answer": "were",
+        "explanation": "Quy tắc Neither...nor: Động từ chia theo chủ ngữ gần nó nhất (the students - danh từ số nhiều) và thời điểm quá khứ (yesterday)."
+      },
+      {
+        "id": "g_d26_q3",
+        "type": "fill_blank",
+        "question": "Điền dạng đúng của động từ trong ngoặc:",
+        "sentence": "By the time we arrived, the train _____ (already / leave).",
+        "answer": "had already left",
+        "hint": "Hành động xảy ra trước một hành động khác trong quá khứ chia thì Quá khứ hoàn thành (Past Perfect)."
+      },
+      {
+        "id": "g_d26_q4",
+        "type": "fill_blank",
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has lived in this vibrant city _____ 2018.",
+        "answer": "since",
+        "hint": "Dùng 'since' trước mốc thời gian xác định trong thì Hiện tại hoàn thành."
+      },
+      {
+        "id": "g_d26_q5",
+        "type": "word_order",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh và đúng ngữ pháp:",
+        "words": [
+          "English",
+          "she",
+          "fluently",
+          "speaks",
+          "every",
+          "day"
+        ],
+        "answer": "she speaks English fluently every day",
+        "explanation": "Cấu trúc chuẩn: Chủ ngữ (she) + Động từ (speaks) + Tân ngữ (English) + Trạng từ chỉ cách thức (fluently) + Trạng từ chỉ thời gian (every day)."
+      }
+    ]
+  },
+  {
+    "day": 27,
+    "title": "Shopping and consumerism",
+    "titleVi": "Chủ đề: Mua sắm & Tiêu dùng",
+    "level": "B1-B2",
+    "description": "Cấu trúc so sánh kép (The more... the more...), mệnh đề kết quả",
+    "theory": {
+      "overview": "Bài học Shopping and consumerism (Chủ đề: Mua sắm & Tiêu dùng) là một trong những phần cốt lõi của giáo trình 30 Ngày Phủ Xanh IELTS, giúp bạn nắm vững cấu trúc và ứng dụng chính xác trong các bài thi IELTS Speaking & Writing.",
+      "formulas": [
+        {
+          "type": "Khẳng định (Affirmative)",
+          "rule": "The + comparative, the + comparative",
+          "example": "She studies English diligently every single day."
+        },
+        {
+          "type": "Phủ định (Negative)",
+          "rule": "So + Adj + that + clause",
+          "example": "They do not hesitate to ask questions in class."
+        },
+        {
+          "type": "Nghi vấn (Interrogative)",
+          "rule": "Such + (a/an) + Adj + N + that + clause",
+          "example": "Do you practice English speaking regularly?"
+        }
+      ],
+      "rules": [
+        "Nguyên tắc 1: Nắm chắc Cấu trúc so sánh kép (The more... the more...), mệnh đề kết quả.",
+        "Nguyên tắc 2: Chú ý sự hòa hợp giữa chủ ngữ và động từ.",
+        "Nguyên tắc 3: Nhận biết nhanh qua các từ nhận biết (signal words) trong câu."
+      ],
+      "examples": [
+        {
+          "en": "Regular practice leads to remarkable academic success.",
+          "vi": "Luyện tập thường xuyên mang lại thành công học tập vượt bậc."
+        },
+        {
+          "en": "Understanding grammar rules boosts your IELTS score significantly.",
+          "vi": "Hiểu rõ các quy tắc ngữ pháp sẽ nâng cao đáng kể điểm số IELTS của bạn."
+        }
+      ]
+    },
+    "exercises": [
+      {
+        "id": "g_d27_q1",
+        "type": "multiple_choice",
+        "question": "Chọn đáp án đúng nhất cho câu ứng dụng bài Shopping and consumerism:",
+        "sentence": "Every morning, John _____ (wake) up at 6 AM to review his English lessons.",
+        "choices": [
+          "wakes",
+          "woke",
+          "waking",
+          "is waking"
+        ],
+        "answer": "wakes",
+        "explanation": "Dấu hiệu 'Every morning' chỉ thói quen lặp đi lặp lại. Chủ ngữ 'John' là ngôi thứ 3 số ít nên động từ thêm 's'."
+      },
+      {
+        "id": "g_d27_q2",
+        "type": "multiple_choice",
+        "question": "Chọn câu chính xác về mặt ngữ pháp:",
+        "sentence": "Neither the teacher nor the students _____ present at yesterday's seminar.",
+        "choices": [
+          "was",
+          "were",
+          "is",
+          "are"
+        ],
+        "answer": "were",
+        "explanation": "Quy tắc Neither...nor: Động từ chia theo chủ ngữ gần nó nhất (the students - danh từ số nhiều) và thời điểm quá khứ (yesterday)."
+      },
+      {
+        "id": "g_d27_q3",
+        "type": "fill_blank",
+        "question": "Điền dạng đúng của động từ trong ngoặc:",
+        "sentence": "By the time we arrived, the train _____ (already / leave).",
+        "answer": "had already left",
+        "hint": "Hành động xảy ra trước một hành động khác trong quá khứ chia thì Quá khứ hoàn thành (Past Perfect)."
+      },
+      {
+        "id": "g_d27_q4",
+        "type": "fill_blank",
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has lived in this vibrant city _____ 2018.",
+        "answer": "since",
+        "hint": "Dùng 'since' trước mốc thời gian xác định trong thì Hiện tại hoàn thành."
+      },
+      {
+        "id": "g_d27_q5",
+        "type": "word_order",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh và đúng ngữ pháp:",
+        "words": [
+          "English",
+          "she",
+          "fluently",
+          "speaks",
+          "every",
+          "day"
+        ],
+        "answer": "she speaks English fluently every day",
+        "explanation": "Cấu trúc chuẩn: Chủ ngữ (she) + Động từ (speaks) + Tân ngữ (English) + Trạng từ chỉ cách thức (fluently) + Trạng từ chỉ thời gian (every day)."
+      }
+    ]
+  },
+  {
+    "day": 28,
+    "title": "Environment",
+    "titleVi": "Chủ đề: Môi trường & Biến đổi khí hậu",
+    "level": "B2",
+    "description": "Câu giả định (Subjunctive mood) và các cấu trúc giải pháp môi trường",
+    "theory": {
+      "overview": "Bài học Environment (Chủ đề: Môi trường & Biến đổi khí hậu) là một trong những phần cốt lõi của giáo trình 30 Ngày Phủ Xanh IELTS, giúp bạn nắm vững cấu trúc và ứng dụng chính xác trong các bài thi IELTS Speaking & Writing.",
+      "formulas": [
+        {
+          "type": "Khẳng định (Affirmative)",
+          "rule": "It is essential that S + (should) + V_inf",
+          "example": "She studies English diligently every single day."
+        },
+        {
+          "type": "Phủ định (Negative)",
+          "rule": "Suggest that S + V_inf",
+          "example": "They do not hesitate to ask questions in class."
+        },
+        {
+          "type": "Nghi vấn (Interrogative)",
+          "rule": "Take measures to combat pollution",
+          "example": "Do you practice English speaking regularly?"
+        }
+      ],
+      "rules": [
+        "Nguyên tắc 1: Nắm chắc Câu giả định (Subjunctive mood) và các cấu trúc giải pháp môi trường.",
+        "Nguyên tắc 2: Chú ý sự hòa hợp giữa chủ ngữ và động từ.",
+        "Nguyên tắc 3: Nhận biết nhanh qua các từ nhận biết (signal words) trong câu."
+      ],
+      "examples": [
+        {
+          "en": "Regular practice leads to remarkable academic success.",
+          "vi": "Luyện tập thường xuyên mang lại thành công học tập vượt bậc."
+        },
+        {
+          "en": "Understanding grammar rules boosts your IELTS score significantly.",
+          "vi": "Hiểu rõ các quy tắc ngữ pháp sẽ nâng cao đáng kể điểm số IELTS của bạn."
+        }
+      ]
+    },
+    "exercises": [
+      {
+        "id": "g_d28_q1",
+        "type": "multiple_choice",
+        "question": "Chọn đáp án đúng nhất cho câu ứng dụng bài Environment:",
+        "sentence": "Every morning, John _____ (wake) up at 6 AM to review his English lessons.",
+        "choices": [
+          "wakes",
+          "woke",
+          "waking",
+          "is waking"
+        ],
+        "answer": "wakes",
+        "explanation": "Dấu hiệu 'Every morning' chỉ thói quen lặp đi lặp lại. Chủ ngữ 'John' là ngôi thứ 3 số ít nên động từ thêm 's'."
+      },
+      {
+        "id": "g_d28_q2",
+        "type": "multiple_choice",
+        "question": "Chọn câu chính xác về mặt ngữ pháp:",
+        "sentence": "Neither the teacher nor the students _____ present at yesterday's seminar.",
+        "choices": [
+          "was",
+          "were",
+          "is",
+          "are"
+        ],
+        "answer": "were",
+        "explanation": "Quy tắc Neither...nor: Động từ chia theo chủ ngữ gần nó nhất (the students - danh từ số nhiều) và thời điểm quá khứ (yesterday)."
+      },
+      {
+        "id": "g_d28_q3",
+        "type": "fill_blank",
+        "question": "Điền dạng đúng của động từ trong ngoặc:",
+        "sentence": "By the time we arrived, the train _____ (already / leave).",
+        "answer": "had already left",
+        "hint": "Hành động xảy ra trước một hành động khác trong quá khứ chia thì Quá khứ hoàn thành (Past Perfect)."
+      },
+      {
+        "id": "g_d28_q4",
+        "type": "fill_blank",
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has lived in this vibrant city _____ 2018.",
+        "answer": "since",
+        "hint": "Dùng 'since' trước mốc thời gian xác định trong thì Hiện tại hoàn thành."
+      },
+      {
+        "id": "g_d28_q5",
+        "type": "word_order",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh và đúng ngữ pháp:",
+        "words": [
+          "English",
+          "she",
+          "fluently",
+          "speaks",
+          "every",
+          "day"
+        ],
+        "answer": "she speaks English fluently every day",
+        "explanation": "Cấu trúc chuẩn: Chủ ngữ (she) + Động từ (speaks) + Tân ngữ (English) + Trạng từ chỉ cách thức (fluently) + Trạng từ chỉ thời gian (every day)."
+      }
+    ]
+  },
+  {
+    "day": 29,
+    "title": "Law & Crime",
+    "titleVi": "Chủ đề: Luật pháp & Tội phạm",
+    "level": "B2",
+    "description": "Cấu trúc nhấn mạnh Cleft sentences (It is/was... that...), mệnh đề chỉ mục đích",
+    "theory": {
+      "overview": "Bài học Law & Crime (Chủ đề: Luật pháp & Tội phạm) là một trong những phần cốt lõi của giáo trình 30 Ngày Phủ Xanh IELTS, giúp bạn nắm vững cấu trúc và ứng dụng chính xác trong các bài thi IELTS Speaking & Writing.",
+      "formulas": [
+        {
+          "type": "Khẳng định (Affirmative)",
+          "rule": "It is/was X that/who...",
+          "example": "She studies English diligently every single day."
+        },
+        {
+          "type": "Phủ định (Negative)",
+          "rule": "In order that / So that + clause",
+          "example": "They do not hesitate to ask questions in class."
+        },
+        {
+          "type": "Nghi vấn (Interrogative)",
+          "rule": "Legal system vocabulary & collocations",
+          "example": "Do you practice English speaking regularly?"
+        }
+      ],
+      "rules": [
+        "Nguyên tắc 1: Nắm chắc Cấu trúc nhấn mạnh Cleft sentences (It is/was... that...), mệnh đề chỉ mục đích.",
+        "Nguyên tắc 2: Chú ý sự hòa hợp giữa chủ ngữ và động từ.",
+        "Nguyên tắc 3: Nhận biết nhanh qua các từ nhận biết (signal words) trong câu."
+      ],
+      "examples": [
+        {
+          "en": "Regular practice leads to remarkable academic success.",
+          "vi": "Luyện tập thường xuyên mang lại thành công học tập vượt bậc."
+        },
+        {
+          "en": "Understanding grammar rules boosts your IELTS score significantly.",
+          "vi": "Hiểu rõ các quy tắc ngữ pháp sẽ nâng cao đáng kể điểm số IELTS của bạn."
+        }
+      ]
+    },
+    "exercises": [
+      {
+        "id": "g_d29_q1",
+        "type": "multiple_choice",
+        "question": "Chọn đáp án đúng nhất cho câu ứng dụng bài Law & Crime:",
+        "sentence": "Every morning, John _____ (wake) up at 6 AM to review his English lessons.",
+        "choices": [
+          "wakes",
+          "woke",
+          "waking",
+          "is waking"
+        ],
+        "answer": "wakes",
+        "explanation": "Dấu hiệu 'Every morning' chỉ thói quen lặp đi lặp lại. Chủ ngữ 'John' là ngôi thứ 3 số ít nên động từ thêm 's'."
+      },
+      {
+        "id": "g_d29_q2",
+        "type": "multiple_choice",
+        "question": "Chọn câu chính xác về mặt ngữ pháp:",
+        "sentence": "Neither the teacher nor the students _____ present at yesterday's seminar.",
+        "choices": [
+          "was",
+          "were",
+          "is",
+          "are"
+        ],
+        "answer": "were",
+        "explanation": "Quy tắc Neither...nor: Động từ chia theo chủ ngữ gần nó nhất (the students - danh từ số nhiều) và thời điểm quá khứ (yesterday)."
+      },
+      {
+        "id": "g_d29_q3",
+        "type": "fill_blank",
+        "question": "Điền dạng đúng của động từ trong ngoặc:",
+        "sentence": "By the time we arrived, the train _____ (already / leave).",
+        "answer": "had already left",
+        "hint": "Hành động xảy ra trước một hành động khác trong quá khứ chia thì Quá khứ hoàn thành (Past Perfect)."
+      },
+      {
+        "id": "g_d29_q4",
+        "type": "fill_blank",
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has lived in this vibrant city _____ 2018.",
+        "answer": "since",
+        "hint": "Dùng 'since' trước mốc thời gian xác định trong thì Hiện tại hoàn thành."
+      },
+      {
+        "id": "g_d29_q5",
+        "type": "word_order",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh và đúng ngữ pháp:",
+        "words": [
+          "English",
+          "she",
+          "fluently",
+          "speaks",
+          "every",
+          "day"
+        ],
+        "answer": "she speaks English fluently every day",
+        "explanation": "Cấu trúc chuẩn: Chủ ngữ (she) + Động từ (speaks) + Tân ngữ (English) + Trạng từ chỉ cách thức (fluently) + Trạng từ chỉ thời gian (every day)."
+      }
+    ]
+  },
+  {
+    "day": 30,
+    "title": "Media & Modern Society",
+    "titleVi": "Chủ đề: Truyền thông & Xã hội hiện đại",
+    "level": "B2",
+    "description": "Tổng kết ngữ pháp nâng cao, mệnh đề nhượng bộ & chiến thuật IELTS 7.0+",
+    "theory": {
+      "overview": "Bài học Media & Modern Society (Chủ đề: Truyền thông & Xã hội hiện đại) là một trong những phần cốt lõi của giáo trình 30 Ngày Phủ Xanh IELTS, giúp bạn nắm vững cấu trúc và ứng dụng chính xác trong các bài thi IELTS Speaking & Writing.",
+      "formulas": [
+        {
+          "type": "Khẳng định (Affirmative)",
+          "rule": "Whatever / Wherever / However + clause",
+          "example": "She studies English diligently every single day."
+        },
+        {
+          "type": "Phủ định (Negative)",
+          "rule": "Despite / In spite of + N/V-ing",
+          "example": "They do not hesitate to ask questions in class."
+        },
+        {
+          "type": "Nghi vấn (Interrogative)",
+          "rule": "Comprehensive IELTS Grammar Synthesis",
+          "example": "Do you practice English speaking regularly?"
+        }
+      ],
+      "rules": [
+        "Nguyên tắc 1: Nắm chắc Tổng kết ngữ pháp nâng cao, mệnh đề nhượng bộ & chiến thuật IELTS 7.0+.",
+        "Nguyên tắc 2: Chú ý sự hòa hợp giữa chủ ngữ và động từ.",
+        "Nguyên tắc 3: Nhận biết nhanh qua các từ nhận biết (signal words) trong câu."
+      ],
+      "examples": [
+        {
+          "en": "Regular practice leads to remarkable academic success.",
+          "vi": "Luyện tập thường xuyên mang lại thành công học tập vượt bậc."
+        },
+        {
+          "en": "Understanding grammar rules boosts your IELTS score significantly.",
+          "vi": "Hiểu rõ các quy tắc ngữ pháp sẽ nâng cao đáng kể điểm số IELTS của bạn."
+        }
+      ]
+    },
+    "exercises": [
+      {
+        "id": "g_d30_q1",
+        "type": "multiple_choice",
+        "question": "Chọn đáp án đúng nhất cho câu ứng dụng bài Media & Modern Society:",
+        "sentence": "Every morning, John _____ (wake) up at 6 AM to review his English lessons.",
+        "choices": [
+          "wakes",
+          "woke",
+          "waking",
+          "is waking"
+        ],
+        "answer": "wakes",
+        "explanation": "Dấu hiệu 'Every morning' chỉ thói quen lặp đi lặp lại. Chủ ngữ 'John' là ngôi thứ 3 số ít nên động từ thêm 's'."
+      },
+      {
+        "id": "g_d30_q2",
+        "type": "multiple_choice",
+        "question": "Chọn câu chính xác về mặt ngữ pháp:",
+        "sentence": "Neither the teacher nor the students _____ present at yesterday's seminar.",
+        "choices": [
+          "was",
+          "were",
+          "is",
+          "are"
+        ],
+        "answer": "were",
+        "explanation": "Quy tắc Neither...nor: Động từ chia theo chủ ngữ gần nó nhất (the students - danh từ số nhiều) và thời điểm quá khứ (yesterday)."
+      },
+      {
+        "id": "g_d30_q3",
+        "type": "fill_blank",
+        "question": "Điền dạng đúng của động từ trong ngoặc:",
+        "sentence": "By the time we arrived, the train _____ (already / leave).",
+        "answer": "had already left",
+        "hint": "Hành động xảy ra trước một hành động khác trong quá khứ chia thì Quá khứ hoàn thành (Past Perfect)."
+      },
+      {
+        "id": "g_d30_q4",
+        "type": "fill_blank",
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has lived in this vibrant city _____ 2018.",
+        "answer": "since",
+        "hint": "Dùng 'since' trước mốc thời gian xác định trong thì Hiện tại hoàn thành."
+      },
+      {
+        "id": "g_d30_q5",
+        "type": "word_order",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh và đúng ngữ pháp:",
+        "words": [
+          "English",
+          "she",
+          "fluently",
+          "speaks",
+          "every",
+          "day"
+        ],
+        "answer": "she speaks English fluently every day",
+        "explanation": "Cấu trúc chuẩn: Chủ ngữ (she) + Động từ (speaks) + Tân ngữ (English) + Trạng từ chỉ cách thức (fluently) + Trạng từ chỉ thời gian (every day)."
+      }
+    ]
+  }
+]

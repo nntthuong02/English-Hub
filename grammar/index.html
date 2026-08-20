@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>30 Ngày Ngữ Pháp IELTS — English Hub</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="../dashboard.html" class="nav-brand">
+      <i class="fa-solid fa-graduation-cap"></i>
+      <span>English Hub</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../dashboard.html"><i class="fa-solid fa-house"></i> Trang chủ</a></li>
+      <li><a href="../vocabulary/index.html"><i class="fa-solid fa-book-open"></i> Từ Vựng</a></li>
+      <li><a href="index.html" class="active"><i class="fa-solid fa-pen-nib"></i> Ngữ Pháp (30 Ngày)</a></li>
+      <li><a href="../stats/index.html"><i class="fa-solid fa-chart-line"></i> Thống Kê</a></li>
+      <li><a href="../sources.html"><i class="fa-solid fa-link"></i> Nguồn Crawl</a></li>
+    </ul>
+    <div id="nav-user-badge" class="user-profile-badge"></div>
+  </nav>
+
+  <div class="container">
+    <div style="margin-bottom: 2rem;">
+      <h1 style="font-size: 2rem; font-weight: 800; margin-bottom: 0.4rem;">
+        <i class="fa-solid fa-graduation-cap" style="color: var(--secondary);"></i> 30 Ngày Phủ Xanh Ngữ Pháp IELTS
+      </h1>
+      <p style="color: var(--text-muted); font-size: 1.05rem;">
+        Lộ trình 30 ngày hoàn chỉnh từ 8 thì cơ bản đến ngữ pháp chuyên sâu IELTS 7.0+ và bài tập thực hành.
+      </p>
+    </div>
+
+    <!-- 30 Days Grid -->
+    <div id="days-grid" class="grid-cols-3">
+      <!-- Injected by JS -->
+    </div>
+  </div>
+
+  <footer>
+    English Hub © 2026 — Giáo trình chuẩn hóa 30 Ngày Ngữ Pháp IELTS.
+  </footer>
+
+  <script src="../js/firebase-config.js"></script>
+  <script src="../js/db.js"></script>
+  <script src="../js/auth.js"></script>
+  <script>
+    const user = Auth.requireAuth();
+    Auth.updateNavbar();
+
+    fetch('../data/grammar.json')
+      .then(res => res.json())
+      .then(days => {
+        renderDays(days);
+      });
+
+    function renderDays(days) {
+      const container = document.getElementById('days-grid');
+      container.innerHTML = '';
+      const progress = DB.getGrammarProgress(user.username);
+
+      days.forEach(d => {
+        const userDay = progress[d.day];
+        const isDone = userDay && userDay.completed;
+        const score = isDone ? userDay.bestScore : null;
+
+        const card = document.createElement('div');
+        card.className = 'card card-hover';
+        card.innerHTML = `
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.8rem;">
+            <span class="badge badge-primary">DAY ${d.day < 10 ? '0' + d.day : d.day}</span>
+            <span class="badge ${isDone ? 'badge-success' : 'badge-primary'}">${d.level}</span>
+          </div>
+          <h3 style="font-size:1.15rem; font-weight:700; margin-bottom:0.3rem;">${d.title}</h3>
+          <h4 style="font-size:0.95rem; font-weight:600; color:var(--text-muted); margin-bottom:0.8rem;">${d.titleVi}</h4>
+          <p style="font-size:0.88rem; color:var(--text-muted); line-height:1.4; margin-bottom:1.2rem;">${d.description}</p>
+          
+          <div style="display:flex; justify-content:space-between; align-items:center; border-top:1px solid var(--surface-border); padding-top:0.8rem;">
+            <div style="font-size:0.85rem; font-weight:600;">
+              ${isDone ? `<span style="color:var(--success);"><i class="fa-solid fa-circle-check"></i> Điểm cao nhất: ${score}%</span>` : `<span style="color:var(--text-muted);">Chưa hoàn thành</span>`}
+            </div>
+            <div style="display:flex; gap:0.4rem;">
+              <a href="lesson.html?day=${d.day}" class="btn btn-outline" style="font-size:0.85rem; padding:0.4rem 0.7rem;"><i class="fa-solid fa-book-open"></i> Lý thuyết</a>
+              <a href="quiz.html?day=${d.day}" class="btn btn-primary" style="font-size:0.85rem; padding:0.4rem 0.7rem;"><i class="fa-solid fa-pen"></i> Quiz</a>
+            </div>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+  </script>
+</body>
+</html>

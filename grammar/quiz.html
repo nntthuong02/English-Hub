@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kiểm Tra Ngữ Pháp — English Hub</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="../dashboard.html" class="nav-brand">
+      <i class="fa-solid fa-graduation-cap"></i>
+      <span>English Hub</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../dashboard.html"><i class="fa-solid fa-house"></i> Trang chủ</a></li>
+      <li><a href="../vocabulary/index.html"><i class="fa-solid fa-book-open"></i> Từ Vựng</a></li>
+      <li><a href="index.html" class="active"><i class="fa-solid fa-pen-nib"></i> Ngữ Pháp</a></li>
+      <li><a href="../stats/index.html"><i class="fa-solid fa-chart-line"></i> Thống Kê</a></li>
+      <li><a href="../sources.html"><i class="fa-solid fa-link"></i> Nguồn Crawl</a></li>
+    </ul>
+    <div id="nav-user-badge" class="user-profile-badge"></div>
+  </nav>
+
+  <div class="container" style="max-width: 800px;">
+    <!-- Header -->
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1.5rem;">
+      <a href="index.html" class="btn btn-outline"><i class="fa-solid fa-arrow-left"></i> Trở về lộ trình</a>
+      <div id="quiz-progress" style="font-weight:700; color:var(--text-muted);">Câu hỏi 1 / 5</div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div id="grammar-quiz-box" class="quiz-box">
+      <!-- Injected by JS -->
+    </div>
+
+    <!-- Result Screen -->
+    <div id="grammar-result-box" class="quiz-box" style="display:none; text-align:center;">
+      <div style="font-size:3.5rem; color:var(--success); margin-bottom:1rem;"><i class="fa-solid fa-clipboard-check"></i></div>
+      <h2 style="font-size:2rem; font-weight:800; margin-bottom:0.5rem;">Kết Quả Bài Kiểm Tra</h2>
+      <p style="color:var(--text-muted); font-size:1.1rem; margin-bottom:1.5rem;" id="grammar-score-text"></p>
+
+      <div id="grammar-mistakes-box" style="text-align:left; margin-bottom:2rem; display:none;">
+        <h3 style="font-size:1.1rem; color:var(--danger); margin-bottom:0.8rem;"><i class="fa-solid fa-triangle-exclamation"></i> Giải thích các câu bạn làm sai:</h3>
+        <div id="grammar-mistakes-list"></div>
+      </div>
+
+      <div style="display:flex; gap:1rem; justify-content:center;">
+        <button class="btn btn-primary" onclick="restartGrammarQuiz()"><i class="fa-solid fa-rotate-right"></i> Làm lại bài</button>
+        <a id="next-day-btn" href="lesson.html?day=2" class="btn btn-success"><i class="fa-solid fa-forward"></i> Bài học tiếp theo</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    English Hub © 2026 — Chấm điểm & lưu trữ tiến trình ngữ pháp.
+  </footer>
+
+  <script src="../js/firebase-config.js"></script>
+  <script src="../js/db.js"></script>
+  <script src="../js/auth.js"></script>
+  <script>
+    const user = Auth.requireAuth();
+    Auth.updateNavbar();
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const day = parseInt(urlParams.get('day') || '1');
+
+    let currentLesson = null;
+    let questions = [];
+    let currentIndex = 0;
+    let score = 0;
+    let mistakes = [];
+
+    fetch('../data/grammar.json')
+      .then(res => res.json())
+      .then(days => {
+        currentLesson = days.find(d => d.day === day) || days[0];
+        questions = currentLesson.exercises;
+        renderGrammarQuestion();
+      });
+
+    function renderGrammarQuestion() {
+      const q = questions[currentIndex];
+      if (!q) return showGrammarResults();
+
+      document.getElementById('quiz-progress').innerText = `Câu hỏi ${currentIndex + 1} / ${questions.length}`;
+      const box = document.getElementById('grammar-quiz-box');
+
+      if (q.type === 'multiple_choice') {
+        box.innerHTML = `
+          <div style="margin-bottom:1.2rem;">
+            <span class="badge badge-primary">DAY ${currentLesson.day} — ${currentLesson.title}</span>
+          </div>
+          <h3 style="font-size:1.15rem; font-weight:700; margin-bottom:0.8rem;">${q.question}</h3>
+          <div style="background:var(--bg); border:1px solid var(--surface-border); border-radius:var(--radius-sm); padding:1rem; font-size:1.1rem; font-weight:600; margin-bottom:1.5rem; color:var(--primary);">
+            ${q.sentence}
+          </div>
+
+          <div>
+            ${q.choices.map((choice, i) => `
+              <button class="choice-btn" onclick="submitGrammarChoice(this, '${choice}', '${q.answer}')">
+                <span><strong>${String.fromCharCode(65 + i)}.</strong></span>
+                <span>${choice}</span>
+              </button>
+            `).join('')}
+          </div>
+        `;
+      } else if (q.type === 'fill_blank') {
+        box.innerHTML = `
+          <div style="margin-bottom:1.2rem;">
+            <span class="badge badge-primary">DAY ${currentLesson.day} — ${currentLesson.title}</span>
+          </div>
+          <h3 style="font-size:1.15rem; font-weight:700; margin-bottom:0.8rem;">${q.question}</h3>
+          <div style="background:var(--bg); border:1px solid var(--surface-border); border-radius:var(--radius-sm); padding:1rem; font-size:1.1rem; font-weight:600; margin-bottom:1.2rem; color:var(--primary);">
+            ${q.sentence}
+          </div>
+          <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:1rem;">💡 Gợi ý: ${q.hint || ''}</p>
+
+          <div style="display:flex; gap:0.5rem;">
+            <input type="text" id="fill-input" class="btn btn-outline" style="flex:1; text-align:left; background:var(--surface);" placeholder="Nhập đáp án của bạn..." autofocus>
+            <button class="btn btn-primary" onclick="submitFillBlank('${q.answer}')">Gửi đáp án</button>
+          </div>
+        `;
+      } else if (q.type === 'word_order') {
+        box.innerHTML = `
+          <div style="margin-bottom:1.2rem;">
+            <span class="badge badge-primary">DAY ${currentLesson.day} — ${currentLesson.title}</span>
+          </div>
+          <h3 style="font-size:1.15rem; font-weight:700; margin-bottom:0.8rem;">${q.question}</h3>
+          <div id="word-order-tray" style="display:flex; flex-wrap:wrap; gap:0.5rem; margin-bottom:1.2rem;">
+            ${q.words.map(w => `
+              <button class="btn btn-outline" style="padding:0.4rem 0.8rem;" onclick="addWordToAnswer(this, '${w}')">${w}</button>
+            `).join('')}
+          </div>
+
+          <div style="margin-bottom:1.2rem;">
+            <label style="display:block; font-size:0.85rem; font-weight:600; margin-bottom:0.4rem;">Câu hoàn chỉnh của bạn:</label>
+            <div id="word-answer-display" style="background:var(--bg); border:1px solid var(--surface-border); border-radius:var(--radius-sm); padding:1rem; min-height:48px; font-weight:700; color:var(--primary);"></div>
+          </div>
+
+          <div style="display:flex; gap:0.5rem;">
+            <button class="btn btn-outline" onclick="resetWordOrder()">Xóa làm lại</button>
+            <button class="btn btn-primary" style="flex:1;" onclick="submitWordOrder('${q.answer}')">Kiểm tra câu</button>
+          </div>
+        `;
+      }
+    }
+
+    function submitGrammarChoice(btn, selected, correct) {
+      const q = questions[currentIndex];
+      const allBtns = document.querySelectorAll('.choice-btn');
+      allBtns.forEach(b => b.disabled = true);
+
+      if (selected === correct) {
+        btn.classList.add('correct');
+        score++;
+      } else {
+        btn.classList.add('wrong');
+        allBtns.forEach(b => {
+          if (b.innerText.includes(correct)) b.classList.add('correct');
+        });
+        mistakes.push(q);
+      }
+
+      setTimeout(() => {
+        currentIndex++;
+        renderGrammarQuestion();
+      }, 1000);
+    }
+
+    function submitFillBlank(correct) {
+      const val = (document.getElementById('fill-input').value || '').trim().toLowerCase();
+      const q = questions[currentIndex];
+      if (val === correct.toLowerCase()) {
+        score++;
+      } else {
+        mistakes.push({ ...q, userAnswer: val });
+      }
+      currentIndex++;
+      renderGrammarQuestion();
+    }
+
+    let builtWords = [];
+    function addWordToAnswer(btn, word) {
+      builtWords.push(word);
+      btn.style.display = 'none';
+      document.getElementById('word-answer-display').innerText = builtWords.join(' ');
+    }
+
+    function resetWordOrder() {
+      builtWords = [];
+      document.getElementById('word-answer-display').innerText = '';
+      const tray = document.getElementById('word-order-tray');
+      if (tray) {
+        const btns = tray.querySelectorAll('button');
+        btns.forEach(b => b.style.display = 'inline-flex');
+      }
+    }
+
+    function submitWordOrder(correct) {
+      const myAns = builtWords.join(' ').trim().toLowerCase();
+      const q = questions[currentIndex];
+      if (myAns === correct.toLowerCase()) {
+        score++;
+      } else {
+        mistakes.push({ ...q, userAnswer: myAns });
+      }
+      builtWords = [];
+      currentIndex++;
+      renderGrammarQuestion();
+    }
+
+    function showGrammarResults() {
+      document.getElementById('grammar-quiz-box').style.display = 'none';
+      const resBox = document.getElementById('grammar-result-box');
+      resBox.style.display = 'block';
+
+      const percent = Math.round((score / questions.length) * 100);
+      document.getElementById('grammar-score-text').innerText = `Bạn đã hoàn thành với số điểm: ${score} / ${questions.length} (${percent}%)`;
+      document.getElementById('next-day-btn').href = `lesson.html?day=${Math.min(30, currentLesson.day + 1)}`;
+
+      // Save grammar completion
+      DB.saveGrammarProgress(user.username, currentLesson.day, percent);
+      DB.addQuizResult(user.username, 'grammar', `Day ${currentLesson.day} - ${currentLesson.title}`, score, questions.length, mistakes);
+
+      if (mistakes.length > 0) {
+        const mBox = document.getElementById('grammar-mistakes-box');
+        const mList = document.getElementById('grammar-mistakes-list');
+        mBox.style.display = 'block';
+        mList.innerHTML = mistakes.map(m => `
+          <div style="background:var(--bg); border:1px solid var(--surface-border); border-radius:var(--radius-sm); padding:1rem; margin-bottom:0.8rem;">
+            <div style="font-weight:700; color:var(--danger); margin-bottom:0.3rem;">Câu hỏi: ${m.sentence || m.question}</div>
+            <div style="font-size:0.9rem; margin-bottom:0.2rem;"><strong>Đáp án đúng:</strong> <span style="color:var(--success);">${m.answer}</span></div>
+            <div style="font-size:0.85rem; color:var(--text-muted);"><strong>Giải thích:</strong> ${m.explanation || m.hint || 'Quy tắc ngữ pháp chuẩn'}</div>
+          </div>
+        `).join('');
+      }
+    }
+
+    function restartGrammarQuiz() {
+      document.getElementById('grammar-result-box').style.display = 'none';
+      document.getElementById('grammar-quiz-box').style.display = 'block';
+      currentIndex = 0;
+      score = 0;
+      mistakes = [];
+      renderGrammarQuestion();
+    }
+  </script>
+</body>
+</html>

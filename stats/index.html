@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thống Kê Tiến Trình — English Hub</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="../dashboard.html" class="nav-brand">
+      <i class="fa-solid fa-graduation-cap"></i>
+      <span>English Hub</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../dashboard.html"><i class="fa-solid fa-house"></i> Trang chủ</a></li>
+      <li><a href="../vocabulary/index.html"><i class="fa-solid fa-book-open"></i> Từ Vựng</a></li>
+      <li><a href="../grammar/index.html"><i class="fa-solid fa-pen-nib"></i> Ngữ Pháp (30 Ngày)</a></li>
+      <li><a href="index.html" class="active"><i class="fa-solid fa-chart-line"></i> Thống Kê</a></li>
+      <li><a href="../sources.html"><i class="fa-solid fa-link"></i> Nguồn Crawl</a></li>
+    </ul>
+    <div id="nav-user-badge" class="user-profile-badge"></div>
+  </nav>
+
+  <div class="container">
+    <div style="margin-bottom: 2rem;">
+      <h1 style="font-size: 2rem; font-weight: 800; margin-bottom: 0.4rem;">
+        <i class="fa-solid fa-chart-pie" style="color: var(--primary);"></i> Thống Kê & Báo Cáo Học Tập
+      </h1>
+      <p style="color: var(--text-muted); font-size: 1.05rem;">
+        Theo dõi chi tiết số từ đã học, bài ngữ pháp đã qua, lịch sử kiểm tra và ngân hàng câu làm sai để ôn luyện lại.
+      </p>
+    </div>
+
+    <!-- Stats Summary Row -->
+    <div class="grid-cols-4" style="margin-bottom: 2.5rem;">
+      <div class="card">
+        <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600; margin-bottom: 0.3rem;">Tổng từ đã thuộc</div>
+        <div id="stat-learned-words" style="font-size: 1.8rem; font-weight: 800; color: var(--primary);">0</div>
+      </div>
+      <div class="card">
+        <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600; margin-bottom: 0.3rem;">Ngữ pháp hoàn thành</div>
+        <div id="stat-grammar-count" style="font-size: 1.8rem; font-weight: 800; color: var(--secondary);">0 / 30</div>
+      </div>
+      <div class="card">
+        <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600; margin-bottom: 0.3rem;">Điểm trung bình Quiz</div>
+        <div id="stat-avg-score" style="font-size: 1.8rem; font-weight: 800; color: var(--success);">0%</div>
+      </div>
+      <div class="card">
+        <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600; margin-bottom: 0.3rem;">Câu sai cần làm lại</div>
+        <div id="stat-mistake-total" style="font-size: 1.8rem; font-weight: 800; color: var(--danger);">0 câu</div>
+      </div>
+    </div>
+
+    <!-- Chart & Mistake Bank Grid -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2.5rem;">
+      <div class="card">
+        <h3 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 1rem;"><i class="fa-solid fa-chart-column" style="color: var(--primary);"></i> Phân Phối Tiến Độ Học</h3>
+        <canvas id="progressChart" style="max-height: 260px;"></canvas>
+      </div>
+
+      <div class="card">
+        <h3 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 1rem;"><i class="fa-solid fa-clock-rotate-left" style="color: var(--secondary);"></i> Lịch Sử Điểm 5 Bài Quiz Gần Nhất</h3>
+        <canvas id="scoreChart" style="max-height: 260px;"></canvas>
+      </div>
+    </div>
+
+    <!-- Mistake Bank Section -->
+    <div class="card" style="margin-bottom: 2.5rem;">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1.2rem;">
+        <div>
+          <h2 style="font-size: 1.3rem; font-weight: 800; color: var(--danger);"><i class="fa-solid fa-triangle-exclamation"></i> Ngân Hàng Câu Sai & Ôn Luyện Lại</h2>
+          <p style="font-size: 0.9rem; color: var(--text-muted);">Hệ thống tự động lưu các câu trắc nghiệm và từ vựng bạn đã làm sai để bạn rèn luyện lại cho đến khi thuộc.</p>
+        </div>
+      </div>
+
+      <div id="mistake-bank-container">
+        <!-- Injected by JS -->
+      </div>
+    </div>
+
+    <!-- Quiz History Table -->
+    <div class="card">
+      <h2 style="font-size: 1.3rem; font-weight: 800; margin-bottom: 1.2rem;"><i class="fa-solid fa-list-check"></i> Toàn Bộ Lịch Sử Kiểm Tra</h2>
+      <div style="overflow-x: auto;">
+        <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.95rem;">
+          <thead>
+            <tr style="border-bottom: 2px solid var(--surface-border); color: var(--text-muted);">
+              <th style="padding: 0.75rem;">Thời gian</th>
+              <th style="padding: 0.75rem;">Loại bài tập</th>
+              <th style="padding: 0.75rem;">Chủ đề</th>
+              <th style="padding: 0.75rem;">Số câu đúng</th>
+              <th style="padding: 0.75rem;">Tỷ lệ</th>
+            </tr>
+          </thead>
+          <tbody id="history-table-body">
+            <!-- Injected by JS -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    English Hub © 2026 — Thống kê & phân tích tiến trình học cá nhân.
+  </footer>
+
+  <script src="../js/firebase-config.js"></script>
+  <script src="../js/db.js"></script>
+  <script src="../js/auth.js"></script>
+  <script>
+    const user = Auth.requireAuth();
+    Auth.updateNavbar();
+
+    const stats = DB.getStats(user.username);
+
+    document.getElementById('stat-learned-words').innerText = stats.totalLearnedVocab;
+    document.getElementById('stat-grammar-count').innerText = `${stats.totalGrammarDone} / 30`;
+    document.getElementById('stat-avg-score').innerText = `${stats.avgScore}%`;
+    document.getElementById('stat-mistake-total').innerText = `${stats.mistakesCount} câu`;
+
+    // Render Charts
+    const ctxProg = document.getElementById('progressChart').getContext('2d');
+    new Chart(ctxProg, {
+      type: 'doughnut',
+      data: {
+        labels: ['Từ vựng đã thuộc', 'Từ vựng chưa học', 'Ngữ pháp hoàn thành', 'Ngữ pháp chưa học'],
+        datasets: [{
+          data: [
+            stats.totalLearnedVocab,
+            Math.max(0, 1020 - stats.totalLearnedVocab),
+            stats.totalGrammarDone,
+            Math.max(0, 30 - stats.totalGrammarDone)
+          ],
+          backgroundColor: ['#10b981', '#e2e8f0', '#4361ee', '#f1f5f9']
+        }]
+      },
+      options: { responsive: true, maintainAspectRatio: false }
+    });
+
+    const recentQuizzes = stats.quizzes.slice(0, 5).reverse();
+    const ctxScore = document.getElementById('scoreChart').getContext('2d');
+    new Chart(ctxScore, {
+      type: 'line',
+      data: {
+        labels: recentQuizzes.map((q, i) => `Bài ${i+1}`),
+        datasets: [{
+          label: 'Điểm số (%)',
+          data: recentQuizzes.map(q => q.percent),
+          borderColor: '#4361ee',
+          backgroundColor: 'rgba(67, 97, 238, 0.1)',
+          fill: true,
+          tension: 0.3
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+          y: { min: 0, max: 100 }
+        }
+      }
+    });
+
+    // Render Mistake Bank
+    const mContainer = document.getElementById('mistake-bank-container');
+    if (stats.mistakes.length === 0) {
+      mContainer.innerHTML = `<div style="text-align:center; padding:2rem; color:var(--text-muted);"><i class="fa-solid fa-circle-check" style="color:var(--success); font-size:2rem; margin-bottom:0.5rem; display:block;"></i>Hiện tại bạn không có câu sai nào trong ngân hàng! Tuyệt vời!</div>`;
+    } else {
+      mContainer.innerHTML = stats.mistakes.map(m => `
+        <div style="background:var(--bg); border:1px solid var(--surface-border); border-radius:var(--radius-sm); padding:1rem; margin-bottom:0.75rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.5rem;">
+          <div>
+            <div style="font-weight:700; color:var(--text-main); margin-bottom:0.2rem;">${m.word || m.sentence || m.question}</div>
+            <div style="font-size:0.85rem; color:var(--text-muted);">
+              ${m.meaning_vi ? `Nghĩa: <strong>${m.meaning_vi}</strong>` : `Đáp án đúng: <strong style="color:var(--success);">${m.answer}</strong>`}
+            </div>
+          </div>
+          <button class="btn btn-outline" style="font-size:0.85rem; padding:0.4rem 0.8rem;" onclick="removeMistake('${m.id}')">
+            <i class="fa-solid fa-check"></i> Đã nhớ câu này
+          </button>
+        </div>
+      `).join('');
+    }
+
+    function removeMistake(itemId) {
+      DB.resolveMistake(user.username, itemId);
+      window.location.reload();
+    }
+
+    // Render History Table
+    const tbody = document.getElementById('history-table-body');
+    if (stats.quizzes.length === 0) {
+      tbody.innerHTML = `<tr><td colspan="5" style="padding:1.5rem; text-align:center; color:var(--text-muted);">Chưa có bài kiểm tra nào được thực hiện.</td></tr>`;
+    } else {
+      tbody.innerHTML = stats.quizzes.map(q => `
+        <tr style="border-bottom:1px solid var(--surface-border);">
+          <td style="padding:0.75rem; color:var(--text-muted);">${new Date(q.date).toLocaleString('vi-VN')}</td>
+          <td style="padding:0.75rem;"><span class="badge badge-primary">${q.type === 'vocab' ? 'Từ Vựng' : 'Ngữ Pháp'}</span></td>
+          <td style="padding:0.75rem; font-weight:600;">${q.topic}</td>
+          <td style="padding:0.75rem;">${q.score} / ${q.total}</td>
+          <td style="padding:0.75rem; font-weight:700; color:${q.percent >= 80 ? 'var(--success)' : (q.percent >= 50 ? 'var(--warning)' : 'var(--danger)')};">${q.percent}%</td>
+        </tr>
+      `).join('');
+    }
+  </script>
+</body>
+</html>

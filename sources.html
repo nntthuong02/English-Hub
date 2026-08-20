@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nguồn Dữ Liệu Crawl — English Hub</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="dashboard.html" class="nav-brand">
+      <i class="fa-solid fa-graduation-cap"></i>
+      <span>English Hub</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="dashboard.html"><i class="fa-solid fa-house"></i> Trang chủ</a></li>
+      <li><a href="vocabulary/index.html"><i class="fa-solid fa-book-open"></i> Từ Vựng</a></li>
+      <li><a href="grammar/index.html"><i class="fa-solid fa-pen-nib"></i> Ngữ Pháp (30 Ngày)</a></li>
+      <li><a href="stats/index.html"><i class="fa-solid fa-chart-line"></i> Thống Kê</a></li>
+      <li><a href="sources.html" class="active"><i class="fa-solid fa-link"></i> Nguồn Crawl</a></li>
+    </ul>
+    <div id="nav-user-badge" class="user-profile-badge"></div>
+  </nav>
+
+  <div class="container">
+    <div style="margin-bottom: 2rem;">
+      <h1 style="font-size: 2rem; font-weight: 800; margin-bottom: 0.5rem;">
+        <i class="fa-solid fa-database" style="color: var(--primary);"></i> Danh Mục Nguồn Dữ Liệu Đã Crawl
+      </h1>
+      <p style="color: var(--text-muted); font-size: 1.05rem;">
+        Tổng hợp toàn bộ các danh mục từ vựng đã thu thập từ <strong>LanguageGuide.org</strong> và <strong>TiengAnh123.com</strong> kèm link gốc để bạn dễ dàng tra cứu.
+      </p>
+    </div>
+
+    <!-- Source Tabs Selector -->
+    <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem; border-bottom: 2px solid var(--surface-border); padding-bottom: 0.5rem;">
+      <button id="tab-btn-lg" class="btn btn-primary" onclick="switchSourceTab('lg')">
+        <i class="fa-solid fa-globe"></i> LanguageGuide.org (23 Chủ đề)
+      </button>
+      <button id="tab-btn-ta123" class="btn btn-outline" onclick="switchSourceTab('ta123')">
+        <i class="fa-solid fa-image"></i> TiengAnh123.com (42 Chủ đề)
+      </button>
+    </div>
+
+    <!-- Search filter inside crawled sources -->
+    <div style="margin-bottom: 1.5rem;">
+      <input type="text" id="source-search" class="btn btn-outline" style="width: 100%; max-width: 400px; text-align: left; background: var(--surface);" placeholder="🔍 Tìm kiếm chủ đề link crawl..." oninput="filterSources()">
+    </div>
+
+    <!-- Content Container -->
+    <div id="sources-container" class="grid-cols-3">
+      <!-- Injected by JS -->
+    </div>
+  </div>
+
+  <footer>
+    English Hub © 2026 — Dữ liệu học tập bản quyền và nguồn mở.
+  </footer>
+
+  <script src="js/firebase-config.js"></script>
+  <script src="js/db.js"></script>
+  <script src="js/auth.js"></script>
+  <script>
+    Auth.requireAuth();
+    Auth.updateNavbar();
+
+    let allSources = null;
+    let currentTab = 'lg';
+
+    fetch('data/crawled_sources.json')
+      .then(res => res.json())
+      .then(data => {
+        allSources = data;
+        renderSources();
+      })
+      .catch(e => console.error("Error loading sources:", e));
+
+    function switchSourceTab(tab) {
+      currentTab = tab;
+      document.getElementById('tab-btn-lg').className = tab === 'lg' ? 'btn btn-primary' : 'btn btn-outline';
+      document.getElementById('tab-btn-ta123').className = tab === 'ta123' ? 'btn btn-primary' : 'btn btn-outline';
+      renderSources();
+    }
+
+    function renderSources() {
+      if (!allSources) return;
+      const container = document.getElementById('sources-container');
+      container.innerHTML = '';
+
+      const dataset = currentTab === 'lg' ? allSources.languageguide.categories : allSources.tienganh123.categories;
+      const query = (document.getElementById('source-search').value || '').toLowerCase();
+
+      const filtered = dataset.filter(c => c.title.toLowerCase().includes(query) || (c.group && c.group.toLowerCase().includes(query)));
+
+      filtered.forEach((cat, idx) => {
+        const card = document.createElement('div');
+        card.className = 'card card-hover';
+        card.innerHTML = `
+          <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:0.8rem;">
+            <span class="badge badge-primary">${cat.group || 'Chủ đề'}</span>
+            <span class="badge badge-success"><i class="fa-solid fa-check"></i> Đã crawl (~${cat.count} từ)</span>
+          </div>
+          <h3 style="font-size:1.15rem; font-weight:700; margin-bottom:0.5rem;">${cat.title}</h3>
+          <p style="font-size:0.85rem; color:var(--text-muted); word-break:break-all; margin-bottom:1.2rem;">
+            <i class="fa-solid fa-link"></i> ${cat.url}
+          </p>
+          <div style="display:flex; gap:0.5rem;">
+            <a href="${cat.url}" target="_blank" class="btn btn-outline" style="flex:1; font-size:0.85rem; padding:0.5rem;">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Xem link gốc
+            </a>
+            <a href="vocabulary/index.html?cat=${cat.id}" class="btn btn-primary" style="font-size:0.85rem; padding:0.5rem 0.8rem;">
+              <i class="fa-solid fa-graduation-cap"></i> Học ngay
+            </a>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+
+      if (filtered.length === 0) {
+        container.innerHTML = `<div style="grid-column: 1/-1; text-align:center; padding:3rem; color:var(--text-muted);">Không tìm thấy chủ đề phù hợp.</div>`;
+      }
+    }
+
+    function filterSources() {
+      renderSources();
+    }
+  </script>
+</body>
+</html>
