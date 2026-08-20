@@ -105,7 +105,7 @@
       <div>
         <span class="badge" style="background:rgba(255,255,255,0.2); color:white; margin-bottom:0.4rem;" id="cat-badge">Chủ đề từ vựng</span>
         <h1 id="vocab-quiz-title" style="font-size:1.6rem; font-weight:800;">Trắc Nghiệm & Điền Từ Vựng</h1>
-        <p style="opacity:0.95; font-size:0.95rem;">Làm toàn bộ câu hỏi và bấm nộp bài để xem đáp án kèm phiên âm IPA và ví dụ.</p>
+        <p style="opacity:0.95; font-size:0.95rem;">Làm toàn bộ 10 câu hỏi bên dưới và bấm nộp bài để xem đáp án kèm phiên âm IPA và ví dụ.</p>
       </div>
     </div>
 
@@ -116,14 +116,16 @@
       <p id="score-text-detail" style="font-size:1.25rem; font-weight:700; color:var(--text-main); margin-bottom:1rem;"></p>
       <p style="color:#15803d; font-size:0.95rem;">Toàn bộ đáp án đúng và nghĩa của từ vựng đã được mở khóa bên dưới từng câu hỏi.</p>
       <div style="margin-top:1.2rem; display:flex; gap:1rem; justify-content:center;">
-        <button class="btn btn-primary" onclick="reloadVocabQuiz()"><i class="fa-solid fa-rotate-right"></i> Làm lại bài này</button>
+        <button class="btn btn-primary" onclick="reloadVocabQuiz()"><i class="fa-solid fa-rotate-right"></i> Làm đề 10 câu mới</button>
         <a href="index.html" class="btn btn-outline"><i class="fa-solid fa-book"></i> Chọn chủ đề khác</a>
       </div>
     </div>
 
     <!-- Form Container -->
     <form id="vocab-form" onsubmit="submitVocabExam(event)">
-      <div id="questions-list-container"></div>
+      <div id="questions-list-container">
+        <!-- Injected by JS -->
+      </div>
 
       <!-- Submit Bar -->
       <div id="submit-bar" style="position:sticky; bottom:1.5rem; background:var(--surface); border:2px solid var(--primary); border-radius:var(--radius-md); padding:1.2rem 2rem; box-shadow:var(--shadow-lg); display:flex; justify-content:space-between; align-items:center; z-index:50;">
@@ -159,40 +161,46 @@
     let isSubmitted = false;
 
     function initData(data) {
-      allWords = data;
+      allWords = data || [];
       document.getElementById('cat-badge').innerText = category === 'all' ? 'Tất cả từ vựng' : `Chủ đề: ${category}`;
       generateVocabQuiz();
     }
 
-    if (window.VOCABULARY_DATA) {
+    if (window.VOCABULARY_DATA && window.VOCABULARY_DATA.length > 0) {
       initData(window.VOCABULARY_DATA);
     } else {
       fetch('../data/vocabulary.json')
         .then(res => res.json())
-        .then(data => initData(data));
+        .then(data => initData(data))
+        .catch(e => console.error(e));
     }
 
     function generateVocabQuiz() {
+      if (!allWords || allWords.length === 0) return;
+
       const filtered = category === 'all' ? allWords : allWords.filter(w => w.category === category);
-      const shuffled = [...filtered].sort(() => 0.5 - Math.random());
+      const pool = (filtered.length >= 10) ? filtered : allWords;
+      const shuffled = [...pool].sort(() => 0.5 - Math.random());
       const selected = shuffled.slice(0, 10);
 
       activeQuestions = selected.map((item, idx) => {
-        // Build 4 choices
-        const distractors = allWords.filter(w => w.id !== item.id).sort(() => 0.5 - Math.random()).slice(0, 3);
-        const choices = [item.meaning, ...distractors.map(d => d.meaning)].sort(() => 0.5 - Math.random());
+        // Collect 3 distinct distractors with meaning_vi
+        const otherWords = allWords.filter(w => w.id !== item.id && w.meaning_vi !== item.meaning_vi);
+        const distractors = [...otherWords].sort(() => 0.5 - Math.random()).slice(0, 3);
+        
+        const choices = [item.meaning_vi, ...distractors.map(d => d.meaning_vi)].sort(() => 0.5 - Math.random());
 
         return {
           id: item.id,
           word: item.word,
-          ipa: item.ipa,
-          image: item.image,
-          meaning: item.meaning,
-          example: item.example,
-          exampleVi: item.exampleVi,
-          question: `Từ "${item.word}" (${item.ipa}) có nghĩa là gì?`,
+          phonetic: item.phonetic || '',
+          imageUrl: item.imageUrl || '',
+          meaning_vi: item.meaning_vi,
+          exampleSentence: item.exampleSentence || '',
+          exampleTranslation: item.exampleTranslation || '',
+          question: `Từ "${item.word}" ${item.phonetic ? '(' + item.phonetic + ')' : ''} có nghĩa tiếng Việt là gì?`,
           choices: choices,
-          answer: item.meaning
+          answer: item.meaning_vi
         };
       });
 
@@ -212,14 +220,14 @@
           <div class="q-card" id="qcard-${idx}">
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.8rem;">
               <span class="badge badge-primary" style="font-size:0.85rem;">CÂU ${idx + 1}</span>
-              <span style="font-size:0.85rem; color:var(--text-muted); font-family:monospace;">${q.ipa}</span>
+              <span style="font-size:0.85rem; color:var(--text-muted); font-family:monospace;">${q.phonetic}</span>
             </div>
 
             <div style="display:flex; gap:1.2rem; align-items:center; margin-bottom:1.2rem;">
-              ${q.image ? `<img src="${q.image}" alt="${q.word}" style="width:80px; height:80px; object-fit:cover; border-radius:var(--radius-sm); border:1px solid var(--surface-border);" onerror="this.style.display='none'">` : ''}
+              ${q.imageUrl ? `<img src="${q.imageUrl}" alt="${q.word}" style="width:75px; height:75px; object-fit:cover; border-radius:var(--radius-sm); border:1px solid var(--surface-border);" onerror="this.style.display='none'">` : ''}
               <div>
                 <h3 style="font-size:1.3rem; font-weight:800; color:var(--primary); margin-bottom:0.2rem;">${q.word}</h3>
-                <p style="font-size:0.9rem; color:var(--text-muted); margin:0;">${q.question}</p>
+                <p style="font-size:0.95rem; color:var(--text-main); font-weight:600; margin:0;">${q.question}</p>
               </div>
             </div>
 
@@ -238,10 +246,10 @@
             <!-- Explanation box (Revealed after submission) -->
             <div class="explanation-box" id="exp-box-${idx}">
               <div style="font-size:0.95rem; margin-bottom:0.3rem;">
-                <strong>Nghĩa đúng:</strong> <span style="color:var(--success); font-weight:800; font-size:1.05rem;">${q.answer}</span>
+                <strong>Đáp án đúng:</strong> <span style="color:var(--success); font-weight:800; font-size:1.05rem;">${q.answer}</span>
               </div>
-              <div style="font-size:0.9rem; color:var(--text-muted);">
-                <strong>Ví dụ:</strong> <em>"${q.example}"</em> (${q.exampleVi})
+              <div style="font-size:0.9rem; color:var(--text-muted); line-height:1.5;">
+                <strong>Ví dụ minh họa:</strong> <em>"${q.exampleSentence}"</em> — ${q.exampleTranslation}
               </div>
             </div>
           </div>
@@ -314,8 +322,8 @@
           mistakes.push({
             id: q.id,
             word: q.word,
-            meaning: q.meaning,
-            ipa: q.ipa,
+            meaning: q.meaning_vi,
+            ipa: q.phonetic,
             type: 'vocabulary'
           });
         }
