@@ -533,7 +533,8 @@
         "D. Lion"
       ],
       "answer": "B",
-      "explanation": " \nCác đáp án A, C, D là danh từ 2 âm tiết trọng âm thứ nhất\nĐáp án B có cách đọc là /təˈmɑː.təʊ/ trọng âm rơi vào thứ 2"
+      "explanation": " \nCác đáp án A, C, D là danh từ 2 âm tiết trọng âm thứ nhất\nĐáp án B có cách đọc là /təˈmɑː.təʊ/ trọng âm rơi vào thứ 2",
+      "stressBreakdown": "A. <u>Work</u>book (âm 1) | B. To<u>ma</u>to (âm 2) | C. <u>Moun</u>tain (âm 1) | D. <u>Li</u>on (âm 1)"
     },
     {
       "id": "stress_q2",
@@ -546,7 +547,8 @@
         "D. Preparation"
       ],
       "answer": "D",
-      "explanation": " \nDanh từ kết thúc đuôi –ion trọng âm rơi vào trước nó. Các đáp án A, B, C trọng âm thứ 2, đáp án D trọng âm thứ 3"
+      "explanation": " \nDanh từ kết thúc đuôi –ion trọng âm rơi vào trước nó. Các đáp án A, B, C trọng âm thứ 2, đáp án D trọng âm thứ 3",
+      "stressBreakdown": "A. Pres<u>crip</u>tion (âm 2) | B. Pro<u>duc</u>tion (âm 2) | C. Pre<u>sump</u>tion (âm 2) | D. Prepa<u>ra</u>tion (âm 3)"
     },
     {
       "id": "stress_q3",
@@ -559,7 +561,8 @@
         "D. Sympathy"
       ],
       "answer": "B",
-      "explanation": " \nDanh từ kết thúc đuôi –y trọng âm thứ 3 đến ngược từ dưới lên. Các đáp án A, C, D trọng âm rơi vào âm thứ 1, đáp án B trọng âm rơi vào thứ 2"
+      "explanation": " \nDanh từ kết thúc đuôi –y trọng âm thứ 3 đến ngược từ dưới lên. Các đáp án A, C, D trọng âm rơi vào âm thứ 1, đáp án B trọng âm rơi vào thứ 2",
+      "stressBreakdown": "A. <u>En</u>ergy (âm 1) | B. E<u>mer</u>gency (âm 2) | C. <u>Con</u>stancy (âm 1) | D. <u>Sym</u>pathy (âm 1)"
     },
     {
       "id": "stress_q4",
@@ -572,7 +575,8 @@
         "D. Apology"
       ],
       "answer": "A",
-      "explanation": " \nĐáp án A trọng âm thứ 3, rơi trước đuôi –ion\nCác đáp án B, C, D trọng âm thứ 2, do có kết thúc -y"
+      "explanation": " \nĐáp án A trọng âm thứ 3, rơi trước đuôi –ion\nCác đáp án B, C, D trọng âm thứ 2, do có kết thúc -y",
+      "stressBreakdown": "A. Application | B. Economy | C. Photography | D. Apology"
     },
     {
       "id": "stress_q5",
@@ -585,7 +589,8 @@
         "D. Humorous"
       ],
       "answer": "D",
-      "explanation": " \nCác tiền tối in-, un- và hậu tố -ous không nhận trọng âm, nên ta xét nguyên thể các từ này.\nĐáp án A, B, C trọng âm thứ 2, đáp án D trọng âm thứ nhất."
+      "explanation": " \nCác tiền tối in-, un- và hậu tố -ous không nhận trọng âm, nên ta xét nguyên thể các từ này.\nĐáp án A, B, C trọng âm thứ 2, đáp án D trọng âm thứ nhất.",
+      "stressBreakdown": "A. Incapable | B. Unselfish | C. Attraction | D. Humorous"
     },
     {
       "id": "stress_q6",
@@ -598,7 +603,8 @@
         "D. Economic"
       ],
       "answer": "C",
-      "explanation": " \nCác danh từ kết thúc bằng –ion, -ity, -ic trọng âm rơi vào trước kết cấu này, nên các đáp án A, B, D trọng âm thứ 3. Đáp án C trọng âm thứ nhất"
+      "explanation": " \nCác danh từ kết thúc bằng –ion, -ity, -ic trọng âm rơi vào trước kết cấu này, nên các đáp án A, B, D trọng âm thứ 3. Đáp án C trọng âm thứ nhất",
+      "stressBreakdown": "A. Destination | B. productivity | C. Interesting | D. Economic"
     },
     {
       "id": "stress_q7",
@@ -611,7 +617,8 @@
         "D. Borrow"
       ],
       "answer": "C",
-      "explanation": " \nĐáp án A, B bỏ không xét các hậu tố -less, -y, ta được trọng âm thứ nhất\nĐáp án C động từ 2 âm tiết trọng âm thứ 2\nĐáp án D /ˈbɒr.əʊ/"
+      "explanation": " \nĐáp án A, B bỏ không xét các hậu tố -less, -y, ta được trọng âm thứ nhất\nĐáp án C động từ 2 âm tiết trọng âm thứ 2\nĐáp án D /ˈbɒr.əʊ/",
+      "stressBreakdown": "A. <u>Speech</u>less (âm 1) | B. <u>Wor</u>thy (âm 1) | C. Pol<u>lute</u> (âm 2) | D. <u>Bor</u>row (âm 1)"
     },
     {
       "id": "stress_q8",
@@ -624,7 +631,8 @@
         "D. Sincere"
       ],
       "answer": "A",
-      "explanation": " \nĐáp án A danh từ 3 âm tiết kết thúc –y trọng âm rơi vào thứ 1\nĐáp án B /səkˈses/\nĐáp án C tiền tố in- và hậu tố -able không nhận trọng âm, ta được trọng âm thứ 2\nĐáp án D /sɪnˈsɪər/"
+      "explanation": " \nĐáp án A danh từ 3 âm tiết kết thúc –y trọng âm rơi vào thứ 1\nĐáp án B /səkˈses/\nĐáp án C tiền tố in- và hậu tố -able không nhận trọng âm, ta được trọng âm thứ 2\nĐáp án D /sɪnˈsɪər/",
+      "stressBreakdown": "A. Loyalty | B. Success | C. Incapable | D. Sincere"
     },
     {
       "id": "stress_q9",
@@ -637,7 +645,8 @@
         "D. Father"
       ],
       "answer": "C",
-      "explanation": " \nĐáp án A /ˈɡʌv.ən/\nĐáp án B, D danh từ 2 âm tiết kết thúc –er trọng âm rơi vào thứ nhất\nĐáp án C động từ 2 âm tiết trọng âm rơi thứ 2"
+      "explanation": " \nĐáp án A /ˈɡʌv.ən/\nĐáp án B, D danh từ 2 âm tiết kết thúc –er trọng âm rơi vào thứ nhất\nĐáp án C động từ 2 âm tiết trọng âm rơi thứ 2",
+      "stressBreakdown": "A. Govern | B. Cover | C. Perform | D. Father"
     },
     {
       "id": "stress_q10",
@@ -650,7 +659,8 @@
         "D. Famous"
       ],
       "answer": "C",
-      "explanation": " \nĐáp án C động từ 2 âm tiết trọng âm rơi âm thứ 2\nCác đáp án A, B, D danh từ 2 âm tiết trọng âm rơi thứ nhất"
+      "explanation": " \nĐáp án C động từ 2 âm tiết trọng âm rơi âm thứ 2\nCác đáp án A, B, D danh từ 2 âm tiết trọng âm rơi thứ nhất",
+      "stressBreakdown": "A. Morning | B. College | C. Arrive | D. Famous"
     },
     {
       "id": "stress_q11",
@@ -663,7 +673,8 @@
         "D. Financial"
       ],
       "answer": "B",
-      "explanation": " \nCác đuôi –ic, -ion, -ial, trọng âm rơi vào trước nó nên đáp án A, C, D trọng âm thứ 2\nDanh từ 3 âm tiết kết thúc –ate trọng âm rơi vào âm thứ nhất nên đáp án C trọng âm thứ 1"
+      "explanation": " \nCác đuôi –ic, -ion, -ial, trọng âm rơi vào trước nó nên đáp án A, C, D trọng âm thứ 2\nDanh từ 3 âm tiết kết thúc –ate trọng âm rơi vào âm thứ nhất nên đáp án C trọng âm thứ 1",
+      "stressBreakdown": "A. Specific | B. Indicate | C. Ambition | D. Financial"
     },
     {
       "id": "stress_q12",
@@ -676,7 +687,8 @@
         "D. Speaker"
       ],
       "answer": "B",
-      "explanation": " \nCác đáp án C, D hậu tố -ness, và –er không nhận trọng âm nên trọng âm 2 đáp án này thứ nhất\nĐáp án A /ˈef.ət/\nĐáp án B /ɪˈfekt/"
+      "explanation": " \nCác đáp án C, D hậu tố -ness, và –er không nhận trọng âm nên trọng âm 2 đáp án này thứ nhất\nĐáp án A /ˈef.ət/\nĐáp án B /ɪˈfekt/",
+      "stressBreakdown": "A. Effort | B. Effect | C. Deafness | D. Speaker"
     },
     {
       "id": "stress_q13",
@@ -689,7 +701,8 @@
         "D. Tonight"
       ],
       "answer": "D",
-      "explanation": " \nĐáp án A /ˈfɜː.nɪʃ/\nĐáp án B, C danh từ 2 âm tiết trọng âm thứ 1\nĐáp án D /təˈnaɪt/"
+      "explanation": " \nĐáp án A /ˈfɜː.nɪʃ/\nĐáp án B, C danh từ 2 âm tiết trọng âm thứ 1\nĐáp án D /təˈnaɪt/",
+      "stressBreakdown": "A. Furnish | B. Reason | C. Promise | D. Tonight"
     },
     {
       "id": "stress_q14",
@@ -702,7 +715,8 @@
         "D. Pyramid"
       ],
       "answer": "B",
-      "explanation": " \nCác đáp án A, C, D trọng âm thứ 1, còn đáp án B trọng âm thứ 2"
+      "explanation": " \nCác đáp án A, C, D trọng âm thứ 1, còn đáp án B trọng âm thứ 2",
+      "stressBreakdown": "A. Animal | B. Bacteria | C. Habitat | D. Pyramid"
     },
     {
       "id": "stress_q15",
@@ -715,7 +729,8 @@
         "D. Appliance"
       ],
       "answer": "D",
-      "explanation": " \nĐáp án A từ 3 âm tiết kết thúc y trọng âm thứ nhất\nĐáp án B /ˈsev.ər.əl/\nĐáp án C danh từ ghép trọng âm thứ 1 /ˈhaʊs.həʊld/\nĐáp án D /əˈplaɪ.əns/"
+      "explanation": " \nĐáp án A từ 3 âm tiết kết thúc y trọng âm thứ nhất\nĐáp án B /ˈsev.ər.əl/\nĐáp án C danh từ ghép trọng âm thứ 1 /ˈhaʊs.həʊld/\nĐáp án D /əˈplaɪ.əns/",
+      "stressBreakdown": "A. <u>En</u>ergy (âm 1) | B. Several | C. Household | D. Appliance"
     },
     {
       "id": "stress_q16",
@@ -728,7 +743,8 @@
         "D. Photographer"
       ],
       "answer": "C",
-      "explanation": " \nĐáp án A trọng âm thứ 2 do tính từ kết thúc đuôi –ate trọng âm thứ 3 từ dưới lên.\nĐáp án B đuôi –ity trọng âm rơi vào trước nó, âm tiết thứ 2\nĐáp án C /ˈdɪf.ər.ənt/\nĐáp án D /fəˈtɒɡ.rə.fər/"
+      "explanation": " \nĐáp án A trọng âm thứ 2 do tính từ kết thúc đuôi –ate trọng âm thứ 3 từ dưới lên.\nĐáp án B đuôi –ity trọng âm rơi vào trước nó, âm tiết thứ 2\nĐáp án C /ˈdɪf.ər.ənt/\nĐáp án D /fəˈtɒɡ.rə.fər/",
+      "stressBreakdown": "A. Considerate | B. Community | C. Different | D. Photographer"
     },
     {
       "id": "stress_q17",
@@ -741,7 +757,8 @@
         "D. Beauty"
       ],
       "answer": "A",
-      "explanation": " \nĐáp án A động từ 2 âm tiết trọng âm thứ 2\nĐáp án B, C, D danh từ 2 âm tiết trọng âm thứ nhất"
+      "explanation": " \nĐáp án A động từ 2 âm tiết trọng âm thứ 2\nĐáp án B, C, D danh từ 2 âm tiết trọng âm thứ nhất",
+      "stressBreakdown": "A. Appear | B. Orphan | C. Friendly | D. Beauty"
     },
     {
       "id": "stress_q18",
@@ -754,7 +771,8 @@
         "D. Deliver"
       ],
       "answer": "D",
-      "explanation": " \nĐáp án A /ˈkʌs.tə.mər/\nĐáp án B /ˈsteɪ.ʃən.ər.i/\nĐáp án C /ˈfɜː.nɪ.tʃər/\nĐáp án D /dɪˈlɪv.ər/"
+      "explanation": " \nĐáp án A /ˈkʌs.tə.mər/\nĐáp án B /ˈsteɪ.ʃən.ər.i/\nĐáp án C /ˈfɜː.nɪ.tʃər/\nĐáp án D /dɪˈlɪv.ər/",
+      "stressBreakdown": "A. Customer | B. Stationery | C. Furniture | D. Deliver"
     },
     {
       "id": "stress_q19",
@@ -767,7 +785,8 @@
         "D. Even"
       ],
       "answer": "D",
-      "explanation": " \nTrọng âm rơi vào âm tiết manh hơn nên đáp án A, B, C trọng âm thứ 2, đáp án D trọng âm thứ nhất"
+      "explanation": " \nTrọng âm rơi vào âm tiết manh hơn nên đáp án A, B, C trọng âm thứ 2, đáp án D trọng âm thứ nhất",
+      "stressBreakdown": "A. Effect | B. Event | C. Emerge | D. Even"
     },
     {
       "id": "stress_q20",
@@ -780,7 +799,8 @@
         "D. Refugee"
       ],
       "answer": "A",
-      "explanation": " \nTừ kết thúc đuôi –ee trọng âm rơi vào chính nó. TRỪ committee /kəˈmɪt.i/"
+      "explanation": " \nTừ kết thúc đuôi –ee trọng âm rơi vào chính nó. TRỪ committee /kəˈmɪt.i/",
+      "stressBreakdown": "A. Committee | B. Referee | C. Employee | D. Refugee"
     },
     {
       "id": "stress_q21",
@@ -793,7 +813,8 @@
         "D. Impatient"
       ],
       "answer": "C",
-      "explanation": " \nĐáp án A /fəˈmɪl.i.ər/\nĐáp án B trọng âm thứ 2, bỏ không xét tiền tố -un, certain là tính từ 2 âm tiết trọng âm thứ nhất\nĐáp án D trọng âm thứ 2, bỏ không xét tiền tố -im, patient là tính từ 2 âm tiết trọng âm thứ nhất\nĐáp án C /ˈɡləʊ.bəl/"
+      "explanation": " \nĐáp án A /fəˈmɪl.i.ər/\nĐáp án B trọng âm thứ 2, bỏ không xét tiền tố -un, certain là tính từ 2 âm tiết trọng âm thứ nhất\nĐáp án D trọng âm thứ 2, bỏ không xét tiền tố -im, patient là tính từ 2 âm tiết trọng âm thứ nhất\nĐáp án C /ˈɡləʊ.bəl/",
+      "stressBreakdown": "A. Familiar | B. Uncertain | C. Global | D. Impatient"
     },
     {
       "id": "stress_q22",
@@ -806,7 +827,8 @@
         "D. Forgettable"
       ],
       "answer": "B",
-      "explanation": " \nĐáp án A trọng âm thứ 2 do là danh từ 4 âm tiết kết thúc y.\nĐáp án B /ˈhjuː.mə.nɪ.zəm/\nĐáp án C trọng âm thứ 2 do kết thúc bằng đuôi –ity\nĐáp án D đuôi –able không nhận trọng âm nên xét nguyên thể forget, trọng âm thứ 2"
+      "explanation": " \nĐáp án A trọng âm thứ 2 do là danh từ 4 âm tiết kết thúc y.\nĐáp án B /ˈhjuː.mə.nɪ.zəm/\nĐáp án C trọng âm thứ 2 do kết thúc bằng đuôi –ity\nĐáp án D đuôi –able không nhận trọng âm nên xét nguyên thể forget, trọng âm thứ 2",
+      "stressBreakdown": "A. Philosophy | B. Humanism | C. Activity | D. Forgettable"
     },
     {
       "id": "stress_q23",
@@ -819,7 +841,8 @@
         "D. Temple"
       ],
       "answer": "C",
-      "explanation": " \nĐáp án A, B, D danh từ 2 âm tiết trọng âm thứ nhất\nĐáp án C /həʊˈtel/"
+      "explanation": " \nĐáp án A, B, D danh từ 2 âm tiết trọng âm thứ nhất\nĐáp án C /həʊˈtel/",
+      "stressBreakdown": "A. Desert | B. Common | C. Hotel | D. Temple"
     },
     {
       "id": "stress_q24",
@@ -832,7 +855,8 @@
         "D. Breakfast"
       ],
       "answer": "B",
-      "explanation": " \nĐáp án A, C, D danh từ 2 âm tiết trọng âm thứ nhất\nĐáp án B /bɪˈkəz/"
+      "explanation": " \nĐáp án A, C, D danh từ 2 âm tiết trọng âm thứ nhất\nĐáp án B /bɪˈkəz/",
+      "stressBreakdown": "A. Blanket | B. Because | C. Bedroom | D. Breakfast"
     },
     {
       "id": "stress_q25",
@@ -845,7 +869,8 @@
         "D. Accept"
       ],
       "answer": "C",
-      "explanation": " \nĐáp án A, B, D có âm “a” đầu tiên đọc là / ə/ nên có trọng âm thứ 2\nĐáp án  C /ˈɔːl.məʊst/"
+      "explanation": " \nĐáp án A, B, D có âm “a” đầu tiên đọc là / ə/ nên có trọng âm thứ 2\nĐáp án  C /ˈɔːl.məʊst/",
+      "stressBreakdown": "A. Above | B. Across | C. Almost | D. Accept"
     },
     {
       "id": "stress_q26",
@@ -858,7 +883,8 @@
         "D. Cucumber"
       ],
       "answer": "B",
-      "explanation": " \nĐáp án A danh từ 3 âm tiết kết thúc –y trọng âm thứ nhất\nĐáp án B /kəmˈpjuː.tər/\nĐáp án C /ˈkæm.rə/\nĐáp án D /ˈkjuː.kʌm.bər/"
+      "explanation": " \nĐáp án A danh từ 3 âm tiết kết thúc –y trọng âm thứ nhất\nĐáp án B /kəmˈpjuː.tər/\nĐáp án C /ˈkæm.rə/\nĐáp án D /ˈkjuː.kʌm.bər/",
+      "stressBreakdown": "A. Chemistry | B. Computer | C. Camera | D. Cucumber"
     },
     {
       "id": "stress_q27",
@@ -871,7 +897,8 @@
         "D. Deny"
       ],
       "answer": "B",
-      "explanation": " \nĐáp án A, C, D động từ 2 âm tiết trọng âm thứ 2\nĐáp án B danh từ 2 âm tiết trọng âm thứ nhất"
+      "explanation": " \nĐáp án A, C, D động từ 2 âm tiết trọng âm thứ 2\nĐáp án B danh từ 2 âm tiết trọng âm thứ nhất",
+      "stressBreakdown": "A. Decide | B. Discount | C. Discuss | D. Deny"
     },
     {
       "id": "stress_q28",
@@ -884,7 +911,8 @@
         "D. Detail"
       ],
       "answer": "A",
-      "explanation": " \nĐáp án A /dɪˈzɜːt/\nĐáp án B /ˈsʌm.taɪmz/\nĐáp án C, D danh từ 2 âm tiết trọng âm thứ nhất"
+      "explanation": " \nĐáp án A /dɪˈzɜːt/\nĐáp án B /ˈsʌm.taɪmz/\nĐáp án C, D danh từ 2 âm tiết trọng âm thứ nhất",
+      "stressBreakdown": "A. Dessert | B. Sometimes | C. Dancer | D. Detail"
     },
     {
       "id": "stress_q29",
@@ -897,7 +925,8 @@
         "D. Accurate"
       ],
       "answer": "A",
-      "explanation": " \nĐáp án A /fəˈmɪl.i.ər/\nĐáp án B /ˈflek.sə.bəl/\nĐáp án C /ˈfeɪ.vər.ɪt/\nĐáp án D /ˈæk.jə.rət/"
+      "explanation": " \nĐáp án A /fəˈmɪl.i.ər/\nĐáp án B /ˈflek.sə.bəl/\nĐáp án C /ˈfeɪ.vər.ɪt/\nĐáp án D /ˈæk.jə.rət/",
+      "stressBreakdown": "A. Familiar | B. Flexible | C. Favorite | D. Accurate"
     },
     {
       "id": "stress_q30",
@@ -910,7 +939,8 @@
         "D. Movie"
       ],
       "answer": "A",
-      "explanation": " \nĐáp án B, C, D danh từ tính từ 2 âm tiết trọng âm thứ nhất\nĐáp án A động từ 2 âm tiết trọng âm thứ 2"
+      "explanation": " \nĐáp án B, C, D danh từ tính từ 2 âm tiết trọng âm thứ nhất\nĐáp án A động từ 2 âm tiết trọng âm thứ 2",
+      "stressBreakdown": "A. Visit | B. Perfect | C. Center | D. Movie"
     },
     {
       "id": "stress_q31",
@@ -923,7 +953,8 @@
         "D. Comment"
       ],
       "answer": "C",
-      "explanation": " \nĐáp án A /ɪkˈspres/\nĐáp án B /ɪˈfekt/\nĐáp án C /ˈɒf.ɪs/\nĐáp án D /ˈkɒm.ent/"
+      "explanation": " \nĐáp án A /ɪkˈspres/\nĐáp án B /ɪˈfekt/\nĐáp án C /ˈɒf.ɪs/\nĐáp án D /ˈkɒm.ent/",
+      "stressBreakdown": "A. Express | B. Effect | C. Office | D. Comment"
     },
     {
       "id": "stress_q32",
@@ -936,7 +967,8 @@
         "D. Campsite"
       ],
       "answer": "A",
-      "explanation": " \nĐáp án A trọng âm thứ 2 do là từ có kết thúc –ever trọng âm rơi vào chính nó\nĐáp án B, C, D danh từ 2 âm tiết trọng âm rơi vào âm thứ 1"
+      "explanation": " \nĐáp án A trọng âm thứ 2 do là từ có kết thúc –ever trọng âm rơi vào chính nó\nĐáp án B, C, D danh từ 2 âm tiết trọng âm rơi vào âm thứ 1",
+      "stressBreakdown": "A. Whenever | B. Answer | C. Autumn | D. Campsite"
     },
     {
       "id": "stress_q33",
@@ -949,7 +981,8 @@
         "D. Today"
       ],
       "answer": "D",
-      "explanation": " \nĐáp án A, B, C danh từ 2 âm tiết trọng âm rơi vào âm thứ 1\nĐáp án D /təˈdeɪ/"
+      "explanation": " \nĐáp án A, B, C danh từ 2 âm tiết trọng âm rơi vào âm thứ 1\nĐáp án D /təˈdeɪ/",
+      "stressBreakdown": "A. Flourish | B. Season | C. Product | D. Today"
     },
     {
       "id": "stress_q34",
@@ -962,7 +995,8 @@
         "D. Engine"
       ],
       "answer": "A",
-      "explanation": " \nĐáp án A /ɪˈnʌf/\nĐáp án B /ˈɜː.li/\nĐáp án C /ˈen.trəns/\nĐáp án D /ˈen.dʒɪn/"
+      "explanation": " \nĐáp án A /ɪˈnʌf/\nĐáp án B /ˈɜː.li/\nĐáp án C /ˈen.trəns/\nĐáp án D /ˈen.dʒɪn/",
+      "stressBreakdown": "A. Enough | B. Early | C. Entrance | D. Engine"
     },
     {
       "id": "stress_q35",
@@ -975,7 +1009,8 @@
         "D. Fantastic"
       ],
       "answer": "D",
-      "explanation": " \nĐáp án A /ˈek.səl.ənt/\nĐáp án B /ˈdɪf.ər.ənt/\nĐáp án C /ˈfaɪ.nəl.i/\nĐáp án D từ kết thúc là –ic trọng âm rơi vào trước nó"
+      "explanation": " \nĐáp án A /ˈek.səl.ənt/\nĐáp án B /ˈdɪf.ər.ənt/\nĐáp án C /ˈfaɪ.nəl.i/\nĐáp án D từ kết thúc là –ic trọng âm rơi vào trước nó",
+      "stressBreakdown": "A. Excellent | B. Different | C. Finally | D. Fantastic"
     },
     {
       "id": "stress_q36",
@@ -988,7 +1023,8 @@
         "D. Finger"
       ],
       "answer": "B",
-      "explanation": " \nĐáp án A /ˈfɪn.ɪʃ/\nĐáp án B động từ  2 âm tiết trọng âm thứ 2\nĐáp án C, D danh từ 2 âm tiết kết thúc –er trọng âm thứ nhất"
+      "explanation": " \nĐáp án A /ˈfɪn.ɪʃ/\nĐáp án B động từ  2 âm tiết trọng âm thứ 2\nĐáp án C, D danh từ 2 âm tiết kết thúc –er trọng âm thứ nhất",
+      "stressBreakdown": "A. Finish | B. Forget | C. Farmer | D. Finger"
     },
     {
       "id": "stress_q37",
@@ -1001,7 +1037,8 @@
         "D. Musical"
       ],
       "answer": "B",
-      "explanation": " \nĐáp án A /ˈmæn.ɪ.dʒər/\nĐáp án B /mjuːˈziː.əm/\nĐáp án C /ˈfæm.əl.i/\nĐáp án D /ˈmjuː.zɪ.kəl/"
+      "explanation": " \nĐáp án A /ˈmæn.ɪ.dʒər/\nĐáp án B /mjuːˈziː.əm/\nĐáp án C /ˈfæm.əl.i/\nĐáp án D /ˈmjuː.zɪ.kəl/",
+      "stressBreakdown": "A. Manager | B. Museum | C. Family | D. Musical"
     },
     {
       "id": "stress_q38",
@@ -1014,7 +1051,8 @@
         "D. Outside"
       ],
       "answer": "A",
-      "explanation": "\nĐáp án A /pəˈlaɪt/\nĐáp án B, C danh từ 2 âm tiết trọng âm thứ nhất\nĐáp án D /ˌaʊtˈsaɪd/"
+      "explanation": "\nĐáp án A /pəˈlaɪt/\nĐáp án B, C danh từ 2 âm tiết trọng âm thứ nhất\nĐáp án D /ˌaʊtˈsaɪd/",
+      "stressBreakdown": "A. Polite | B. Normal | C. Number | D. Outside"
     },
     {
       "id": "stress_q39",
@@ -1027,7 +1065,8 @@
         "D. Horrible"
       ],
       "answer": "C",
-      "explanation": " \nĐáp án A /ˈɪn.trəst/\nĐáp án B /ˈnætʃ.ər.əl/\nĐáp án C /prəˈhɪb.ɪt/\nĐáp án D /ˈhɒr.ə.bəl/"
+      "explanation": " \nĐáp án A /ˈɪn.trəst/\nĐáp án B /ˈnætʃ.ər.əl/\nĐáp án C /prəˈhɪb.ɪt/\nĐáp án D /ˈhɒr.ə.bəl/",
+      "stressBreakdown": "A. Interest | B. Natural | C. Prohibit | D. Horrible"
     },
     {
       "id": "stress_q40",
@@ -1040,7 +1079,8 @@
         "D. Explain"
       ],
       "answer": "D",
-      "explanation": " \nĐáp án A, B danh từ 2 âm tiết trọng âm thứ nhất\nĐáp án C /ˈhæp.ən/\nĐáp án D động từ 2 âm tiết trọng âm thứ 2"
+      "explanation": " \nĐáp án A, B danh từ 2 âm tiết trọng âm thứ nhất\nĐáp án C /ˈhæp.ən/\nĐáp án D động từ 2 âm tiết trọng âm thứ 2",
+      "stressBreakdown": "A. Garden | B. Handbag | C. Happen | D. Explain"
     }
   ]
 }

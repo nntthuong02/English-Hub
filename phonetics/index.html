@@ -192,9 +192,10 @@
         mBox.style.display = 'block';
         mList.innerHTML = mistakes.map(m => `
           <div style="background:var(--bg); border:1px solid var(--surface-border); border-radius:var(--radius-sm); padding:1rem; margin-bottom:0.8rem;">
-            <div style="font-weight:700; color:var(--text-main); margin-bottom:0.3rem;">${m.title}</div>
-            <div style="font-size:0.9rem; margin-bottom:0.3rem;"><strong>Đáp án đúng:</strong> <span style="color:var(--success); font-weight:700;">${m.answer}</span></div>
-            <div style="font-size:0.88rem; color:var(--text-muted);"><strong>💡 Giải thích:</strong> ${m.explanation}</div>
+            <div style="font-weight:700; color:var(--text-main); margin-bottom:0.4rem;">${m.title}</div>
+            <div style="font-size:0.92rem; margin-bottom:0.4rem;"><strong>Đáp án đúng:</strong> <span style="color:var(--success); font-weight:700; font-size:1.05rem;">${m.answer}</span></div>
+            ${m.stressBreakdown ? `<div style="background:var(--surface); border:1px dashed var(--secondary); padding:0.5rem 0.8rem; border-radius:4px; font-size:0.9rem; margin-bottom:0.4rem; color:var(--primary);"><strong>🎯 Vị trí trọng âm từng từ:</strong> ${m.stressBreakdown}</div>` : ''}
+            <div style="font-size:0.88rem; color:var(--text-muted); line-height:1.5;"><strong>💡 Quy tắc & Phân tích:</strong> ${m.explanation}</div>
           </div>
         `).join('');
       }
