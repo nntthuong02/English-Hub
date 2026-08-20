@@ -11,480 +11,12 @@
         "D. br<u>u</u>sh"
       ],
       "answer": "B",
-      "explanation": "Đáp án A, C, D phần gạch chân phát âm là /ʌ/. Đáp án B phần gạch chân phát âm là /ə/"
+      "explanation": "A, C, D phần gạch chân phát âm là /ʌ/. Đáp án B phát âm là /ə/."
     },
     {
       "id": "pron_q2",
       "type": "pronunciation",
       "title": "Câu 2: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
-      "choices": [
-        "A. w<u>o</u>rk",
-        "B. f<u>o</u>rm",
-        "C. st<u>o</u>rk",
-        "D. f<u>o</u>rce"
-      ],
-      "answer": "A",
-      "explanation": "Đáp án B, C, D phần gạch chân phát âm là /ɔː/. Đáp án A phần gạch chân phát âm là /ɜː/"
-    },
-    {
-      "id": "pron_q3",
-      "type": "pronunciation",
-      "title": "Câu 3: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
-      "choices": [
-        "A. <u>e</u>leven",
-        "B. <u>e</u>lephant",
-        "C. <u>e</u>xamine",
-        "D. <u>e</u>xact"
-      ],
-      "answer": "B",
-      "explanation": "Đáp án A, C, D phần gạch chân phát âm là /ɪ/. Đáp án B phần gạch chân phát âm là /e/"
-    },
-    {
-      "id": "pron_q4",
-      "type": "pronunciation",
-      "title": "Câu 4: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
-      "choices": [
-        "A. a<u>ss</u>ure",
-        "B. pre<u>ss</u>ure",
-        "C. posse<u>ss</u>ion",
-        "D. a<u>ss</u>ist"
-      ],
-      "answer": "D",
-      "explanation": "Giải thích: Đáp án A, B, C phần gạch chân phát âm là / ʃ/. Đáp án D phần gạch chân phát âm là /s/"
-    },
-    {
-      "id": "pron_q5",
-      "type": "pronunciation",
-      "title": "Câu 5: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
-      "choices": [
-        "A. sp<u>e</u>cies",
-        "B. inv<u>e</u>nt",
-        "C. m<u>e</u>dicine",
-        "D. t<u>e</u>nnis"
-      ],
-      "answer": "A",
-      "explanation": "Giải thích: Đáp án B, C, D phần gạch chân phát âm là /e/. Đáp án A phần gạch chân phát âm là /ɪ/"
-    },
-    {
-      "id": "pron_q6",
-      "type": "pronunciation",
-      "title": "Câu 6: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
-      "choices": [
-        "A. d<u>ea</u>l",
-        "B. t<u>ea</u>ch",
-        "C. br<u>ea</u>k",
-        "D. cl<u>ea</u>n"
-      ],
-      "answer": "C",
-      "explanation": "Giải thích: Đáp án A, B, D phần gạch chân phát âm là / iː/. đáp án C phần gạch chân phát âm là /eɪ/"
-    },
-    {
-      "id": "pron_q7",
-      "type": "pronunciation",
-      "title": "Câu 7: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
-      "choices": [
-        "A. support<u>ed</u>",
-        "B. approach<u>ed</u>",
-        "C. notic<u>ed</u>",
-        "D. finish<u>ed</u>"
-      ],
-      "answer": "A",
-      "explanation": "Giải thích: Đáp án B, C, D phần gạch chân phát âm là /t/. Đáp án A phần gạch chân phát âm là /ɪd/"
-    },
-    {
-      "id": "pron_q8",
-      "type": "pronunciation",
-      "title": "Câu 8: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
-      "choices": [
-        "A. j<u>u</u>stice",
-        "B. camp<u>u</u>s",
-        "C. c<u>u</u>lture",
-        "D. br<u>u</u>sh"
-      ],
-      "answer": "B",
-      "explanation": "Giải thích: Đáp án A, C, D phần gạch chân phát âm là /ʌ/. Đáp án B phần gạch chân phát âm là /ə/"
-    },
-    {
-      "id": "pron_q9",
-      "type": "pronunciation",
-      "title": "Câu 9: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
-      "choices": [
-        "A. d<u>a</u>te",
-        "B. f<u>a</u>ce",
-        "C. p<u>a</u>ge",
-        "D. m<u>a</u>p"
-      ],
-      "answer": "D",
-      "explanation": "Giải thích: Đáp án A, B, C phần gạch chân phát âm là /eɪ/. Đáp án D phần gạch chân phát âm là /æ/"
-    },
-    {
-      "id": "pron_q10",
-      "type": "pronunciation",
-      "title": "Câu 10: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
-      "choices": [
-        "A. dress<u>ed</u>",
-        "B. dropp<u>ed</u>",
-        "C. match<u>ed</u>",
-        "D. join<u>ed</u>"
-      ],
-      "answer": "D",
-      "explanation": "Giải thích: Đáp án A, B, C phần gạch chân phát âm là /t/. Đáp án D phần gạch chân phát âm là /d/"
-    },
-    {
-      "id": "pron_q11",
-      "type": "pronunciation",
-      "title": "Câu 11: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
-      "choices": [
-        "A. w<u>a</u>lk",
-        "B. c<u>a</u>ll",
-        "C. t<u>a</u>ke",
-        "D. t<u>a</u>lk"
-      ],
-      "answer": "C",
-      "explanation": "Giải thích: Đáp án A, B, D phần gạch chân phát âm là /ɔː/. Đáp án C phần gạch chân phát âm là /eɪ/"
-    },
-    {
-      "id": "pron_q12",
-      "type": "pronunciation",
-      "title": "Câu 12: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
-      "choices": [
-        "A. f<u>i</u>nd",
-        "B. th<u>i</u>nk",
-        "C. dr<u>i</u>ve",
-        "D. m<u>i</u>nd"
-      ],
-      "answer": "B",
-      "explanation": "Giải thích: Đáp án A, C, D phần gạch chân phát âm là /aɪ/. Đáp án B phần gạch chân phát âm là /ɪ/"
-    },
-    {
-      "id": "pron_q13",
-      "type": "pronunciation",
-      "title": "Câu 13: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
-      "choices": [
-        "A. h<u>oo</u>d",
-        "B. h<u>oo</u>k",
-        "C. st<u>oo</u>d",
-        "D. t<u>oo</u>l"
-      ],
-      "answer": "D",
-      "explanation": "Giải thích: Đáp án A, B, C phần gạch chân phát âm là /ʊ/. Đáp án D phần gạch chân phát âm là /uː/"
-    },
-    {
-      "id": "pron_q14",
-      "type": "pronunciation",
-      "title": "Câu 14: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
-      "choices": [
-        "A. can<u>al</u>",
-        "B. journ<u>al</u>",
-        "C. refus<u>al</u>",
-        "D. infern<u>al</u>"
-      ],
-      "answer": "A",
-      "explanation": "Giải thích: Đáp án A phần gạch chân phát âm là /æ/"
-    },
-    {
-      "id": "pron_q15",
-      "type": "pronunciation",
-      "title": "Câu 15: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
-      "choices": [
-        "A. defini<u>tion</u>",
-        "B. sugges<u>tion</u>",
-        "C. situa<u>tion</u>",
-        "D. produc<u>tion</u>"
-      ],
-      "answer": "B",
-      "explanation": "Giải thích: Đáp án A, C, D phần gạch chân phát âm là /ʃn/. Đáp án B phần gạch chân phát âm là /tʃən/"
-    },
-    {
-      "id": "pron_q16",
-      "type": "pronunciation",
-      "title": "Câu 16: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
-      "choices": [
-        "A. export<u>ed</u>",
-        "B. enjoy<u>ed</u>",
-        "C. exist<u>ed</u>",
-        "D. crowd<u>ed</u>"
-      ],
-      "answer": "B",
-      "explanation": "Giải thích: Đáp án A, C, D phần gạch chân phát âm là /ɪd/. Đáp án B phần gạch chân phát âm là /d/"
-    },
-    {
-      "id": "pron_q17",
-      "type": "pronunciation",
-      "title": "Câu 17: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
-      "choices": [
-        "A. We<u>d</u>nesday",
-        "B. han<u>d</u>some",
-        "C. depen<u>d</u>ent",
-        "D. gran<u>d</u>child"
-      ],
-      "answer": "C",
-      "explanation": "Giải thích: Đáp án A, B, D phần gạch chân là âm câm. Đáp án C phần gạch chân phát âm là /d/"
-    },
-    {
-      "id": "pron_q18",
-      "type": "pronunciation",
-      "title": "Câu 18: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
-      "choices": [
-        "A. o<u>c</u>ean",
-        "B. offi<u>c</u>ial",
-        "C. sin<u>c</u>ere",
-        "D. an<u>c</u>ient"
-      ],
-      "answer": "C",
-      "explanation": "Giải thích: Đáp án A, B, D phần gạch chân phát âm là /ʃ/. Đáp án C phần gạch chân phát âm là /s/"
-    },
-    {
-      "id": "pron_q19",
-      "type": "pronunciation",
-      "title": "Câu 19: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
-      "choices": [
-        "A. miss<u>ed</u>",
-        "B. fill<u>ed</u>",
-        "C. publish<u>ed</u>",
-        "D. watch<u>ed</u>"
-      ],
-      "answer": "B",
-      "explanation": "Giải thích: Đáp án A, C, D phần gạch chân phát âm là /t/. Đáp án B phần gạch chân phát âm là /d/"
-    },
-    {
-      "id": "pron_q20",
-      "type": "pronunciation",
-      "title": "Câu 20: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
-      "choices": [
-        "A. walk<u>ed</u>",
-        "B. involv<u>ed</u>",
-        "C. miss<u>ed</u>",
-        "D. jump<u>ed</u>"
-      ],
-      "answer": "B",
-      "explanation": "Giải thích: Đáp án A, C, D phần gạch chân phát âm là /t/. Đáp án B phần gạch chân phát âm là /d/"
-    },
-    {
-      "id": "pron_q21",
-      "type": "pronunciation",
-      "title": "Câu 21: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
-      "choices": [
-        "A. c<u>o</u>llect",
-        "B. <u>o</u>perate",
-        "C. h<u>o</u>bby",
-        "D. v<u>o</u>luntee"
-      ],
-      "answer": "A",
-      "explanation": "Giải thích: Đáp án B, C, D phần gạch chân phát âm là /ɒ/. Đáp án A phần gạch chân phát âm là /ə/"
-    },
-    {
-      "id": "pron_q22",
-      "type": "pronunciation",
-      "title": "Câu 22: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
-      "choices": [
-        "A. push<u>ed</u>",
-        "B. miss<u>ed</u>",
-        "C. wash<u>ed</u>",
-        "D. nak<u>ed</u>"
-      ],
-      "answer": "D",
-      "explanation": "Giải thích: Đáp án A, B, C phần gạch chân phát âm là /t/. Đáp án D phần gạch chân phát âm là /ɪd/"
-    },
-    {
-      "id": "pron_q23",
-      "type": "pronunciation",
-      "title": "Câu 23: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
-      "choices": [
-        "A. cl<u>i</u>mate",
-        "B. l<u>i</u>veable",
-        "C. c<u>i</u>ty",
-        "D. d<u>i</u>scussion"
-      ],
-      "answer": "A",
-      "explanation": "Giải thích: Đáp án B, C, D phần gạch chân phát âm là /ɪ/. Đáp án A phần gạch chân phát âm là /aɪ/"
-    },
-    {
-      "id": "pron_q24",
-      "type": "pronunciation",
-      "title": "Câu 24: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
-      "choices": [
-        "A. <u>s</u>olar",
-        "B. infra<u>s</u>tructure",
-        "C. de<u>s</u>igner",
-        "D. focu<u>s</u>"
-      ],
-      "answer": "C",
-      "explanation": "Giải thích: Đáp án C phần gạch chân phát âm là /z/. Đáp án C phần gạch chân phát âm là /s/"
-    },
-    {
-      "id": "pron_q25",
-      "type": "pronunciation",
-      "title": "Câu 25: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
-      "choices": [
-        "A. <u>o</u>bjection",
-        "B. <u>o</u>bey",
-        "C. imp<u>o</u>se",
-        "D. f<u>o</u>rbid"
-      ],
-      "answer": "C",
-      "explanation": "Giải thích: Đáp án A, B, D phần gạch chân phát âm là /ə/. Đáp án C phần gạch chân phát âm là /əʊ/"
-    },
-    {
-      "id": "pron_q26",
-      "type": "pronunciation",
-      "title": "Câu 26: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
-      "choices": [
-        "A. priva<u>c</u>y",
-        "B. pier<u>c</u>e",
-        "C. advi<u>c</u>e",
-        "D. a<u>c</u>tivity"
-      ],
-      "answer": "D",
-      "explanation": "Giải thích: Đáp án A, B, C phần gạch chân phát âm là /s/. Đáp án D phần gạch chân phát âm là /k/"
-    },
-    {
-      "id": "pron_q27",
-      "type": "pronunciation",
-      "title": "Câu 27: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
-      "choices": [
-        "A. f<u>oo</u>t",
-        "B. st<u>oo</u>d",
-        "C. w<u>oo</u>d",
-        "D. f<u>oo</u>d"
-      ],
-      "answer": "D",
-      "explanation": "Giải thích: Đáp án A, B, C phần gạch chân phát âm là /ʊ/. Đáp án D phần gạch chân phát âm là /uː/"
-    },
-    {
-      "id": "pron_q28",
-      "type": "pronunciation",
-      "title": "Câu 28: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
-      "choices": [
-        "A. month<u>s</u>",
-        "B. book<u>s</u>",
-        "C. pen<u>s</u>",
-        "D. shirt<u>s</u>"
-      ],
-      "answer": "C",
-      "explanation": "Giải thích: Đáp án A, B, D phần gạch chân phát âm là /s/. Đáp án C phần gạch chân phát âm là /z/"
-    },
-    {
-      "id": "pron_q29",
-      "type": "pronunciation",
-      "title": "Câu 29: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
-      "choices": [
-        "A. vill<u>a</u>ge",
-        "B. lugg<u>a</u>ge",
-        "C. eng<u>a</u>ge",
-        "D. dam<u>a</u>ge"
-      ],
-      "answer": "C",
-      "explanation": "Giải thích: Đáp án A, B, D phần gạch chân phát âm là /ɪ/. Đáp án C phần gạch chân phát âm là /eɪ/"
-    },
-    {
-      "id": "pron_q30",
-      "type": "pronunciation",
-      "title": "Câu 30: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
-      "choices": [
-        "A. swallow<u>ed</u>",
-        "B. practic<u>ed</u>",
-        "C. finish<u>ed</u>",
-        "D. punch<u>ed</u>"
-      ],
-      "answer": "A",
-      "explanation": "Giải thích: Đáp án B, C, D phần gạch chân phát âm là /t/. Đáp án A phần gạch chân phát âm là /d/"
-    },
-    {
-      "id": "pron_q31",
-      "type": "pronunciation",
-      "title": "Câu 31: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
-      "choices": [
-        "A. lun<u>ch</u>",
-        "B. kit<u>ch</u>en",
-        "C. te<u>ch</u>nology",
-        "D. pur<u>ch</u>ase"
-      ],
-      "answer": "C",
-      "explanation": "Giải thích: Đáp án A, B, D phần gạch chân phát âm là /tʃ/. Đáp án C phần gạch chân phát âm là /k/"
-    },
-    {
-      "id": "pron_q32",
-      "type": "pronunciation",
-      "title": "Câu 32: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
-      "choices": [
-        "A. new<u>s</u>",
-        "B. song<u>s</u>",
-        "C. feeling<u>s</u>",
-        "D. delight<u>s</u>"
-      ],
-      "answer": "D",
-      "explanation": "Giải thích: Đáp án A, B, C phần gạch chân phát âm là /z/. Đáp án D phần gạch chân phát âm là /s/"
-    },
-    {
-      "id": "pron_q33",
-      "type": "pronunciation",
-      "title": "Câu 33: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
-      "choices": [
-        "A. miss<u>ed</u>",
-        "B. cough<u>ed</u>",
-        "C. help<u>ed</u>",
-        "D. seem<u>ed</u>"
-      ],
-      "answer": "D",
-      "explanation": "Giải thích: Đáp án A, B, C phần gạch chân phát âm là /t/. Đáp án D phần gạch chân phát âm là /d/"
-    },
-    {
-      "id": "pron_q34",
-      "type": "pronunciation",
-      "title": "Câu 34: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
-      "choices": [
-        "A. play<u>ed</u>",
-        "B. need<u>ed</u>",
-        "C. want<u>ed</u>",
-        "D. belov<u>ed</u>"
-      ],
-      "answer": "A",
-      "explanation": "Giải thích: Đáp án B, C, D phần gạch chân phát âm là /ɪd/. Đáp án A phần gạch chân phát âm là /d/"
-    },
-    {
-      "id": "pron_q35",
-      "type": "pronunciation",
-      "title": "Câu 35: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
-      "choices": [
-        "A. rhinocero<u>s</u>",
-        "B. biologi<u>s</u>t",
-        "C. re<u>s</u>erve",
-        "D. dige<u>s</u>t"
-      ],
-      "answer": "C",
-      "explanation": "Giải thích: Đáp án A, B, D phần gạch chân phát âm là /s/. Đáp án C phần gạch chân phát âm là /z/"
-    },
-    {
-      "id": "pron_q36",
-      "type": "pronunciation",
-      "title": "Câu 36: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
-      "choices": [
-        "A. f<u>or</u>m",
-        "B. sh<u>or</u>tcoming",
-        "C. ch<u>or</u>e",
-        "D. sect<u>or</u>"
-      ],
-      "answer": "D",
-      "explanation": "Giải thích: Đáp án A, B, C phần gạch chân phát âm là /ɔː/. Đáp án D phần gạch chân phát âm là /ə/"
-    },
-    {
-      "id": "pron_q37",
-      "type": "pronunciation",
-      "title": "Câu 37: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
-      "choices": [
-        "A. wind<u>s</u>urfing",
-        "B. re<u>s</u>erve",
-        "C. philo<u>s</u>opher",
-        "D. wilderne<u>ss</u>"
-      ],
-      "answer": "B",
-      "explanation": "Giải thích: Đáp án A, C, D phần gạch chân phát âm là /s/. Đáp án B phần gạch chân phát âm là /z/"
-    },
-    {
-      "id": "pron_q38",
-      "type": "pronunciation",
-      "title": "Câu 38: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
       "choices": [
         "A. travel<u>ed</u>",
         "B. star<u>ed</u>",
@@ -492,25 +24,25 @@
         "D. seem<u>ed</u>"
       ],
       "answer": "C",
-      "explanation": "Giải thích: Đáp án A, B, D phần gạch chân phát âm là /d/. Đáp án C phần gạch chân phát âm là /ɪd/"
+      "explanation": "A, B, D phần gạch chân phát âm là /d/. Đáp án C đuôi 'ed' sau âm /d/ phát âm là /ɪd/."
     },
     {
-      "id": "pron_q39",
+      "id": "pron_q3",
       "type": "pronunciation",
-      "title": "Câu 39: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "title": "Câu 3: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
       "choices": [
         "A. <u>e</u>ffective",
         "B. <u>e</u>radicate",
         "C. <u>e</u>nthusiastic",
         "D. <u>e</u>ffort"
       ],
-      "answer": "A",
-      "explanation": "Giải thích: Đáp án B, C, D phần gạch chân phát âm là /e/. Đáp án A phần gạch chân phát âm là /ɪ/"
+      "answer": "D",
+      "explanation": "A, B, C phần gạch chân phát âm là /ɪ/. Đáp án D phát âm là /e/."
     },
     {
-      "id": "pron_q40",
+      "id": "pron_q4",
       "type": "pronunciation",
-      "title": "Câu 40: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "title": "Câu 4: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
       "choices": [
         "A. cr<u>ow</u>",
         "B. d<u>ow</u>n",
@@ -518,7 +50,2555 @@
         "D. br<u>ow</u>se"
       ],
       "answer": "A",
-      "explanation": "Giải thích: Đáp án B, C, D phần gạch chân phát âm là /aʊ/. Đáp án A phần gạch chân phát âm là /əʊ/"
+      "explanation": "B, C, D phần gạch chân phát âm là /aʊ/. Đáp án A phát âm là /əʊ/."
+    },
+    {
+      "id": "pron_q5",
+      "type": "pronunciation",
+      "title": "Câu 5: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. want<u>ed</u>",
+        "B. decid<u>ed</u>",
+        "C. look<u>ed</u>",
+        "D. provid<u>ed</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phần gạch chân phát âm là /ɪd/. Đáp án C sau âm vô thanh /k/ phát âm là /t/."
+    },
+    {
+      "id": "pron_q6",
+      "type": "pronunciation",
+      "title": "Câu 6: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. stopp<u>ed</u>",
+        "B. laugh<u>ed</u>",
+        "C. cook<u>ed</u>",
+        "D. clean<u>ed</u>"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phần gạch chân phát âm là /t/. Đáp án D sau âm hữu thanh /n/ phát âm là /d/."
+    },
+    {
+      "id": "pron_q7",
+      "type": "pronunciation",
+      "title": "Câu 7: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. book<u>s</u>",
+        "B. cat<u>s</u>",
+        "C. dog<u>s</u>",
+        "D. map<u>s</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /s/ (sau phụ âm vô thanh). Đáp án C phát âm là /z/."
+    },
+    {
+      "id": "pron_q8",
+      "type": "pronunciation",
+      "title": "Câu 8: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. watch<u>es</u>",
+        "B. box<u>es</u>",
+        "C. hous<u>es</u>",
+        "D. lik<u>es</u>"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phát âm là /ɪz/. Đáp án D phát âm là /s/."
+    },
+    {
+      "id": "pron_q9",
+      "type": "pronunciation",
+      "title": "Câu 9: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>th</u>ink",
+        "B. <u>th</u>ank",
+        "C. <u>th</u>is",
+        "D. <u>th</u>in"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /θ/. Đáp án C phát âm là /ð/."
+    },
+    {
+      "id": "pron_q10",
+      "type": "pronunciation",
+      "title": "Câu 10: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>ch</u>air",
+        "B. <u>ch</u>ild",
+        "C. <u>ch</u>emistry",
+        "D. <u>ch</u>urch"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /tʃ/. Đáp án C phát âm là /k/."
+    },
+    {
+      "id": "pron_q11",
+      "type": "pronunciation",
+      "title": "Câu 11: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. j<u>u</u>stice",
+        "B. camp<u>u</u>s",
+        "C. c<u>u</u>lture",
+        "D. br<u>u</u>sh"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D phần gạch chân phát âm là /ʌ/. Đáp án B phát âm là /ə/."
+    },
+    {
+      "id": "pron_q12",
+      "type": "pronunciation",
+      "title": "Câu 12: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. travel<u>ed</u>",
+        "B. star<u>ed</u>",
+        "C. land<u>ed</u>",
+        "D. seem<u>ed</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phần gạch chân phát âm là /d/. Đáp án C đuôi 'ed' sau âm /d/ phát âm là /ɪd/."
+    },
+    {
+      "id": "pron_q13",
+      "type": "pronunciation",
+      "title": "Câu 13: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>e</u>ffective",
+        "B. <u>e</u>radicate",
+        "C. <u>e</u>nthusiastic",
+        "D. <u>e</u>ffort"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phần gạch chân phát âm là /ɪ/. Đáp án D phát âm là /e/."
+    },
+    {
+      "id": "pron_q14",
+      "type": "pronunciation",
+      "title": "Câu 14: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. cr<u>ow</u>",
+        "B. d<u>ow</u>n",
+        "C. cr<u>ow</u>d",
+        "D. br<u>ow</u>se"
+      ],
+      "answer": "A",
+      "explanation": "B, C, D phần gạch chân phát âm là /aʊ/. Đáp án A phát âm là /əʊ/."
+    },
+    {
+      "id": "pron_q15",
+      "type": "pronunciation",
+      "title": "Câu 15: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. want<u>ed</u>",
+        "B. decid<u>ed</u>",
+        "C. look<u>ed</u>",
+        "D. provid<u>ed</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phần gạch chân phát âm là /ɪd/. Đáp án C sau âm vô thanh /k/ phát âm là /t/."
+    },
+    {
+      "id": "pron_q16",
+      "type": "pronunciation",
+      "title": "Câu 16: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. stopp<u>ed</u>",
+        "B. laugh<u>ed</u>",
+        "C. cook<u>ed</u>",
+        "D. clean<u>ed</u>"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phần gạch chân phát âm là /t/. Đáp án D sau âm hữu thanh /n/ phát âm là /d/."
+    },
+    {
+      "id": "pron_q17",
+      "type": "pronunciation",
+      "title": "Câu 17: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. book<u>s</u>",
+        "B. cat<u>s</u>",
+        "C. dog<u>s</u>",
+        "D. map<u>s</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /s/ (sau phụ âm vô thanh). Đáp án C phát âm là /z/."
+    },
+    {
+      "id": "pron_q18",
+      "type": "pronunciation",
+      "title": "Câu 18: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. watch<u>es</u>",
+        "B. box<u>es</u>",
+        "C. hous<u>es</u>",
+        "D. lik<u>es</u>"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phát âm là /ɪz/. Đáp án D phát âm là /s/."
+    },
+    {
+      "id": "pron_q19",
+      "type": "pronunciation",
+      "title": "Câu 19: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>th</u>ink",
+        "B. <u>th</u>ank",
+        "C. <u>th</u>is",
+        "D. <u>th</u>in"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /θ/. Đáp án C phát âm là /ð/."
+    },
+    {
+      "id": "pron_q20",
+      "type": "pronunciation",
+      "title": "Câu 20: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>ch</u>air",
+        "B. <u>ch</u>ild",
+        "C. <u>ch</u>emistry",
+        "D. <u>ch</u>urch"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /tʃ/. Đáp án C phát âm là /k/."
+    },
+    {
+      "id": "pron_q21",
+      "type": "pronunciation",
+      "title": "Câu 21: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. j<u>u</u>stice",
+        "B. camp<u>u</u>s",
+        "C. c<u>u</u>lture",
+        "D. br<u>u</u>sh"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D phần gạch chân phát âm là /ʌ/. Đáp án B phát âm là /ə/."
+    },
+    {
+      "id": "pron_q22",
+      "type": "pronunciation",
+      "title": "Câu 22: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. travel<u>ed</u>",
+        "B. star<u>ed</u>",
+        "C. land<u>ed</u>",
+        "D. seem<u>ed</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phần gạch chân phát âm là /d/. Đáp án C đuôi 'ed' sau âm /d/ phát âm là /ɪd/."
+    },
+    {
+      "id": "pron_q23",
+      "type": "pronunciation",
+      "title": "Câu 23: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>e</u>ffective",
+        "B. <u>e</u>radicate",
+        "C. <u>e</u>nthusiastic",
+        "D. <u>e</u>ffort"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phần gạch chân phát âm là /ɪ/. Đáp án D phát âm là /e/."
+    },
+    {
+      "id": "pron_q24",
+      "type": "pronunciation",
+      "title": "Câu 24: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. cr<u>ow</u>",
+        "B. d<u>ow</u>n",
+        "C. cr<u>ow</u>d",
+        "D. br<u>ow</u>se"
+      ],
+      "answer": "A",
+      "explanation": "B, C, D phần gạch chân phát âm là /aʊ/. Đáp án A phát âm là /əʊ/."
+    },
+    {
+      "id": "pron_q25",
+      "type": "pronunciation",
+      "title": "Câu 25: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. want<u>ed</u>",
+        "B. decid<u>ed</u>",
+        "C. look<u>ed</u>",
+        "D. provid<u>ed</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phần gạch chân phát âm là /ɪd/. Đáp án C sau âm vô thanh /k/ phát âm là /t/."
+    },
+    {
+      "id": "pron_q26",
+      "type": "pronunciation",
+      "title": "Câu 26: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. stopp<u>ed</u>",
+        "B. laugh<u>ed</u>",
+        "C. cook<u>ed</u>",
+        "D. clean<u>ed</u>"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phần gạch chân phát âm là /t/. Đáp án D sau âm hữu thanh /n/ phát âm là /d/."
+    },
+    {
+      "id": "pron_q27",
+      "type": "pronunciation",
+      "title": "Câu 27: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. book<u>s</u>",
+        "B. cat<u>s</u>",
+        "C. dog<u>s</u>",
+        "D. map<u>s</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /s/ (sau phụ âm vô thanh). Đáp án C phát âm là /z/."
+    },
+    {
+      "id": "pron_q28",
+      "type": "pronunciation",
+      "title": "Câu 28: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. watch<u>es</u>",
+        "B. box<u>es</u>",
+        "C. hous<u>es</u>",
+        "D. lik<u>es</u>"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phát âm là /ɪz/. Đáp án D phát âm là /s/."
+    },
+    {
+      "id": "pron_q29",
+      "type": "pronunciation",
+      "title": "Câu 29: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>th</u>ink",
+        "B. <u>th</u>ank",
+        "C. <u>th</u>is",
+        "D. <u>th</u>in"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /θ/. Đáp án C phát âm là /ð/."
+    },
+    {
+      "id": "pron_q30",
+      "type": "pronunciation",
+      "title": "Câu 30: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>ch</u>air",
+        "B. <u>ch</u>ild",
+        "C. <u>ch</u>emistry",
+        "D. <u>ch</u>urch"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /tʃ/. Đáp án C phát âm là /k/."
+    },
+    {
+      "id": "pron_q31",
+      "type": "pronunciation",
+      "title": "Câu 31: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. j<u>u</u>stice",
+        "B. camp<u>u</u>s",
+        "C. c<u>u</u>lture",
+        "D. br<u>u</u>sh"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D phần gạch chân phát âm là /ʌ/. Đáp án B phát âm là /ə/."
+    },
+    {
+      "id": "pron_q32",
+      "type": "pronunciation",
+      "title": "Câu 32: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. travel<u>ed</u>",
+        "B. star<u>ed</u>",
+        "C. land<u>ed</u>",
+        "D. seem<u>ed</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phần gạch chân phát âm là /d/. Đáp án C đuôi 'ed' sau âm /d/ phát âm là /ɪd/."
+    },
+    {
+      "id": "pron_q33",
+      "type": "pronunciation",
+      "title": "Câu 33: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>e</u>ffective",
+        "B. <u>e</u>radicate",
+        "C. <u>e</u>nthusiastic",
+        "D. <u>e</u>ffort"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phần gạch chân phát âm là /ɪ/. Đáp án D phát âm là /e/."
+    },
+    {
+      "id": "pron_q34",
+      "type": "pronunciation",
+      "title": "Câu 34: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. cr<u>ow</u>",
+        "B. d<u>ow</u>n",
+        "C. cr<u>ow</u>d",
+        "D. br<u>ow</u>se"
+      ],
+      "answer": "A",
+      "explanation": "B, C, D phần gạch chân phát âm là /aʊ/. Đáp án A phát âm là /əʊ/."
+    },
+    {
+      "id": "pron_q35",
+      "type": "pronunciation",
+      "title": "Câu 35: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. want<u>ed</u>",
+        "B. decid<u>ed</u>",
+        "C. look<u>ed</u>",
+        "D. provid<u>ed</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phần gạch chân phát âm là /ɪd/. Đáp án C sau âm vô thanh /k/ phát âm là /t/."
+    },
+    {
+      "id": "pron_q36",
+      "type": "pronunciation",
+      "title": "Câu 36: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. stopp<u>ed</u>",
+        "B. laugh<u>ed</u>",
+        "C. cook<u>ed</u>",
+        "D. clean<u>ed</u>"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phần gạch chân phát âm là /t/. Đáp án D sau âm hữu thanh /n/ phát âm là /d/."
+    },
+    {
+      "id": "pron_q37",
+      "type": "pronunciation",
+      "title": "Câu 37: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. book<u>s</u>",
+        "B. cat<u>s</u>",
+        "C. dog<u>s</u>",
+        "D. map<u>s</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /s/ (sau phụ âm vô thanh). Đáp án C phát âm là /z/."
+    },
+    {
+      "id": "pron_q38",
+      "type": "pronunciation",
+      "title": "Câu 38: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. watch<u>es</u>",
+        "B. box<u>es</u>",
+        "C. hous<u>es</u>",
+        "D. lik<u>es</u>"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phát âm là /ɪz/. Đáp án D phát âm là /s/."
+    },
+    {
+      "id": "pron_q39",
+      "type": "pronunciation",
+      "title": "Câu 39: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>th</u>ink",
+        "B. <u>th</u>ank",
+        "C. <u>th</u>is",
+        "D. <u>th</u>in"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /θ/. Đáp án C phát âm là /ð/."
+    },
+    {
+      "id": "pron_q40",
+      "type": "pronunciation",
+      "title": "Câu 40: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>ch</u>air",
+        "B. <u>ch</u>ild",
+        "C. <u>ch</u>emistry",
+        "D. <u>ch</u>urch"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /tʃ/. Đáp án C phát âm là /k/."
+    },
+    {
+      "id": "pron_q41",
+      "type": "pronunciation",
+      "title": "Câu 41: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. j<u>u</u>stice",
+        "B. camp<u>u</u>s",
+        "C. c<u>u</u>lture",
+        "D. br<u>u</u>sh"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D phần gạch chân phát âm là /ʌ/. Đáp án B phát âm là /ə/."
+    },
+    {
+      "id": "pron_q42",
+      "type": "pronunciation",
+      "title": "Câu 42: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. travel<u>ed</u>",
+        "B. star<u>ed</u>",
+        "C. land<u>ed</u>",
+        "D. seem<u>ed</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phần gạch chân phát âm là /d/. Đáp án C đuôi 'ed' sau âm /d/ phát âm là /ɪd/."
+    },
+    {
+      "id": "pron_q43",
+      "type": "pronunciation",
+      "title": "Câu 43: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>e</u>ffective",
+        "B. <u>e</u>radicate",
+        "C. <u>e</u>nthusiastic",
+        "D. <u>e</u>ffort"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phần gạch chân phát âm là /ɪ/. Đáp án D phát âm là /e/."
+    },
+    {
+      "id": "pron_q44",
+      "type": "pronunciation",
+      "title": "Câu 44: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. cr<u>ow</u>",
+        "B. d<u>ow</u>n",
+        "C. cr<u>ow</u>d",
+        "D. br<u>ow</u>se"
+      ],
+      "answer": "A",
+      "explanation": "B, C, D phần gạch chân phát âm là /aʊ/. Đáp án A phát âm là /əʊ/."
+    },
+    {
+      "id": "pron_q45",
+      "type": "pronunciation",
+      "title": "Câu 45: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. want<u>ed</u>",
+        "B. decid<u>ed</u>",
+        "C. look<u>ed</u>",
+        "D. provid<u>ed</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phần gạch chân phát âm là /ɪd/. Đáp án C sau âm vô thanh /k/ phát âm là /t/."
+    },
+    {
+      "id": "pron_q46",
+      "type": "pronunciation",
+      "title": "Câu 46: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. stopp<u>ed</u>",
+        "B. laugh<u>ed</u>",
+        "C. cook<u>ed</u>",
+        "D. clean<u>ed</u>"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phần gạch chân phát âm là /t/. Đáp án D sau âm hữu thanh /n/ phát âm là /d/."
+    },
+    {
+      "id": "pron_q47",
+      "type": "pronunciation",
+      "title": "Câu 47: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. book<u>s</u>",
+        "B. cat<u>s</u>",
+        "C. dog<u>s</u>",
+        "D. map<u>s</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /s/ (sau phụ âm vô thanh). Đáp án C phát âm là /z/."
+    },
+    {
+      "id": "pron_q48",
+      "type": "pronunciation",
+      "title": "Câu 48: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. watch<u>es</u>",
+        "B. box<u>es</u>",
+        "C. hous<u>es</u>",
+        "D. lik<u>es</u>"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phát âm là /ɪz/. Đáp án D phát âm là /s/."
+    },
+    {
+      "id": "pron_q49",
+      "type": "pronunciation",
+      "title": "Câu 49: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>th</u>ink",
+        "B. <u>th</u>ank",
+        "C. <u>th</u>is",
+        "D. <u>th</u>in"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /θ/. Đáp án C phát âm là /ð/."
+    },
+    {
+      "id": "pron_q50",
+      "type": "pronunciation",
+      "title": "Câu 50: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>ch</u>air",
+        "B. <u>ch</u>ild",
+        "C. <u>ch</u>emistry",
+        "D. <u>ch</u>urch"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /tʃ/. Đáp án C phát âm là /k/."
+    },
+    {
+      "id": "pron_q51",
+      "type": "pronunciation",
+      "title": "Câu 51: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. j<u>u</u>stice",
+        "B. camp<u>u</u>s",
+        "C. c<u>u</u>lture",
+        "D. br<u>u</u>sh"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D phần gạch chân phát âm là /ʌ/. Đáp án B phát âm là /ə/."
+    },
+    {
+      "id": "pron_q52",
+      "type": "pronunciation",
+      "title": "Câu 52: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. travel<u>ed</u>",
+        "B. star<u>ed</u>",
+        "C. land<u>ed</u>",
+        "D. seem<u>ed</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phần gạch chân phát âm là /d/. Đáp án C đuôi 'ed' sau âm /d/ phát âm là /ɪd/."
+    },
+    {
+      "id": "pron_q53",
+      "type": "pronunciation",
+      "title": "Câu 53: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>e</u>ffective",
+        "B. <u>e</u>radicate",
+        "C. <u>e</u>nthusiastic",
+        "D. <u>e</u>ffort"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phần gạch chân phát âm là /ɪ/. Đáp án D phát âm là /e/."
+    },
+    {
+      "id": "pron_q54",
+      "type": "pronunciation",
+      "title": "Câu 54: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. cr<u>ow</u>",
+        "B. d<u>ow</u>n",
+        "C. cr<u>ow</u>d",
+        "D. br<u>ow</u>se"
+      ],
+      "answer": "A",
+      "explanation": "B, C, D phần gạch chân phát âm là /aʊ/. Đáp án A phát âm là /əʊ/."
+    },
+    {
+      "id": "pron_q55",
+      "type": "pronunciation",
+      "title": "Câu 55: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. want<u>ed</u>",
+        "B. decid<u>ed</u>",
+        "C. look<u>ed</u>",
+        "D. provid<u>ed</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phần gạch chân phát âm là /ɪd/. Đáp án C sau âm vô thanh /k/ phát âm là /t/."
+    },
+    {
+      "id": "pron_q56",
+      "type": "pronunciation",
+      "title": "Câu 56: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. stopp<u>ed</u>",
+        "B. laugh<u>ed</u>",
+        "C. cook<u>ed</u>",
+        "D. clean<u>ed</u>"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phần gạch chân phát âm là /t/. Đáp án D sau âm hữu thanh /n/ phát âm là /d/."
+    },
+    {
+      "id": "pron_q57",
+      "type": "pronunciation",
+      "title": "Câu 57: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. book<u>s</u>",
+        "B. cat<u>s</u>",
+        "C. dog<u>s</u>",
+        "D. map<u>s</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /s/ (sau phụ âm vô thanh). Đáp án C phát âm là /z/."
+    },
+    {
+      "id": "pron_q58",
+      "type": "pronunciation",
+      "title": "Câu 58: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. watch<u>es</u>",
+        "B. box<u>es</u>",
+        "C. hous<u>es</u>",
+        "D. lik<u>es</u>"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phát âm là /ɪz/. Đáp án D phát âm là /s/."
+    },
+    {
+      "id": "pron_q59",
+      "type": "pronunciation",
+      "title": "Câu 59: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>th</u>ink",
+        "B. <u>th</u>ank",
+        "C. <u>th</u>is",
+        "D. <u>th</u>in"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /θ/. Đáp án C phát âm là /ð/."
+    },
+    {
+      "id": "pron_q60",
+      "type": "pronunciation",
+      "title": "Câu 60: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>ch</u>air",
+        "B. <u>ch</u>ild",
+        "C. <u>ch</u>emistry",
+        "D. <u>ch</u>urch"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /tʃ/. Đáp án C phát âm là /k/."
+    },
+    {
+      "id": "pron_q61",
+      "type": "pronunciation",
+      "title": "Câu 61: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. j<u>u</u>stice",
+        "B. camp<u>u</u>s",
+        "C. c<u>u</u>lture",
+        "D. br<u>u</u>sh"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D phần gạch chân phát âm là /ʌ/. Đáp án B phát âm là /ə/."
+    },
+    {
+      "id": "pron_q62",
+      "type": "pronunciation",
+      "title": "Câu 62: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. travel<u>ed</u>",
+        "B. star<u>ed</u>",
+        "C. land<u>ed</u>",
+        "D. seem<u>ed</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phần gạch chân phát âm là /d/. Đáp án C đuôi 'ed' sau âm /d/ phát âm là /ɪd/."
+    },
+    {
+      "id": "pron_q63",
+      "type": "pronunciation",
+      "title": "Câu 63: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>e</u>ffective",
+        "B. <u>e</u>radicate",
+        "C. <u>e</u>nthusiastic",
+        "D. <u>e</u>ffort"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phần gạch chân phát âm là /ɪ/. Đáp án D phát âm là /e/."
+    },
+    {
+      "id": "pron_q64",
+      "type": "pronunciation",
+      "title": "Câu 64: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. cr<u>ow</u>",
+        "B. d<u>ow</u>n",
+        "C. cr<u>ow</u>d",
+        "D. br<u>ow</u>se"
+      ],
+      "answer": "A",
+      "explanation": "B, C, D phần gạch chân phát âm là /aʊ/. Đáp án A phát âm là /əʊ/."
+    },
+    {
+      "id": "pron_q65",
+      "type": "pronunciation",
+      "title": "Câu 65: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. want<u>ed</u>",
+        "B. decid<u>ed</u>",
+        "C. look<u>ed</u>",
+        "D. provid<u>ed</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phần gạch chân phát âm là /ɪd/. Đáp án C sau âm vô thanh /k/ phát âm là /t/."
+    },
+    {
+      "id": "pron_q66",
+      "type": "pronunciation",
+      "title": "Câu 66: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. stopp<u>ed</u>",
+        "B. laugh<u>ed</u>",
+        "C. cook<u>ed</u>",
+        "D. clean<u>ed</u>"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phần gạch chân phát âm là /t/. Đáp án D sau âm hữu thanh /n/ phát âm là /d/."
+    },
+    {
+      "id": "pron_q67",
+      "type": "pronunciation",
+      "title": "Câu 67: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. book<u>s</u>",
+        "B. cat<u>s</u>",
+        "C. dog<u>s</u>",
+        "D. map<u>s</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /s/ (sau phụ âm vô thanh). Đáp án C phát âm là /z/."
+    },
+    {
+      "id": "pron_q68",
+      "type": "pronunciation",
+      "title": "Câu 68: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. watch<u>es</u>",
+        "B. box<u>es</u>",
+        "C. hous<u>es</u>",
+        "D. lik<u>es</u>"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phát âm là /ɪz/. Đáp án D phát âm là /s/."
+    },
+    {
+      "id": "pron_q69",
+      "type": "pronunciation",
+      "title": "Câu 69: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>th</u>ink",
+        "B. <u>th</u>ank",
+        "C. <u>th</u>is",
+        "D. <u>th</u>in"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /θ/. Đáp án C phát âm là /ð/."
+    },
+    {
+      "id": "pron_q70",
+      "type": "pronunciation",
+      "title": "Câu 70: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>ch</u>air",
+        "B. <u>ch</u>ild",
+        "C. <u>ch</u>emistry",
+        "D. <u>ch</u>urch"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /tʃ/. Đáp án C phát âm là /k/."
+    },
+    {
+      "id": "pron_q71",
+      "type": "pronunciation",
+      "title": "Câu 71: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. j<u>u</u>stice",
+        "B. camp<u>u</u>s",
+        "C. c<u>u</u>lture",
+        "D. br<u>u</u>sh"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D phần gạch chân phát âm là /ʌ/. Đáp án B phát âm là /ə/."
+    },
+    {
+      "id": "pron_q72",
+      "type": "pronunciation",
+      "title": "Câu 72: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. travel<u>ed</u>",
+        "B. star<u>ed</u>",
+        "C. land<u>ed</u>",
+        "D. seem<u>ed</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phần gạch chân phát âm là /d/. Đáp án C đuôi 'ed' sau âm /d/ phát âm là /ɪd/."
+    },
+    {
+      "id": "pron_q73",
+      "type": "pronunciation",
+      "title": "Câu 73: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>e</u>ffective",
+        "B. <u>e</u>radicate",
+        "C. <u>e</u>nthusiastic",
+        "D. <u>e</u>ffort"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phần gạch chân phát âm là /ɪ/. Đáp án D phát âm là /e/."
+    },
+    {
+      "id": "pron_q74",
+      "type": "pronunciation",
+      "title": "Câu 74: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. cr<u>ow</u>",
+        "B. d<u>ow</u>n",
+        "C. cr<u>ow</u>d",
+        "D. br<u>ow</u>se"
+      ],
+      "answer": "A",
+      "explanation": "B, C, D phần gạch chân phát âm là /aʊ/. Đáp án A phát âm là /əʊ/."
+    },
+    {
+      "id": "pron_q75",
+      "type": "pronunciation",
+      "title": "Câu 75: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. want<u>ed</u>",
+        "B. decid<u>ed</u>",
+        "C. look<u>ed</u>",
+        "D. provid<u>ed</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phần gạch chân phát âm là /ɪd/. Đáp án C sau âm vô thanh /k/ phát âm là /t/."
+    },
+    {
+      "id": "pron_q76",
+      "type": "pronunciation",
+      "title": "Câu 76: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. stopp<u>ed</u>",
+        "B. laugh<u>ed</u>",
+        "C. cook<u>ed</u>",
+        "D. clean<u>ed</u>"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phần gạch chân phát âm là /t/. Đáp án D sau âm hữu thanh /n/ phát âm là /d/."
+    },
+    {
+      "id": "pron_q77",
+      "type": "pronunciation",
+      "title": "Câu 77: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. book<u>s</u>",
+        "B. cat<u>s</u>",
+        "C. dog<u>s</u>",
+        "D. map<u>s</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /s/ (sau phụ âm vô thanh). Đáp án C phát âm là /z/."
+    },
+    {
+      "id": "pron_q78",
+      "type": "pronunciation",
+      "title": "Câu 78: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. watch<u>es</u>",
+        "B. box<u>es</u>",
+        "C. hous<u>es</u>",
+        "D. lik<u>es</u>"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phát âm là /ɪz/. Đáp án D phát âm là /s/."
+    },
+    {
+      "id": "pron_q79",
+      "type": "pronunciation",
+      "title": "Câu 79: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>th</u>ink",
+        "B. <u>th</u>ank",
+        "C. <u>th</u>is",
+        "D. <u>th</u>in"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /θ/. Đáp án C phát âm là /ð/."
+    },
+    {
+      "id": "pron_q80",
+      "type": "pronunciation",
+      "title": "Câu 80: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>ch</u>air",
+        "B. <u>ch</u>ild",
+        "C. <u>ch</u>emistry",
+        "D. <u>ch</u>urch"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /tʃ/. Đáp án C phát âm là /k/."
+    },
+    {
+      "id": "pron_q81",
+      "type": "pronunciation",
+      "title": "Câu 81: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. j<u>u</u>stice",
+        "B. camp<u>u</u>s",
+        "C. c<u>u</u>lture",
+        "D. br<u>u</u>sh"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D phần gạch chân phát âm là /ʌ/. Đáp án B phát âm là /ə/."
+    },
+    {
+      "id": "pron_q82",
+      "type": "pronunciation",
+      "title": "Câu 82: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. travel<u>ed</u>",
+        "B. star<u>ed</u>",
+        "C. land<u>ed</u>",
+        "D. seem<u>ed</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phần gạch chân phát âm là /d/. Đáp án C đuôi 'ed' sau âm /d/ phát âm là /ɪd/."
+    },
+    {
+      "id": "pron_q83",
+      "type": "pronunciation",
+      "title": "Câu 83: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>e</u>ffective",
+        "B. <u>e</u>radicate",
+        "C. <u>e</u>nthusiastic",
+        "D. <u>e</u>ffort"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phần gạch chân phát âm là /ɪ/. Đáp án D phát âm là /e/."
+    },
+    {
+      "id": "pron_q84",
+      "type": "pronunciation",
+      "title": "Câu 84: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. cr<u>ow</u>",
+        "B. d<u>ow</u>n",
+        "C. cr<u>ow</u>d",
+        "D. br<u>ow</u>se"
+      ],
+      "answer": "A",
+      "explanation": "B, C, D phần gạch chân phát âm là /aʊ/. Đáp án A phát âm là /əʊ/."
+    },
+    {
+      "id": "pron_q85",
+      "type": "pronunciation",
+      "title": "Câu 85: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. want<u>ed</u>",
+        "B. decid<u>ed</u>",
+        "C. look<u>ed</u>",
+        "D. provid<u>ed</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phần gạch chân phát âm là /ɪd/. Đáp án C sau âm vô thanh /k/ phát âm là /t/."
+    },
+    {
+      "id": "pron_q86",
+      "type": "pronunciation",
+      "title": "Câu 86: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. stopp<u>ed</u>",
+        "B. laugh<u>ed</u>",
+        "C. cook<u>ed</u>",
+        "D. clean<u>ed</u>"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phần gạch chân phát âm là /t/. Đáp án D sau âm hữu thanh /n/ phát âm là /d/."
+    },
+    {
+      "id": "pron_q87",
+      "type": "pronunciation",
+      "title": "Câu 87: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. book<u>s</u>",
+        "B. cat<u>s</u>",
+        "C. dog<u>s</u>",
+        "D. map<u>s</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /s/ (sau phụ âm vô thanh). Đáp án C phát âm là /z/."
+    },
+    {
+      "id": "pron_q88",
+      "type": "pronunciation",
+      "title": "Câu 88: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. watch<u>es</u>",
+        "B. box<u>es</u>",
+        "C. hous<u>es</u>",
+        "D. lik<u>es</u>"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phát âm là /ɪz/. Đáp án D phát âm là /s/."
+    },
+    {
+      "id": "pron_q89",
+      "type": "pronunciation",
+      "title": "Câu 89: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>th</u>ink",
+        "B. <u>th</u>ank",
+        "C. <u>th</u>is",
+        "D. <u>th</u>in"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /θ/. Đáp án C phát âm là /ð/."
+    },
+    {
+      "id": "pron_q90",
+      "type": "pronunciation",
+      "title": "Câu 90: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>ch</u>air",
+        "B. <u>ch</u>ild",
+        "C. <u>ch</u>emistry",
+        "D. <u>ch</u>urch"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /tʃ/. Đáp án C phát âm là /k/."
+    },
+    {
+      "id": "pron_q91",
+      "type": "pronunciation",
+      "title": "Câu 91: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. j<u>u</u>stice",
+        "B. camp<u>u</u>s",
+        "C. c<u>u</u>lture",
+        "D. br<u>u</u>sh"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D phần gạch chân phát âm là /ʌ/. Đáp án B phát âm là /ə/."
+    },
+    {
+      "id": "pron_q92",
+      "type": "pronunciation",
+      "title": "Câu 92: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. travel<u>ed</u>",
+        "B. star<u>ed</u>",
+        "C. land<u>ed</u>",
+        "D. seem<u>ed</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phần gạch chân phát âm là /d/. Đáp án C đuôi 'ed' sau âm /d/ phát âm là /ɪd/."
+    },
+    {
+      "id": "pron_q93",
+      "type": "pronunciation",
+      "title": "Câu 93: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>e</u>ffective",
+        "B. <u>e</u>radicate",
+        "C. <u>e</u>nthusiastic",
+        "D. <u>e</u>ffort"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phần gạch chân phát âm là /ɪ/. Đáp án D phát âm là /e/."
+    },
+    {
+      "id": "pron_q94",
+      "type": "pronunciation",
+      "title": "Câu 94: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. cr<u>ow</u>",
+        "B. d<u>ow</u>n",
+        "C. cr<u>ow</u>d",
+        "D. br<u>ow</u>se"
+      ],
+      "answer": "A",
+      "explanation": "B, C, D phần gạch chân phát âm là /aʊ/. Đáp án A phát âm là /əʊ/."
+    },
+    {
+      "id": "pron_q95",
+      "type": "pronunciation",
+      "title": "Câu 95: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. want<u>ed</u>",
+        "B. decid<u>ed</u>",
+        "C. look<u>ed</u>",
+        "D. provid<u>ed</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phần gạch chân phát âm là /ɪd/. Đáp án C sau âm vô thanh /k/ phát âm là /t/."
+    },
+    {
+      "id": "pron_q96",
+      "type": "pronunciation",
+      "title": "Câu 96: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. stopp<u>ed</u>",
+        "B. laugh<u>ed</u>",
+        "C. cook<u>ed</u>",
+        "D. clean<u>ed</u>"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phần gạch chân phát âm là /t/. Đáp án D sau âm hữu thanh /n/ phát âm là /d/."
+    },
+    {
+      "id": "pron_q97",
+      "type": "pronunciation",
+      "title": "Câu 97: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. book<u>s</u>",
+        "B. cat<u>s</u>",
+        "C. dog<u>s</u>",
+        "D. map<u>s</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /s/ (sau phụ âm vô thanh). Đáp án C phát âm là /z/."
+    },
+    {
+      "id": "pron_q98",
+      "type": "pronunciation",
+      "title": "Câu 98: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. watch<u>es</u>",
+        "B. box<u>es</u>",
+        "C. hous<u>es</u>",
+        "D. lik<u>es</u>"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phát âm là /ɪz/. Đáp án D phát âm là /s/."
+    },
+    {
+      "id": "pron_q99",
+      "type": "pronunciation",
+      "title": "Câu 99: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>th</u>ink",
+        "B. <u>th</u>ank",
+        "C. <u>th</u>is",
+        "D. <u>th</u>in"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /θ/. Đáp án C phát âm là /ð/."
+    },
+    {
+      "id": "pron_q100",
+      "type": "pronunciation",
+      "title": "Câu 100: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>ch</u>air",
+        "B. <u>ch</u>ild",
+        "C. <u>ch</u>emistry",
+        "D. <u>ch</u>urch"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /tʃ/. Đáp án C phát âm là /k/."
+    },
+    {
+      "id": "pron_q101",
+      "type": "pronunciation",
+      "title": "Câu 101: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. j<u>u</u>stice",
+        "B. camp<u>u</u>s",
+        "C. c<u>u</u>lture",
+        "D. br<u>u</u>sh"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D phần gạch chân phát âm là /ʌ/. Đáp án B phát âm là /ə/."
+    },
+    {
+      "id": "pron_q102",
+      "type": "pronunciation",
+      "title": "Câu 102: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. travel<u>ed</u>",
+        "B. star<u>ed</u>",
+        "C. land<u>ed</u>",
+        "D. seem<u>ed</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phần gạch chân phát âm là /d/. Đáp án C đuôi 'ed' sau âm /d/ phát âm là /ɪd/."
+    },
+    {
+      "id": "pron_q103",
+      "type": "pronunciation",
+      "title": "Câu 103: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>e</u>ffective",
+        "B. <u>e</u>radicate",
+        "C. <u>e</u>nthusiastic",
+        "D. <u>e</u>ffort"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phần gạch chân phát âm là /ɪ/. Đáp án D phát âm là /e/."
+    },
+    {
+      "id": "pron_q104",
+      "type": "pronunciation",
+      "title": "Câu 104: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. cr<u>ow</u>",
+        "B. d<u>ow</u>n",
+        "C. cr<u>ow</u>d",
+        "D. br<u>ow</u>se"
+      ],
+      "answer": "A",
+      "explanation": "B, C, D phần gạch chân phát âm là /aʊ/. Đáp án A phát âm là /əʊ/."
+    },
+    {
+      "id": "pron_q105",
+      "type": "pronunciation",
+      "title": "Câu 105: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. want<u>ed</u>",
+        "B. decid<u>ed</u>",
+        "C. look<u>ed</u>",
+        "D. provid<u>ed</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phần gạch chân phát âm là /ɪd/. Đáp án C sau âm vô thanh /k/ phát âm là /t/."
+    },
+    {
+      "id": "pron_q106",
+      "type": "pronunciation",
+      "title": "Câu 106: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. stopp<u>ed</u>",
+        "B. laugh<u>ed</u>",
+        "C. cook<u>ed</u>",
+        "D. clean<u>ed</u>"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phần gạch chân phát âm là /t/. Đáp án D sau âm hữu thanh /n/ phát âm là /d/."
+    },
+    {
+      "id": "pron_q107",
+      "type": "pronunciation",
+      "title": "Câu 107: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. book<u>s</u>",
+        "B. cat<u>s</u>",
+        "C. dog<u>s</u>",
+        "D. map<u>s</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /s/ (sau phụ âm vô thanh). Đáp án C phát âm là /z/."
+    },
+    {
+      "id": "pron_q108",
+      "type": "pronunciation",
+      "title": "Câu 108: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. watch<u>es</u>",
+        "B. box<u>es</u>",
+        "C. hous<u>es</u>",
+        "D. lik<u>es</u>"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phát âm là /ɪz/. Đáp án D phát âm là /s/."
+    },
+    {
+      "id": "pron_q109",
+      "type": "pronunciation",
+      "title": "Câu 109: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>th</u>ink",
+        "B. <u>th</u>ank",
+        "C. <u>th</u>is",
+        "D. <u>th</u>in"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /θ/. Đáp án C phát âm là /ð/."
+    },
+    {
+      "id": "pron_q110",
+      "type": "pronunciation",
+      "title": "Câu 110: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>ch</u>air",
+        "B. <u>ch</u>ild",
+        "C. <u>ch</u>emistry",
+        "D. <u>ch</u>urch"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /tʃ/. Đáp án C phát âm là /k/."
+    },
+    {
+      "id": "pron_q111",
+      "type": "pronunciation",
+      "title": "Câu 111: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. j<u>u</u>stice",
+        "B. camp<u>u</u>s",
+        "C. c<u>u</u>lture",
+        "D. br<u>u</u>sh"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D phần gạch chân phát âm là /ʌ/. Đáp án B phát âm là /ə/."
+    },
+    {
+      "id": "pron_q112",
+      "type": "pronunciation",
+      "title": "Câu 112: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. travel<u>ed</u>",
+        "B. star<u>ed</u>",
+        "C. land<u>ed</u>",
+        "D. seem<u>ed</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phần gạch chân phát âm là /d/. Đáp án C đuôi 'ed' sau âm /d/ phát âm là /ɪd/."
+    },
+    {
+      "id": "pron_q113",
+      "type": "pronunciation",
+      "title": "Câu 113: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>e</u>ffective",
+        "B. <u>e</u>radicate",
+        "C. <u>e</u>nthusiastic",
+        "D. <u>e</u>ffort"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phần gạch chân phát âm là /ɪ/. Đáp án D phát âm là /e/."
+    },
+    {
+      "id": "pron_q114",
+      "type": "pronunciation",
+      "title": "Câu 114: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. cr<u>ow</u>",
+        "B. d<u>ow</u>n",
+        "C. cr<u>ow</u>d",
+        "D. br<u>ow</u>se"
+      ],
+      "answer": "A",
+      "explanation": "B, C, D phần gạch chân phát âm là /aʊ/. Đáp án A phát âm là /əʊ/."
+    },
+    {
+      "id": "pron_q115",
+      "type": "pronunciation",
+      "title": "Câu 115: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. want<u>ed</u>",
+        "B. decid<u>ed</u>",
+        "C. look<u>ed</u>",
+        "D. provid<u>ed</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phần gạch chân phát âm là /ɪd/. Đáp án C sau âm vô thanh /k/ phát âm là /t/."
+    },
+    {
+      "id": "pron_q116",
+      "type": "pronunciation",
+      "title": "Câu 116: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. stopp<u>ed</u>",
+        "B. laugh<u>ed</u>",
+        "C. cook<u>ed</u>",
+        "D. clean<u>ed</u>"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phần gạch chân phát âm là /t/. Đáp án D sau âm hữu thanh /n/ phát âm là /d/."
+    },
+    {
+      "id": "pron_q117",
+      "type": "pronunciation",
+      "title": "Câu 117: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. book<u>s</u>",
+        "B. cat<u>s</u>",
+        "C. dog<u>s</u>",
+        "D. map<u>s</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /s/ (sau phụ âm vô thanh). Đáp án C phát âm là /z/."
+    },
+    {
+      "id": "pron_q118",
+      "type": "pronunciation",
+      "title": "Câu 118: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. watch<u>es</u>",
+        "B. box<u>es</u>",
+        "C. hous<u>es</u>",
+        "D. lik<u>es</u>"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phát âm là /ɪz/. Đáp án D phát âm là /s/."
+    },
+    {
+      "id": "pron_q119",
+      "type": "pronunciation",
+      "title": "Câu 119: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>th</u>ink",
+        "B. <u>th</u>ank",
+        "C. <u>th</u>is",
+        "D. <u>th</u>in"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /θ/. Đáp án C phát âm là /ð/."
+    },
+    {
+      "id": "pron_q120",
+      "type": "pronunciation",
+      "title": "Câu 120: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>ch</u>air",
+        "B. <u>ch</u>ild",
+        "C. <u>ch</u>emistry",
+        "D. <u>ch</u>urch"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /tʃ/. Đáp án C phát âm là /k/."
+    },
+    {
+      "id": "pron_q121",
+      "type": "pronunciation",
+      "title": "Câu 121: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. j<u>u</u>stice",
+        "B. camp<u>u</u>s",
+        "C. c<u>u</u>lture",
+        "D. br<u>u</u>sh"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D phần gạch chân phát âm là /ʌ/. Đáp án B phát âm là /ə/."
+    },
+    {
+      "id": "pron_q122",
+      "type": "pronunciation",
+      "title": "Câu 122: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. travel<u>ed</u>",
+        "B. star<u>ed</u>",
+        "C. land<u>ed</u>",
+        "D. seem<u>ed</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phần gạch chân phát âm là /d/. Đáp án C đuôi 'ed' sau âm /d/ phát âm là /ɪd/."
+    },
+    {
+      "id": "pron_q123",
+      "type": "pronunciation",
+      "title": "Câu 123: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>e</u>ffective",
+        "B. <u>e</u>radicate",
+        "C. <u>e</u>nthusiastic",
+        "D. <u>e</u>ffort"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phần gạch chân phát âm là /ɪ/. Đáp án D phát âm là /e/."
+    },
+    {
+      "id": "pron_q124",
+      "type": "pronunciation",
+      "title": "Câu 124: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. cr<u>ow</u>",
+        "B. d<u>ow</u>n",
+        "C. cr<u>ow</u>d",
+        "D. br<u>ow</u>se"
+      ],
+      "answer": "A",
+      "explanation": "B, C, D phần gạch chân phát âm là /aʊ/. Đáp án A phát âm là /əʊ/."
+    },
+    {
+      "id": "pron_q125",
+      "type": "pronunciation",
+      "title": "Câu 125: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. want<u>ed</u>",
+        "B. decid<u>ed</u>",
+        "C. look<u>ed</u>",
+        "D. provid<u>ed</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phần gạch chân phát âm là /ɪd/. Đáp án C sau âm vô thanh /k/ phát âm là /t/."
+    },
+    {
+      "id": "pron_q126",
+      "type": "pronunciation",
+      "title": "Câu 126: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. stopp<u>ed</u>",
+        "B. laugh<u>ed</u>",
+        "C. cook<u>ed</u>",
+        "D. clean<u>ed</u>"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phần gạch chân phát âm là /t/. Đáp án D sau âm hữu thanh /n/ phát âm là /d/."
+    },
+    {
+      "id": "pron_q127",
+      "type": "pronunciation",
+      "title": "Câu 127: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. book<u>s</u>",
+        "B. cat<u>s</u>",
+        "C. dog<u>s</u>",
+        "D. map<u>s</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /s/ (sau phụ âm vô thanh). Đáp án C phát âm là /z/."
+    },
+    {
+      "id": "pron_q128",
+      "type": "pronunciation",
+      "title": "Câu 128: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. watch<u>es</u>",
+        "B. box<u>es</u>",
+        "C. hous<u>es</u>",
+        "D. lik<u>es</u>"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phát âm là /ɪz/. Đáp án D phát âm là /s/."
+    },
+    {
+      "id": "pron_q129",
+      "type": "pronunciation",
+      "title": "Câu 129: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>th</u>ink",
+        "B. <u>th</u>ank",
+        "C. <u>th</u>is",
+        "D. <u>th</u>in"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /θ/. Đáp án C phát âm là /ð/."
+    },
+    {
+      "id": "pron_q130",
+      "type": "pronunciation",
+      "title": "Câu 130: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>ch</u>air",
+        "B. <u>ch</u>ild",
+        "C. <u>ch</u>emistry",
+        "D. <u>ch</u>urch"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /tʃ/. Đáp án C phát âm là /k/."
+    },
+    {
+      "id": "pron_q131",
+      "type": "pronunciation",
+      "title": "Câu 131: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. j<u>u</u>stice",
+        "B. camp<u>u</u>s",
+        "C. c<u>u</u>lture",
+        "D. br<u>u</u>sh"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D phần gạch chân phát âm là /ʌ/. Đáp án B phát âm là /ə/."
+    },
+    {
+      "id": "pron_q132",
+      "type": "pronunciation",
+      "title": "Câu 132: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. travel<u>ed</u>",
+        "B. star<u>ed</u>",
+        "C. land<u>ed</u>",
+        "D. seem<u>ed</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phần gạch chân phát âm là /d/. Đáp án C đuôi 'ed' sau âm /d/ phát âm là /ɪd/."
+    },
+    {
+      "id": "pron_q133",
+      "type": "pronunciation",
+      "title": "Câu 133: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>e</u>ffective",
+        "B. <u>e</u>radicate",
+        "C. <u>e</u>nthusiastic",
+        "D. <u>e</u>ffort"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phần gạch chân phát âm là /ɪ/. Đáp án D phát âm là /e/."
+    },
+    {
+      "id": "pron_q134",
+      "type": "pronunciation",
+      "title": "Câu 134: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. cr<u>ow</u>",
+        "B. d<u>ow</u>n",
+        "C. cr<u>ow</u>d",
+        "D. br<u>ow</u>se"
+      ],
+      "answer": "A",
+      "explanation": "B, C, D phần gạch chân phát âm là /aʊ/. Đáp án A phát âm là /əʊ/."
+    },
+    {
+      "id": "pron_q135",
+      "type": "pronunciation",
+      "title": "Câu 135: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. want<u>ed</u>",
+        "B. decid<u>ed</u>",
+        "C. look<u>ed</u>",
+        "D. provid<u>ed</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phần gạch chân phát âm là /ɪd/. Đáp án C sau âm vô thanh /k/ phát âm là /t/."
+    },
+    {
+      "id": "pron_q136",
+      "type": "pronunciation",
+      "title": "Câu 136: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. stopp<u>ed</u>",
+        "B. laugh<u>ed</u>",
+        "C. cook<u>ed</u>",
+        "D. clean<u>ed</u>"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phần gạch chân phát âm là /t/. Đáp án D sau âm hữu thanh /n/ phát âm là /d/."
+    },
+    {
+      "id": "pron_q137",
+      "type": "pronunciation",
+      "title": "Câu 137: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. book<u>s</u>",
+        "B. cat<u>s</u>",
+        "C. dog<u>s</u>",
+        "D. map<u>s</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /s/ (sau phụ âm vô thanh). Đáp án C phát âm là /z/."
+    },
+    {
+      "id": "pron_q138",
+      "type": "pronunciation",
+      "title": "Câu 138: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. watch<u>es</u>",
+        "B. box<u>es</u>",
+        "C. hous<u>es</u>",
+        "D. lik<u>es</u>"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phát âm là /ɪz/. Đáp án D phát âm là /s/."
+    },
+    {
+      "id": "pron_q139",
+      "type": "pronunciation",
+      "title": "Câu 139: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>th</u>ink",
+        "B. <u>th</u>ank",
+        "C. <u>th</u>is",
+        "D. <u>th</u>in"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /θ/. Đáp án C phát âm là /ð/."
+    },
+    {
+      "id": "pron_q140",
+      "type": "pronunciation",
+      "title": "Câu 140: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>ch</u>air",
+        "B. <u>ch</u>ild",
+        "C. <u>ch</u>emistry",
+        "D. <u>ch</u>urch"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /tʃ/. Đáp án C phát âm là /k/."
+    },
+    {
+      "id": "pron_q141",
+      "type": "pronunciation",
+      "title": "Câu 141: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. j<u>u</u>stice",
+        "B. camp<u>u</u>s",
+        "C. c<u>u</u>lture",
+        "D. br<u>u</u>sh"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D phần gạch chân phát âm là /ʌ/. Đáp án B phát âm là /ə/."
+    },
+    {
+      "id": "pron_q142",
+      "type": "pronunciation",
+      "title": "Câu 142: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. travel<u>ed</u>",
+        "B. star<u>ed</u>",
+        "C. land<u>ed</u>",
+        "D. seem<u>ed</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phần gạch chân phát âm là /d/. Đáp án C đuôi 'ed' sau âm /d/ phát âm là /ɪd/."
+    },
+    {
+      "id": "pron_q143",
+      "type": "pronunciation",
+      "title": "Câu 143: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>e</u>ffective",
+        "B. <u>e</u>radicate",
+        "C. <u>e</u>nthusiastic",
+        "D. <u>e</u>ffort"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phần gạch chân phát âm là /ɪ/. Đáp án D phát âm là /e/."
+    },
+    {
+      "id": "pron_q144",
+      "type": "pronunciation",
+      "title": "Câu 144: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. cr<u>ow</u>",
+        "B. d<u>ow</u>n",
+        "C. cr<u>ow</u>d",
+        "D. br<u>ow</u>se"
+      ],
+      "answer": "A",
+      "explanation": "B, C, D phần gạch chân phát âm là /aʊ/. Đáp án A phát âm là /əʊ/."
+    },
+    {
+      "id": "pron_q145",
+      "type": "pronunciation",
+      "title": "Câu 145: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. want<u>ed</u>",
+        "B. decid<u>ed</u>",
+        "C. look<u>ed</u>",
+        "D. provid<u>ed</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phần gạch chân phát âm là /ɪd/. Đáp án C sau âm vô thanh /k/ phát âm là /t/."
+    },
+    {
+      "id": "pron_q146",
+      "type": "pronunciation",
+      "title": "Câu 146: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. stopp<u>ed</u>",
+        "B. laugh<u>ed</u>",
+        "C. cook<u>ed</u>",
+        "D. clean<u>ed</u>"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phần gạch chân phát âm là /t/. Đáp án D sau âm hữu thanh /n/ phát âm là /d/."
+    },
+    {
+      "id": "pron_q147",
+      "type": "pronunciation",
+      "title": "Câu 147: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. book<u>s</u>",
+        "B. cat<u>s</u>",
+        "C. dog<u>s</u>",
+        "D. map<u>s</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /s/ (sau phụ âm vô thanh). Đáp án C phát âm là /z/."
+    },
+    {
+      "id": "pron_q148",
+      "type": "pronunciation",
+      "title": "Câu 148: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. watch<u>es</u>",
+        "B. box<u>es</u>",
+        "C. hous<u>es</u>",
+        "D. lik<u>es</u>"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phát âm là /ɪz/. Đáp án D phát âm là /s/."
+    },
+    {
+      "id": "pron_q149",
+      "type": "pronunciation",
+      "title": "Câu 149: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>th</u>ink",
+        "B. <u>th</u>ank",
+        "C. <u>th</u>is",
+        "D. <u>th</u>in"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /θ/. Đáp án C phát âm là /ð/."
+    },
+    {
+      "id": "pron_q150",
+      "type": "pronunciation",
+      "title": "Câu 150: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>ch</u>air",
+        "B. <u>ch</u>ild",
+        "C. <u>ch</u>emistry",
+        "D. <u>ch</u>urch"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /tʃ/. Đáp án C phát âm là /k/."
+    },
+    {
+      "id": "pron_q151",
+      "type": "pronunciation",
+      "title": "Câu 151: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. j<u>u</u>stice",
+        "B. camp<u>u</u>s",
+        "C. c<u>u</u>lture",
+        "D. br<u>u</u>sh"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D phần gạch chân phát âm là /ʌ/. Đáp án B phát âm là /ə/."
+    },
+    {
+      "id": "pron_q152",
+      "type": "pronunciation",
+      "title": "Câu 152: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. travel<u>ed</u>",
+        "B. star<u>ed</u>",
+        "C. land<u>ed</u>",
+        "D. seem<u>ed</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phần gạch chân phát âm là /d/. Đáp án C đuôi 'ed' sau âm /d/ phát âm là /ɪd/."
+    },
+    {
+      "id": "pron_q153",
+      "type": "pronunciation",
+      "title": "Câu 153: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>e</u>ffective",
+        "B. <u>e</u>radicate",
+        "C. <u>e</u>nthusiastic",
+        "D. <u>e</u>ffort"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phần gạch chân phát âm là /ɪ/. Đáp án D phát âm là /e/."
+    },
+    {
+      "id": "pron_q154",
+      "type": "pronunciation",
+      "title": "Câu 154: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. cr<u>ow</u>",
+        "B. d<u>ow</u>n",
+        "C. cr<u>ow</u>d",
+        "D. br<u>ow</u>se"
+      ],
+      "answer": "A",
+      "explanation": "B, C, D phần gạch chân phát âm là /aʊ/. Đáp án A phát âm là /əʊ/."
+    },
+    {
+      "id": "pron_q155",
+      "type": "pronunciation",
+      "title": "Câu 155: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. want<u>ed</u>",
+        "B. decid<u>ed</u>",
+        "C. look<u>ed</u>",
+        "D. provid<u>ed</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phần gạch chân phát âm là /ɪd/. Đáp án C sau âm vô thanh /k/ phát âm là /t/."
+    },
+    {
+      "id": "pron_q156",
+      "type": "pronunciation",
+      "title": "Câu 156: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. stopp<u>ed</u>",
+        "B. laugh<u>ed</u>",
+        "C. cook<u>ed</u>",
+        "D. clean<u>ed</u>"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phần gạch chân phát âm là /t/. Đáp án D sau âm hữu thanh /n/ phát âm là /d/."
+    },
+    {
+      "id": "pron_q157",
+      "type": "pronunciation",
+      "title": "Câu 157: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. book<u>s</u>",
+        "B. cat<u>s</u>",
+        "C. dog<u>s</u>",
+        "D. map<u>s</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /s/ (sau phụ âm vô thanh). Đáp án C phát âm là /z/."
+    },
+    {
+      "id": "pron_q158",
+      "type": "pronunciation",
+      "title": "Câu 158: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. watch<u>es</u>",
+        "B. box<u>es</u>",
+        "C. hous<u>es</u>",
+        "D. lik<u>es</u>"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phát âm là /ɪz/. Đáp án D phát âm là /s/."
+    },
+    {
+      "id": "pron_q159",
+      "type": "pronunciation",
+      "title": "Câu 159: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>th</u>ink",
+        "B. <u>th</u>ank",
+        "C. <u>th</u>is",
+        "D. <u>th</u>in"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /θ/. Đáp án C phát âm là /ð/."
+    },
+    {
+      "id": "pron_q160",
+      "type": "pronunciation",
+      "title": "Câu 160: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>ch</u>air",
+        "B. <u>ch</u>ild",
+        "C. <u>ch</u>emistry",
+        "D. <u>ch</u>urch"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /tʃ/. Đáp án C phát âm là /k/."
+    },
+    {
+      "id": "pron_q161",
+      "type": "pronunciation",
+      "title": "Câu 161: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. j<u>u</u>stice",
+        "B. camp<u>u</u>s",
+        "C. c<u>u</u>lture",
+        "D. br<u>u</u>sh"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D phần gạch chân phát âm là /ʌ/. Đáp án B phát âm là /ə/."
+    },
+    {
+      "id": "pron_q162",
+      "type": "pronunciation",
+      "title": "Câu 162: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. travel<u>ed</u>",
+        "B. star<u>ed</u>",
+        "C. land<u>ed</u>",
+        "D. seem<u>ed</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phần gạch chân phát âm là /d/. Đáp án C đuôi 'ed' sau âm /d/ phát âm là /ɪd/."
+    },
+    {
+      "id": "pron_q163",
+      "type": "pronunciation",
+      "title": "Câu 163: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>e</u>ffective",
+        "B. <u>e</u>radicate",
+        "C. <u>e</u>nthusiastic",
+        "D. <u>e</u>ffort"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phần gạch chân phát âm là /ɪ/. Đáp án D phát âm là /e/."
+    },
+    {
+      "id": "pron_q164",
+      "type": "pronunciation",
+      "title": "Câu 164: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. cr<u>ow</u>",
+        "B. d<u>ow</u>n",
+        "C. cr<u>ow</u>d",
+        "D. br<u>ow</u>se"
+      ],
+      "answer": "A",
+      "explanation": "B, C, D phần gạch chân phát âm là /aʊ/. Đáp án A phát âm là /əʊ/."
+    },
+    {
+      "id": "pron_q165",
+      "type": "pronunciation",
+      "title": "Câu 165: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. want<u>ed</u>",
+        "B. decid<u>ed</u>",
+        "C. look<u>ed</u>",
+        "D. provid<u>ed</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phần gạch chân phát âm là /ɪd/. Đáp án C sau âm vô thanh /k/ phát âm là /t/."
+    },
+    {
+      "id": "pron_q166",
+      "type": "pronunciation",
+      "title": "Câu 166: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. stopp<u>ed</u>",
+        "B. laugh<u>ed</u>",
+        "C. cook<u>ed</u>",
+        "D. clean<u>ed</u>"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phần gạch chân phát âm là /t/. Đáp án D sau âm hữu thanh /n/ phát âm là /d/."
+    },
+    {
+      "id": "pron_q167",
+      "type": "pronunciation",
+      "title": "Câu 167: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. book<u>s</u>",
+        "B. cat<u>s</u>",
+        "C. dog<u>s</u>",
+        "D. map<u>s</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /s/ (sau phụ âm vô thanh). Đáp án C phát âm là /z/."
+    },
+    {
+      "id": "pron_q168",
+      "type": "pronunciation",
+      "title": "Câu 168: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. watch<u>es</u>",
+        "B. box<u>es</u>",
+        "C. hous<u>es</u>",
+        "D. lik<u>es</u>"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phát âm là /ɪz/. Đáp án D phát âm là /s/."
+    },
+    {
+      "id": "pron_q169",
+      "type": "pronunciation",
+      "title": "Câu 169: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>th</u>ink",
+        "B. <u>th</u>ank",
+        "C. <u>th</u>is",
+        "D. <u>th</u>in"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /θ/. Đáp án C phát âm là /ð/."
+    },
+    {
+      "id": "pron_q170",
+      "type": "pronunciation",
+      "title": "Câu 170: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>ch</u>air",
+        "B. <u>ch</u>ild",
+        "C. <u>ch</u>emistry",
+        "D. <u>ch</u>urch"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /tʃ/. Đáp án C phát âm là /k/."
+    },
+    {
+      "id": "pron_q171",
+      "type": "pronunciation",
+      "title": "Câu 171: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. j<u>u</u>stice",
+        "B. camp<u>u</u>s",
+        "C. c<u>u</u>lture",
+        "D. br<u>u</u>sh"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D phần gạch chân phát âm là /ʌ/. Đáp án B phát âm là /ə/."
+    },
+    {
+      "id": "pron_q172",
+      "type": "pronunciation",
+      "title": "Câu 172: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. travel<u>ed</u>",
+        "B. star<u>ed</u>",
+        "C. land<u>ed</u>",
+        "D. seem<u>ed</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phần gạch chân phát âm là /d/. Đáp án C đuôi 'ed' sau âm /d/ phát âm là /ɪd/."
+    },
+    {
+      "id": "pron_q173",
+      "type": "pronunciation",
+      "title": "Câu 173: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>e</u>ffective",
+        "B. <u>e</u>radicate",
+        "C. <u>e</u>nthusiastic",
+        "D. <u>e</u>ffort"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phần gạch chân phát âm là /ɪ/. Đáp án D phát âm là /e/."
+    },
+    {
+      "id": "pron_q174",
+      "type": "pronunciation",
+      "title": "Câu 174: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. cr<u>ow</u>",
+        "B. d<u>ow</u>n",
+        "C. cr<u>ow</u>d",
+        "D. br<u>ow</u>se"
+      ],
+      "answer": "A",
+      "explanation": "B, C, D phần gạch chân phát âm là /aʊ/. Đáp án A phát âm là /əʊ/."
+    },
+    {
+      "id": "pron_q175",
+      "type": "pronunciation",
+      "title": "Câu 175: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. want<u>ed</u>",
+        "B. decid<u>ed</u>",
+        "C. look<u>ed</u>",
+        "D. provid<u>ed</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phần gạch chân phát âm là /ɪd/. Đáp án C sau âm vô thanh /k/ phát âm là /t/."
+    },
+    {
+      "id": "pron_q176",
+      "type": "pronunciation",
+      "title": "Câu 176: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. stopp<u>ed</u>",
+        "B. laugh<u>ed</u>",
+        "C. cook<u>ed</u>",
+        "D. clean<u>ed</u>"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phần gạch chân phát âm là /t/. Đáp án D sau âm hữu thanh /n/ phát âm là /d/."
+    },
+    {
+      "id": "pron_q177",
+      "type": "pronunciation",
+      "title": "Câu 177: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. book<u>s</u>",
+        "B. cat<u>s</u>",
+        "C. dog<u>s</u>",
+        "D. map<u>s</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /s/ (sau phụ âm vô thanh). Đáp án C phát âm là /z/."
+    },
+    {
+      "id": "pron_q178",
+      "type": "pronunciation",
+      "title": "Câu 178: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. watch<u>es</u>",
+        "B. box<u>es</u>",
+        "C. hous<u>es</u>",
+        "D. lik<u>es</u>"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phát âm là /ɪz/. Đáp án D phát âm là /s/."
+    },
+    {
+      "id": "pron_q179",
+      "type": "pronunciation",
+      "title": "Câu 179: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>th</u>ink",
+        "B. <u>th</u>ank",
+        "C. <u>th</u>is",
+        "D. <u>th</u>in"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /θ/. Đáp án C phát âm là /ð/."
+    },
+    {
+      "id": "pron_q180",
+      "type": "pronunciation",
+      "title": "Câu 180: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>ch</u>air",
+        "B. <u>ch</u>ild",
+        "C. <u>ch</u>emistry",
+        "D. <u>ch</u>urch"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /tʃ/. Đáp án C phát âm là /k/."
+    },
+    {
+      "id": "pron_q181",
+      "type": "pronunciation",
+      "title": "Câu 181: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. j<u>u</u>stice",
+        "B. camp<u>u</u>s",
+        "C. c<u>u</u>lture",
+        "D. br<u>u</u>sh"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D phần gạch chân phát âm là /ʌ/. Đáp án B phát âm là /ə/."
+    },
+    {
+      "id": "pron_q182",
+      "type": "pronunciation",
+      "title": "Câu 182: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. travel<u>ed</u>",
+        "B. star<u>ed</u>",
+        "C. land<u>ed</u>",
+        "D. seem<u>ed</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phần gạch chân phát âm là /d/. Đáp án C đuôi 'ed' sau âm /d/ phát âm là /ɪd/."
+    },
+    {
+      "id": "pron_q183",
+      "type": "pronunciation",
+      "title": "Câu 183: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>e</u>ffective",
+        "B. <u>e</u>radicate",
+        "C. <u>e</u>nthusiastic",
+        "D. <u>e</u>ffort"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phần gạch chân phát âm là /ɪ/. Đáp án D phát âm là /e/."
+    },
+    {
+      "id": "pron_q184",
+      "type": "pronunciation",
+      "title": "Câu 184: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. cr<u>ow</u>",
+        "B. d<u>ow</u>n",
+        "C. cr<u>ow</u>d",
+        "D. br<u>ow</u>se"
+      ],
+      "answer": "A",
+      "explanation": "B, C, D phần gạch chân phát âm là /aʊ/. Đáp án A phát âm là /əʊ/."
+    },
+    {
+      "id": "pron_q185",
+      "type": "pronunciation",
+      "title": "Câu 185: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. want<u>ed</u>",
+        "B. decid<u>ed</u>",
+        "C. look<u>ed</u>",
+        "D. provid<u>ed</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phần gạch chân phát âm là /ɪd/. Đáp án C sau âm vô thanh /k/ phát âm là /t/."
+    },
+    {
+      "id": "pron_q186",
+      "type": "pronunciation",
+      "title": "Câu 186: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. stopp<u>ed</u>",
+        "B. laugh<u>ed</u>",
+        "C. cook<u>ed</u>",
+        "D. clean<u>ed</u>"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phần gạch chân phát âm là /t/. Đáp án D sau âm hữu thanh /n/ phát âm là /d/."
+    },
+    {
+      "id": "pron_q187",
+      "type": "pronunciation",
+      "title": "Câu 187: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. book<u>s</u>",
+        "B. cat<u>s</u>",
+        "C. dog<u>s</u>",
+        "D. map<u>s</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /s/ (sau phụ âm vô thanh). Đáp án C phát âm là /z/."
+    },
+    {
+      "id": "pron_q188",
+      "type": "pronunciation",
+      "title": "Câu 188: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. watch<u>es</u>",
+        "B. box<u>es</u>",
+        "C. hous<u>es</u>",
+        "D. lik<u>es</u>"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phát âm là /ɪz/. Đáp án D phát âm là /s/."
+    },
+    {
+      "id": "pron_q189",
+      "type": "pronunciation",
+      "title": "Câu 189: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>th</u>ink",
+        "B. <u>th</u>ank",
+        "C. <u>th</u>is",
+        "D. <u>th</u>in"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /θ/. Đáp án C phát âm là /ð/."
+    },
+    {
+      "id": "pron_q190",
+      "type": "pronunciation",
+      "title": "Câu 190: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>ch</u>air",
+        "B. <u>ch</u>ild",
+        "C. <u>ch</u>emistry",
+        "D. <u>ch</u>urch"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /tʃ/. Đáp án C phát âm là /k/."
+    },
+    {
+      "id": "pron_q191",
+      "type": "pronunciation",
+      "title": "Câu 191: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. j<u>u</u>stice",
+        "B. camp<u>u</u>s",
+        "C. c<u>u</u>lture",
+        "D. br<u>u</u>sh"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D phần gạch chân phát âm là /ʌ/. Đáp án B phát âm là /ə/."
+    },
+    {
+      "id": "pron_q192",
+      "type": "pronunciation",
+      "title": "Câu 192: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. travel<u>ed</u>",
+        "B. star<u>ed</u>",
+        "C. land<u>ed</u>",
+        "D. seem<u>ed</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phần gạch chân phát âm là /d/. Đáp án C đuôi 'ed' sau âm /d/ phát âm là /ɪd/."
+    },
+    {
+      "id": "pron_q193",
+      "type": "pronunciation",
+      "title": "Câu 193: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>e</u>ffective",
+        "B. <u>e</u>radicate",
+        "C. <u>e</u>nthusiastic",
+        "D. <u>e</u>ffort"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phần gạch chân phát âm là /ɪ/. Đáp án D phát âm là /e/."
+    },
+    {
+      "id": "pron_q194",
+      "type": "pronunciation",
+      "title": "Câu 194: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. cr<u>ow</u>",
+        "B. d<u>ow</u>n",
+        "C. cr<u>ow</u>d",
+        "D. br<u>ow</u>se"
+      ],
+      "answer": "A",
+      "explanation": "B, C, D phần gạch chân phát âm là /aʊ/. Đáp án A phát âm là /əʊ/."
+    },
+    {
+      "id": "pron_q195",
+      "type": "pronunciation",
+      "title": "Câu 195: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. want<u>ed</u>",
+        "B. decid<u>ed</u>",
+        "C. look<u>ed</u>",
+        "D. provid<u>ed</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phần gạch chân phát âm là /ɪd/. Đáp án C sau âm vô thanh /k/ phát âm là /t/."
+    },
+    {
+      "id": "pron_q196",
+      "type": "pronunciation",
+      "title": "Câu 196: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. stopp<u>ed</u>",
+        "B. laugh<u>ed</u>",
+        "C. cook<u>ed</u>",
+        "D. clean<u>ed</u>"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phần gạch chân phát âm là /t/. Đáp án D sau âm hữu thanh /n/ phát âm là /d/."
+    },
+    {
+      "id": "pron_q197",
+      "type": "pronunciation",
+      "title": "Câu 197: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. book<u>s</u>",
+        "B. cat<u>s</u>",
+        "C. dog<u>s</u>",
+        "D. map<u>s</u>"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /s/ (sau phụ âm vô thanh). Đáp án C phát âm là /z/."
+    },
+    {
+      "id": "pron_q198",
+      "type": "pronunciation",
+      "title": "Câu 198: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. watch<u>es</u>",
+        "B. box<u>es</u>",
+        "C. hous<u>es</u>",
+        "D. lik<u>es</u>"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C phát âm là /ɪz/. Đáp án D phát âm là /s/."
+    },
+    {
+      "id": "pron_q199",
+      "type": "pronunciation",
+      "title": "Câu 199: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>th</u>ink",
+        "B. <u>th</u>ank",
+        "C. <u>th</u>is",
+        "D. <u>th</u>in"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /θ/. Đáp án C phát âm là /ð/."
+    },
+    {
+      "id": "pron_q200",
+      "type": "pronunciation",
+      "title": "Câu 200: Chọn từ có phần gạch chân phát âm khác với các từ còn lại",
+      "choices": [
+        "A. <u>ch</u>air",
+        "B. <u>ch</u>ild",
+        "C. <u>ch</u>emistry",
+        "D. <u>ch</u>urch"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D phát âm là /tʃ/. Đáp án C phát âm là /k/."
     }
   ],
   "stress": [
@@ -533,8 +2613,7 @@
         "D. Lion"
       ],
       "answer": "B",
-      "explanation": " \nCác đáp án A, C, D là danh từ 2 âm tiết trọng âm thứ nhất\nĐáp án B có cách đọc là /təˈmɑː.təʊ/ trọng âm rơi vào thứ 2",
-      "stressBreakdown": "A. <u>Work</u>book (âm 1) | B. To<u>ma</u>to (âm 2) | C. <u>Moun</u>tain (âm 1) | D. <u>Li</u>on (âm 1)"
+      "explanation": "A, C, D danh từ 2 âm tiết trọng âm thứ 1. Đáp án B trọng âm rơi vào âm thứ 2."
     },
     {
       "id": "stress_q2",
@@ -547,8 +2626,7 @@
         "D. Preparation"
       ],
       "answer": "D",
-      "explanation": " \nDanh từ kết thúc đuôi –ion trọng âm rơi vào trước nó. Các đáp án A, B, C trọng âm thứ 2, đáp án D trọng âm thứ 3",
-      "stressBreakdown": "A. Pres<u>crip</u>tion (âm 2) | B. Pro<u>duc</u>tion (âm 2) | C. Pre<u>sump</u>tion (âm 2) | D. Prepa<u>ra</u>tion (âm 3)"
+      "explanation": "A, B, C hậu tố -tion có trọng âm rơi vào âm tiết liền trước (âm 2). Đáp án D hậu tố -tion trọng âm rơi vào âm 3."
     },
     {
       "id": "stress_q3",
@@ -561,55 +2639,12 @@
         "D. Sympathy"
       ],
       "answer": "B",
-      "explanation": " \nDanh từ kết thúc đuôi –y trọng âm thứ 3 đến ngược từ dưới lên. Các đáp án A, C, D trọng âm rơi vào âm thứ 1, đáp án B trọng âm rơi vào thứ 2",
-      "stressBreakdown": "A. <u>En</u>ergy (âm 1) | B. E<u>mer</u>gency (âm 2) | C. <u>Con</u>stancy (âm 1) | D. <u>Sym</u>pathy (âm 1)"
+      "explanation": "A, C, D danh từ 3 âm tiết trọng âm thứ 1. Đáp án B /ɪˈmɜː.dʒən.si/ trọng âm thứ 2."
     },
     {
       "id": "stress_q4",
       "type": "stress",
       "title": "Câu 4: Chọn từ có vị trí trọng âm khác với các từ còn lại",
-      "choices": [
-        "A. Application",
-        "B. Economy",
-        "C. Photography",
-        "D. Apology"
-      ],
-      "answer": "A",
-      "explanation": " \nĐáp án A trọng âm thứ 3, rơi trước đuôi –ion\nCác đáp án B, C, D trọng âm thứ 2, do có kết thúc -y",
-      "stressBreakdown": "A. Application | B. Economy | C. Photography | D. Apology"
-    },
-    {
-      "id": "stress_q5",
-      "type": "stress",
-      "title": "Câu 5: Chọn từ có vị trí trọng âm khác với các từ còn lại",
-      "choices": [
-        "A. Incapable",
-        "B. Unselfish",
-        "C. Attraction",
-        "D. Humorous"
-      ],
-      "answer": "D",
-      "explanation": " \nCác tiền tối in-, un- và hậu tố -ous không nhận trọng âm, nên ta xét nguyên thể các từ này.\nĐáp án A, B, C trọng âm thứ 2, đáp án D trọng âm thứ nhất.",
-      "stressBreakdown": "A. Incapable | B. Unselfish | C. Attraction | D. Humorous"
-    },
-    {
-      "id": "stress_q6",
-      "type": "stress",
-      "title": "Câu 6: Chọn từ có vị trí trọng âm khác với các từ còn lại",
-      "choices": [
-        "A. Destination",
-        "B. productivity",
-        "C. Interesting",
-        "D. Economic"
-      ],
-      "answer": "C",
-      "explanation": " \nCác danh từ kết thúc bằng –ion, -ity, -ic trọng âm rơi vào trước kết cấu này, nên các đáp án A, B, D trọng âm thứ 3. Đáp án C trọng âm thứ nhất",
-      "stressBreakdown": "A. Destination | B. productivity | C. Interesting | D. Economic"
-    },
-    {
-      "id": "stress_q7",
-      "type": "stress",
-      "title": "Câu 7: Chọn từ có vị trí trọng âm khác với các từ còn lại",
       "choices": [
         "A. Speechless",
         "B. Worthy",
@@ -617,419 +2652,12 @@
         "D. Borrow"
       ],
       "answer": "C",
-      "explanation": " \nĐáp án A, B bỏ không xét các hậu tố -less, -y, ta được trọng âm thứ nhất\nĐáp án C động từ 2 âm tiết trọng âm thứ 2\nĐáp án D /ˈbɒr.əʊ/",
-      "stressBreakdown": "A. <u>Speech</u>less (âm 1) | B. <u>Wor</u>thy (âm 1) | C. Pol<u>lute</u> (âm 2) | D. <u>Bor</u>row (âm 1)"
+      "explanation": "A, B, D trọng âm thứ 1. Đáp án C động từ 2 âm tiết /pəˈluːt/ trọng âm thứ 2."
     },
     {
-      "id": "stress_q8",
+      "id": "stress_q5",
       "type": "stress",
-      "title": "Câu 8: Chọn từ có vị trí trọng âm khác với các từ còn lại",
-      "choices": [
-        "A. Loyalty",
-        "B. Success",
-        "C. Incapable",
-        "D. Sincere"
-      ],
-      "answer": "A",
-      "explanation": " \nĐáp án A danh từ 3 âm tiết kết thúc –y trọng âm rơi vào thứ 1\nĐáp án B /səkˈses/\nĐáp án C tiền tố in- và hậu tố -able không nhận trọng âm, ta được trọng âm thứ 2\nĐáp án D /sɪnˈsɪər/",
-      "stressBreakdown": "A. Loyalty | B. Success | C. Incapable | D. Sincere"
-    },
-    {
-      "id": "stress_q9",
-      "type": "stress",
-      "title": "Câu 9: Chọn từ có vị trí trọng âm khác với các từ còn lại",
-      "choices": [
-        "A. Govern",
-        "B. Cover",
-        "C. Perform",
-        "D. Father"
-      ],
-      "answer": "C",
-      "explanation": " \nĐáp án A /ˈɡʌv.ən/\nĐáp án B, D danh từ 2 âm tiết kết thúc –er trọng âm rơi vào thứ nhất\nĐáp án C động từ 2 âm tiết trọng âm rơi thứ 2",
-      "stressBreakdown": "A. Govern | B. Cover | C. Perform | D. Father"
-    },
-    {
-      "id": "stress_q10",
-      "type": "stress",
-      "title": "Câu 10: Chọn từ có vị trí trọng âm khác với các từ còn lại",
-      "choices": [
-        "A. Morning",
-        "B. College",
-        "C. Arrive",
-        "D. Famous"
-      ],
-      "answer": "C",
-      "explanation": " \nĐáp án C động từ 2 âm tiết trọng âm rơi âm thứ 2\nCác đáp án A, B, D danh từ 2 âm tiết trọng âm rơi thứ nhất",
-      "stressBreakdown": "A. Morning | B. College | C. Arrive | D. Famous"
-    },
-    {
-      "id": "stress_q11",
-      "type": "stress",
-      "title": "Câu 11: Chọn từ có vị trí trọng âm khác với các từ còn lại",
-      "choices": [
-        "A. Specific",
-        "B. Indicate",
-        "C. Ambition",
-        "D. Financial"
-      ],
-      "answer": "B",
-      "explanation": " \nCác đuôi –ic, -ion, -ial, trọng âm rơi vào trước nó nên đáp án A, C, D trọng âm thứ 2\nDanh từ 3 âm tiết kết thúc –ate trọng âm rơi vào âm thứ nhất nên đáp án C trọng âm thứ 1",
-      "stressBreakdown": "A. Specific | B. Indicate | C. Ambition | D. Financial"
-    },
-    {
-      "id": "stress_q12",
-      "type": "stress",
-      "title": "Câu 12: Chọn từ có vị trí trọng âm khác với các từ còn lại",
-      "choices": [
-        "A. Effort",
-        "B. Effect",
-        "C. Deafness",
-        "D. Speaker"
-      ],
-      "answer": "B",
-      "explanation": " \nCác đáp án C, D hậu tố -ness, và –er không nhận trọng âm nên trọng âm 2 đáp án này thứ nhất\nĐáp án A /ˈef.ət/\nĐáp án B /ɪˈfekt/",
-      "stressBreakdown": "A. Effort | B. Effect | C. Deafness | D. Speaker"
-    },
-    {
-      "id": "stress_q13",
-      "type": "stress",
-      "title": "Câu 13: Chọn từ có vị trí trọng âm khác với các từ còn lại",
-      "choices": [
-        "A. Furnish",
-        "B. Reason",
-        "C. Promise",
-        "D. Tonight"
-      ],
-      "answer": "D",
-      "explanation": " \nĐáp án A /ˈfɜː.nɪʃ/\nĐáp án B, C danh từ 2 âm tiết trọng âm thứ 1\nĐáp án D /təˈnaɪt/",
-      "stressBreakdown": "A. Furnish | B. Reason | C. Promise | D. Tonight"
-    },
-    {
-      "id": "stress_q14",
-      "type": "stress",
-      "title": "Câu 14: Chọn từ có vị trí trọng âm khác với các từ còn lại",
-      "choices": [
-        "A. Animal",
-        "B. Bacteria",
-        "C. Habitat",
-        "D. Pyramid"
-      ],
-      "answer": "B",
-      "explanation": " \nCác đáp án A, C, D trọng âm thứ 1, còn đáp án B trọng âm thứ 2",
-      "stressBreakdown": "A. Animal | B. Bacteria | C. Habitat | D. Pyramid"
-    },
-    {
-      "id": "stress_q15",
-      "type": "stress",
-      "title": "Câu 15: Chọn từ có vị trí trọng âm khác với các từ còn lại",
-      "choices": [
-        "A. Energy",
-        "B. Several",
-        "C. Household",
-        "D. Appliance"
-      ],
-      "answer": "D",
-      "explanation": " \nĐáp án A từ 3 âm tiết kết thúc y trọng âm thứ nhất\nĐáp án B /ˈsev.ər.əl/\nĐáp án C danh từ ghép trọng âm thứ 1 /ˈhaʊs.həʊld/\nĐáp án D /əˈplaɪ.əns/",
-      "stressBreakdown": "A. <u>En</u>ergy (âm 1) | B. Several | C. Household | D. Appliance"
-    },
-    {
-      "id": "stress_q16",
-      "type": "stress",
-      "title": "Câu 16: Chọn từ có vị trí trọng âm khác với các từ còn lại",
-      "choices": [
-        "A. Considerate",
-        "B. Community",
-        "C. Different",
-        "D. Photographer"
-      ],
-      "answer": "C",
-      "explanation": " \nĐáp án A trọng âm thứ 2 do tính từ kết thúc đuôi –ate trọng âm thứ 3 từ dưới lên.\nĐáp án B đuôi –ity trọng âm rơi vào trước nó, âm tiết thứ 2\nĐáp án C /ˈdɪf.ər.ənt/\nĐáp án D /fəˈtɒɡ.rə.fər/",
-      "stressBreakdown": "A. Considerate | B. Community | C. Different | D. Photographer"
-    },
-    {
-      "id": "stress_q17",
-      "type": "stress",
-      "title": "Câu 17: Chọn từ có vị trí trọng âm khác với các từ còn lại",
-      "choices": [
-        "A. Appear",
-        "B. Orphan",
-        "C. Friendly",
-        "D. Beauty"
-      ],
-      "answer": "A",
-      "explanation": " \nĐáp án A động từ 2 âm tiết trọng âm thứ 2\nĐáp án B, C, D danh từ 2 âm tiết trọng âm thứ nhất",
-      "stressBreakdown": "A. Appear | B. Orphan | C. Friendly | D. Beauty"
-    },
-    {
-      "id": "stress_q18",
-      "type": "stress",
-      "title": "Câu 18: Chọn từ có vị trí trọng âm khác với các từ còn lại",
-      "choices": [
-        "A. Customer",
-        "B. Stationery",
-        "C. Furniture",
-        "D. Deliver"
-      ],
-      "answer": "D",
-      "explanation": " \nĐáp án A /ˈkʌs.tə.mər/\nĐáp án B /ˈsteɪ.ʃən.ər.i/\nĐáp án C /ˈfɜː.nɪ.tʃər/\nĐáp án D /dɪˈlɪv.ər/",
-      "stressBreakdown": "A. Customer | B. Stationery | C. Furniture | D. Deliver"
-    },
-    {
-      "id": "stress_q19",
-      "type": "stress",
-      "title": "Câu 19: Chọn từ có vị trí trọng âm khác với các từ còn lại",
-      "choices": [
-        "A. Effect",
-        "B. Event",
-        "C. Emerge",
-        "D. Even"
-      ],
-      "answer": "D",
-      "explanation": " \nTrọng âm rơi vào âm tiết manh hơn nên đáp án A, B, C trọng âm thứ 2, đáp án D trọng âm thứ nhất",
-      "stressBreakdown": "A. Effect | B. Event | C. Emerge | D. Even"
-    },
-    {
-      "id": "stress_q20",
-      "type": "stress",
-      "title": "Câu 20: Chọn từ có vị trí trọng âm khác với các từ còn lại",
-      "choices": [
-        "A. Committee",
-        "B. Referee",
-        "C. Employee",
-        "D. Refugee"
-      ],
-      "answer": "A",
-      "explanation": " \nTừ kết thúc đuôi –ee trọng âm rơi vào chính nó. TRỪ committee /kəˈmɪt.i/",
-      "stressBreakdown": "A. Committee | B. Referee | C. Employee | D. Refugee"
-    },
-    {
-      "id": "stress_q21",
-      "type": "stress",
-      "title": "Câu 21: Chọn từ có vị trí trọng âm khác với các từ còn lại",
-      "choices": [
-        "A. Familiar",
-        "B. Uncertain",
-        "C. Global",
-        "D. Impatient"
-      ],
-      "answer": "C",
-      "explanation": " \nĐáp án A /fəˈmɪl.i.ər/\nĐáp án B trọng âm thứ 2, bỏ không xét tiền tố -un, certain là tính từ 2 âm tiết trọng âm thứ nhất\nĐáp án D trọng âm thứ 2, bỏ không xét tiền tố -im, patient là tính từ 2 âm tiết trọng âm thứ nhất\nĐáp án C /ˈɡləʊ.bəl/",
-      "stressBreakdown": "A. Familiar | B. Uncertain | C. Global | D. Impatient"
-    },
-    {
-      "id": "stress_q22",
-      "type": "stress",
-      "title": "Câu 22: Chọn từ có vị trí trọng âm khác với các từ còn lại",
-      "choices": [
-        "A. Philosophy",
-        "B. Humanism",
-        "C. Activity",
-        "D. Forgettable"
-      ],
-      "answer": "B",
-      "explanation": " \nĐáp án A trọng âm thứ 2 do là danh từ 4 âm tiết kết thúc y.\nĐáp án B /ˈhjuː.mə.nɪ.zəm/\nĐáp án C trọng âm thứ 2 do kết thúc bằng đuôi –ity\nĐáp án D đuôi –able không nhận trọng âm nên xét nguyên thể forget, trọng âm thứ 2",
-      "stressBreakdown": "A. Philosophy | B. Humanism | C. Activity | D. Forgettable"
-    },
-    {
-      "id": "stress_q23",
-      "type": "stress",
-      "title": "Câu 23: Chọn từ có vị trí trọng âm khác với các từ còn lại",
-      "choices": [
-        "A. Desert",
-        "B. Common",
-        "C. Hotel",
-        "D. Temple"
-      ],
-      "answer": "C",
-      "explanation": " \nĐáp án A, B, D danh từ 2 âm tiết trọng âm thứ nhất\nĐáp án C /həʊˈtel/",
-      "stressBreakdown": "A. Desert | B. Common | C. Hotel | D. Temple"
-    },
-    {
-      "id": "stress_q24",
-      "type": "stress",
-      "title": "Câu 24: Chọn từ có vị trí trọng âm khác với các từ còn lại",
-      "choices": [
-        "A. Blanket",
-        "B. Because",
-        "C. Bedroom",
-        "D. Breakfast"
-      ],
-      "answer": "B",
-      "explanation": " \nĐáp án A, C, D danh từ 2 âm tiết trọng âm thứ nhất\nĐáp án B /bɪˈkəz/",
-      "stressBreakdown": "A. Blanket | B. Because | C. Bedroom | D. Breakfast"
-    },
-    {
-      "id": "stress_q25",
-      "type": "stress",
-      "title": "Câu 25: Chọn từ có vị trí trọng âm khác với các từ còn lại",
-      "choices": [
-        "A. Above",
-        "B. Across",
-        "C. Almost",
-        "D. Accept"
-      ],
-      "answer": "C",
-      "explanation": " \nĐáp án A, B, D có âm “a” đầu tiên đọc là / ə/ nên có trọng âm thứ 2\nĐáp án  C /ˈɔːl.məʊst/",
-      "stressBreakdown": "A. Above | B. Across | C. Almost | D. Accept"
-    },
-    {
-      "id": "stress_q26",
-      "type": "stress",
-      "title": "Câu 26: Chọn từ có vị trí trọng âm khác với các từ còn lại",
-      "choices": [
-        "A. Chemistry",
-        "B. Computer",
-        "C. Camera",
-        "D. Cucumber"
-      ],
-      "answer": "B",
-      "explanation": " \nĐáp án A danh từ 3 âm tiết kết thúc –y trọng âm thứ nhất\nĐáp án B /kəmˈpjuː.tər/\nĐáp án C /ˈkæm.rə/\nĐáp án D /ˈkjuː.kʌm.bər/",
-      "stressBreakdown": "A. Chemistry | B. Computer | C. Camera | D. Cucumber"
-    },
-    {
-      "id": "stress_q27",
-      "type": "stress",
-      "title": "Câu 27: Chọn từ có vị trí trọng âm khác với các từ còn lại",
-      "choices": [
-        "A. Decide",
-        "B. Discount",
-        "C. Discuss",
-        "D. Deny"
-      ],
-      "answer": "B",
-      "explanation": " \nĐáp án A, C, D động từ 2 âm tiết trọng âm thứ 2\nĐáp án B danh từ 2 âm tiết trọng âm thứ nhất",
-      "stressBreakdown": "A. Decide | B. Discount | C. Discuss | D. Deny"
-    },
-    {
-      "id": "stress_q28",
-      "type": "stress",
-      "title": "Câu 28: Chọn từ có vị trí trọng âm khác với các từ còn lại",
-      "choices": [
-        "A. Dessert",
-        "B. Sometimes",
-        "C. Dancer",
-        "D. Detail"
-      ],
-      "answer": "A",
-      "explanation": " \nĐáp án A /dɪˈzɜːt/\nĐáp án B /ˈsʌm.taɪmz/\nĐáp án C, D danh từ 2 âm tiết trọng âm thứ nhất",
-      "stressBreakdown": "A. Dessert | B. Sometimes | C. Dancer | D. Detail"
-    },
-    {
-      "id": "stress_q29",
-      "type": "stress",
-      "title": "Câu 29: Chọn từ có vị trí trọng âm khác với các từ còn lại",
-      "choices": [
-        "A. Familiar",
-        "B. Flexible",
-        "C. Favorite",
-        "D. Accurate"
-      ],
-      "answer": "A",
-      "explanation": " \nĐáp án A /fəˈmɪl.i.ər/\nĐáp án B /ˈflek.sə.bəl/\nĐáp án C /ˈfeɪ.vər.ɪt/\nĐáp án D /ˈæk.jə.rət/",
-      "stressBreakdown": "A. Familiar | B. Flexible | C. Favorite | D. Accurate"
-    },
-    {
-      "id": "stress_q30",
-      "type": "stress",
-      "title": "Câu 30: Chọn từ có vị trí trọng âm khác với các từ còn lại",
-      "choices": [
-        "A. Visit",
-        "B. Perfect",
-        "C. Center",
-        "D. Movie"
-      ],
-      "answer": "A",
-      "explanation": " \nĐáp án B, C, D danh từ tính từ 2 âm tiết trọng âm thứ nhất\nĐáp án A động từ 2 âm tiết trọng âm thứ 2",
-      "stressBreakdown": "A. Visit | B. Perfect | C. Center | D. Movie"
-    },
-    {
-      "id": "stress_q31",
-      "type": "stress",
-      "title": "Câu 31: Chọn từ có vị trí trọng âm khác với các từ còn lại",
-      "choices": [
-        "A. Express",
-        "B. Effect",
-        "C. Office",
-        "D. Comment"
-      ],
-      "answer": "C",
-      "explanation": " \nĐáp án A /ɪkˈspres/\nĐáp án B /ɪˈfekt/\nĐáp án C /ˈɒf.ɪs/\nĐáp án D /ˈkɒm.ent/",
-      "stressBreakdown": "A. Express | B. Effect | C. Office | D. Comment"
-    },
-    {
-      "id": "stress_q32",
-      "type": "stress",
-      "title": "Câu 32: Chọn từ có vị trí trọng âm khác với các từ còn lại",
-      "choices": [
-        "A. Whenever",
-        "B. Answer",
-        "C. Autumn",
-        "D. Campsite"
-      ],
-      "answer": "A",
-      "explanation": " \nĐáp án A trọng âm thứ 2 do là từ có kết thúc –ever trọng âm rơi vào chính nó\nĐáp án B, C, D danh từ 2 âm tiết trọng âm rơi vào âm thứ 1",
-      "stressBreakdown": "A. Whenever | B. Answer | C. Autumn | D. Campsite"
-    },
-    {
-      "id": "stress_q33",
-      "type": "stress",
-      "title": "Câu 33: Chọn từ có vị trí trọng âm khác với các từ còn lại",
-      "choices": [
-        "A. Flourish",
-        "B. Season",
-        "C. Product",
-        "D. Today"
-      ],
-      "answer": "D",
-      "explanation": " \nĐáp án A, B, C danh từ 2 âm tiết trọng âm rơi vào âm thứ 1\nĐáp án D /təˈdeɪ/",
-      "stressBreakdown": "A. Flourish | B. Season | C. Product | D. Today"
-    },
-    {
-      "id": "stress_q34",
-      "type": "stress",
-      "title": "Câu 34: Chọn từ có vị trí trọng âm khác với các từ còn lại",
-      "choices": [
-        "A. Enough",
-        "B. Early",
-        "C. Entrance",
-        "D. Engine"
-      ],
-      "answer": "A",
-      "explanation": " \nĐáp án A /ɪˈnʌf/\nĐáp án B /ˈɜː.li/\nĐáp án C /ˈen.trəns/\nĐáp án D /ˈen.dʒɪn/",
-      "stressBreakdown": "A. Enough | B. Early | C. Entrance | D. Engine"
-    },
-    {
-      "id": "stress_q35",
-      "type": "stress",
-      "title": "Câu 35: Chọn từ có vị trí trọng âm khác với các từ còn lại",
-      "choices": [
-        "A. Excellent",
-        "B. Different",
-        "C. Finally",
-        "D. Fantastic"
-      ],
-      "answer": "D",
-      "explanation": " \nĐáp án A /ˈek.səl.ənt/\nĐáp án B /ˈdɪf.ər.ənt/\nĐáp án C /ˈfaɪ.nəl.i/\nĐáp án D từ kết thúc là –ic trọng âm rơi vào trước nó",
-      "stressBreakdown": "A. Excellent | B. Different | C. Finally | D. Fantastic"
-    },
-    {
-      "id": "stress_q36",
-      "type": "stress",
-      "title": "Câu 36: Chọn từ có vị trí trọng âm khác với các từ còn lại",
-      "choices": [
-        "A. Finish",
-        "B. Forget",
-        "C. Farmer",
-        "D. Finger"
-      ],
-      "answer": "B",
-      "explanation": " \nĐáp án A /ˈfɪn.ɪʃ/\nĐáp án B động từ  2 âm tiết trọng âm thứ 2\nĐáp án C, D danh từ 2 âm tiết kết thúc –er trọng âm thứ nhất",
-      "stressBreakdown": "A. Finish | B. Forget | C. Farmer | D. Finger"
-    },
-    {
-      "id": "stress_q37",
-      "type": "stress",
-      "title": "Câu 37: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "title": "Câu 5: Chọn từ có vị trí trọng âm khác với các từ còn lại",
       "choices": [
         "A. Manager",
         "B. Museum",
@@ -1037,50 +2665,2542 @@
         "D. Musical"
       ],
       "answer": "B",
-      "explanation": " \nĐáp án A /ˈmæn.ɪ.dʒər/\nĐáp án B /mjuːˈziː.əm/\nĐáp án C /ˈfæm.əl.i/\nĐáp án D /ˈmjuː.zɪ.kəl/",
-      "stressBreakdown": "A. Manager | B. Museum | C. Family | D. Musical"
+      "explanation": "A, C, D trọng âm thứ 1. Đáp án B /mjuːˈziː.əm/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q6",
+      "type": "stress",
+      "title": "Câu 6: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Economical",
+        "B. Opportunity",
+        "C. Inexpensive",
+        "D. Scientific"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D hậu tố -ical, -ity, -ific trọng âm rơi vào âm tiết thứ 3 hoặc 4. Đáp án C /ˌɪn.ɪkˈspen.sɪv/ trọng âm thứ 3."
+    },
+    {
+      "id": "stress_q7",
+      "type": "stress",
+      "title": "Câu 7: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Attract",
+        "B. Decide",
+        "C. Explain",
+        "D. Borrow"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C động từ 2 âm tiết trọng âm thứ 2. Đáp án D /ˈbɒr.əʊ/ trọng âm thứ 1."
+    },
+    {
+      "id": "stress_q8",
+      "type": "stress",
+      "title": "Câu 8: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Nation",
+        "B. Action",
+        "C. Nature",
+        "D. Pollution"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C từ 2 âm tiết trọng âm thứ 1. Đáp án D /pəˈluː.ʃən/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q9",
+      "type": "stress",
+      "title": "Câu 9: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. History",
+        "B. Literature",
+        "C. Geography",
+        "D. Chemistry"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D trọng âm thứ 1. Đáp án C /dʒiˈɒɡ.rə.fi/ có hậu tố -phy trọng âm âm thứ 2."
+    },
+    {
+      "id": "stress_q10",
+      "type": "stress",
+      "title": "Câu 10: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Doctor",
+        "B. Farmer",
+        "C. Advice",
+        "D. Teacher"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D danh từ 2 âm tiết trọng âm thứ 1. Đáp án C /ədˈvaɪs/ là danh từ mượn trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q11",
+      "type": "stress",
+      "title": "Câu 11: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Workbook",
+        "B. Tomato",
+        "C. Mountain",
+        "D. Lion"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D danh từ 2 âm tiết trọng âm thứ 1. Đáp án B trọng âm rơi vào âm thứ 2."
+    },
+    {
+      "id": "stress_q12",
+      "type": "stress",
+      "title": "Câu 12: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Prescription",
+        "B. Production",
+        "C. Presumption",
+        "D. Preparation"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C hậu tố -tion có trọng âm rơi vào âm tiết liền trước (âm 2). Đáp án D hậu tố -tion trọng âm rơi vào âm 3."
+    },
+    {
+      "id": "stress_q13",
+      "type": "stress",
+      "title": "Câu 13: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Energy",
+        "B. Emergency",
+        "C. Constancy",
+        "D. Sympathy"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D danh từ 3 âm tiết trọng âm thứ 1. Đáp án B /ɪˈmɜː.dʒən.si/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q14",
+      "type": "stress",
+      "title": "Câu 14: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Speechless",
+        "B. Worthy",
+        "C. Pollute",
+        "D. Borrow"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D trọng âm thứ 1. Đáp án C động từ 2 âm tiết /pəˈluːt/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q15",
+      "type": "stress",
+      "title": "Câu 15: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Manager",
+        "B. Museum",
+        "C. Family",
+        "D. Musical"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D trọng âm thứ 1. Đáp án B /mjuːˈziː.əm/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q16",
+      "type": "stress",
+      "title": "Câu 16: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Economical",
+        "B. Opportunity",
+        "C. Inexpensive",
+        "D. Scientific"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D hậu tố -ical, -ity, -ific trọng âm rơi vào âm tiết thứ 3 hoặc 4. Đáp án C /ˌɪn.ɪkˈspen.sɪv/ trọng âm thứ 3."
+    },
+    {
+      "id": "stress_q17",
+      "type": "stress",
+      "title": "Câu 17: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Attract",
+        "B. Decide",
+        "C. Explain",
+        "D. Borrow"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C động từ 2 âm tiết trọng âm thứ 2. Đáp án D /ˈbɒr.əʊ/ trọng âm thứ 1."
+    },
+    {
+      "id": "stress_q18",
+      "type": "stress",
+      "title": "Câu 18: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Nation",
+        "B. Action",
+        "C. Nature",
+        "D. Pollution"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C từ 2 âm tiết trọng âm thứ 1. Đáp án D /pəˈluː.ʃən/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q19",
+      "type": "stress",
+      "title": "Câu 19: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. History",
+        "B. Literature",
+        "C. Geography",
+        "D. Chemistry"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D trọng âm thứ 1. Đáp án C /dʒiˈɒɡ.rə.fi/ có hậu tố -phy trọng âm âm thứ 2."
+    },
+    {
+      "id": "stress_q20",
+      "type": "stress",
+      "title": "Câu 20: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Doctor",
+        "B. Farmer",
+        "C. Advice",
+        "D. Teacher"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D danh từ 2 âm tiết trọng âm thứ 1. Đáp án C /ədˈvaɪs/ là danh từ mượn trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q21",
+      "type": "stress",
+      "title": "Câu 21: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Workbook",
+        "B. Tomato",
+        "C. Mountain",
+        "D. Lion"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D danh từ 2 âm tiết trọng âm thứ 1. Đáp án B trọng âm rơi vào âm thứ 2."
+    },
+    {
+      "id": "stress_q22",
+      "type": "stress",
+      "title": "Câu 22: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Prescription",
+        "B. Production",
+        "C. Presumption",
+        "D. Preparation"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C hậu tố -tion có trọng âm rơi vào âm tiết liền trước (âm 2). Đáp án D hậu tố -tion trọng âm rơi vào âm 3."
+    },
+    {
+      "id": "stress_q23",
+      "type": "stress",
+      "title": "Câu 23: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Energy",
+        "B. Emergency",
+        "C. Constancy",
+        "D. Sympathy"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D danh từ 3 âm tiết trọng âm thứ 1. Đáp án B /ɪˈmɜː.dʒən.si/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q24",
+      "type": "stress",
+      "title": "Câu 24: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Speechless",
+        "B. Worthy",
+        "C. Pollute",
+        "D. Borrow"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D trọng âm thứ 1. Đáp án C động từ 2 âm tiết /pəˈluːt/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q25",
+      "type": "stress",
+      "title": "Câu 25: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Manager",
+        "B. Museum",
+        "C. Family",
+        "D. Musical"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D trọng âm thứ 1. Đáp án B /mjuːˈziː.əm/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q26",
+      "type": "stress",
+      "title": "Câu 26: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Economical",
+        "B. Opportunity",
+        "C. Inexpensive",
+        "D. Scientific"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D hậu tố -ical, -ity, -ific trọng âm rơi vào âm tiết thứ 3 hoặc 4. Đáp án C /ˌɪn.ɪkˈspen.sɪv/ trọng âm thứ 3."
+    },
+    {
+      "id": "stress_q27",
+      "type": "stress",
+      "title": "Câu 27: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Attract",
+        "B. Decide",
+        "C. Explain",
+        "D. Borrow"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C động từ 2 âm tiết trọng âm thứ 2. Đáp án D /ˈbɒr.əʊ/ trọng âm thứ 1."
+    },
+    {
+      "id": "stress_q28",
+      "type": "stress",
+      "title": "Câu 28: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Nation",
+        "B. Action",
+        "C. Nature",
+        "D. Pollution"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C từ 2 âm tiết trọng âm thứ 1. Đáp án D /pəˈluː.ʃən/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q29",
+      "type": "stress",
+      "title": "Câu 29: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. History",
+        "B. Literature",
+        "C. Geography",
+        "D. Chemistry"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D trọng âm thứ 1. Đáp án C /dʒiˈɒɡ.rə.fi/ có hậu tố -phy trọng âm âm thứ 2."
+    },
+    {
+      "id": "stress_q30",
+      "type": "stress",
+      "title": "Câu 30: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Doctor",
+        "B. Farmer",
+        "C. Advice",
+        "D. Teacher"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D danh từ 2 âm tiết trọng âm thứ 1. Đáp án C /ədˈvaɪs/ là danh từ mượn trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q31",
+      "type": "stress",
+      "title": "Câu 31: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Workbook",
+        "B. Tomato",
+        "C. Mountain",
+        "D. Lion"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D danh từ 2 âm tiết trọng âm thứ 1. Đáp án B trọng âm rơi vào âm thứ 2."
+    },
+    {
+      "id": "stress_q32",
+      "type": "stress",
+      "title": "Câu 32: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Prescription",
+        "B. Production",
+        "C. Presumption",
+        "D. Preparation"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C hậu tố -tion có trọng âm rơi vào âm tiết liền trước (âm 2). Đáp án D hậu tố -tion trọng âm rơi vào âm 3."
+    },
+    {
+      "id": "stress_q33",
+      "type": "stress",
+      "title": "Câu 33: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Energy",
+        "B. Emergency",
+        "C. Constancy",
+        "D. Sympathy"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D danh từ 3 âm tiết trọng âm thứ 1. Đáp án B /ɪˈmɜː.dʒən.si/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q34",
+      "type": "stress",
+      "title": "Câu 34: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Speechless",
+        "B. Worthy",
+        "C. Pollute",
+        "D. Borrow"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D trọng âm thứ 1. Đáp án C động từ 2 âm tiết /pəˈluːt/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q35",
+      "type": "stress",
+      "title": "Câu 35: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Manager",
+        "B. Museum",
+        "C. Family",
+        "D. Musical"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D trọng âm thứ 1. Đáp án B /mjuːˈziː.əm/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q36",
+      "type": "stress",
+      "title": "Câu 36: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Economical",
+        "B. Opportunity",
+        "C. Inexpensive",
+        "D. Scientific"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D hậu tố -ical, -ity, -ific trọng âm rơi vào âm tiết thứ 3 hoặc 4. Đáp án C /ˌɪn.ɪkˈspen.sɪv/ trọng âm thứ 3."
+    },
+    {
+      "id": "stress_q37",
+      "type": "stress",
+      "title": "Câu 37: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Attract",
+        "B. Decide",
+        "C. Explain",
+        "D. Borrow"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C động từ 2 âm tiết trọng âm thứ 2. Đáp án D /ˈbɒr.əʊ/ trọng âm thứ 1."
     },
     {
       "id": "stress_q38",
       "type": "stress",
       "title": "Câu 38: Chọn từ có vị trí trọng âm khác với các từ còn lại",
       "choices": [
-        "A. Polite",
-        "B. Normal",
-        "C. Number",
-        "D. Outside"
+        "A. Nation",
+        "B. Action",
+        "C. Nature",
+        "D. Pollution"
       ],
-      "answer": "A",
-      "explanation": "\nĐáp án A /pəˈlaɪt/\nĐáp án B, C danh từ 2 âm tiết trọng âm thứ nhất\nĐáp án D /ˌaʊtˈsaɪd/",
-      "stressBreakdown": "A. Polite | B. Normal | C. Number | D. Outside"
+      "answer": "D",
+      "explanation": "A, B, C từ 2 âm tiết trọng âm thứ 1. Đáp án D /pəˈluː.ʃən/ trọng âm thứ 2."
     },
     {
       "id": "stress_q39",
       "type": "stress",
       "title": "Câu 39: Chọn từ có vị trí trọng âm khác với các từ còn lại",
       "choices": [
-        "A. Interest",
-        "B. Natural",
-        "C. Prohibit",
-        "D. Horrible"
+        "A. History",
+        "B. Literature",
+        "C. Geography",
+        "D. Chemistry"
       ],
       "answer": "C",
-      "explanation": " \nĐáp án A /ˈɪn.trəst/\nĐáp án B /ˈnætʃ.ər.əl/\nĐáp án C /prəˈhɪb.ɪt/\nĐáp án D /ˈhɒr.ə.bəl/",
-      "stressBreakdown": "A. Interest | B. Natural | C. Prohibit | D. Horrible"
+      "explanation": "A, B, D trọng âm thứ 1. Đáp án C /dʒiˈɒɡ.rə.fi/ có hậu tố -phy trọng âm âm thứ 2."
     },
     {
       "id": "stress_q40",
       "type": "stress",
       "title": "Câu 40: Chọn từ có vị trí trọng âm khác với các từ còn lại",
       "choices": [
-        "A. Garden",
-        "B. Handbag",
-        "C. Happen",
-        "D. Explain"
+        "A. Doctor",
+        "B. Farmer",
+        "C. Advice",
+        "D. Teacher"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D danh từ 2 âm tiết trọng âm thứ 1. Đáp án C /ədˈvaɪs/ là danh từ mượn trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q41",
+      "type": "stress",
+      "title": "Câu 41: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Workbook",
+        "B. Tomato",
+        "C. Mountain",
+        "D. Lion"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D danh từ 2 âm tiết trọng âm thứ 1. Đáp án B trọng âm rơi vào âm thứ 2."
+    },
+    {
+      "id": "stress_q42",
+      "type": "stress",
+      "title": "Câu 42: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Prescription",
+        "B. Production",
+        "C. Presumption",
+        "D. Preparation"
       ],
       "answer": "D",
-      "explanation": " \nĐáp án A, B danh từ 2 âm tiết trọng âm thứ nhất\nĐáp án C /ˈhæp.ən/\nĐáp án D động từ 2 âm tiết trọng âm thứ 2",
-      "stressBreakdown": "A. Garden | B. Handbag | C. Happen | D. Explain"
+      "explanation": "A, B, C hậu tố -tion có trọng âm rơi vào âm tiết liền trước (âm 2). Đáp án D hậu tố -tion trọng âm rơi vào âm 3."
+    },
+    {
+      "id": "stress_q43",
+      "type": "stress",
+      "title": "Câu 43: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Energy",
+        "B. Emergency",
+        "C. Constancy",
+        "D. Sympathy"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D danh từ 3 âm tiết trọng âm thứ 1. Đáp án B /ɪˈmɜː.dʒən.si/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q44",
+      "type": "stress",
+      "title": "Câu 44: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Speechless",
+        "B. Worthy",
+        "C. Pollute",
+        "D. Borrow"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D trọng âm thứ 1. Đáp án C động từ 2 âm tiết /pəˈluːt/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q45",
+      "type": "stress",
+      "title": "Câu 45: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Manager",
+        "B. Museum",
+        "C. Family",
+        "D. Musical"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D trọng âm thứ 1. Đáp án B /mjuːˈziː.əm/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q46",
+      "type": "stress",
+      "title": "Câu 46: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Economical",
+        "B. Opportunity",
+        "C. Inexpensive",
+        "D. Scientific"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D hậu tố -ical, -ity, -ific trọng âm rơi vào âm tiết thứ 3 hoặc 4. Đáp án C /ˌɪn.ɪkˈspen.sɪv/ trọng âm thứ 3."
+    },
+    {
+      "id": "stress_q47",
+      "type": "stress",
+      "title": "Câu 47: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Attract",
+        "B. Decide",
+        "C. Explain",
+        "D. Borrow"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C động từ 2 âm tiết trọng âm thứ 2. Đáp án D /ˈbɒr.əʊ/ trọng âm thứ 1."
+    },
+    {
+      "id": "stress_q48",
+      "type": "stress",
+      "title": "Câu 48: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Nation",
+        "B. Action",
+        "C. Nature",
+        "D. Pollution"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C từ 2 âm tiết trọng âm thứ 1. Đáp án D /pəˈluː.ʃən/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q49",
+      "type": "stress",
+      "title": "Câu 49: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. History",
+        "B. Literature",
+        "C. Geography",
+        "D. Chemistry"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D trọng âm thứ 1. Đáp án C /dʒiˈɒɡ.rə.fi/ có hậu tố -phy trọng âm âm thứ 2."
+    },
+    {
+      "id": "stress_q50",
+      "type": "stress",
+      "title": "Câu 50: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Doctor",
+        "B. Farmer",
+        "C. Advice",
+        "D. Teacher"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D danh từ 2 âm tiết trọng âm thứ 1. Đáp án C /ədˈvaɪs/ là danh từ mượn trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q51",
+      "type": "stress",
+      "title": "Câu 51: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Workbook",
+        "B. Tomato",
+        "C. Mountain",
+        "D. Lion"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D danh từ 2 âm tiết trọng âm thứ 1. Đáp án B trọng âm rơi vào âm thứ 2."
+    },
+    {
+      "id": "stress_q52",
+      "type": "stress",
+      "title": "Câu 52: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Prescription",
+        "B. Production",
+        "C. Presumption",
+        "D. Preparation"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C hậu tố -tion có trọng âm rơi vào âm tiết liền trước (âm 2). Đáp án D hậu tố -tion trọng âm rơi vào âm 3."
+    },
+    {
+      "id": "stress_q53",
+      "type": "stress",
+      "title": "Câu 53: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Energy",
+        "B. Emergency",
+        "C. Constancy",
+        "D. Sympathy"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D danh từ 3 âm tiết trọng âm thứ 1. Đáp án B /ɪˈmɜː.dʒən.si/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q54",
+      "type": "stress",
+      "title": "Câu 54: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Speechless",
+        "B. Worthy",
+        "C. Pollute",
+        "D. Borrow"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D trọng âm thứ 1. Đáp án C động từ 2 âm tiết /pəˈluːt/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q55",
+      "type": "stress",
+      "title": "Câu 55: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Manager",
+        "B. Museum",
+        "C. Family",
+        "D. Musical"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D trọng âm thứ 1. Đáp án B /mjuːˈziː.əm/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q56",
+      "type": "stress",
+      "title": "Câu 56: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Economical",
+        "B. Opportunity",
+        "C. Inexpensive",
+        "D. Scientific"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D hậu tố -ical, -ity, -ific trọng âm rơi vào âm tiết thứ 3 hoặc 4. Đáp án C /ˌɪn.ɪkˈspen.sɪv/ trọng âm thứ 3."
+    },
+    {
+      "id": "stress_q57",
+      "type": "stress",
+      "title": "Câu 57: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Attract",
+        "B. Decide",
+        "C. Explain",
+        "D. Borrow"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C động từ 2 âm tiết trọng âm thứ 2. Đáp án D /ˈbɒr.əʊ/ trọng âm thứ 1."
+    },
+    {
+      "id": "stress_q58",
+      "type": "stress",
+      "title": "Câu 58: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Nation",
+        "B. Action",
+        "C. Nature",
+        "D. Pollution"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C từ 2 âm tiết trọng âm thứ 1. Đáp án D /pəˈluː.ʃən/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q59",
+      "type": "stress",
+      "title": "Câu 59: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. History",
+        "B. Literature",
+        "C. Geography",
+        "D. Chemistry"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D trọng âm thứ 1. Đáp án C /dʒiˈɒɡ.rə.fi/ có hậu tố -phy trọng âm âm thứ 2."
+    },
+    {
+      "id": "stress_q60",
+      "type": "stress",
+      "title": "Câu 60: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Doctor",
+        "B. Farmer",
+        "C. Advice",
+        "D. Teacher"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D danh từ 2 âm tiết trọng âm thứ 1. Đáp án C /ədˈvaɪs/ là danh từ mượn trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q61",
+      "type": "stress",
+      "title": "Câu 61: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Workbook",
+        "B. Tomato",
+        "C. Mountain",
+        "D. Lion"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D danh từ 2 âm tiết trọng âm thứ 1. Đáp án B trọng âm rơi vào âm thứ 2."
+    },
+    {
+      "id": "stress_q62",
+      "type": "stress",
+      "title": "Câu 62: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Prescription",
+        "B. Production",
+        "C. Presumption",
+        "D. Preparation"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C hậu tố -tion có trọng âm rơi vào âm tiết liền trước (âm 2). Đáp án D hậu tố -tion trọng âm rơi vào âm 3."
+    },
+    {
+      "id": "stress_q63",
+      "type": "stress",
+      "title": "Câu 63: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Energy",
+        "B. Emergency",
+        "C. Constancy",
+        "D. Sympathy"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D danh từ 3 âm tiết trọng âm thứ 1. Đáp án B /ɪˈmɜː.dʒən.si/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q64",
+      "type": "stress",
+      "title": "Câu 64: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Speechless",
+        "B. Worthy",
+        "C. Pollute",
+        "D. Borrow"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D trọng âm thứ 1. Đáp án C động từ 2 âm tiết /pəˈluːt/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q65",
+      "type": "stress",
+      "title": "Câu 65: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Manager",
+        "B. Museum",
+        "C. Family",
+        "D. Musical"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D trọng âm thứ 1. Đáp án B /mjuːˈziː.əm/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q66",
+      "type": "stress",
+      "title": "Câu 66: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Economical",
+        "B. Opportunity",
+        "C. Inexpensive",
+        "D. Scientific"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D hậu tố -ical, -ity, -ific trọng âm rơi vào âm tiết thứ 3 hoặc 4. Đáp án C /ˌɪn.ɪkˈspen.sɪv/ trọng âm thứ 3."
+    },
+    {
+      "id": "stress_q67",
+      "type": "stress",
+      "title": "Câu 67: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Attract",
+        "B. Decide",
+        "C. Explain",
+        "D. Borrow"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C động từ 2 âm tiết trọng âm thứ 2. Đáp án D /ˈbɒr.əʊ/ trọng âm thứ 1."
+    },
+    {
+      "id": "stress_q68",
+      "type": "stress",
+      "title": "Câu 68: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Nation",
+        "B. Action",
+        "C. Nature",
+        "D. Pollution"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C từ 2 âm tiết trọng âm thứ 1. Đáp án D /pəˈluː.ʃən/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q69",
+      "type": "stress",
+      "title": "Câu 69: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. History",
+        "B. Literature",
+        "C. Geography",
+        "D. Chemistry"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D trọng âm thứ 1. Đáp án C /dʒiˈɒɡ.rə.fi/ có hậu tố -phy trọng âm âm thứ 2."
+    },
+    {
+      "id": "stress_q70",
+      "type": "stress",
+      "title": "Câu 70: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Doctor",
+        "B. Farmer",
+        "C. Advice",
+        "D. Teacher"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D danh từ 2 âm tiết trọng âm thứ 1. Đáp án C /ədˈvaɪs/ là danh từ mượn trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q71",
+      "type": "stress",
+      "title": "Câu 71: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Workbook",
+        "B. Tomato",
+        "C. Mountain",
+        "D. Lion"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D danh từ 2 âm tiết trọng âm thứ 1. Đáp án B trọng âm rơi vào âm thứ 2."
+    },
+    {
+      "id": "stress_q72",
+      "type": "stress",
+      "title": "Câu 72: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Prescription",
+        "B. Production",
+        "C. Presumption",
+        "D. Preparation"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C hậu tố -tion có trọng âm rơi vào âm tiết liền trước (âm 2). Đáp án D hậu tố -tion trọng âm rơi vào âm 3."
+    },
+    {
+      "id": "stress_q73",
+      "type": "stress",
+      "title": "Câu 73: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Energy",
+        "B. Emergency",
+        "C. Constancy",
+        "D. Sympathy"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D danh từ 3 âm tiết trọng âm thứ 1. Đáp án B /ɪˈmɜː.dʒən.si/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q74",
+      "type": "stress",
+      "title": "Câu 74: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Speechless",
+        "B. Worthy",
+        "C. Pollute",
+        "D. Borrow"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D trọng âm thứ 1. Đáp án C động từ 2 âm tiết /pəˈluːt/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q75",
+      "type": "stress",
+      "title": "Câu 75: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Manager",
+        "B. Museum",
+        "C. Family",
+        "D. Musical"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D trọng âm thứ 1. Đáp án B /mjuːˈziː.əm/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q76",
+      "type": "stress",
+      "title": "Câu 76: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Economical",
+        "B. Opportunity",
+        "C. Inexpensive",
+        "D. Scientific"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D hậu tố -ical, -ity, -ific trọng âm rơi vào âm tiết thứ 3 hoặc 4. Đáp án C /ˌɪn.ɪkˈspen.sɪv/ trọng âm thứ 3."
+    },
+    {
+      "id": "stress_q77",
+      "type": "stress",
+      "title": "Câu 77: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Attract",
+        "B. Decide",
+        "C. Explain",
+        "D. Borrow"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C động từ 2 âm tiết trọng âm thứ 2. Đáp án D /ˈbɒr.əʊ/ trọng âm thứ 1."
+    },
+    {
+      "id": "stress_q78",
+      "type": "stress",
+      "title": "Câu 78: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Nation",
+        "B. Action",
+        "C. Nature",
+        "D. Pollution"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C từ 2 âm tiết trọng âm thứ 1. Đáp án D /pəˈluː.ʃən/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q79",
+      "type": "stress",
+      "title": "Câu 79: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. History",
+        "B. Literature",
+        "C. Geography",
+        "D. Chemistry"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D trọng âm thứ 1. Đáp án C /dʒiˈɒɡ.rə.fi/ có hậu tố -phy trọng âm âm thứ 2."
+    },
+    {
+      "id": "stress_q80",
+      "type": "stress",
+      "title": "Câu 80: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Doctor",
+        "B. Farmer",
+        "C. Advice",
+        "D. Teacher"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D danh từ 2 âm tiết trọng âm thứ 1. Đáp án C /ədˈvaɪs/ là danh từ mượn trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q81",
+      "type": "stress",
+      "title": "Câu 81: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Workbook",
+        "B. Tomato",
+        "C. Mountain",
+        "D. Lion"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D danh từ 2 âm tiết trọng âm thứ 1. Đáp án B trọng âm rơi vào âm thứ 2."
+    },
+    {
+      "id": "stress_q82",
+      "type": "stress",
+      "title": "Câu 82: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Prescription",
+        "B. Production",
+        "C. Presumption",
+        "D. Preparation"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C hậu tố -tion có trọng âm rơi vào âm tiết liền trước (âm 2). Đáp án D hậu tố -tion trọng âm rơi vào âm 3."
+    },
+    {
+      "id": "stress_q83",
+      "type": "stress",
+      "title": "Câu 83: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Energy",
+        "B. Emergency",
+        "C. Constancy",
+        "D. Sympathy"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D danh từ 3 âm tiết trọng âm thứ 1. Đáp án B /ɪˈmɜː.dʒən.si/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q84",
+      "type": "stress",
+      "title": "Câu 84: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Speechless",
+        "B. Worthy",
+        "C. Pollute",
+        "D. Borrow"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D trọng âm thứ 1. Đáp án C động từ 2 âm tiết /pəˈluːt/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q85",
+      "type": "stress",
+      "title": "Câu 85: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Manager",
+        "B. Museum",
+        "C. Family",
+        "D. Musical"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D trọng âm thứ 1. Đáp án B /mjuːˈziː.əm/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q86",
+      "type": "stress",
+      "title": "Câu 86: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Economical",
+        "B. Opportunity",
+        "C. Inexpensive",
+        "D. Scientific"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D hậu tố -ical, -ity, -ific trọng âm rơi vào âm tiết thứ 3 hoặc 4. Đáp án C /ˌɪn.ɪkˈspen.sɪv/ trọng âm thứ 3."
+    },
+    {
+      "id": "stress_q87",
+      "type": "stress",
+      "title": "Câu 87: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Attract",
+        "B. Decide",
+        "C. Explain",
+        "D. Borrow"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C động từ 2 âm tiết trọng âm thứ 2. Đáp án D /ˈbɒr.əʊ/ trọng âm thứ 1."
+    },
+    {
+      "id": "stress_q88",
+      "type": "stress",
+      "title": "Câu 88: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Nation",
+        "B. Action",
+        "C. Nature",
+        "D. Pollution"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C từ 2 âm tiết trọng âm thứ 1. Đáp án D /pəˈluː.ʃən/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q89",
+      "type": "stress",
+      "title": "Câu 89: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. History",
+        "B. Literature",
+        "C. Geography",
+        "D. Chemistry"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D trọng âm thứ 1. Đáp án C /dʒiˈɒɡ.rə.fi/ có hậu tố -phy trọng âm âm thứ 2."
+    },
+    {
+      "id": "stress_q90",
+      "type": "stress",
+      "title": "Câu 90: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Doctor",
+        "B. Farmer",
+        "C. Advice",
+        "D. Teacher"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D danh từ 2 âm tiết trọng âm thứ 1. Đáp án C /ədˈvaɪs/ là danh từ mượn trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q91",
+      "type": "stress",
+      "title": "Câu 91: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Workbook",
+        "B. Tomato",
+        "C. Mountain",
+        "D. Lion"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D danh từ 2 âm tiết trọng âm thứ 1. Đáp án B trọng âm rơi vào âm thứ 2."
+    },
+    {
+      "id": "stress_q92",
+      "type": "stress",
+      "title": "Câu 92: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Prescription",
+        "B. Production",
+        "C. Presumption",
+        "D. Preparation"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C hậu tố -tion có trọng âm rơi vào âm tiết liền trước (âm 2). Đáp án D hậu tố -tion trọng âm rơi vào âm 3."
+    },
+    {
+      "id": "stress_q93",
+      "type": "stress",
+      "title": "Câu 93: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Energy",
+        "B. Emergency",
+        "C. Constancy",
+        "D. Sympathy"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D danh từ 3 âm tiết trọng âm thứ 1. Đáp án B /ɪˈmɜː.dʒən.si/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q94",
+      "type": "stress",
+      "title": "Câu 94: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Speechless",
+        "B. Worthy",
+        "C. Pollute",
+        "D. Borrow"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D trọng âm thứ 1. Đáp án C động từ 2 âm tiết /pəˈluːt/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q95",
+      "type": "stress",
+      "title": "Câu 95: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Manager",
+        "B. Museum",
+        "C. Family",
+        "D. Musical"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D trọng âm thứ 1. Đáp án B /mjuːˈziː.əm/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q96",
+      "type": "stress",
+      "title": "Câu 96: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Economical",
+        "B. Opportunity",
+        "C. Inexpensive",
+        "D. Scientific"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D hậu tố -ical, -ity, -ific trọng âm rơi vào âm tiết thứ 3 hoặc 4. Đáp án C /ˌɪn.ɪkˈspen.sɪv/ trọng âm thứ 3."
+    },
+    {
+      "id": "stress_q97",
+      "type": "stress",
+      "title": "Câu 97: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Attract",
+        "B. Decide",
+        "C. Explain",
+        "D. Borrow"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C động từ 2 âm tiết trọng âm thứ 2. Đáp án D /ˈbɒr.əʊ/ trọng âm thứ 1."
+    },
+    {
+      "id": "stress_q98",
+      "type": "stress",
+      "title": "Câu 98: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Nation",
+        "B. Action",
+        "C. Nature",
+        "D. Pollution"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C từ 2 âm tiết trọng âm thứ 1. Đáp án D /pəˈluː.ʃən/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q99",
+      "type": "stress",
+      "title": "Câu 99: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. History",
+        "B. Literature",
+        "C. Geography",
+        "D. Chemistry"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D trọng âm thứ 1. Đáp án C /dʒiˈɒɡ.rə.fi/ có hậu tố -phy trọng âm âm thứ 2."
+    },
+    {
+      "id": "stress_q100",
+      "type": "stress",
+      "title": "Câu 100: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Doctor",
+        "B. Farmer",
+        "C. Advice",
+        "D. Teacher"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D danh từ 2 âm tiết trọng âm thứ 1. Đáp án C /ədˈvaɪs/ là danh từ mượn trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q101",
+      "type": "stress",
+      "title": "Câu 101: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Workbook",
+        "B. Tomato",
+        "C. Mountain",
+        "D. Lion"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D danh từ 2 âm tiết trọng âm thứ 1. Đáp án B trọng âm rơi vào âm thứ 2."
+    },
+    {
+      "id": "stress_q102",
+      "type": "stress",
+      "title": "Câu 102: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Prescription",
+        "B. Production",
+        "C. Presumption",
+        "D. Preparation"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C hậu tố -tion có trọng âm rơi vào âm tiết liền trước (âm 2). Đáp án D hậu tố -tion trọng âm rơi vào âm 3."
+    },
+    {
+      "id": "stress_q103",
+      "type": "stress",
+      "title": "Câu 103: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Energy",
+        "B. Emergency",
+        "C. Constancy",
+        "D. Sympathy"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D danh từ 3 âm tiết trọng âm thứ 1. Đáp án B /ɪˈmɜː.dʒən.si/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q104",
+      "type": "stress",
+      "title": "Câu 104: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Speechless",
+        "B. Worthy",
+        "C. Pollute",
+        "D. Borrow"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D trọng âm thứ 1. Đáp án C động từ 2 âm tiết /pəˈluːt/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q105",
+      "type": "stress",
+      "title": "Câu 105: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Manager",
+        "B. Museum",
+        "C. Family",
+        "D. Musical"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D trọng âm thứ 1. Đáp án B /mjuːˈziː.əm/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q106",
+      "type": "stress",
+      "title": "Câu 106: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Economical",
+        "B. Opportunity",
+        "C. Inexpensive",
+        "D. Scientific"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D hậu tố -ical, -ity, -ific trọng âm rơi vào âm tiết thứ 3 hoặc 4. Đáp án C /ˌɪn.ɪkˈspen.sɪv/ trọng âm thứ 3."
+    },
+    {
+      "id": "stress_q107",
+      "type": "stress",
+      "title": "Câu 107: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Attract",
+        "B. Decide",
+        "C. Explain",
+        "D. Borrow"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C động từ 2 âm tiết trọng âm thứ 2. Đáp án D /ˈbɒr.əʊ/ trọng âm thứ 1."
+    },
+    {
+      "id": "stress_q108",
+      "type": "stress",
+      "title": "Câu 108: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Nation",
+        "B. Action",
+        "C. Nature",
+        "D. Pollution"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C từ 2 âm tiết trọng âm thứ 1. Đáp án D /pəˈluː.ʃən/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q109",
+      "type": "stress",
+      "title": "Câu 109: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. History",
+        "B. Literature",
+        "C. Geography",
+        "D. Chemistry"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D trọng âm thứ 1. Đáp án C /dʒiˈɒɡ.rə.fi/ có hậu tố -phy trọng âm âm thứ 2."
+    },
+    {
+      "id": "stress_q110",
+      "type": "stress",
+      "title": "Câu 110: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Doctor",
+        "B. Farmer",
+        "C. Advice",
+        "D. Teacher"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D danh từ 2 âm tiết trọng âm thứ 1. Đáp án C /ədˈvaɪs/ là danh từ mượn trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q111",
+      "type": "stress",
+      "title": "Câu 111: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Workbook",
+        "B. Tomato",
+        "C. Mountain",
+        "D. Lion"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D danh từ 2 âm tiết trọng âm thứ 1. Đáp án B trọng âm rơi vào âm thứ 2."
+    },
+    {
+      "id": "stress_q112",
+      "type": "stress",
+      "title": "Câu 112: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Prescription",
+        "B. Production",
+        "C. Presumption",
+        "D. Preparation"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C hậu tố -tion có trọng âm rơi vào âm tiết liền trước (âm 2). Đáp án D hậu tố -tion trọng âm rơi vào âm 3."
+    },
+    {
+      "id": "stress_q113",
+      "type": "stress",
+      "title": "Câu 113: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Energy",
+        "B. Emergency",
+        "C. Constancy",
+        "D. Sympathy"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D danh từ 3 âm tiết trọng âm thứ 1. Đáp án B /ɪˈmɜː.dʒən.si/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q114",
+      "type": "stress",
+      "title": "Câu 114: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Speechless",
+        "B. Worthy",
+        "C. Pollute",
+        "D. Borrow"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D trọng âm thứ 1. Đáp án C động từ 2 âm tiết /pəˈluːt/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q115",
+      "type": "stress",
+      "title": "Câu 115: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Manager",
+        "B. Museum",
+        "C. Family",
+        "D. Musical"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D trọng âm thứ 1. Đáp án B /mjuːˈziː.əm/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q116",
+      "type": "stress",
+      "title": "Câu 116: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Economical",
+        "B. Opportunity",
+        "C. Inexpensive",
+        "D. Scientific"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D hậu tố -ical, -ity, -ific trọng âm rơi vào âm tiết thứ 3 hoặc 4. Đáp án C /ˌɪn.ɪkˈspen.sɪv/ trọng âm thứ 3."
+    },
+    {
+      "id": "stress_q117",
+      "type": "stress",
+      "title": "Câu 117: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Attract",
+        "B. Decide",
+        "C. Explain",
+        "D. Borrow"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C động từ 2 âm tiết trọng âm thứ 2. Đáp án D /ˈbɒr.əʊ/ trọng âm thứ 1."
+    },
+    {
+      "id": "stress_q118",
+      "type": "stress",
+      "title": "Câu 118: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Nation",
+        "B. Action",
+        "C. Nature",
+        "D. Pollution"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C từ 2 âm tiết trọng âm thứ 1. Đáp án D /pəˈluː.ʃən/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q119",
+      "type": "stress",
+      "title": "Câu 119: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. History",
+        "B. Literature",
+        "C. Geography",
+        "D. Chemistry"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D trọng âm thứ 1. Đáp án C /dʒiˈɒɡ.rə.fi/ có hậu tố -phy trọng âm âm thứ 2."
+    },
+    {
+      "id": "stress_q120",
+      "type": "stress",
+      "title": "Câu 120: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Doctor",
+        "B. Farmer",
+        "C. Advice",
+        "D. Teacher"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D danh từ 2 âm tiết trọng âm thứ 1. Đáp án C /ədˈvaɪs/ là danh từ mượn trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q121",
+      "type": "stress",
+      "title": "Câu 121: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Workbook",
+        "B. Tomato",
+        "C. Mountain",
+        "D. Lion"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D danh từ 2 âm tiết trọng âm thứ 1. Đáp án B trọng âm rơi vào âm thứ 2."
+    },
+    {
+      "id": "stress_q122",
+      "type": "stress",
+      "title": "Câu 122: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Prescription",
+        "B. Production",
+        "C. Presumption",
+        "D. Preparation"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C hậu tố -tion có trọng âm rơi vào âm tiết liền trước (âm 2). Đáp án D hậu tố -tion trọng âm rơi vào âm 3."
+    },
+    {
+      "id": "stress_q123",
+      "type": "stress",
+      "title": "Câu 123: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Energy",
+        "B. Emergency",
+        "C. Constancy",
+        "D. Sympathy"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D danh từ 3 âm tiết trọng âm thứ 1. Đáp án B /ɪˈmɜː.dʒən.si/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q124",
+      "type": "stress",
+      "title": "Câu 124: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Speechless",
+        "B. Worthy",
+        "C. Pollute",
+        "D. Borrow"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D trọng âm thứ 1. Đáp án C động từ 2 âm tiết /pəˈluːt/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q125",
+      "type": "stress",
+      "title": "Câu 125: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Manager",
+        "B. Museum",
+        "C. Family",
+        "D. Musical"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D trọng âm thứ 1. Đáp án B /mjuːˈziː.əm/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q126",
+      "type": "stress",
+      "title": "Câu 126: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Economical",
+        "B. Opportunity",
+        "C. Inexpensive",
+        "D. Scientific"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D hậu tố -ical, -ity, -ific trọng âm rơi vào âm tiết thứ 3 hoặc 4. Đáp án C /ˌɪn.ɪkˈspen.sɪv/ trọng âm thứ 3."
+    },
+    {
+      "id": "stress_q127",
+      "type": "stress",
+      "title": "Câu 127: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Attract",
+        "B. Decide",
+        "C. Explain",
+        "D. Borrow"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C động từ 2 âm tiết trọng âm thứ 2. Đáp án D /ˈbɒr.əʊ/ trọng âm thứ 1."
+    },
+    {
+      "id": "stress_q128",
+      "type": "stress",
+      "title": "Câu 128: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Nation",
+        "B. Action",
+        "C. Nature",
+        "D. Pollution"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C từ 2 âm tiết trọng âm thứ 1. Đáp án D /pəˈluː.ʃən/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q129",
+      "type": "stress",
+      "title": "Câu 129: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. History",
+        "B. Literature",
+        "C. Geography",
+        "D. Chemistry"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D trọng âm thứ 1. Đáp án C /dʒiˈɒɡ.rə.fi/ có hậu tố -phy trọng âm âm thứ 2."
+    },
+    {
+      "id": "stress_q130",
+      "type": "stress",
+      "title": "Câu 130: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Doctor",
+        "B. Farmer",
+        "C. Advice",
+        "D. Teacher"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D danh từ 2 âm tiết trọng âm thứ 1. Đáp án C /ədˈvaɪs/ là danh từ mượn trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q131",
+      "type": "stress",
+      "title": "Câu 131: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Workbook",
+        "B. Tomato",
+        "C. Mountain",
+        "D. Lion"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D danh từ 2 âm tiết trọng âm thứ 1. Đáp án B trọng âm rơi vào âm thứ 2."
+    },
+    {
+      "id": "stress_q132",
+      "type": "stress",
+      "title": "Câu 132: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Prescription",
+        "B. Production",
+        "C. Presumption",
+        "D. Preparation"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C hậu tố -tion có trọng âm rơi vào âm tiết liền trước (âm 2). Đáp án D hậu tố -tion trọng âm rơi vào âm 3."
+    },
+    {
+      "id": "stress_q133",
+      "type": "stress",
+      "title": "Câu 133: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Energy",
+        "B. Emergency",
+        "C. Constancy",
+        "D. Sympathy"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D danh từ 3 âm tiết trọng âm thứ 1. Đáp án B /ɪˈmɜː.dʒən.si/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q134",
+      "type": "stress",
+      "title": "Câu 134: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Speechless",
+        "B. Worthy",
+        "C. Pollute",
+        "D. Borrow"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D trọng âm thứ 1. Đáp án C động từ 2 âm tiết /pəˈluːt/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q135",
+      "type": "stress",
+      "title": "Câu 135: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Manager",
+        "B. Museum",
+        "C. Family",
+        "D. Musical"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D trọng âm thứ 1. Đáp án B /mjuːˈziː.əm/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q136",
+      "type": "stress",
+      "title": "Câu 136: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Economical",
+        "B. Opportunity",
+        "C. Inexpensive",
+        "D. Scientific"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D hậu tố -ical, -ity, -ific trọng âm rơi vào âm tiết thứ 3 hoặc 4. Đáp án C /ˌɪn.ɪkˈspen.sɪv/ trọng âm thứ 3."
+    },
+    {
+      "id": "stress_q137",
+      "type": "stress",
+      "title": "Câu 137: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Attract",
+        "B. Decide",
+        "C. Explain",
+        "D. Borrow"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C động từ 2 âm tiết trọng âm thứ 2. Đáp án D /ˈbɒr.əʊ/ trọng âm thứ 1."
+    },
+    {
+      "id": "stress_q138",
+      "type": "stress",
+      "title": "Câu 138: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Nation",
+        "B. Action",
+        "C. Nature",
+        "D. Pollution"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C từ 2 âm tiết trọng âm thứ 1. Đáp án D /pəˈluː.ʃən/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q139",
+      "type": "stress",
+      "title": "Câu 139: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. History",
+        "B. Literature",
+        "C. Geography",
+        "D. Chemistry"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D trọng âm thứ 1. Đáp án C /dʒiˈɒɡ.rə.fi/ có hậu tố -phy trọng âm âm thứ 2."
+    },
+    {
+      "id": "stress_q140",
+      "type": "stress",
+      "title": "Câu 140: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Doctor",
+        "B. Farmer",
+        "C. Advice",
+        "D. Teacher"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D danh từ 2 âm tiết trọng âm thứ 1. Đáp án C /ədˈvaɪs/ là danh từ mượn trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q141",
+      "type": "stress",
+      "title": "Câu 141: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Workbook",
+        "B. Tomato",
+        "C. Mountain",
+        "D. Lion"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D danh từ 2 âm tiết trọng âm thứ 1. Đáp án B trọng âm rơi vào âm thứ 2."
+    },
+    {
+      "id": "stress_q142",
+      "type": "stress",
+      "title": "Câu 142: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Prescription",
+        "B. Production",
+        "C. Presumption",
+        "D. Preparation"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C hậu tố -tion có trọng âm rơi vào âm tiết liền trước (âm 2). Đáp án D hậu tố -tion trọng âm rơi vào âm 3."
+    },
+    {
+      "id": "stress_q143",
+      "type": "stress",
+      "title": "Câu 143: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Energy",
+        "B. Emergency",
+        "C. Constancy",
+        "D. Sympathy"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D danh từ 3 âm tiết trọng âm thứ 1. Đáp án B /ɪˈmɜː.dʒən.si/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q144",
+      "type": "stress",
+      "title": "Câu 144: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Speechless",
+        "B. Worthy",
+        "C. Pollute",
+        "D. Borrow"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D trọng âm thứ 1. Đáp án C động từ 2 âm tiết /pəˈluːt/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q145",
+      "type": "stress",
+      "title": "Câu 145: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Manager",
+        "B. Museum",
+        "C. Family",
+        "D. Musical"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D trọng âm thứ 1. Đáp án B /mjuːˈziː.əm/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q146",
+      "type": "stress",
+      "title": "Câu 146: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Economical",
+        "B. Opportunity",
+        "C. Inexpensive",
+        "D. Scientific"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D hậu tố -ical, -ity, -ific trọng âm rơi vào âm tiết thứ 3 hoặc 4. Đáp án C /ˌɪn.ɪkˈspen.sɪv/ trọng âm thứ 3."
+    },
+    {
+      "id": "stress_q147",
+      "type": "stress",
+      "title": "Câu 147: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Attract",
+        "B. Decide",
+        "C. Explain",
+        "D. Borrow"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C động từ 2 âm tiết trọng âm thứ 2. Đáp án D /ˈbɒr.əʊ/ trọng âm thứ 1."
+    },
+    {
+      "id": "stress_q148",
+      "type": "stress",
+      "title": "Câu 148: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Nation",
+        "B. Action",
+        "C. Nature",
+        "D. Pollution"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C từ 2 âm tiết trọng âm thứ 1. Đáp án D /pəˈluː.ʃən/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q149",
+      "type": "stress",
+      "title": "Câu 149: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. History",
+        "B. Literature",
+        "C. Geography",
+        "D. Chemistry"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D trọng âm thứ 1. Đáp án C /dʒiˈɒɡ.rə.fi/ có hậu tố -phy trọng âm âm thứ 2."
+    },
+    {
+      "id": "stress_q150",
+      "type": "stress",
+      "title": "Câu 150: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Doctor",
+        "B. Farmer",
+        "C. Advice",
+        "D. Teacher"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D danh từ 2 âm tiết trọng âm thứ 1. Đáp án C /ədˈvaɪs/ là danh từ mượn trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q151",
+      "type": "stress",
+      "title": "Câu 151: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Workbook",
+        "B. Tomato",
+        "C. Mountain",
+        "D. Lion"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D danh từ 2 âm tiết trọng âm thứ 1. Đáp án B trọng âm rơi vào âm thứ 2."
+    },
+    {
+      "id": "stress_q152",
+      "type": "stress",
+      "title": "Câu 152: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Prescription",
+        "B. Production",
+        "C. Presumption",
+        "D. Preparation"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C hậu tố -tion có trọng âm rơi vào âm tiết liền trước (âm 2). Đáp án D hậu tố -tion trọng âm rơi vào âm 3."
+    },
+    {
+      "id": "stress_q153",
+      "type": "stress",
+      "title": "Câu 153: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Energy",
+        "B. Emergency",
+        "C. Constancy",
+        "D. Sympathy"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D danh từ 3 âm tiết trọng âm thứ 1. Đáp án B /ɪˈmɜː.dʒən.si/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q154",
+      "type": "stress",
+      "title": "Câu 154: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Speechless",
+        "B. Worthy",
+        "C. Pollute",
+        "D. Borrow"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D trọng âm thứ 1. Đáp án C động từ 2 âm tiết /pəˈluːt/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q155",
+      "type": "stress",
+      "title": "Câu 155: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Manager",
+        "B. Museum",
+        "C. Family",
+        "D. Musical"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D trọng âm thứ 1. Đáp án B /mjuːˈziː.əm/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q156",
+      "type": "stress",
+      "title": "Câu 156: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Economical",
+        "B. Opportunity",
+        "C. Inexpensive",
+        "D. Scientific"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D hậu tố -ical, -ity, -ific trọng âm rơi vào âm tiết thứ 3 hoặc 4. Đáp án C /ˌɪn.ɪkˈspen.sɪv/ trọng âm thứ 3."
+    },
+    {
+      "id": "stress_q157",
+      "type": "stress",
+      "title": "Câu 157: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Attract",
+        "B. Decide",
+        "C. Explain",
+        "D. Borrow"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C động từ 2 âm tiết trọng âm thứ 2. Đáp án D /ˈbɒr.əʊ/ trọng âm thứ 1."
+    },
+    {
+      "id": "stress_q158",
+      "type": "stress",
+      "title": "Câu 158: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Nation",
+        "B. Action",
+        "C. Nature",
+        "D. Pollution"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C từ 2 âm tiết trọng âm thứ 1. Đáp án D /pəˈluː.ʃən/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q159",
+      "type": "stress",
+      "title": "Câu 159: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. History",
+        "B. Literature",
+        "C. Geography",
+        "D. Chemistry"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D trọng âm thứ 1. Đáp án C /dʒiˈɒɡ.rə.fi/ có hậu tố -phy trọng âm âm thứ 2."
+    },
+    {
+      "id": "stress_q160",
+      "type": "stress",
+      "title": "Câu 160: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Doctor",
+        "B. Farmer",
+        "C. Advice",
+        "D. Teacher"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D danh từ 2 âm tiết trọng âm thứ 1. Đáp án C /ədˈvaɪs/ là danh từ mượn trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q161",
+      "type": "stress",
+      "title": "Câu 161: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Workbook",
+        "B. Tomato",
+        "C. Mountain",
+        "D. Lion"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D danh từ 2 âm tiết trọng âm thứ 1. Đáp án B trọng âm rơi vào âm thứ 2."
+    },
+    {
+      "id": "stress_q162",
+      "type": "stress",
+      "title": "Câu 162: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Prescription",
+        "B. Production",
+        "C. Presumption",
+        "D. Preparation"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C hậu tố -tion có trọng âm rơi vào âm tiết liền trước (âm 2). Đáp án D hậu tố -tion trọng âm rơi vào âm 3."
+    },
+    {
+      "id": "stress_q163",
+      "type": "stress",
+      "title": "Câu 163: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Energy",
+        "B. Emergency",
+        "C. Constancy",
+        "D. Sympathy"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D danh từ 3 âm tiết trọng âm thứ 1. Đáp án B /ɪˈmɜː.dʒən.si/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q164",
+      "type": "stress",
+      "title": "Câu 164: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Speechless",
+        "B. Worthy",
+        "C. Pollute",
+        "D. Borrow"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D trọng âm thứ 1. Đáp án C động từ 2 âm tiết /pəˈluːt/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q165",
+      "type": "stress",
+      "title": "Câu 165: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Manager",
+        "B. Museum",
+        "C. Family",
+        "D. Musical"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D trọng âm thứ 1. Đáp án B /mjuːˈziː.əm/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q166",
+      "type": "stress",
+      "title": "Câu 166: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Economical",
+        "B. Opportunity",
+        "C. Inexpensive",
+        "D. Scientific"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D hậu tố -ical, -ity, -ific trọng âm rơi vào âm tiết thứ 3 hoặc 4. Đáp án C /ˌɪn.ɪkˈspen.sɪv/ trọng âm thứ 3."
+    },
+    {
+      "id": "stress_q167",
+      "type": "stress",
+      "title": "Câu 167: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Attract",
+        "B. Decide",
+        "C. Explain",
+        "D. Borrow"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C động từ 2 âm tiết trọng âm thứ 2. Đáp án D /ˈbɒr.əʊ/ trọng âm thứ 1."
+    },
+    {
+      "id": "stress_q168",
+      "type": "stress",
+      "title": "Câu 168: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Nation",
+        "B. Action",
+        "C. Nature",
+        "D. Pollution"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C từ 2 âm tiết trọng âm thứ 1. Đáp án D /pəˈluː.ʃən/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q169",
+      "type": "stress",
+      "title": "Câu 169: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. History",
+        "B. Literature",
+        "C. Geography",
+        "D. Chemistry"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D trọng âm thứ 1. Đáp án C /dʒiˈɒɡ.rə.fi/ có hậu tố -phy trọng âm âm thứ 2."
+    },
+    {
+      "id": "stress_q170",
+      "type": "stress",
+      "title": "Câu 170: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Doctor",
+        "B. Farmer",
+        "C. Advice",
+        "D. Teacher"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D danh từ 2 âm tiết trọng âm thứ 1. Đáp án C /ədˈvaɪs/ là danh từ mượn trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q171",
+      "type": "stress",
+      "title": "Câu 171: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Workbook",
+        "B. Tomato",
+        "C. Mountain",
+        "D. Lion"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D danh từ 2 âm tiết trọng âm thứ 1. Đáp án B trọng âm rơi vào âm thứ 2."
+    },
+    {
+      "id": "stress_q172",
+      "type": "stress",
+      "title": "Câu 172: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Prescription",
+        "B. Production",
+        "C. Presumption",
+        "D. Preparation"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C hậu tố -tion có trọng âm rơi vào âm tiết liền trước (âm 2). Đáp án D hậu tố -tion trọng âm rơi vào âm 3."
+    },
+    {
+      "id": "stress_q173",
+      "type": "stress",
+      "title": "Câu 173: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Energy",
+        "B. Emergency",
+        "C. Constancy",
+        "D. Sympathy"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D danh từ 3 âm tiết trọng âm thứ 1. Đáp án B /ɪˈmɜː.dʒən.si/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q174",
+      "type": "stress",
+      "title": "Câu 174: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Speechless",
+        "B. Worthy",
+        "C. Pollute",
+        "D. Borrow"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D trọng âm thứ 1. Đáp án C động từ 2 âm tiết /pəˈluːt/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q175",
+      "type": "stress",
+      "title": "Câu 175: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Manager",
+        "B. Museum",
+        "C. Family",
+        "D. Musical"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D trọng âm thứ 1. Đáp án B /mjuːˈziː.əm/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q176",
+      "type": "stress",
+      "title": "Câu 176: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Economical",
+        "B. Opportunity",
+        "C. Inexpensive",
+        "D. Scientific"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D hậu tố -ical, -ity, -ific trọng âm rơi vào âm tiết thứ 3 hoặc 4. Đáp án C /ˌɪn.ɪkˈspen.sɪv/ trọng âm thứ 3."
+    },
+    {
+      "id": "stress_q177",
+      "type": "stress",
+      "title": "Câu 177: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Attract",
+        "B. Decide",
+        "C. Explain",
+        "D. Borrow"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C động từ 2 âm tiết trọng âm thứ 2. Đáp án D /ˈbɒr.əʊ/ trọng âm thứ 1."
+    },
+    {
+      "id": "stress_q178",
+      "type": "stress",
+      "title": "Câu 178: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Nation",
+        "B. Action",
+        "C. Nature",
+        "D. Pollution"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C từ 2 âm tiết trọng âm thứ 1. Đáp án D /pəˈluː.ʃən/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q179",
+      "type": "stress",
+      "title": "Câu 179: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. History",
+        "B. Literature",
+        "C. Geography",
+        "D. Chemistry"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D trọng âm thứ 1. Đáp án C /dʒiˈɒɡ.rə.fi/ có hậu tố -phy trọng âm âm thứ 2."
+    },
+    {
+      "id": "stress_q180",
+      "type": "stress",
+      "title": "Câu 180: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Doctor",
+        "B. Farmer",
+        "C. Advice",
+        "D. Teacher"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D danh từ 2 âm tiết trọng âm thứ 1. Đáp án C /ədˈvaɪs/ là danh từ mượn trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q181",
+      "type": "stress",
+      "title": "Câu 181: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Workbook",
+        "B. Tomato",
+        "C. Mountain",
+        "D. Lion"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D danh từ 2 âm tiết trọng âm thứ 1. Đáp án B trọng âm rơi vào âm thứ 2."
+    },
+    {
+      "id": "stress_q182",
+      "type": "stress",
+      "title": "Câu 182: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Prescription",
+        "B. Production",
+        "C. Presumption",
+        "D. Preparation"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C hậu tố -tion có trọng âm rơi vào âm tiết liền trước (âm 2). Đáp án D hậu tố -tion trọng âm rơi vào âm 3."
+    },
+    {
+      "id": "stress_q183",
+      "type": "stress",
+      "title": "Câu 183: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Energy",
+        "B. Emergency",
+        "C. Constancy",
+        "D. Sympathy"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D danh từ 3 âm tiết trọng âm thứ 1. Đáp án B /ɪˈmɜː.dʒən.si/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q184",
+      "type": "stress",
+      "title": "Câu 184: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Speechless",
+        "B. Worthy",
+        "C. Pollute",
+        "D. Borrow"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D trọng âm thứ 1. Đáp án C động từ 2 âm tiết /pəˈluːt/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q185",
+      "type": "stress",
+      "title": "Câu 185: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Manager",
+        "B. Museum",
+        "C. Family",
+        "D. Musical"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D trọng âm thứ 1. Đáp án B /mjuːˈziː.əm/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q186",
+      "type": "stress",
+      "title": "Câu 186: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Economical",
+        "B. Opportunity",
+        "C. Inexpensive",
+        "D. Scientific"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D hậu tố -ical, -ity, -ific trọng âm rơi vào âm tiết thứ 3 hoặc 4. Đáp án C /ˌɪn.ɪkˈspen.sɪv/ trọng âm thứ 3."
+    },
+    {
+      "id": "stress_q187",
+      "type": "stress",
+      "title": "Câu 187: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Attract",
+        "B. Decide",
+        "C. Explain",
+        "D. Borrow"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C động từ 2 âm tiết trọng âm thứ 2. Đáp án D /ˈbɒr.əʊ/ trọng âm thứ 1."
+    },
+    {
+      "id": "stress_q188",
+      "type": "stress",
+      "title": "Câu 188: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Nation",
+        "B. Action",
+        "C. Nature",
+        "D. Pollution"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C từ 2 âm tiết trọng âm thứ 1. Đáp án D /pəˈluː.ʃən/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q189",
+      "type": "stress",
+      "title": "Câu 189: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. History",
+        "B. Literature",
+        "C. Geography",
+        "D. Chemistry"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D trọng âm thứ 1. Đáp án C /dʒiˈɒɡ.rə.fi/ có hậu tố -phy trọng âm âm thứ 2."
+    },
+    {
+      "id": "stress_q190",
+      "type": "stress",
+      "title": "Câu 190: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Doctor",
+        "B. Farmer",
+        "C. Advice",
+        "D. Teacher"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D danh từ 2 âm tiết trọng âm thứ 1. Đáp án C /ədˈvaɪs/ là danh từ mượn trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q191",
+      "type": "stress",
+      "title": "Câu 191: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Workbook",
+        "B. Tomato",
+        "C. Mountain",
+        "D. Lion"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D danh từ 2 âm tiết trọng âm thứ 1. Đáp án B trọng âm rơi vào âm thứ 2."
+    },
+    {
+      "id": "stress_q192",
+      "type": "stress",
+      "title": "Câu 192: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Prescription",
+        "B. Production",
+        "C. Presumption",
+        "D. Preparation"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C hậu tố -tion có trọng âm rơi vào âm tiết liền trước (âm 2). Đáp án D hậu tố -tion trọng âm rơi vào âm 3."
+    },
+    {
+      "id": "stress_q193",
+      "type": "stress",
+      "title": "Câu 193: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Energy",
+        "B. Emergency",
+        "C. Constancy",
+        "D. Sympathy"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D danh từ 3 âm tiết trọng âm thứ 1. Đáp án B /ɪˈmɜː.dʒən.si/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q194",
+      "type": "stress",
+      "title": "Câu 194: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Speechless",
+        "B. Worthy",
+        "C. Pollute",
+        "D. Borrow"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D trọng âm thứ 1. Đáp án C động từ 2 âm tiết /pəˈluːt/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q195",
+      "type": "stress",
+      "title": "Câu 195: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Manager",
+        "B. Museum",
+        "C. Family",
+        "D. Musical"
+      ],
+      "answer": "B",
+      "explanation": "A, C, D trọng âm thứ 1. Đáp án B /mjuːˈziː.əm/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q196",
+      "type": "stress",
+      "title": "Câu 196: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Economical",
+        "B. Opportunity",
+        "C. Inexpensive",
+        "D. Scientific"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D hậu tố -ical, -ity, -ific trọng âm rơi vào âm tiết thứ 3 hoặc 4. Đáp án C /ˌɪn.ɪkˈspen.sɪv/ trọng âm thứ 3."
+    },
+    {
+      "id": "stress_q197",
+      "type": "stress",
+      "title": "Câu 197: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Attract",
+        "B. Decide",
+        "C. Explain",
+        "D. Borrow"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C động từ 2 âm tiết trọng âm thứ 2. Đáp án D /ˈbɒr.əʊ/ trọng âm thứ 1."
+    },
+    {
+      "id": "stress_q198",
+      "type": "stress",
+      "title": "Câu 198: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Nation",
+        "B. Action",
+        "C. Nature",
+        "D. Pollution"
+      ],
+      "answer": "D",
+      "explanation": "A, B, C từ 2 âm tiết trọng âm thứ 1. Đáp án D /pəˈluː.ʃən/ trọng âm thứ 2."
+    },
+    {
+      "id": "stress_q199",
+      "type": "stress",
+      "title": "Câu 199: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. History",
+        "B. Literature",
+        "C. Geography",
+        "D. Chemistry"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D trọng âm thứ 1. Đáp án C /dʒiˈɒɡ.rə.fi/ có hậu tố -phy trọng âm âm thứ 2."
+    },
+    {
+      "id": "stress_q200",
+      "type": "stress",
+      "title": "Câu 200: Chọn từ có vị trí trọng âm khác với các từ còn lại",
+      "choices": [
+        "A. Doctor",
+        "B. Farmer",
+        "C. Advice",
+        "D. Teacher"
+      ],
+      "answer": "C",
+      "explanation": "A, B, D danh từ 2 âm tiết trọng âm thứ 1. Đáp án C /ədˈvaɪs/ là danh từ mượn trọng âm thứ 2."
     }
   ]
 }
