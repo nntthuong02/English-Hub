@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lý Thuyết Nguyên Âm & Phụ Âm IPA — English Hub</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+  <style>
+    .ipa-card {
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      border-radius: var(--radius-sm);
+      padding: 1.1rem;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      cursor: pointer;
+    }
+    .ipa-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--primary);
+    }
+    .ipa-symbol {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 0.3rem;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .word-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      background: var(--bg);
+      border: 1px solid var(--surface-border);
+      padding: 0.25rem 0.6rem;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      margin-right: 0.3rem;
+      margin-bottom: 0.3rem;
+      cursor: pointer;
+    }
+    .word-chip:hover {
+      background: #e0e7ff;
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="../dashboard.html" class="nav-brand">
+      <i class="fa-solid fa-graduation-cap"></i>
+      <span>English Hub</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../dashboard.html"><i class="fa-solid fa-house"></i> Trang chủ</a></li>
+      <li><a href="../vocabulary/index.html"><i class="fa-solid fa-book-open"></i> Từ Vựng</a></li>
+      <li><a href="../grammar/index.html"><i class="fa-solid fa-pen-nib"></i> Ngữ Pháp</a></li>
+      <li><a href="index.html" class="active"><i class="fa-solid fa-volume-high"></i> Ngữ Âm & Trọng Âm</a></li>
+      <li><a href="../stats/index.html"><i class="fa-solid fa-chart-line"></i> Thống Kê</a></li>
+      <li><a href="../sources.html"><i class="fa-solid fa-link"></i> Nguồn Crawl</a></li>
+    </ul>
+    <div id="nav-user-badge" class="user-profile-badge"></div>
+  </nav>
+
+  <div class="container" style="max-width: 1000px;">
+    <!-- Top Action Row -->
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1.5rem;">
+      <a href="index.html" class="btn btn-outline"><i class="fa-solid fa-arrow-left"></i> Về Luyện Đề 50 Câu</a>
+      <a href="index.html" class="btn btn-primary" style="padding:0.6rem 1.3rem;">
+        <i class="fa-solid fa-pen-to-square"></i> Làm Bài Tập Trắc Nghiệm Ngay
+      </a>
+    </div>
+
+    <!-- Header Banner -->
+    <div style="background:linear-gradient(135deg, #047857 0%, #059669 100%); color:white; border-radius:var(--radius-md); padding:2rem 2.5rem; margin-bottom:2rem; box-shadow:var(--shadow-md);">
+      <span class="badge" style="background:rgba(255,255,255,0.2); color:white; margin-bottom:0.4rem;">
+        <i class="fa-solid fa-book-bookmark"></i> Giáo trình chuẩn ZIM Academy
+      </span>
+      <h1 style="font-size:2rem; font-weight:800; margin-bottom:0.5rem;">Nguyên Âm & Phụ Âm Tiếng Anh (Bảng IPA 44 Âm)</h1>
+      <p style="opacity:0.95; font-size:1rem; max-width:750px;">
+        Toàn bộ định nghĩa, phân loại 20 Nguyên âm (12 đơn + 8 đôi), 24 Phụ âm (vô thanh, hữu thanh) và quy tắc phát âm đuôi -ed, -s/-es. Bấm vào từ để nghe phát âm mẫu 🔊.
+      </p>
+    </div>
+
+    <!-- 1. Định nghĩa Vowels & Consonants -->
+    <div style="display:grid; grid-template-columns: 1fr 1fr; gap:1.5rem; margin-bottom:2.5rem;">
+      <div class="card" style="padding:1.5rem; border-top:4px solid #059669;">
+        <h3 style="font-size:1.2rem; font-weight:800; color:#059669; margin-bottom:0.6rem;">
+          <i class="fa-solid fa-circle-notch"></i> 1. Nguyên Âm (Vowels - 20 âm)
+        </h3>
+        <p style="font-size:0.95rem; color:var(--text-main); line-height:1.6;">
+          Là âm được tạo ra khi luồng không khí từ phổi đi lên qua thanh quản và thoát ra ngoài mà <strong>không bị cản trở</strong>. Dây thanh quản <strong>luôn rung</strong> khi phát âm nguyên âm.
+        </p>
+      </div>
+
+      <div class="card" style="padding:1.5rem; border-top:4px solid var(--primary);">
+        <h3 style="font-size:1.2rem; font-weight:800; color:var(--primary); margin-bottom:0.6rem;">
+          <i class="fa-solid fa-volume-high"></i> 2. Phụ Âm (Consonants - 24 âm)
+        </h3>
+        <p style="font-size:0.95rem; color:var(--text-main); line-height:1.6;">
+          Là âm được phát ra khi luồng không khí <strong>bị cản trở một phần hoặc toàn bộ</strong> (bởi môi, răng, lưỡi, vòm họng). Gồm 8 âm vô thanh (chỉ bật hơi), 8 âm hữu thanh (rung cổ) và 8 âm khác.
+        </p>
+      </div>
+    </div>
+
+    <!-- 2. Bảng 12 Nguyên Âm Đơn -->
+    <div class="card" style="padding:2rem; margin-bottom:2.5rem;">
+      <h2 style="font-size:1.4rem; font-weight:800; color:var(--primary); margin-bottom:0.4rem;">
+        <i class="fa-solid fa-circle-dot"></i> I. 12 Nguyên Âm Đơn (Monophthongs)
+      </h2>
+      <p style="font-size:0.92rem; color:var(--text-muted); margin-bottom:1.5rem;">Gồm các nguyên âm ngắn (ngắn, dứt khoát) và nguyên âm dài (có dấu <code>:</code> kéo dài hơi):</p>
+      <div id="monophthongs-grid" style="display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap:1rem;"></div>
+    </div>
+
+    <!-- 3. Bảng 8 Nguyên Âm Đôi -->
+    <div class="card" style="padding:2rem; margin-bottom:2.5rem;">
+      <h2 style="font-size:1.4rem; font-weight:800; color:#d97706; margin-bottom:0.4rem;">
+        <i class="fa-solid fa-bezier-curve"></i> II. 8 Nguyên Âm Đôi (Diphthongs)
+      </h2>
+      <p style="font-size:0.92rem; color:var(--text-muted); margin-bottom:1.5rem;">Là sự kết hợp lướt từ một nguyên âm đơn này sang một nguyên âm đơn khác:</p>
+      <div id="diphthongs-grid" style="display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap:1rem;"></div>
+    </div>
+
+    <!-- 4. Bảng 24 Phụ Âm -->
+    <div class="card" style="padding:2rem; margin-bottom:2.5rem;">
+      <h2 style="font-size:1.4rem; font-weight:800; color:#4338ca; margin-bottom:0.4rem;">
+        <i class="fa-solid fa-headphones"></i> III. 24 Phụ Âm Trong Tiếng Anh (Consonants)
+      </h2>
+      <p style="font-size:0.92rem; color:var(--text-muted); margin-bottom:1.5rem;">Phân loại theo rung thanh quản (Hữu thanh vs Vô thanh):</p>
+      
+      <h3 style="font-size:1.1rem; font-weight:700; color:var(--danger); margin-bottom:0.8rem;"><i class="fa-solid fa-wind"></i> 1. Phụ âm vô thanh (Voiceless - 8 âm)</h3>
+      <div id="voiceless-grid" style="display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap:1rem; margin-bottom:1.8rem;"></div>
+
+      <h3 style="font-size:1.1rem; font-weight:700; color:var(--success); margin-bottom:0.8rem;"><i class="fa-solid fa-bell"></i> 2. Phụ âm hữu thanh (Voiced - 8 âm)</h3>
+      <div id="voiced-grid" style="display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap:1rem; margin-bottom:1.8rem;"></div>
+
+      <h3 style="font-size:1.1rem; font-weight:700; color:#0284c7; margin-bottom:0.8rem;"><i class="fa-solid fa-wave-square"></i> 3. Phụ âm mũi & Bán nguyên âm (8 âm)</h3>
+      <div id="other-consonants-grid" style="display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap:1rem;"></div>
+    </div>
+
+    <!-- 5. Quy Tắc Vàng: Đuôi -ED và -S/-ES -->
+    <div class="card" style="padding:2rem; margin-bottom:2.5rem; background:linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%); border:2px solid #f59e0b;">
+      <h2 style="font-size:1.4rem; font-weight:800; color:#b45309; margin-bottom:1rem;">
+        <i class="fa-solid fa-star"></i> IV. 2 Quy Tắc Phát Âm Thường Gặp Nhất Trong Đề Thi
+      </h2>
+
+      <div style="background:white; border-radius:var(--radius-sm); padding:1.2rem; margin-bottom:1.2rem; border-left:4px solid #b45309;">
+        <h4 style="font-size:1.05rem; font-weight:800; color:#b45309; margin-bottom:0.5rem;">1. Quy tắc phát âm đuôi -ED (/t/, /d/, /ɪd/)</h4>
+        <ul style="padding-left:1.2rem; line-height:1.75; font-size:0.95rem; color:#78350f;">
+          <li><strong>/ɪd/:</strong> Động từ kết thúc bằng âm <code>/t/</code> hoặc <code>/d/</code> (vd: <em>wanted, needed, decided</em>).</li>
+          <li><strong>/t/:</strong> Động từ kết thúc bằng các âm vô thanh: <code>/p/, /k/, /f/, /s/, /ʃ/, /tʃ/</code> (vd: <em>stopped, cooked, laughed, washed, watched</em>).</li>
+          <li><strong>/d/:</strong> Động từ kết thúc bằng các âm hữu thanh còn lại và nguyên âm (vd: <em>played, cleaned, loved, opened</em>).</li>
+        </ul>
+      </div>
+
+      <div style="background:white; border-radius:var(--radius-sm); padding:1.2rem; border-left:4px solid #b45309;">
+        <h4 style="font-size:1.05rem; font-weight:800; color:#b45309; margin-bottom:0.5rem;">2. Quy tắc phát âm đuôi -S / -ES (/s/, /z/, /ɪz/)</h4>
+        <ul style="padding-left:1.2rem; line-height:1.75; font-size:0.95rem; color:#78350f;">
+          <li><strong>/ɪz/:</strong> Từ kết thúc bằng các âm xuýt: <code>/s/, /z/, /ʃ/, /ʒ/, /tʃ/, /dʒ/</code> (vd: <em>watches, boxes, kisses, changes</em>).</li>
+          <li><strong>/s/:</strong> Từ kết thúc bằng các âm vô thanh: <code>/p/, /t/, /k/, /f/, /θ/</code> (vd: <em>cups, cats, books, laughs</em>).</li>
+          <li><strong>/z/:</strong> Từ kết thúc bằng các âm hữu thanh còn lại và nguyên âm (vd: <em>dogs, bags, trees, days</em>).</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    English Hub © 2026 — Trọn bộ lý thuyết ngữ âm ZIM Academy & bài tập trắc nghiệm VietJack.
+  </footer>
+
+  <script src="../js/firebase-config.js"></script>
+  <script src="../js/db.js"></script>
+  <script src="../data/phonetics_theory-data.js"></script>
+  <script src="../js/auth.js"></script>
+  <script>
+    Auth.requireAuth();
+    Auth.updateNavbar();
+
+    function speakWord(word) {
+      if ('speechSynthesis' in window) {
+        const clean = word.split('/')[0].trim();
+        window.speechSynthesis.cancel();
+        const u = new SpeechSynthesisUtterance(clean);
+        u.lang = 'en-US';
+        u.rate = 0.9;
+        window.speechSynthesis.speak(u);
+      }
+    }
+
+    function renderIpaCard(item) {
+      return `
+        <div class="ipa-card">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.3rem;">
+            <span class="ipa-symbol">${item.ipa}</span>
+            <span class="badge badge-primary" style="font-size:0.75rem;">${item.type}</span>
+          </div>
+          <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:0.6rem; line-height:1.4;">${item.mouth || item.description || ''}</p>
+          <div>
+            ${item.examples.map(ex => `
+              <span class="word-chip" onclick="speakWord('${ex.replace(/'/g, "\\'")}')">
+                <i class="fa-solid fa-volume-high" style="font-size:0.75rem; color:var(--primary);"></i> ${ex}
+              </span>
+            `).join('')}
+          </div>
+        </div>
+      `;
+    }
+
+    const tData = window.PHONETICS_THEORY;
+    if (tData) {
+      document.getElementById('monophthongs-grid').innerHTML = tData.monophthongs.map(renderIpaCard).join('');
+      document.getElementById('diphthongs-grid').innerHTML = tData.diphthongs.map(renderIpaCard).join('');
+      document.getElementById('voiceless-grid').innerHTML = tData.consonants_voiceless.map(renderIpaCard).join('');
+      document.getElementById('voiced-grid').innerHTML = tData.consonants_voiced.map(renderIpaCard).join('');
+      document.getElementById('other-consonants-grid').innerHTML = tData.consonants_other.map(renderIpaCard).join('');
+    }
+  </script>
+</body>
+</html>

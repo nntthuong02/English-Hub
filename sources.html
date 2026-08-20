@@ -99,6 +99,7 @@
       document.getElementById('tab-btn-ta123').className = tab === 'ta123' ? 'btn btn-primary' : 'btn btn-outline';
       if (document.getElementById('tab-btn-bttn')) document.getElementById('tab-btn-bttn').className = tab === 'bttn' ? 'btn btn-primary' : 'btn btn-outline';
       if (document.getElementById('tab-btn-vj')) document.getElementById('tab-btn-vj').className = tab === 'vj' ? 'btn btn-primary' : 'btn btn-outline';
+      if (document.getElementById('tab-btn-zim')) document.getElementById('tab-btn-zim').className = tab === 'zim' ? 'btn btn-primary' : 'btn btn-outline';
       if (false) {
         document.getElementById('tab-btn-bttn').className = tab === 'bttn' ? 'btn btn-primary' : 'btn btn-outline';
       }
@@ -115,6 +116,7 @@
       else if (currentTab === 'ta123') dataset = allSources.tienganh123.categories;
       else if (currentTab === 'bttn' && allSources.baitaptracnghiem) dataset = allSources.baitaptracnghiem.categories;
       else if (currentTab === 'vj' && allSources.vietjack) dataset = allSources.vietjack.categories;
+      else if (currentTab === 'zim' && allSources.zim) dataset = allSources.zim.categories;
       const query = (document.getElementById('source-search').value || '').toLowerCase();
 
       const filtered = dataset.filter(c => c.title.toLowerCase().includes(query) || (c.group && c.group.toLowerCase().includes(query)));

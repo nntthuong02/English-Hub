@@ -553,5 +553,33 @@
         "status": "crawled"
       }
     ]
+  },
+  "zim": {
+    "name": "ZIM.vn (ZIM Academy)",
+    "description": "Giáo trình chuẩn hóa lý thuyết Nguyên âm và Phụ âm trong tiếng Anh (Bảng IPA 44 âm quốc tế, quy tắc phát âm đuôi -ed, -s/-es).",
+    "baseUrl": "https://zim.vn/nguyen-am-va-phu-am-trong-tieng-anh",
+    "categories": [
+      {
+        "id": "zim_vowels",
+        "title": "20 Nguyên Âm IPA (12 Đơn + 8 Đôi)",
+        "url": "https://zim.vn/nguyen-am-va-phu-am-trong-tieng-anh",
+        "count": 20,
+        "status": "crawled"
+      },
+      {
+        "id": "zim_consonants",
+        "title": "24 Phụ Âm IPA (Vô thanh + Hữu thanh)",
+        "url": "https://zim.vn/nguyen-am-va-phu-am-trong-tieng-anh",
+        "count": 24,
+        "status": "crawled"
+      },
+      {
+        "id": "zim_rules",
+        "title": "Quy tắc phát âm đuôi -ED và -S/-ES",
+        "url": "https://zim.vn/nguyen-am-va-phu-am-trong-tieng-anh",
+        "count": 2,
+        "status": "crawled"
+      }
+    ]
   }
 }
