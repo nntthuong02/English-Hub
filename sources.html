@@ -42,6 +42,10 @@
         <i class="fa-solid fa-image"></i> TiengAnh123.com (42 Chủ đề)
       </button>
       <button id="tab-btn-bttn" class="btn btn-outline" onclick="switchSourceTab('bttn')">
+        <i class="fa-solid fa-pen-to-square"></i> BaiTapTracNghiem.com
+      </button>
+      <button id="tab-btn-vj" class="btn btn-outline" onclick="switchSourceTab('vj')">
+        <i class="fa-solid fa-volume-high"></i> VietJack.com (Ngữ Âm & Trọng Âm)
         <i class="fa-solid fa-pen-to-square"></i> BaiTapTracNghiem.com (Đề Trộn)
       </button>
     </div>
@@ -93,7 +97,9 @@
       currentTab = tab;
       document.getElementById('tab-btn-lg').className = tab === 'lg' ? 'btn btn-primary' : 'btn btn-outline';
       document.getElementById('tab-btn-ta123').className = tab === 'ta123' ? 'btn btn-primary' : 'btn btn-outline';
-      if (document.getElementById('tab-btn-bttn')) {
+      if (document.getElementById('tab-btn-bttn')) document.getElementById('tab-btn-bttn').className = tab === 'bttn' ? 'btn btn-primary' : 'btn btn-outline';
+      if (document.getElementById('tab-btn-vj')) document.getElementById('tab-btn-vj').className = tab === 'vj' ? 'btn btn-primary' : 'btn btn-outline';
+      if (false) {
         document.getElementById('tab-btn-bttn').className = tab === 'bttn' ? 'btn btn-primary' : 'btn btn-outline';
       }
       renderSources();
@@ -108,6 +114,7 @@
       if (currentTab === 'lg') dataset = allSources.languageguide.categories;
       else if (currentTab === 'ta123') dataset = allSources.tienganh123.categories;
       else if (currentTab === 'bttn' && allSources.baitaptracnghiem) dataset = allSources.baitaptracnghiem.categories;
+      else if (currentTab === 'vj' && allSources.vietjack) dataset = allSources.vietjack.categories;
       const query = (document.getElementById('source-search').value || '').toLowerCase();
 
       const filtered = dataset.filter(c => c.title.toLowerCase().includes(query) || (c.group && c.group.toLowerCase().includes(query)));

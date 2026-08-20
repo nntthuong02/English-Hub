@@ -532,5 +532,26 @@
         "status": "crawled"
       }
     ]
+  },
+  "vietjack": {
+    "name": "VietJack.com",
+    "description": "Bộ 200+ câu trắc nghiệm Ngữ âm (Phonetics) & Trọng âm (Stress) có đáp án và giải thích chi tiết phiên âm IPA phục vụ kỳ thi tốt nghiệp THPT và IELTS.",
+    "baseUrl": "https://vietjack.com/trac-nghiem-tieng-anh/200-cau-trac-nghiem-ngu-am-co-dap-an.jsp",
+    "categories": [
+      {
+        "id": "vj_pron",
+        "title": "200 Câu Trắc Nghiệm Ngữ Âm Có Đáp Án (VietJack)",
+        "url": "https://vietjack.com/trac-nghiem-tieng-anh/200-cau-trac-nghiem-ngu-am-co-dap-an.jsp",
+        "count": 100,
+        "status": "crawled"
+      },
+      {
+        "id": "vj_stress",
+        "title": "200 Câu Trắc Nghiệm Trọng Âm Có Đáp Án (VietJack)",
+        "url": "https://vietjack.com/trac-nghiem-tieng-anh/200-cau-trac-nghiem-trong-am-co-dap-an.jsp",
+        "count": 100,
+        "status": "crawled"
+      }
+    ]
   }
 }
