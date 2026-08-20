@@ -223,11 +223,22 @@
               <span style="font-size:0.85rem; color:var(--text-muted); font-family:monospace;">${q.phonetic}</span>
             </div>
 
-            <div style="display:flex; gap:1.2rem; align-items:center; margin-bottom:1.2rem;">
-              ${q.imageUrl ? `<img src="${q.imageUrl}" alt="${q.word}" style="width:75px; height:75px; object-fit:cover; border-radius:var(--radius-sm); border:1px solid var(--surface-border);" onerror="this.style.display='none'">` : ''}
+            <!-- Prominent Visual Image Card -->
+            <div style="display:grid; grid-template-columns: 200px 1fr; gap:1.5rem; align-items:center; margin-bottom:1.5rem; background:var(--bg); border:1px solid var(--surface-border); border-radius:var(--radius-sm); padding:1rem;">
+              <div style="width:100%; height:140px; border-radius:var(--radius-sm); overflow:hidden; background:#e2e8f0; display:flex; align-items:center; justify-content:center; box-shadow:var(--shadow-sm);">
+                <img src="${q.imageUrl || 'https://images.unsplash.com/photo-1546519638-68e109498ffc?w=400&q=80'}" alt="${q.word}" 
+                     style="width:100%; height:100%; object-fit:cover; display:block;" 
+                     onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=400&q=80';">
+              </div>
               <div>
-                <h3 style="font-size:1.3rem; font-weight:800; color:var(--primary); margin-bottom:0.2rem;">${q.word}</h3>
-                <p style="font-size:0.95rem; color:var(--text-main); font-weight:600; margin:0;">${q.question}</p>
+                <div style="display:flex; align-items:center; gap:0.6rem; margin-bottom:0.4rem;">
+                  <h3 style="font-size:1.6rem; font-weight:800; color:var(--primary); margin:0;">${q.word}</h3>
+                  <button type="button" class="btn btn-outline" style="padding:0.25rem 0.6rem; font-size:0.85rem; border-radius:50px;" onclick="speakVocab('${q.word.replace(/'/g, "\\'")}')">
+                    <i class="fa-solid fa-volume-high" style="color:var(--primary);"></i> Nghe
+                  </button>
+                </div>
+                <div style="font-family:monospace; font-weight:700; color:var(--text-muted); font-size:1rem; margin-bottom:0.5rem;">${q.phonetic}</div>
+                <p style="font-size:0.98rem; color:var(--text-main); font-weight:600; margin:0;">${q.question}</p>
               </div>
             </div>
 
@@ -255,6 +266,16 @@
           </div>
         `;
       }).join('');
+    }
+
+    function speakVocab(word) {
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+        const u = new SpeechSynthesisUtterance(word);
+        u.lang = 'en-US';
+        u.rate = 0.9;
+        window.speechSynthesis.speak(u);
+      }
     }
 
     function chooseOption(qIdx, selectedValue) {
