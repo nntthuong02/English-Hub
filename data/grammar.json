@@ -40,7 +40,20 @@
           "en": "Consistent practice leads to natural fluency in English communication.",
           "vi": "Luyện tập kiên trì giúp bạn nói tiếng Anh lưu loát và tự nhiên."
         }
-      ]
+      ],
+      "signalWords": [
+        "always, constantly",
+        "usually, frequently",
+        "often, occasionally",
+        "sometimes",
+        "seldom, rarely, hardly",
+        "every day / week / month / year",
+        "once / twice / three times a week"
+      ],
+      "ieltsApplication": {
+        "speaking": "Áp dụng Thì Hiện tại đơn trong Speaking Part 1/2 để diễn đạt chính xác ngữ cảnh, tự nhiên và nâng điểm tiêu chí Grammatical Range & Accuracy.",
+        "writing": "Sử dụng linh hoạt cấu trúc Present simple tense trong Writing Task 1/2 giúp đa dạng hóa cấu trúc câu đơn/phức và ghi điểm với giám khảo 7.0+."
+      }
     },
     "exercises": [
       {
@@ -145,7 +158,19 @@
           "en": "Consistent practice leads to natural fluency in English communication.",
           "vi": "Luyện tập kiên trì giúp bạn nói tiếng Anh lưu loát và tự nhiên."
         }
-      ]
+      ],
+      "signalWords": [
+        "now, right now",
+        "at the moment, at present",
+        "currently",
+        "Look! / Listen! / Be quiet!",
+        "at this time",
+        "today / this week (tính tạm thời)"
+      ],
+      "ieltsApplication": {
+        "speaking": "Áp dụng Thì Hiện tại tiếp diễn trong Speaking Part 1/2 để diễn đạt chính xác ngữ cảnh, tự nhiên và nâng điểm tiêu chí Grammatical Range & Accuracy.",
+        "writing": "Sử dụng linh hoạt cấu trúc Present continuous tense trong Writing Task 1/2 giúp đa dạng hóa cấu trúc câu đơn/phức và ghi điểm với giám khảo 7.0+."
+      }
     },
     "exercises": [
       {
@@ -250,7 +275,21 @@
           "en": "Consistent practice leads to natural fluency in English communication.",
           "vi": "Luyện tập kiên trì giúp bạn nói tiếng Anh lưu loát và tự nhiên."
         }
-      ]
+      ],
+      "signalWords": [
+        "already (đã... rồi)",
+        "just (vừa mới)",
+        "ever (đã từng) / never (chưa bao giờ)",
+        "yet (chưa - câu phủ định/nghi vấn)",
+        "since + mốc thời gian",
+        "for + khoảng thời gian",
+        "so far, up to now, until now",
+        "recently, lately"
+      ],
+      "ieltsApplication": {
+        "speaking": "Áp dụng Thì Hiện tại hoàn thành trong Speaking Part 1/2 để diễn đạt chính xác ngữ cảnh, tự nhiên và nâng điểm tiêu chí Grammatical Range & Accuracy.",
+        "writing": "Sử dụng linh hoạt cấu trúc Present perfect tense trong Writing Task 1/2 giúp đa dạng hóa cấu trúc câu đơn/phức và ghi điểm với giám khảo 7.0+."
+      }
     },
     "exercises": [
       {
@@ -355,7 +394,19 @@
           "en": "Consistent practice leads to natural fluency in English communication.",
           "vi": "Luyện tập kiên trì giúp bạn nói tiếng Anh lưu loát và tự nhiên."
         }
-      ]
+      ],
+      "signalWords": [
+        "yesterday, yesterday morning",
+        "last night / last week / last year",
+        "ago (2 days ago, 5 years ago)",
+        "in + năm trong quá khứ (in 1995)",
+        "in the past",
+        "when + mệnh đề quá khứ"
+      ],
+      "ieltsApplication": {
+        "speaking": "Áp dụng Thì Quá khứ đơn trong Speaking Part 1/2 để diễn đạt chính xác ngữ cảnh, tự nhiên và nâng điểm tiêu chí Grammatical Range & Accuracy.",
+        "writing": "Sử dụng linh hoạt cấu trúc Past simple tense trong Writing Task 1/2 giúp đa dạng hóa cấu trúc câu đơn/phức và ghi điểm với giám khảo 7.0+."
+      }
     },
     "exercises": [
       {
@@ -460,7 +511,18 @@
           "en": "Consistent practice leads to natural fluency in English communication.",
           "vi": "Luyện tập kiên trì giúp bạn nói tiếng Anh lưu loát và tự nhiên."
         }
-      ]
+      ],
+      "signalWords": [
+        "at this time yesterday",
+        "at 8 PM last night",
+        "while (trong khi) / as",
+        "when + QKĐ (hành động xen vào)",
+        "all day yesterday / all night"
+      ],
+      "ieltsApplication": {
+        "speaking": "Áp dụng Thì Quá khứ tiếp diễn trong Speaking Part 1/2 để diễn đạt chính xác ngữ cảnh, tự nhiên và nâng điểm tiêu chí Grammatical Range & Accuracy.",
+        "writing": "Sử dụng linh hoạt cấu trúc Past continuous tense trong Writing Task 1/2 giúp đa dạng hóa cấu trúc câu đơn/phức và ghi điểm với giám khảo 7.0+."
+      }
     },
     "exercises": [
       {
@@ -565,7 +627,19 @@
           "en": "Consistent practice leads to natural fluency in English communication.",
           "vi": "Luyện tập kiên trì giúp bạn nói tiếng Anh lưu loát và tự nhiên."
         }
-      ]
+      ],
+      "signalWords": [
+        "by the time + QKĐ",
+        "before + QKĐ",
+        "after + QKHT",
+        "by + mốc thời gian quá khứ (by 2010)",
+        "as soon as",
+        "until then"
+      ],
+      "ieltsApplication": {
+        "speaking": "Áp dụng Thì Quá khứ hoàn thành trong Speaking Part 1/2 để diễn đạt chính xác ngữ cảnh, tự nhiên và nâng điểm tiêu chí Grammatical Range & Accuracy.",
+        "writing": "Sử dụng linh hoạt cấu trúc Past perfect tense trong Writing Task 1/2 giúp đa dạng hóa cấu trúc câu đơn/phức và ghi điểm với giám khảo 7.0+."
+      }
     },
     "exercises": [
       {
@@ -670,7 +744,19 @@
           "en": "Consistent practice leads to natural fluency in English communication.",
           "vi": "Luyện tập kiên trì giúp bạn nói tiếng Anh lưu loát và tự nhiên."
         }
-      ]
+      ],
+      "signalWords": [
+        "tomorrow, tomorrow morning",
+        "next week / next month / next year",
+        "in + khoảng thời gian tới (in 2 days)",
+        "think, believe, hope, promise",
+        "someday / in the future",
+        "perhaps, probably"
+      ],
+      "ieltsApplication": {
+        "speaking": "Áp dụng Thì Tương lai đơn trong Speaking Part 1/2 để diễn đạt chính xác ngữ cảnh, tự nhiên và nâng điểm tiêu chí Grammatical Range & Accuracy.",
+        "writing": "Sử dụng linh hoạt cấu trúc Future simple tense trong Writing Task 1/2 giúp đa dạng hóa cấu trúc câu đơn/phức và ghi điểm với giám khảo 7.0+."
+      }
     },
     "exercises": [
       {
@@ -775,7 +861,18 @@
           "en": "Consistent practice leads to natural fluency in English communication.",
           "vi": "Luyện tập kiên trì giúp bạn nói tiếng Anh lưu loát và tự nhiên."
         }
-      ]
+      ],
+      "signalWords": [
+        "in the near future",
+        "tonight / this weekend (kế hoạch đã định)",
+        "Look at the clouds! (có bằng chứng cụ thể)",
+        "next + thời gian (đã có dự định)",
+        "be going to + V"
+      ],
+      "ieltsApplication": {
+        "speaking": "Áp dụng Thì Tương lai gần trong Speaking Part 1/2 để diễn đạt chính xác ngữ cảnh, tự nhiên và nâng điểm tiêu chí Grammatical Range & Accuracy.",
+        "writing": "Sử dụng linh hoạt cấu trúc Near future tense trong Writing Task 1/2 giúp đa dạng hóa cấu trúc câu đơn/phức và ghi điểm với giám khảo 7.0+."
+      }
     },
     "exercises": [
       {
@@ -880,7 +977,17 @@
           "en": "Consistent practice leads to natural fluency in English communication.",
           "vi": "Luyện tập kiên trì giúp bạn nói tiếng Anh lưu loát và tự nhiên."
         }
-      ]
+      ],
+      "signalWords": [
+        "Modal verbs: can, could, may, might, must, should, ought to",
+        "Linking verbs: look, sound, smell, taste, feel, become, seem",
+        "Transitive / Intransitive verbs",
+        "Action verbs vs State verbs"
+      ],
+      "ieltsApplication": {
+        "speaking": "Áp dụng Động từ & Động từ khuyết thiếu trong Speaking Part 1/2 để diễn đạt chính xác ngữ cảnh, tự nhiên và nâng điểm tiêu chí Grammatical Range & Accuracy.",
+        "writing": "Sử dụng linh hoạt cấu trúc Verbs trong Writing Task 1/2 giúp đa dạng hóa cấu trúc câu đơn/phức và ghi điểm với giám khảo 7.0+."
+      }
     },
     "exercises": [
       {
@@ -985,7 +1092,17 @@
           "en": "Consistent practice leads to natural fluency in English communication.",
           "vi": "Luyện tập kiên trì giúp bạn nói tiếng Anh lưu loát và tự nhiên."
         }
-      ]
+      ],
+      "signalWords": [
+        "Countable: a/an, many, a few, several, few",
+        "Uncountable: much, a little, little, a lot of, plenty of",
+        "Nouns ending in -s/es",
+        "Irregular plural: children, people, teeth, feet, mice"
+      ],
+      "ieltsApplication": {
+        "speaking": "Áp dụng Danh từ (Đếm được & Không đếm được) trong Speaking Part 1/2 để diễn đạt chính xác ngữ cảnh, tự nhiên và nâng điểm tiêu chí Grammatical Range & Accuracy.",
+        "writing": "Sử dụng linh hoạt cấu trúc Nouns trong Writing Task 1/2 giúp đa dạng hóa cấu trúc câu đơn/phức và ghi điểm với giám khảo 7.0+."
+      }
     },
     "exercises": [
       {
@@ -1090,7 +1207,16 @@
           "en": "Consistent practice leads to natural fluency in English communication.",
           "vi": "Luyện tập kiên trì giúp bạn nói tiếng Anh lưu loát và tự nhiên."
         }
-      ]
+      ],
+      "signalWords": [
+        "A / An: Danh từ đếm được số ít nhắc đến lần đầu",
+        "The: Vật thể duy nhất (The Sun), đã xác định, so sánh nhất, nhạc cụ",
+        "Zero Article (Ø): Danh từ số nhiều/không đếm được nói chung, tên riêng, bữa ăn, ngôn ngữ"
+      ],
+      "ieltsApplication": {
+        "speaking": "Áp dụng Mạo từ (A, An, The) trong Speaking Part 1/2 để diễn đạt chính xác ngữ cảnh, tự nhiên và nâng điểm tiêu chí Grammatical Range & Accuracy.",
+        "writing": "Sử dụng linh hoạt cấu trúc Articles trong Writing Task 1/2 giúp đa dạng hóa cấu trúc câu đơn/phức và ghi điểm với giám khảo 7.0+."
+      }
     },
     "exercises": [
       {
@@ -1195,7 +1321,17 @@
           "en": "Consistent practice leads to natural fluency in English communication.",
           "vi": "Luyện tập kiên trì giúp bạn nói tiếng Anh lưu loát và tự nhiên."
         }
-      ]
+      ],
+      "signalWords": [
+        "Subject pronouns: I, you, we, they, he, she, it",
+        "Object pronouns: me, you, us, them, him, her, it",
+        "Possessive adjectives: my, your, our, their, his, her, its",
+        "Reflexive: myself, yourself, themselves, ourselves"
+      ],
+      "ieltsApplication": {
+        "speaking": "Áp dụng Đại từ và Từ hạn định trong Speaking Part 1/2 để diễn đạt chính xác ngữ cảnh, tự nhiên và nâng điểm tiêu chí Grammatical Range & Accuracy.",
+        "writing": "Sử dụng linh hoạt cấu trúc Pronouns, determiners trong Writing Task 1/2 giúp đa dạng hóa cấu trúc câu đơn/phức và ghi điểm với giám khảo 7.0+."
+      }
     },
     "exercises": [
       {
@@ -1300,7 +1436,17 @@
           "en": "Consistent practice leads to natural fluency in English communication.",
           "vi": "Luyện tập kiên trì giúp bạn nói tiếng Anh lưu loát và tự nhiên."
         }
-      ]
+      ],
+      "signalWords": [
+        "OSASCOMP: Opinion - Size - Age - Shape - Color - Origin - Material - Purpose",
+        "Comparative: -er / more than",
+        "Superlative: the -est / the most",
+        "Adverbs of manner: Adj + ly (quickly, gracefully)"
+      ],
+      "ieltsApplication": {
+        "speaking": "Áp dụng Tính từ và Trật tự tính từ trong Speaking Part 1/2 để diễn đạt chính xác ngữ cảnh, tự nhiên và nâng điểm tiêu chí Grammatical Range & Accuracy.",
+        "writing": "Sử dụng linh hoạt cấu trúc Adjectives trong Writing Task 1/2 giúp đa dạng hóa cấu trúc câu đơn/phức và ghi điểm với giám khảo 7.0+."
+      }
     },
     "exercises": [
       {
@@ -1405,7 +1551,17 @@
           "en": "Consistent practice leads to natural fluency in English communication.",
           "vi": "Luyện tập kiên trì giúp bạn nói tiếng Anh lưu loát và tự nhiên."
         }
-      ]
+      ],
+      "signalWords": [
+        "Chủ ngữ nối bằng AND -> Động từ số nhiều",
+        "Either...or / Neither...nor / Not only...but also -> Chia theo S2 gần nhất",
+        "S1 as well as / with / together with S2 -> Chia theo S1",
+        "Tên môn học (-ics), tin tức (news) -> Động từ số ít"
+      ],
+      "ieltsApplication": {
+        "speaking": "Áp dụng Sự hòa hợp Chủ ngữ - Động từ (Phần 1) trong Speaking Part 1/2 để diễn đạt chính xác ngữ cảnh, tự nhiên và nâng điểm tiêu chí Grammatical Range & Accuracy.",
+        "writing": "Sử dụng linh hoạt cấu trúc Subject – Verb agreement (1) trong Writing Task 1/2 giúp đa dạng hóa cấu trúc câu đơn/phức và ghi điểm với giám khảo 7.0+."
+      }
     },
     "exercises": [
       {
@@ -1510,7 +1666,17 @@
           "en": "Consistent practice leads to natural fluency in English communication.",
           "vi": "Luyện tập kiên trì giúp bạn nói tiếng Anh lưu loát và tự nhiên."
         }
-      ]
+      ],
+      "signalWords": [
+        "Everyone, everybody, someone, nobody, each, every -> Động từ số ít",
+        "The number of + N -> Động từ số ít (chỉ số lượng)",
+        "A number of + N -> Động từ số nhiều (nhiều người/vật)",
+        "Khoảng cách, thời gian, số tiền ($100, 5km) -> Động từ số ít"
+      ],
+      "ieltsApplication": {
+        "speaking": "Áp dụng Sự hòa hợp Chủ ngữ - Động từ (Phần 2) trong Speaking Part 1/2 để diễn đạt chính xác ngữ cảnh, tự nhiên và nâng điểm tiêu chí Grammatical Range & Accuracy.",
+        "writing": "Sử dụng linh hoạt cấu trúc Subject - Verb agreement (2) trong Writing Task 1/2 giúp đa dạng hóa cấu trúc câu đơn/phức và ghi điểm với giám khảo 7.0+."
+      }
     },
     "exercises": [
       {
@@ -1615,7 +1781,17 @@
           "en": "Consistent practice leads to natural fluency in English communication.",
           "vi": "Luyện tập kiên trì giúp bạn nói tiếng Anh lưu loát và tự nhiên."
         }
-      ]
+      ],
+      "signalWords": [
+        "By + tân ngữ chỉ tác nhân gây hành động",
+        "Trạng từ thời gian đứng sau 'by O', nơi chốn đứng trước 'by O'",
+        "Bị động thì tiếp diễn: be + being + V3/ed",
+        "Bị động khuyết thiếu: modal + be + V3/ed"
+      ],
+      "ieltsApplication": {
+        "speaking": "Áp dụng Câu bị động toàn tập trong Speaking Part 1/2 để diễn đạt chính xác ngữ cảnh, tự nhiên và nâng điểm tiêu chí Grammatical Range & Accuracy.",
+        "writing": "Sử dụng linh hoạt cấu trúc Passive Voices trong Writing Task 1/2 giúp đa dạng hóa cấu trúc câu đơn/phức và ghi điểm với giám khảo 7.0+."
+      }
     },
     "exercises": [
       {
@@ -1720,7 +1896,19 @@
           "en": "Consistent practice leads to natural fluency in English communication.",
           "vi": "Luyện tập kiên trì giúp bạn nói tiếng Anh lưu loát và tự nhiên."
         }
-      ]
+      ],
+      "signalWords": [
+        "Who (thay thế cho người làm chủ ngữ)",
+        "Whom (thay thế cho người làm tân ngữ)",
+        "Which (thay thế cho đồ vật, sự việc)",
+        "Whose + N (thay thế cho sở hữu cách)",
+        "That (thay thế cho cả người và vật trong MĐ xác định)",
+        "Rút gọn MĐQH: V-ing (chủ động) / V3-ed (bị động)"
+      ],
+      "ieltsApplication": {
+        "speaking": "Áp dụng Mệnh đề quan hệ trong Speaking Part 1/2 để diễn đạt chính xác ngữ cảnh, tự nhiên và nâng điểm tiêu chí Grammatical Range & Accuracy.",
+        "writing": "Sử dụng linh hoạt cấu trúc Relative clause trong Writing Task 1/2 giúp đa dạng hóa cấu trúc câu đơn/phức và ghi điểm với giám khảo 7.0+."
+      }
     },
     "exercises": [
       {
@@ -1825,7 +2013,18 @@
           "en": "Consistent practice leads to natural fluency in English communication.",
           "vi": "Luyện tập kiên trì giúp bạn nói tiếng Anh lưu loát và tự nhiên."
         }
-      ]
+      ],
+      "signalWords": [
+        "FANBOYS: For, And, Nor, But, Or, Yet, So",
+        "Although, Even though, Though + Clause (Mặc dù)",
+        "Despite, In spite of + Noun/V-ing",
+        "Because, Since, As + Clause (Bởi vì)",
+        "Because of, Due to + Noun/V-ing"
+      ],
+      "ieltsApplication": {
+        "speaking": "Áp dụng Liên từ kết hợp & Liên từ phụ thuộc trong Speaking Part 1/2 để diễn đạt chính xác ngữ cảnh, tự nhiên và nâng điểm tiêu chí Grammatical Range & Accuracy.",
+        "writing": "Sử dụng linh hoạt cấu trúc Conjunctions trong Writing Task 1/2 giúp đa dạng hóa cấu trúc câu đơn/phức và ghi điểm với giám khảo 7.0+."
+      }
     },
     "exercises": [
       {
@@ -1930,7 +2129,18 @@
           "en": "Consistent practice leads to natural fluency in English communication.",
           "vi": "Luyện tập kiên trì giúp bạn nói tiếng Anh lưu loát và tự nhiên."
         }
-      ]
+      ],
+      "signalWords": [
+        "Type 0: If + HTĐ, S + HTĐ (Sự thật khoa học)",
+        "Type 1: If + HTĐ, S + will + V (Có thể xảy ra ở hiện tại/tương lai)",
+        "Type 2: If + QKĐ (were), S + would + V (Không có thật ở hiện tại)",
+        "Type 3: If + QKHT, S + would have V3/ed (Không có thật trong quá khứ)",
+        "Unless = If not"
+      ],
+      "ieltsApplication": {
+        "speaking": "Áp dụng Câu điều kiện & Câu ước WISH trong Speaking Part 1/2 để diễn đạt chính xác ngữ cảnh, tự nhiên và nâng điểm tiêu chí Grammatical Range & Accuracy.",
+        "writing": "Sử dụng linh hoạt cấu trúc Conditional sentence trong Writing Task 1/2 giúp đa dạng hóa cấu trúc câu đơn/phức và ghi điểm với giám khảo 7.0+."
+      }
     },
     "exercises": [
       {
@@ -2035,7 +2245,17 @@
           "en": "Consistent practice leads to natural fluency in English communication.",
           "vi": "Luyện tập kiên trì giúp bạn nói tiếng Anh lưu loát và tự nhiên."
         }
-      ]
+      ],
+      "signalWords": [
+        "IN: Năm, tháng, mùa, buổi trong ngày, thế kỷ (in 2024, in May, in summer, in the morning)",
+        "ON: Thứ trong tuần, ngày cụ thể, ngày lễ có từ Day (on Monday, on May 5th, on Christmas Day)",
+        "AT: Giờ chính xác, ban đêm, các dịp lễ (at 7 AM, at night, at Christmas)",
+        "Prepositions of place: under, above, behind, in front of, between, among"
+      ],
+      "ieltsApplication": {
+        "speaking": "Áp dụng Giới từ chỉ thời gian & Nơi chốn trong Speaking Part 1/2 để diễn đạt chính xác ngữ cảnh, tự nhiên và nâng điểm tiêu chí Grammatical Range & Accuracy.",
+        "writing": "Sử dụng linh hoạt cấu trúc Prepositions trong Writing Task 1/2 giúp đa dạng hóa cấu trúc câu đơn/phức và ghi điểm với giám khảo 7.0+."
+      }
     },
     "exercises": [
       {
@@ -2140,7 +2360,16 @@
           "en": "Consistent practice leads to natural fluency in English communication.",
           "vi": "Luyện tập kiên trì giúp bạn nói tiếng Anh lưu loát và tự nhiên."
         }
-      ]
+      ],
+      "signalWords": [
+        "Appearance: well-built, graceful, elegant, expressive",
+        "Personality: broad-minded, reliable, ambitious, affectionate",
+        "Collocations: have a good sense of humor, keep one's temper, make an impression"
+      ],
+      "ieltsApplication": {
+        "speaking": "Áp dụng Chủ đề IELTS: Con người & Tính cách trong Speaking Part 1/2 để diễn đạt chính xác ngữ cảnh, tự nhiên và nâng điểm tiêu chí Grammatical Range & Accuracy.",
+        "writing": "Sử dụng linh hoạt cấu trúc People trong Writing Task 1/2 giúp đa dạng hóa cấu trúc câu đơn/phức và ghi điểm với giám khảo 7.0+."
+      }
     },
     "exercises": [
       {
@@ -2245,7 +2474,17 @@
           "en": "Consistent practice leads to natural fluency in English communication.",
           "vi": "Luyện tập kiên trì giúp bạn nói tiếng Anh lưu loát và tự nhiên."
         }
-      ]
+      ],
+      "signalWords": [
+        "Daily routine: strike a balance, lead a sedentary/active lifestyle, well-being",
+        "Used to + V (thói quen quá khứ)",
+        "Be/Get used to + V-ing (quen với việc gì ở hiện tại)",
+        "Work-life balance"
+      ],
+      "ieltsApplication": {
+        "speaking": "Áp dụng Chủ đề IELTS: Lối sống & Thói quen trong Speaking Part 1/2 để diễn đạt chính xác ngữ cảnh, tự nhiên và nâng điểm tiêu chí Grammatical Range & Accuracy.",
+        "writing": "Sử dụng linh hoạt cấu trúc Lifestyle trong Writing Task 1/2 giúp đa dạng hóa cấu trúc câu đơn/phức và ghi điểm với giám khảo 7.0+."
+      }
     },
     "exercises": [
       {
@@ -2350,7 +2589,16 @@
           "en": "Consistent practice leads to natural fluency in English communication.",
           "vi": "Luyện tập kiên trì giúp bạn nói tiếng Anh lưu loát và tự nhiên."
         }
-      ]
+      ],
+      "signalWords": [
+        "Direct speech -> Reported speech: Lùi 1 thì (HTĐ -> QKĐ, QKĐ -> QKHT)",
+        "Thay đổi đại từ & trạng từ: here -> there, now -> then, yesterday -> the previous day",
+        "Social media collocations: keep in touch, interact with, express opinions"
+      ],
+      "ieltsApplication": {
+        "speaking": "Áp dụng Chủ đề IELTS: Giao tiếp & Truyền thông trong Speaking Part 1/2 để diễn đạt chính xác ngữ cảnh, tự nhiên và nâng điểm tiêu chí Grammatical Range & Accuracy.",
+        "writing": "Sử dụng linh hoạt cấu trúc Communication trong Writing Task 1/2 giúp đa dạng hóa cấu trúc câu đơn/phức và ghi điểm với giám khảo 7.0+."
+      }
     },
     "exercises": [
       {
@@ -2455,7 +2703,16 @@
           "en": "Consistent practice leads to natural fluency in English communication.",
           "vi": "Luyện tập kiên trì giúp bạn nói tiếng Anh lưu loát và tự nhiên."
         }
-      ]
+      ],
+      "signalWords": [
+        "Noun clauses: What / That / Whether + S + V",
+        "Inversion (Đảo ngữ): Not only... but also, Hardly... when, Never before...",
+        "Cultural heritage, historical preservation, artistic value"
+      ],
+      "ieltsApplication": {
+        "speaking": "Áp dụng Chủ đề IELTS: Lịch sử, Nghệ thuật & Văn hóa trong Speaking Part 1/2 để diễn đạt chính xác ngữ cảnh, tự nhiên và nâng điểm tiêu chí Grammatical Range & Accuracy.",
+        "writing": "Sử dụng linh hoạt cấu trúc History, Art, Culture trong Writing Task 1/2 giúp đa dạng hóa cấu trúc câu đơn/phức và ghi điểm với giám khảo 7.0+."
+      }
     },
     "exercises": [
       {
@@ -2560,7 +2817,16 @@
           "en": "Consistent practice leads to natural fluency in English communication.",
           "vi": "Luyện tập kiên trì giúp bạn nói tiếng Anh lưu loát và tự nhiên."
         }
-      ]
+      ],
+      "signalWords": [
+        "Causative form: Have sb DO sth / Have sth DONE",
+        "Get sb TO DO sth / Get sth DONE",
+        "Entertainment collocations: recharge batteries, broaden horizons, competitive spirit"
+      ],
+      "ieltsApplication": {
+        "speaking": "Áp dụng Chủ đề IELTS: Giải trí, Thể thao & Báo chí trong Speaking Part 1/2 để diễn đạt chính xác ngữ cảnh, tự nhiên và nâng điểm tiêu chí Grammatical Range & Accuracy.",
+        "writing": "Sử dụng linh hoạt cấu trúc Entertainment, Art, Sports, The media trong Writing Task 1/2 giúp đa dạng hóa cấu trúc câu đơn/phức và ghi điểm với giám khảo 7.0+."
+      }
     },
     "exercises": [
       {
@@ -2665,7 +2931,17 @@
           "en": "Consistent practice leads to natural fluency in English communication.",
           "vi": "Luyện tập kiên trì giúp bạn nói tiếng Anh lưu loát và tự nhiên."
         }
-      ]
+      ],
+      "signalWords": [
+        "Deduction modals: Must have + V3 (Chắc chắn đã)",
+        "Can't have + V3 (Không thể nào đã)",
+        "Should have + V3 (Lẽ ra nên làm nhưng không làm)",
+        "Travel vocabulary: breathtaking scenery, off the beaten track"
+      ],
+      "ieltsApplication": {
+        "speaking": "Áp dụng Chủ đề IELTS: Du lịch & Giao thông trong Speaking Part 1/2 để diễn đạt chính xác ngữ cảnh, tự nhiên và nâng điểm tiêu chí Grammatical Range & Accuracy.",
+        "writing": "Sử dụng linh hoạt cấu trúc Travel trong Writing Task 1/2 giúp đa dạng hóa cấu trúc câu đơn/phức và ghi điểm với giám khảo 7.0+."
+      }
     },
     "exercises": [
       {
@@ -2770,7 +3046,16 @@
           "en": "Consistent practice leads to natural fluency in English communication.",
           "vi": "Luyện tập kiên trì giúp bạn nói tiếng Anh lưu loát và tự nhiên."
         }
-      ]
+      ],
+      "signalWords": [
+        "Double comparison: The + comparative..., the + comparative... (Càng... càng...)",
+        "So + Adj + that + Clause / Such + (a/an) + Adj + N + that + Clause",
+        "Consumerism: impulsive buying, cost-effective, consumer society"
+      ],
+      "ieltsApplication": {
+        "speaking": "Áp dụng Chủ đề IELTS: Mua sắm & Tiêu dùng trong Speaking Part 1/2 để diễn đạt chính xác ngữ cảnh, tự nhiên và nâng điểm tiêu chí Grammatical Range & Accuracy.",
+        "writing": "Sử dụng linh hoạt cấu trúc Shopping and consumerism trong Writing Task 1/2 giúp đa dạng hóa cấu trúc câu đơn/phức và ghi điểm với giám khảo 7.0+."
+      }
     },
     "exercises": [
       {
@@ -2875,7 +3160,16 @@
           "en": "Consistent practice leads to natural fluency in English communication.",
           "vi": "Luyện tập kiên trì giúp bạn nói tiếng Anh lưu loát và tự nhiên."
         }
-      ]
+      ],
+      "signalWords": [
+        "Subjunctive mood: It is essential / crucial / vital that S + (should) + V_inf",
+        "Propose / Suggest / Recommend that S + V_inf",
+        "Environmental actions: tackle climate change, reduce carbon footprint, eco-friendly"
+      ],
+      "ieltsApplication": {
+        "speaking": "Áp dụng Chủ đề IELTS: Môi trường & Khí hậu trong Speaking Part 1/2 để diễn đạt chính xác ngữ cảnh, tự nhiên và nâng điểm tiêu chí Grammatical Range & Accuracy.",
+        "writing": "Sử dụng linh hoạt cấu trúc Environment trong Writing Task 1/2 giúp đa dạng hóa cấu trúc câu đơn/phức và ghi điểm với giám khảo 7.0+."
+      }
     },
     "exercises": [
       {
@@ -2980,7 +3274,16 @@
           "en": "Consistent practice leads to natural fluency in English communication.",
           "vi": "Luyện tập kiên trì giúp bạn nói tiếng Anh lưu loát và tự nhiên."
         }
-      ]
+      ],
+      "signalWords": [
+        "Cleft sentence (Câu chẻ): It is/was [Nhân tố nhấn mạnh] THAT/WHO + Clause",
+        "Purpose clauses: In order that / So that + S + can/could + V",
+        "Legal terms: abide by the law, commit a crime, legal framework"
+      ],
+      "ieltsApplication": {
+        "speaking": "Áp dụng Chủ đề IELTS: Luật pháp & Tội phạm trong Speaking Part 1/2 để diễn đạt chính xác ngữ cảnh, tự nhiên và nâng điểm tiêu chí Grammatical Range & Accuracy.",
+        "writing": "Sử dụng linh hoạt cấu trúc Law & Crime trong Writing Task 1/2 giúp đa dạng hóa cấu trúc câu đơn/phức và ghi điểm với giám khảo 7.0+."
+      }
     },
     "exercises": [
       {
@@ -3085,7 +3388,16 @@
           "en": "Consistent practice leads to natural fluency in English communication.",
           "vi": "Luyện tập kiên trì giúp bạn nói tiếng Anh lưu loát và tự nhiên."
         }
-      ]
+      ],
+      "signalWords": [
+        "Concession clauses: Whatever, Whenever, Wherever, However + Clause",
+        "In spite of / Despite the fact that + Clause",
+        "IELTS Writing Task 2 synthesis & advanced cohesive devices"
+      ],
+      "ieltsApplication": {
+        "speaking": "Áp dụng Chủ đề IELTS: Truyền thông & Xã hội hiện đại trong Speaking Part 1/2 để diễn đạt chính xác ngữ cảnh, tự nhiên và nâng điểm tiêu chí Grammatical Range & Accuracy.",
+        "writing": "Sử dụng linh hoạt cấu trúc Media trong Writing Task 1/2 giúp đa dạng hóa cấu trúc câu đơn/phức và ghi điểm với giám khảo 7.0+."
+      }
     },
     "exercises": [
       {
