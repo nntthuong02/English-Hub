@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Luyện Nói & Phát Âm — English Hub</title>
+  <title>Luyện Nói & Chấm Điểm Phát Âm — English Hub</title>
   <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <!-- Firebase SDKs -->
@@ -12,7 +12,7 @@
   <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
   <style>
     .mode-pill {
-      padding: 0.65rem 1.3rem;
+      padding: 0.65rem 1.2rem;
       border-radius: var(--radius-sm);
       font-weight: 700;
       font-size: 0.95rem;
@@ -34,8 +34,8 @@
       background: var(--surface);
       border: 1px solid var(--surface-border);
       border-radius: var(--radius-md);
-      padding: 1.8rem;
-      margin-bottom: 1.5rem;
+      padding: 1.5rem;
+      margin-bottom: 1.2rem;
       box-shadow: var(--shadow-sm);
       transition: all 0.2s ease;
     }
@@ -43,22 +43,23 @@
       box-shadow: var(--shadow-md);
     }
     .mic-btn {
-      width: 65px;
-      height: 65px;
+      width: 52px;
+      height: 52px;
       border-radius: 50%;
       border: none;
       background: linear-gradient(135deg, #9333ea 0%, #7c3aed 100%);
       color: white;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       cursor: pointer;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 4px 14px rgba(147, 51, 234, 0.35);
+      box-shadow: 0 4px 12px rgba(147, 51, 234, 0.35);
       transition: all 0.2s ease;
+      flex-shrink: 0;
     }
     .mic-btn:hover {
-      transform: scale(1.06);
+      transform: scale(1.08);
     }
     .mic-btn.recording {
       background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%) !important;
@@ -70,16 +71,17 @@
       100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
     }
     .score-circle {
-      width: 70px;
-      height: 70px;
+      width: 65px;
+      height: 65px;
       border-radius: 50%;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       font-weight: 800;
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       border: 4px solid;
+      flex-shrink: 0;
     }
     .score-high {
       border-color: #22c55e;
@@ -125,6 +127,11 @@
       gap: 1rem;
       margin-top: 1rem;
     }
+    .vocab-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.2rem;
+    }
   </style>
 </head>
 <body>
@@ -145,51 +152,77 @@
     <div id="nav-user-badge" class="user-profile-badge"></div>
   </nav>
 
-  <div class="container" style="max-width: 960px;">
+  <div class="container" style="max-width: 1020px;">
     <!-- Header Banner & Mode Navigation -->
     <div style="background:linear-gradient(135deg, #7e22ce 0%, #9333ea 100%); color:white; border-radius:var(--radius-md); padding:2rem 2.5rem; margin-bottom:2rem; box-shadow:var(--shadow-md);">
       <span class="badge" style="background:rgba(255,255,255,0.2); color:white; margin-bottom:0.4rem;">
-        <i class="fa-solid fa-microphone"></i> Công nghệ Web Speech API Trực Tiếp
+        <i class="fa-solid fa-microphone"></i> Công nghệ Web Speech Recognition Real-time
       </span>
       <h1 style="font-size:1.9rem; font-weight:800; margin-bottom:0.4rem;">Phòng Luyện Nói & Chấm Điểm Phát Âm</h1>
       <p style="opacity:0.95; font-size:0.98rem; line-height:1.5; margin-bottom:1.5rem;">
-        Luyện phát âm từng âm vị IPA, mẫu câu giao tiếp và kỹ thuật Shadowing. Bật Micro 🎙️ để nhận diện và chấm điểm % độ chuẩn theo thời gian thực!
+        Trọn bộ 1000+ từ vựng theo 23 chủ đề, cặp âm Minimal Pairs và mẫu câu giao tiếp IELTS. Bấm Micro 🎙️ để nhận diện và chấm điểm % độ chuẩn âm!
       </p>
 
-      <!-- 3 Tabs -->
+      <!-- 4 Tabs -->
       <div style="display:flex; gap:0.6rem; flex-wrap:wrap; border-top:1px solid rgba(255,255,255,0.2); padding-top:1rem;">
-        <button id="tab-btn-pairs" class="mode-pill active" onclick="switchSpeakingTab('pairs')">
-          <i class="fa-solid fa-arrows-split-up-and-left"></i> 1. Cặp Âm Dễ Nhầm (Minimal Pairs)
+        <button id="tab-btn-vocab" class="mode-pill active" onclick="switchSpeakingTab('vocab')">
+          <i class="fa-solid fa-book-bookmark"></i> 1. Phát Âm 1000+ Từ Vựng
+        </button>
+        <button id="tab-btn-pairs" class="mode-pill" onclick="switchSpeakingTab('pairs')">
+          <i class="fa-solid fa-arrows-split-up-and-left"></i> 2. Cặp Âm Dễ Nhầm (Minimal Pairs)
         </button>
         <button id="tab-btn-sentences" class="mode-pill" onclick="switchSpeakingTab('sentences')">
-          <i class="fa-solid fa-comments"></i> 2. Luyện Câu Giao Tiếp & IELTS
+          <i class="fa-solid fa-comments"></i> 3. Câu Giao Tiếp & IELTS
         </button>
         <button id="tab-btn-shadowing" class="mode-pill" onclick="switchSpeakingTab('shadowing')">
-          <i class="fa-solid fa-circle-nodes"></i> 3. Thu Âm Đối Chiếu (Shadowing)
+          <i class="fa-solid fa-circle-nodes"></i> 4. Thu Âm Đối Chiếu (Shadowing)
         </button>
       </div>
     </div>
 
     <!-- Browser Support Alert -->
     <div id="browser-warning" style="display:none; background:#fee2e2; border:1px solid #f87171; color:#991b1b; padding:1rem; border-radius:var(--radius-sm); margin-bottom:1.5rem;">
-      <i class="fa-solid fa-triangle-exclamation"></i> <strong>Lưu ý:</strong> Trình duyệt của bạn chưa bật tính năng Nhận diện giọng nói. Hãy dùng <strong>Google Chrome, Edge, Cốc Cốc hoặc Safari</strong> và cấp quyền truy cập Micro để chấm điểm phát âm nhé!
+      <i class="fa-solid fa-triangle-exclamation"></i> <strong>Lưu ý:</strong> Trình duyệt của bạn chưa bật tính năng Nhận diện giọng nói. Hãy dùng <strong>Google Chrome, Edge, Cốc Cốc hoặc Safari</strong> và cấp quyền Micro để chấm điểm phát âm nhé!
     </div>
 
-    <!-- ==================== TAB 1: MINIMAL PAIRS ==================== -->
-    <div id="section-pairs">
+    <!-- ==================== TAB 1: 1000+ VOCABULARY WORDS PRONUNCIATION ==================== -->
+    <div id="section-vocab">
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; margin-bottom:1.5rem;">
+        <div>
+          <h2 style="font-size:1.3rem; font-weight:800; color:var(--text-main); margin-bottom:0.3rem;">
+            <i class="fa-solid fa-microphone" style="color:#9333ea;"></i> Luyện Phát Âm Trọn Bộ Từ Vựng (23 Chủ Đề)
+          </h2>
+          <p style="color:var(--text-muted); font-size:0.92rem; margin:0;">
+            Bấm 🔊 để nghe mẫu, sau đó bấm 🎙️ Micro và nói to từ đó để hệ thống chấm điểm:
+          </p>
+        </div>
+
+        <div style="display:flex; align-items:center; gap:0.6rem;">
+          <label style="font-size:0.9rem; font-weight:700; color:var(--text-muted);">Chủ đề:</label>
+          <select id="vocab-cat-select" class="btn btn-outline" style="padding:0.5rem 1rem; font-size:0.9rem; font-weight:700;" onchange="renderVocabSpeakingList(this.value)">
+            <!-- Injected by JS -->
+          </select>
+        </div>
+      </div>
+
+      <div id="vocab-speaking-grid" class="vocab-grid"></div>
+    </div>
+
+    <!-- ==================== TAB 2: MINIMAL PAIRS ==================== -->
+    <div id="section-pairs" style="display:none;">
       <div style="margin-bottom:1.5rem;">
         <h2 style="font-size:1.3rem; font-weight:800; color:var(--text-main); margin-bottom:0.3rem;">
           <i class="fa-solid fa-bullseye" style="color:#9333ea;"></i> Luyện Phân Biệt Cặp Âm Dễ Nhầm Lẫn (Minimal Pairs)
         </h2>
         <p style="color:var(--text-muted); font-size:0.92rem;">
-          Bấm 🔊 để nghe mẫu, sau đó bấm 🎙️ Micro và phát âm từ tương ứng để hệ thống chấm điểm bạn đang đọc từ nào:
+          Bấm 🔊 để nghe mẫu, sau đó bấm 🎙️ Micro và phát âm để hệ thống nhận diện bạn đang đọc từ nào:
         </p>
       </div>
 
       <div id="pairs-list-container"></div>
     </div>
 
-    <!-- ==================== TAB 2: SENTENCE SPEAKING ==================== -->
+    <!-- ==================== TAB 3: SENTENCE SPEAKING ==================== -->
     <div id="section-sentences" style="display:none;">
       <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; margin-bottom:1.5rem;">
         <div>
@@ -209,7 +242,7 @@
       <div id="sentences-list-container"></div>
     </div>
 
-    <!-- ==================== TAB 3: SHADOWING & RECORDER ==================== -->
+    <!-- ==================== TAB 4: SHADOWING & RECORDER ==================== -->
     <div id="section-shadowing" style="display:none;">
       <div style="margin-bottom:1.5rem;">
         <h2 style="font-size:1.3rem; font-weight:800; color:var(--text-main); margin-bottom:0.3rem;">
@@ -237,7 +270,6 @@
     const user = Auth.requireAuth();
     Auth.updateNavbar();
 
-    // Check Speech Recognition Support
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
     if (!SpeechRecognition) {
       document.getElementById('browser-warning').style.display = 'block';
@@ -247,7 +279,7 @@
     let isRecording = false;
     let currentTargetText = '';
     let currentTargetId = '';
-    let currentTargetType = ''; // 'pair', 'sentence'
+    let currentTargetType = '';
 
     function initSpeechEngine() {
       if (SpeechRecognition) {
@@ -297,21 +329,19 @@
         return;
       }
 
-      // Start Recording
       currentTargetId = targetId;
       currentTargetText = targetText;
       currentTargetType = type;
       isRecording = true;
 
-      // Update UI button
       document.querySelectorAll('.mic-btn').forEach(btn => btn.classList.remove('recording'));
-      const activeBtn = document.getElementById(`btn-mic-${targetId}`);
+      const activeBtn = document.getElementById('btn-mic-' + targetId);
       if (activeBtn) activeBtn.classList.add('recording');
 
-      const feedbackBox = document.getElementById(`feedback-${targetId}`);
+      const feedbackBox = document.getElementById('feedback-' + targetId);
       if (feedbackBox) {
         feedbackBox.style.display = 'block';
-        feedbackBox.innerHTML = '<span style="color:#9333ea; font-weight:700;"><i class="fa-solid fa-microphone-lines fa-fade"></i> Đang lắng nghe... Hãy phát âm câu tiếng Anh ngay!</span>';
+        feedbackBox.innerHTML = '<span style="color:#9333ea; font-weight:700;"><i class="fa-solid fa-microphone-lines fa-fade"></i> Đang lắng nghe... Hãy phát âm ngay!</span>';
       }
 
       try {
@@ -326,7 +356,6 @@
       document.querySelectorAll('.mic-btn').forEach(btn => btn.classList.remove('recording'));
     }
 
-    // Levenshtein Similarity Matcher
     function calculateSimilarity(str1, str2) {
       const s1 = str1.toLowerCase().replace(/[^a-z0-9 ]/g, '').trim();
       const s2 = str2.toLowerCase().replace(/[^a-z0-9 ]/g, '').trim();
@@ -345,59 +374,56 @@
     }
 
     function evaluateSpokenSpeech(spokenText, confidence) {
-      const target = currentTargetText.toLowerCase().replace(/[^a-z0-9 ]/g, '').trim();
-      const spoken = spokenText.toLowerCase().replace(/[^a-z0-9 ]/g, '').trim();
-
       const score = calculateSimilarity(currentTargetText, spokenText);
-      const feedbackBox = document.getElementById(`feedback-${currentTargetId}`);
+      const feedbackBox = document.getElementById('feedback-' + currentTargetId);
       if (!feedbackBox) return;
 
-      // Build word by word diff
       const targetWords = currentTargetText.replace(/[^a-zA-Z0-9 ]/g, '').split(/\s+/);
       const spokenWords = spokenText.replace(/[^a-zA-Z0-9 ]/g, '').toLowerCase().split(/\s+/);
 
       const highlightedSentence = targetWords.map(w => {
         const cleanW = w.toLowerCase();
         if (spokenWords.includes(cleanW)) {
-          return `<span class="word-matched">${w}</span>`;
+          return '<span class="word-matched">' + w + '</span>';
         } else {
-          return `<span class="word-missed">${w}</span>`;
+          return '<span class="word-missed">' + w + '</span>';
         }
       }).join(' ');
 
       const scoreClass = score >= 80 ? 'score-high' : (score >= 50 ? 'score-mid' : 'score-low');
-      const msg = score >= 80 ? '🎉 Xuất sắc! Phát âm rất chuẩn xác!' : (score >= 50 ? '👍 Khá tốt! Cần chú ý các từ màu đỏ nhé.' : '💪 Hãy nghe lại câu mẫu và nói rõ ràng hơn nhé!');
+      const msg = score >= 80 ? '🎉 Xuất sắc! Phát âm rất chuẩn xác!' : (score >= 50 ? '👍 Khá tốt! Cần chú ý các từ màu đỏ nhé.' : '💪 Hãy nghe lại câu mẫu và nói to rõ ràng hơn nhé!');
 
       feedbackBox.innerHTML = `
-        <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; margin-top:0.8rem; padding-top:0.8rem; border-top:1px dashed var(--surface-border);">
-          <div>
-            <div style="font-size:0.92rem; color:var(--text-muted); margin-bottom:0.3rem;">
-              <strong>Bạn vừa nói:</strong> <em>"${spokenText}"</em>
+        <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:0.8rem; margin-top:0.8rem; padding-top:0.8rem; border-top:1px dashed var(--surface-border);">
+          <div style="flex:1;">
+            <div style="font-size:0.9rem; color:var(--text-muted); margin-bottom:0.2rem;">
+              <strong>Bạn nói:</strong> <em>"${spokenText}"</em>
             </div>
-            <div style="font-size:1.05rem; margin-bottom:0.4rem;">
+            <div style="font-size:1rem; margin-bottom:0.3rem;">
               <strong>Phân tích âm:</strong> ${highlightedSentence}
             </div>
-            <div style="font-size:0.92rem; font-weight:700; color:var(--text-main);">${msg}</div>
+            <div style="font-size:0.88rem; font-weight:700; color:var(--text-main);">${msg}</div>
           </div>
           <div class="score-circle ${scoreClass}">
             <span>${score}%</span>
-            <span style="font-size:0.65rem; text-transform:uppercase;">Chuẩn</span>
+            <span style="font-size:0.6rem; text-transform:uppercase;">Chuẩn</span>
           </div>
         </div>
       `;
 
-      // Save Speaking Practice Score to Firebase
       DB.addQuizResult(user.username, 'speaking', `Luyện Nói: ${currentTargetText.slice(0, 30)}...`, score, 100, []);
     }
 
     /* ==========================================================
-       TAB SWITCHING & RENDERING
+       TAB SWITCHING
        ========================================================== */
     function switchSpeakingTab(tab) {
+      document.getElementById('section-vocab').style.display = (tab === 'vocab') ? 'block' : 'none';
       document.getElementById('section-pairs').style.display = (tab === 'pairs') ? 'block' : 'none';
       document.getElementById('section-sentences').style.display = (tab === 'sentences') ? 'block' : 'none';
       document.getElementById('section-shadowing').style.display = (tab === 'shadowing') ? 'block' : 'none';
 
+      document.getElementById('tab-btn-vocab').className = (tab === 'vocab') ? 'mode-pill active' : 'mode-pill';
       document.getElementById('tab-btn-pairs').className = (tab === 'pairs') ? 'mode-pill active' : 'mode-pill';
       document.getElementById('tab-btn-sentences').className = (tab === 'sentences') ? 'mode-pill active' : 'mode-pill';
       document.getElementById('tab-btn-shadowing').className = (tab === 'shadowing') ? 'mode-pill active' : 'mode-pill';
@@ -405,7 +431,16 @@
 
     const sData = window.SPEAKING_DATA;
     if (sData) {
-      // 1. Render Minimal Pairs
+      // 1. Init Vocabulary Categories Dropdown
+      if (sData.vocab_categories && sData.vocab_categories.length > 0) {
+        const vCatSelect = document.getElementById('vocab-cat-select');
+        vCatSelect.innerHTML = sData.vocab_categories.map(c => `
+          <option value="${c.id}">${c.name} (${c.words.length} từ)</option>
+        `).join('');
+        renderVocabSpeakingList(sData.vocab_categories[0].id);
+      }
+
+      // 2. Render Minimal Pairs
       document.getElementById('pairs-list-container').innerHTML = sData.minimal_pairs.map((mp, idx) => `
         <div class="voice-card">
           <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:1rem; flex-wrap:wrap; gap:0.5rem;">
@@ -445,13 +480,43 @@
         </div>
       `).join('');
 
-      // 2. Render Topics Dropdown
+      // 3. Render Topics Dropdown
       const topicSelect = document.getElementById('topic-select');
       topicSelect.innerHTML = sData.topics.map(t => `<option value="${t.id}">${t.title} (${t.level})</option>`).join('');
       renderSentenceTopic(sData.topics[0].id);
 
-      // 3. Render Shadowing
+      // 4. Render Shadowing
       renderShadowing();
+    }
+
+    function renderVocabSpeakingList(catId) {
+      const catObj = sData.vocab_categories.find(c => c.id === catId) || sData.vocab_categories[0];
+      const grid = document.getElementById('vocab-speaking-grid');
+
+      grid.innerHTML = catObj.words.map((w, idx) => `
+        <div class="voice-card" style="padding:1.2rem; display:flex; flex-direction:column; justify-content:space-between; margin-bottom:0;">
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4rem;">
+              <span style="font-size:1.35rem; font-weight:800; color:var(--primary);">${w.word}</span>
+              <span style="font-family:monospace; font-size:0.9rem; color:var(--text-muted); font-weight:700;">${w.ipa}</span>
+            </div>
+            <p style="font-size:0.9rem; color:var(--text-main); font-weight:600; margin:0 0 0.6rem 0;">${w.meaning}</p>
+            ${w.example ? `<p style="font-size:0.82rem; color:var(--text-muted); line-height:1.4; margin:0 0 1rem 0; font-style:italic;">"${w.example}"</p>` : ''}
+          </div>
+
+          <div>
+            <div style="display:flex; gap:0.5rem; align-items:center;">
+              <button type="button" class="btn btn-outline" style="flex:1; padding:0.45rem 0.7rem; font-size:0.85rem;" onclick="speakTarget('${w.word.replace(/'/g, "\\'")}')">
+                <i class="fa-solid fa-volume-high"></i> Nghe 🔊
+              </button>
+              <button type="button" id="btn-mic-v-${w.id}" class="mic-btn" style="width:42px; height:42px; font-size:1.05rem;" onclick="toggleRecord('v-${w.id}', '${w.word.replace(/'/g, "\\'")}', 'vocab')">
+                <i class="fa-solid fa-microphone"></i>
+              </button>
+            </div>
+            <div id="feedback-v-${w.id}" style="display:none; font-size:0.85rem;"></div>
+          </div>
+        </div>
+      `).join('');
     }
 
     function renderSentenceTopic(topicId) {
@@ -492,7 +557,6 @@
        ========================================================== */
     let mediaRecorder = null;
     let audioChunks = [];
-    let activeShadowingId = null;
 
     function renderShadowing() {
       const container = document.getElementById('shadowing-list-container');
@@ -536,7 +600,7 @@
     }
 
     async function toggleMediaRecord(shId) {
-      const recBtn = document.getElementById(`btn-rec-${shId}`);
+      const recBtn = document.getElementById('btn-rec-' + shId);
       if (mediaRecorder && mediaRecorder.state === 'recording') {
         mediaRecorder.stop();
         recBtn.innerHTML = '<i class="fa-solid fa-microphone"></i> 2. Thu Âm Lại';
@@ -556,8 +620,8 @@
         mediaRecorder.onstop = () => {
           const audioBlob = new Blob(audioChunks, { type: 'audio/wav' });
           const audioUrl = URL.createObjectURL(audioBlob);
-          const playerBox = document.getElementById(`player-box-${shId}`);
-          const playback = document.getElementById(`audio-playback-${shId}`);
+          const playerBox = document.getElementById('player-box-' + shId);
+          const playback = document.getElementById('audio-playback-' + shId);
           playback.src = audioUrl;
           playerBox.style.display = 'flex';
           stream.getTracks().forEach(t => t.stop());
