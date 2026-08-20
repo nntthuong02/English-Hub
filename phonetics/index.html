@@ -136,13 +136,15 @@
           ${q.title}
         </h3>
 
-        <div id="choices-container">
+        <div id="choices-container" style="display:grid; grid-template-columns: 1fr 1fr; gap:1rem;">
           ${q.choices.map((choice, i) => {
             const letter = String.fromCharCode(65 + i);
-            const cleanText = choice.replace(/^[A-D]\.\s*/, '');
+            let cleanText = choice.replace(/^[A-D]\.\s*/, '');
+            // Highlight <u> with bold red underline
+            cleanText = cleanText.replace(/<u>(.*?)<\/u>/g, '<u style="text-decoration:underline; text-decoration-color:#e11d48; text-decoration-thickness:3px; font-weight:800; color:#be123c;">$1</u>');
             return `
-              <button class="choice-btn" onclick="submitChoice(this, '${letter}', '${q.answer}')">
-                <span><strong>${letter}.</strong></span>
+              <button class="choice-btn" style="font-size:1.15rem; padding:1.1rem 1.4rem; display:flex; align-items:center; gap:0.8rem;" onclick="submitChoice(this, '${letter}', '${q.answer}')">
+                <span style="font-weight:800; color:var(--primary);">${letter}.</span>
                 <span>${cleanText}</span>
               </button>
             `;
