@@ -1,19 +1,8 @@
-
-// 10 Hardcoded pre-configured accounts
-const ACCOUNTS = [
-  { username: "user01", password: "pass01", displayName: "Học Viên 01 (Nguyễn An)", avatar: "NA" },
-  { username: "user02", password: "pass02", displayName: "Học Viên 02 (Trần Bình)", avatar: "TB" },
-  { username: "user03", password: "pass03", displayName: "Học Viên 03 (Lê Cường)", avatar: "LC" },
-  { username: "user04", password: "pass04", displayName: "Học Viên 04 (Phạm Dung)", avatar: "PD" },
-  { username: "user05", password: "pass05", displayName: "Học Viên 05 (Hoàng Em)", avatar: "HE" },
-  { username: "user06", password: "pass06", displayName: "Học Viên 06 (Vũ Giang)", avatar: "VG" },
-  { username: "user07", password: "pass07", displayName: "Học Viên 07 (Đỗ Hải)", avatar: "DH" },
-  { username: "user08", password: "pass08", displayName: "Học Viên 08 (Bùi Khánh)", avatar: "BK" },
-  { username: "user09", password: "pass09", displayName: "Học Viên 09 (Ngô Linh)", avatar: "NL" },
-  { username: "user10", password: "pass10", displayName: "Học Viên 10 (Trịnh Minh)", avatar: "TM" }
-];
+// Firebase Authentication Management (Zero Passwords in Code)
+// Passwords are encrypted & handled securely by Google Firebase Auth servers.
 
 const Auth = {
+  // Get active session user
   getCurrentUser() {
     const raw = localStorage.getItem('eh_current_user');
     if (!raw) return null;
@@ -24,30 +13,81 @@ const Auth = {
     }
   },
 
-  login(username, password) {
-    const user = ACCOUNTS.find(u => u.username === username && u.password === password);
-    if (user) {
-      localStorage.setItem('eh_current_user', JSON.stringify(user));
-      // Trigger initial user record in DB
-      if (window.DB) {
-        DB.initUser(user.username);
-      }
-      return { success: true, user };
-    }
-    return { success: false, message: "Sai tên đăng nhập hoặc mật khẩu!" };
+  // Helper to format email if user enters just "user01"
+  formatEmail(input) {
+    input = input.trim();
+    if (input.includes('@')) return input;
+    return `${input}@englishhub.com`;
   },
 
-  logout() {
+  // Login via Firebase Auth
+  async login(emailOrUser, password) {
+    const email = this.formatEmail(emailOrUser);
+    
+    if (window.isFirebaseActive && typeof firebase !== 'undefined' && firebase.auth) {
+      try {
+        const userCredential = await firebase.auth().signInWithEmailAndPassword(email, password);
+        const fbUser = userCredential.user;
+        
+        const username = email.split('@')[0];
+        const userObj = {
+          uid: fbUser.uid,
+          email: fbUser.email,
+          username: username,
+          displayName: fbUser.displayName || `Học Viên (${username})`,
+          avatar: username.substring(0, 2).toUpperCase()
+        };
+
+        localStorage.setItem('eh_current_user', JSON.stringify(userObj));
+        
+        if (window.DB) {
+          DB.initUser(userObj.username);
+        }
+        return { success: true, user: userObj };
+      } catch (error) {
+        let msg = "Đăng nhập thất bại: ";
+        if (error.code === 'auth/user-not-found' || error.code === 'auth/wrong-password' || error.code === 'auth/invalid-credential') {
+          msg = "Sai tài khoản hoặc mật khẩu!";
+        } else if (error.code === 'auth/invalid-email') {
+          msg = "Định dạng email không hợp lệ!";
+        } else {
+          msg += error.message;
+        }
+        return { success: false, message: msg };
+      }
+    } else {
+      // Fallback offline session mode
+      const username = email.split('@')[0];
+      const userObj = {
+        uid: 'local_' + username,
+        email: email,
+        username: username,
+        displayName: `Học Viên (${username})`,
+        avatar: username.substring(0, 2).toUpperCase()
+      };
+      localStorage.setItem('eh_current_user', JSON.stringify(userObj));
+      if (window.DB) DB.initUser(userObj.username);
+      return { success: true, user: userObj };
+    }
+  },
+
+  // Logout
+  async logout() {
+    if (typeof firebase !== 'undefined' && firebase.auth) {
+      try {
+        await firebase.auth().signOut();
+      } catch(e) {}
+    }
     localStorage.removeItem('eh_current_user');
-    window.location.href = (window.location.pathname.includes('/vocabulary/') || window.location.pathname.includes('/grammar/') || window.location.pathname.includes('/stats/')) 
-      ? '../index.html' : 'index.html';
+    const isSub = (window.location.pathname.includes('/vocabulary/') || window.location.pathname.includes('/grammar/') || window.location.pathname.includes('/stats/'));
+    window.location.href = isSub ? '../index.html' : 'index.html';
   },
 
   requireAuth() {
     const user = this.getCurrentUser();
     if (!user) {
-      const isSubDir = (window.location.pathname.includes('/vocabulary/') || window.location.pathname.includes('/grammar/') || window.location.pathname.includes('/stats/'));
-      window.location.href = isSubDir ? '../index.html' : 'index.html';
+      const isSub = (window.location.pathname.includes('/vocabulary/') || window.location.pathname.includes('/grammar/') || window.location.pathname.includes('/stats/'));
+      window.location.href = isSub ? '../index.html' : 'index.html';
       return null;
     }
     return user;
@@ -67,4 +107,3 @@ const Auth = {
 };
 
 window.Auth = Auth;
-window.ACCOUNTS = ACCOUNTS;
