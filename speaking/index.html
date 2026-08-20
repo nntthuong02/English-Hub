@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luyện Nói & Phát Âm — English Hub</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+  <style>
+    .mode-pill {
+      padding: 0.65rem 1.3rem;
+      border-radius: var(--radius-sm);
+      font-weight: 700;
+      font-size: 0.95rem;
+      cursor: pointer;
+      border: 1px solid rgba(255,255,255,0.3);
+      background: transparent;
+      color: white;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .mode-pill.active {
+      background: white !important;
+      color: #9333ea !important;
+      box-shadow: var(--shadow-sm);
+    }
+    .voice-card {
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      border-radius: var(--radius-md);
+      padding: 1.8rem;
+      margin-bottom: 1.5rem;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.2s ease;
+    }
+    .voice-card:hover {
+      box-shadow: var(--shadow-md);
+    }
+    .mic-btn {
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      border: none;
+      background: linear-gradient(135deg, #9333ea 0%, #7c3aed 100%);
+      color: white;
+      font-size: 1.5rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 14px rgba(147, 51, 234, 0.35);
+      transition: all 0.2s ease;
+    }
+    .mic-btn:hover {
+      transform: scale(1.06);
+    }
+    .mic-btn.recording {
+      background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%) !important;
+      animation: pulse-ring 1.2s infinite;
+    }
+    @keyframes pulse-ring {
+      0% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
+      70% { box-shadow: 0 0 0 16px rgba(239, 68, 68, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+    }
+    .score-circle {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 1.3rem;
+      border: 4px solid;
+    }
+    .score-high {
+      border-color: #22c55e;
+      background: #f0fdf4;
+      color: #16a34a;
+    }
+    .score-mid {
+      border-color: #f59e0b;
+      background: #fffbeb;
+      color: #d97706;
+    }
+    .score-low {
+      border-color: #ef4444;
+      background: #fef2f2;
+      color: #dc2626;
+    }
+    .word-matched {
+      color: #16a34a;
+      font-weight: 800;
+      background: #dcfce7;
+      padding: 0.1rem 0.35rem;
+      border-radius: 3px;
+      display: inline-block;
+      margin-right: 0.2rem;
+    }
+    .word-missed {
+      color: #dc2626;
+      font-weight: 800;
+      background: #fee2e2;
+      padding: 0.1rem 0.35rem;
+      border-radius: 3px;
+      display: inline-block;
+      margin-right: 0.2rem;
+    }
+    .audio-player-box {
+      background: var(--bg);
+      border: 1px solid var(--surface-border);
+      border-radius: var(--radius-sm);
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="../dashboard.html" class="nav-brand">
+      <i class="fa-solid fa-graduation-cap"></i>
+      <span>English Hub</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../dashboard.html"><i class="fa-solid fa-house"></i> Trang chủ</a></li>
+      <li><a href="../vocabulary/index.html"><i class="fa-solid fa-book-open"></i> Từ Vựng</a></li>
+      <li><a href="../grammar/index.html"><i class="fa-solid fa-pen-nib"></i> Ngữ Pháp</a></li>
+      <li><a href="../phonetics/index.html"><i class="fa-solid fa-volume-high"></i> Ngữ Âm & Trọng Âm</a></li>
+      <li><a href="index.html" class="active"><i class="fa-solid fa-microphone-lines"></i> Luyện Nói</a></li>
+      <li><a href="../stats/index.html"><i class="fa-solid fa-chart-line"></i> Thống Kê</a></li>
+      <li><a href="../docs/methods.html"><i class="fa-solid fa-brain"></i> Phương Pháp Học</a></li>
+    </ul>
+    <div id="nav-user-badge" class="user-profile-badge"></div>
+  </nav>
+
+  <div class="container" style="max-width: 960px;">
+    <!-- Header Banner & Mode Navigation -->
+    <div style="background:linear-gradient(135deg, #7e22ce 0%, #9333ea 100%); color:white; border-radius:var(--radius-md); padding:2rem 2.5rem; margin-bottom:2rem; box-shadow:var(--shadow-md);">
+      <span class="badge" style="background:rgba(255,255,255,0.2); color:white; margin-bottom:0.4rem;">
+        <i class="fa-solid fa-microphone"></i> Công nghệ Web Speech API Trực Tiếp
+      </span>
+      <h1 style="font-size:1.9rem; font-weight:800; margin-bottom:0.4rem;">Phòng Luyện Nói & Chấm Điểm Phát Âm</h1>
+      <p style="opacity:0.95; font-size:0.98rem; line-height:1.5; margin-bottom:1.5rem;">
+        Luyện phát âm từng âm vị IPA, mẫu câu giao tiếp và kỹ thuật Shadowing. Bật Micro 🎙️ để nhận diện và chấm điểm % độ chuẩn theo thời gian thực!
+      </p>
+
+      <!-- 3 Tabs -->
+      <div style="display:flex; gap:0.6rem; flex-wrap:wrap; border-top:1px solid rgba(255,255,255,0.2); padding-top:1rem;">
+        <button id="tab-btn-pairs" class="mode-pill active" onclick="switchSpeakingTab('pairs')">
+          <i class="fa-solid fa-arrows-split-up-and-left"></i> 1. Cặp Âm Dễ Nhầm (Minimal Pairs)
+        </button>
+        <button id="tab-btn-sentences" class="mode-pill" onclick="switchSpeakingTab('sentences')">
+          <i class="fa-solid fa-comments"></i> 2. Luyện Câu Giao Tiếp & IELTS
+        </button>
+        <button id="tab-btn-shadowing" class="mode-pill" onclick="switchSpeakingTab('shadowing')">
+          <i class="fa-solid fa-circle-nodes"></i> 3. Thu Âm Đối Chiếu (Shadowing)
+        </button>
+      </div>
+    </div>
+
+    <!-- Browser Support Alert -->
+    <div id="browser-warning" style="display:none; background:#fee2e2; border:1px solid #f87171; color:#991b1b; padding:1rem; border-radius:var(--radius-sm); margin-bottom:1.5rem;">
+      <i class="fa-solid fa-triangle-exclamation"></i> <strong>Lưu ý:</strong> Trình duyệt của bạn chưa bật tính năng Nhận diện giọng nói. Hãy dùng <strong>Google Chrome, Edge, Cốc Cốc hoặc Safari</strong> và cấp quyền truy cập Micro để chấm điểm phát âm nhé!
+    </div>
+
+    <!-- ==================== TAB 1: MINIMAL PAIRS ==================== -->
+    <div id="section-pairs">
+      <div style="margin-bottom:1.5rem;">
+        <h2 style="font-size:1.3rem; font-weight:800; color:var(--text-main); margin-bottom:0.3rem;">
+          <i class="fa-solid fa-bullseye" style="color:#9333ea;"></i> Luyện Phân Biệt Cặp Âm Dễ Nhầm Lẫn (Minimal Pairs)
+        </h2>
+        <p style="color:var(--text-muted); font-size:0.92rem;">
+          Bấm 🔊 để nghe mẫu, sau đó bấm 🎙️ Micro và phát âm từ tương ứng để hệ thống chấm điểm bạn đang đọc từ nào:
+        </p>
+      </div>
+
+      <div id="pairs-list-container"></div>
+    </div>
+
+    <!-- ==================== TAB 2: SENTENCE SPEAKING ==================== -->
+    <div id="section-sentences" style="display:none;">
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; margin-bottom:1.5rem;">
+        <div>
+          <h2 style="font-size:1.3rem; font-weight:800; color:var(--text-main); margin-bottom:0.3rem;">
+            <i class="fa-solid fa-comment-dots" style="color:#9333ea;"></i> Luyện Nói Câu Hoàn Chỉnh & IELTS Speaking
+          </h2>
+          <p style="color:var(--text-muted); font-size:0.92rem;">
+            Đọc to câu tiếng Anh theo micro để hệ thống highlight từng từ phát âm chuẩn:
+          </p>
+        </div>
+
+        <select id="topic-select" class="btn btn-outline" style="padding:0.5rem 1rem; font-size:0.9rem;" onchange="renderSentenceTopic(this.value)">
+          <!-- Injected by JS -->
+        </select>
+      </div>
+
+      <div id="sentences-list-container"></div>
+    </div>
+
+    <!-- ==================== TAB 3: SHADOWING & RECORDER ==================== -->
+    <div id="section-shadowing" style="display:none;">
+      <div style="margin-bottom:1.5rem;">
+        <h2 style="font-size:1.3rem; font-weight:800; color:var(--text-main); margin-bottom:0.3rem;">
+          <i class="fa-solid fa-headphones-simple" style="color:#9333ea;"></i> Kỹ Thuật Shadowing & Thu Âm Đối Chiếu Bản Xứ
+        </h2>
+        <p style="color:var(--text-muted); font-size:0.92rem;">
+          1. Bấm 🔊 Nghe người bản xứ ➜ 2. Bấm 🔴 Ghi âm giọng của bạn ➜ 3. Bấm ▶️ Nghe lại đối chiếu ngữ điệu:
+        </p>
+      </div>
+
+      <div id="shadowing-list-container"></div>
+    </div>
+
+  </div>
+
+  <footer>
+    English Hub © 2026 — Phòng luyện nói & chấm điểm phát âm Web Speech API.
+  </footer>
+
+  <script src="../js/firebase-config.js"></script>
+  <script src="../js/db.js"></script>
+  <script src="../data/speaking-data.js"></script>
+  <script src="../js/auth.js"></script>
+  <script>
+    const user = Auth.requireAuth();
+    Auth.updateNavbar();
+
+    // Check Speech Recognition Support
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (!SpeechRecognition) {
+      document.getElementById('browser-warning').style.display = 'block';
+    }
+
+    let recognition = null;
+    let isRecording = false;
+    let currentTargetText = '';
+    let currentTargetId = '';
+    let currentTargetType = ''; // 'pair', 'sentence'
+
+    function initSpeechEngine() {
+      if (SpeechRecognition) {
+        recognition = new SpeechRecognition();
+        recognition.lang = 'en-US';
+        recognition.interimResults = false;
+        recognition.maxAlternatives = 3;
+
+        recognition.onresult = (event) => {
+          const spokenText = event.results[0][0].transcript.toLowerCase().trim();
+          const confidence = event.results[0][0].confidence;
+          evaluateSpokenSpeech(spokenText, confidence);
+        };
+
+        recognition.onerror = (event) => {
+          console.error("Speech Recognition Error:", event.error);
+          stopRecordingUI();
+          alert("Không nhận diện được âm thanh. Hãy thử nói to và rõ ràng hơn nhé!");
+        };
+
+        recognition.onend = () => {
+          stopRecordingUI();
+        };
+      }
+    }
+    initSpeechEngine();
+
+    function speakTarget(text, rate = 0.85) {
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+        const clean = text.replace(/<[^>]*>/g, '').replace(/\(.*?\)/g, '').replace(/\/[^\/]+\//g, '').trim();
+        const u = new SpeechSynthesisUtterance(clean);
+        u.lang = 'en-US';
+        u.rate = rate;
+        window.speechSynthesis.speak(u);
+      }
+    }
+
+    function toggleRecord(targetId, targetText, type = 'sentence') {
+      if (!SpeechRecognition) {
+        return alert("Trình duyệt của bạn chưa hỗ trợ Micro nhận diện giọng nói. Hãy sử dụng Google Chrome hoặc Edge nhé!");
+      }
+
+      if (isRecording && currentTargetId === targetId) {
+        recognition.stop();
+        stopRecordingUI();
+        return;
+      }
+
+      // Start Recording
+      currentTargetId = targetId;
+      currentTargetText = targetText;
+      currentTargetType = type;
+      isRecording = true;
+
+      // Update UI button
+      document.querySelectorAll('.mic-btn').forEach(btn => btn.classList.remove('recording'));
+      const activeBtn = document.getElementById(`btn-mic-${targetId}`);
+      if (activeBtn) activeBtn.classList.add('recording');
+
+      const feedbackBox = document.getElementById(`feedback-${targetId}`);
+      if (feedbackBox) {
+        feedbackBox.style.display = 'block';
+        feedbackBox.innerHTML = '<span style="color:#9333ea; font-weight:700;"><i class="fa-solid fa-microphone-lines fa-fade"></i> Đang lắng nghe... Hãy phát âm câu tiếng Anh ngay!</span>';
+      }
+
+      try {
+        recognition.start();
+      } catch (e) {
+        console.warn(e);
+      }
+    }
+
+    function stopRecordingUI() {
+      isRecording = false;
+      document.querySelectorAll('.mic-btn').forEach(btn => btn.classList.remove('recording'));
+    }
+
+    // Levenshtein Similarity Matcher
+    function calculateSimilarity(str1, str2) {
+      const s1 = str1.toLowerCase().replace(/[^a-z0-9 ]/g, '').trim();
+      const s2 = str2.toLowerCase().replace(/[^a-z0-9 ]/g, '').trim();
+      if (s1 === s2) return 100;
+
+      const words1 = s1.split(/\s+/);
+      const words2 = s2.split(/\s+/);
+      let matches = 0;
+
+      words1.forEach(w => {
+        if (words2.includes(w)) matches++;
+      });
+
+      const ratio = matches / Math.max(words1.length, words2.length);
+      return Math.min(100, Math.round(ratio * 100));
+    }
+
+    function evaluateSpokenSpeech(spokenText, confidence) {
+      const target = currentTargetText.toLowerCase().replace(/[^a-z0-9 ]/g, '').trim();
+      const spoken = spokenText.toLowerCase().replace(/[^a-z0-9 ]/g, '').trim();
+
+      const score = calculateSimilarity(currentTargetText, spokenText);
+      const feedbackBox = document.getElementById(`feedback-${currentTargetId}`);
+      if (!feedbackBox) return;
+
+      // Build word by word diff
+      const targetWords = currentTargetText.replace(/[^a-zA-Z0-9 ]/g, '').split(/\s+/);
+      const spokenWords = spokenText.replace(/[^a-zA-Z0-9 ]/g, '').toLowerCase().split(/\s+/);
+
+      const highlightedSentence = targetWords.map(w => {
+        const cleanW = w.toLowerCase();
+        if (spokenWords.includes(cleanW)) {
+          return `<span class="word-matched">${w}</span>`;
+        } else {
+          return `<span class="word-missed">${w}</span>`;
+        }
+      }).join(' ');
+
+      const scoreClass = score >= 80 ? 'score-high' : (score >= 50 ? 'score-mid' : 'score-low');
+      const msg = score >= 80 ? '🎉 Xuất sắc! Phát âm rất chuẩn xác!' : (score >= 50 ? '👍 Khá tốt! Cần chú ý các từ màu đỏ nhé.' : '💪 Hãy nghe lại câu mẫu và nói rõ ràng hơn nhé!');
+
+      feedbackBox.innerHTML = `
+        <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; margin-top:0.8rem; padding-top:0.8rem; border-top:1px dashed var(--surface-border);">
+          <div>
+            <div style="font-size:0.92rem; color:var(--text-muted); margin-bottom:0.3rem;">
+              <strong>Bạn vừa nói:</strong> <em>"${spokenText}"</em>
+            </div>
+            <div style="font-size:1.05rem; margin-bottom:0.4rem;">
+              <strong>Phân tích âm:</strong> ${highlightedSentence}
+            </div>
+            <div style="font-size:0.92rem; font-weight:700; color:var(--text-main);">${msg}</div>
+          </div>
+          <div class="score-circle ${scoreClass}">
+            <span>${score}%</span>
+            <span style="font-size:0.65rem; text-transform:uppercase;">Chuẩn</span>
+          </div>
+        </div>
+      `;
+
+      // Save Speaking Practice Score to Firebase
+      DB.addQuizResult(user.username, 'speaking', `Luyện Nói: ${currentTargetText.slice(0, 30)}...`, score, 100, []);
+    }
+
+    /* ==========================================================
+       TAB SWITCHING & RENDERING
+       ========================================================== */
+    function switchSpeakingTab(tab) {
+      document.getElementById('section-pairs').style.display = (tab === 'pairs') ? 'block' : 'none';
+      document.getElementById('section-sentences').style.display = (tab === 'sentences') ? 'block' : 'none';
+      document.getElementById('section-shadowing').style.display = (tab === 'shadowing') ? 'block' : 'none';
+
+      document.getElementById('tab-btn-pairs').className = (tab === 'pairs') ? 'mode-pill active' : 'mode-pill';
+      document.getElementById('tab-btn-sentences').className = (tab === 'sentences') ? 'mode-pill active' : 'mode-pill';
+      document.getElementById('tab-btn-shadowing').className = (tab === 'shadowing') ? 'mode-pill active' : 'mode-pill';
+    }
+
+    const sData = window.SPEAKING_DATA;
+    if (sData) {
+      // 1. Render Minimal Pairs
+      document.getElementById('pairs-list-container').innerHTML = sData.minimal_pairs.map((mp, idx) => `
+        <div class="voice-card">
+          <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:1rem; flex-wrap:wrap; gap:0.5rem;">
+            <div>
+              <span class="badge" style="background:#f3e8ff; color:#7e22ce; font-weight:800; font-size:0.85rem;">CẶP ÂM ${idx + 1}</span>
+              <h3 style="font-size:1.25rem; font-weight:800; color:var(--primary); margin:0.3rem 0;">${mp.sound}</h3>
+              <p style="font-size:0.9rem; color:var(--text-muted); margin:0;">${mp.desc}</p>
+            </div>
+          </div>
+
+          <div style="display:grid; grid-template-columns: 1fr 1fr; gap:1.2rem;">
+            ${mp.words.map(w => `
+              <div style="background:var(--bg); border:1px solid var(--surface-border); border-radius:var(--radius-sm); padding:1.2rem; display:flex; flex-direction:column; justify-content:space-between;">
+                <div>
+                  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4rem;">
+                    <span style="font-size:1.5rem; font-weight:800; color:var(--text-main);">${w.word}</span>
+                    <span style="font-family:monospace; font-weight:700; color:var(--primary); font-size:1.05rem;">${w.ipa}</span>
+                  </div>
+                  <div style="font-size:0.9rem; color:var(--text-muted); margin-bottom:0.8rem;"><strong>Nghĩa:</strong> ${w.meaning}</div>
+                  <div style="font-size:0.88rem; color:var(--text-main); line-height:1.4; margin-bottom:1rem; font-style:italic;">
+                    "${w.example}"
+                  </div>
+                </div>
+                
+                <div style="display:flex; gap:0.6rem; align-items:center;">
+                  <button type="button" class="btn btn-outline" style="flex:1; padding:0.5rem; font-size:0.85rem;" onclick="speakTarget('${w.word}')">
+                    <i class="fa-solid fa-volume-high"></i> Nghe 🔊
+                  </button>
+                  <button type="button" id="btn-mic-pair-${w.word}" class="mic-btn" style="width:45px; height:45px; font-size:1.1rem;" onclick="toggleRecord('pair-${w.word}', '${w.word}', 'pair')">
+                    <i class="fa-solid fa-microphone"></i>
+                  </button>
+                </div>
+                <div id="feedback-pair-${w.word}" style="display:none; margin-top:0.6rem;"></div>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      `).join('');
+
+      // 2. Render Topics Dropdown
+      const topicSelect = document.getElementById('topic-select');
+      topicSelect.innerHTML = sData.topics.map(t => `<option value="${t.id}">${t.title} (${t.level})</option>`).join('');
+      renderSentenceTopic(sData.topics[0].id);
+
+      // 3. Render Shadowing
+      renderShadowing();
+    }
+
+    function renderSentenceTopic(topicId) {
+      const topic = sData.topics.find(t => t.id === topicId) || sData.topics[0];
+      const container = document.getElementById('sentences-list-container');
+
+      container.innerHTML = topic.sentences.map((st, idx) => `
+        <div class="voice-card">
+          <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:0.8rem;">
+            <span class="badge badge-primary" style="font-size:0.85rem;">CÂU ${idx + 1}</span>
+            <span style="font-size:0.85rem; color:var(--text-muted); font-family:monospace;">${st.ipa}</span>
+          </div>
+
+          <h3 style="font-size:1.35rem; font-weight:800; color:var(--primary); line-height:1.5; margin-bottom:0.4rem;">
+            ${st.text}
+          </h3>
+          <p style="font-size:0.95rem; color:var(--text-muted); margin-bottom:1.2rem;">
+            <i class="fa-solid fa-language"></i> ${st.vi}
+          </p>
+
+          <div style="display:flex; gap:0.8rem; align-items:center;">
+            <button type="button" class="btn btn-outline" style="padding:0.6rem 1.2rem; font-size:0.95rem;" onclick="speakTarget('${st.text.replace(/'/g, "\\'")}')">
+              <i class="fa-solid fa-volume-high"></i> Nghe câu mẫu 🔊
+            </button>
+            <button type="button" id="btn-mic-st-${idx}" class="mic-btn" onclick="toggleRecord('st-${idx}', '${st.text.replace(/'/g, "\\'")}', 'sentence')">
+              <i class="fa-solid fa-microphone"></i>
+            </button>
+            <span style="font-size:0.88rem; color:var(--text-muted);">Bấm Micro và đọc to câu trên</span>
+          </div>
+
+          <div id="feedback-st-${idx}" style="display:none;"></div>
+        </div>
+      `).join('');
+    }
+
+    /* ==========================================================
+       MEDIARECORDER SHADOWING COMPONENT
+       ========================================================== */
+    let mediaRecorder = null;
+    let audioChunks = [];
+    let activeShadowingId = null;
+
+    function renderShadowing() {
+      const container = document.getElementById('shadowing-list-container');
+      container.innerHTML = sData.shadowing.map(sh => `
+        <div class="voice-card">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.8rem;">
+            <span class="badge" style="background:#fef3c7; color:#b45309; font-weight:800;">THỜI LƯỢNG: ${sh.duration}</span>
+            <span style="font-size:0.85rem; color:var(--text-muted);"><i class="fa-solid fa-user-tie"></i> ${sh.speaker}</span>
+          </div>
+
+          <h3 style="font-size:1.25rem; font-weight:800; color:var(--text-main); margin-bottom:0.5rem;">
+            ${sh.title}
+          </h3>
+
+          <div style="background:var(--bg); border:1px solid var(--surface-border); border-radius:var(--radius-sm); padding:1.2rem; margin-bottom:1rem;">
+            <p style="font-size:1.15rem; font-weight:700; color:var(--primary); line-height:1.6; margin-bottom:0.4rem;">
+              "${sh.audioText}"
+            </p>
+            <p style="font-size:0.92rem; color:var(--text-muted); margin:0;">
+              ${sh.translation}
+            </p>
+          </div>
+
+          <div style="display:flex; gap:0.8rem; align-items:center; flex-wrap:wrap;">
+            <button type="button" class="btn btn-primary" onclick="speakTarget('${sh.audioText.replace(/'/g, "\\'")}', 0.85)">
+              <i class="fa-solid fa-play"></i> 1. Nghe Người Bản Xứ 🔊
+            </button>
+            <button type="button" id="btn-rec-${sh.id}" class="btn" style="background:#dc2626; color:white; font-weight:700;" onclick="toggleMediaRecord('${sh.id}')">
+              <i class="fa-solid fa-microphone"></i> 2. Thu Âm Giọng Bạn
+            </button>
+          </div>
+
+          <div id="player-box-${sh.id}" style="display:none;" class="audio-player-box">
+            <div>
+              <strong><i class="fa-solid fa-circle-check" style="color:#16a34a;"></i> Bản thu âm của bạn:</strong>
+            </div>
+            <audio id="audio-playback-${sh.id}" controls style="height:38px;"></audio>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    async function toggleMediaRecord(shId) {
+      const recBtn = document.getElementById(`btn-rec-${shId}`);
+      if (mediaRecorder && mediaRecorder.state === 'recording') {
+        mediaRecorder.stop();
+        recBtn.innerHTML = '<i class="fa-solid fa-microphone"></i> 2. Thu Âm Lại';
+        recBtn.style.background = '#dc2626';
+        return;
+      }
+
+      try {
+        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        audioChunks = [];
+        mediaRecorder = new MediaRecorder(stream);
+
+        mediaRecorder.ondataavailable = (e) => {
+          if (e.data.size > 0) audioChunks.push(e.data);
+        };
+
+        mediaRecorder.onstop = () => {
+          const audioBlob = new Blob(audioChunks, { type: 'audio/wav' });
+          const audioUrl = URL.createObjectURL(audioBlob);
+          const playerBox = document.getElementById(`player-box-${shId}`);
+          const playback = document.getElementById(`audio-playback-${shId}`);
+          playback.src = audioUrl;
+          playerBox.style.display = 'flex';
+          stream.getTracks().forEach(t => t.stop());
+        };
+
+        mediaRecorder.start();
+        recBtn.innerHTML = '<i class="fa-solid fa-stop fa-beat"></i> ⏹️ Đang thu... Bấm để Dừng';
+        recBtn.style.background = '#000';
+      } catch (err) {
+        alert("Vui lòng cấp quyền truy cập Micro trên trình duyệt để ghi âm giọng nói của bạn nhé!");
+      }
+    }
+  </script>
+</body>
+</html>

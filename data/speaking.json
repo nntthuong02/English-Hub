@@ -1,0 +1,302 @@
+{
+  "minimal_pairs": [
+    {
+      "id": "mp_01",
+      "pair": [
+        "ship /ʃɪp/",
+        "sheep /ʃiːp/"
+      ],
+      "sound": "Âm /ɪ/ ngắn vs /iː/ dài",
+      "desc": "Phân biệt nguyên âm ngắn và nguyên âm dài",
+      "words": [
+        {
+          "word": "ship",
+          "ipa": "/ʃɪp/",
+          "meaning": "con tàu",
+          "example": "The big ship sailed across the sea."
+        },
+        {
+          "word": "sheep",
+          "ipa": "/ʃiːp/",
+          "meaning": "con cừu",
+          "example": "The white sheep is grazing on the hill."
+        }
+      ]
+    },
+    {
+      "id": "mp_02",
+      "pair": [
+        "pen /pen/",
+        "pan /pæn/"
+      ],
+      "sound": "Âm /e/ vs /æ/ (e bẹt)",
+      "desc": "Phân biệt độ mở khẩu hình miệng",
+      "words": [
+        {
+          "word": "pen",
+          "ipa": "/pen/",
+          "meaning": "cây bút",
+          "example": "Can I borrow your black pen?"
+        },
+        {
+          "word": "pan",
+          "ipa": "/pæn/",
+          "meaning": "cái chảo",
+          "example": "Heat the oil in a frying pan."
+        }
+      ]
+    },
+    {
+      "id": "mp_03",
+      "pair": [
+        "think /θɪŋk/",
+        "sink /sɪŋk/"
+      ],
+      "sound": "Âm /θ/ (thè lưỡi) vs /s/ (xát răng)",
+      "desc": "Phân biệt âm răng thè lưỡi và âm xát nướu",
+      "words": [
+        {
+          "word": "think",
+          "ipa": "/θɪŋk/",
+          "meaning": "suy nghĩ",
+          "example": "I think this is a great idea."
+        },
+        {
+          "word": "sink",
+          "ipa": "/sɪŋk/",
+          "meaning": "chìm / bồn rửa",
+          "example": "Heavy stones will sink in water."
+        }
+      ]
+    },
+    {
+      "id": "mp_04",
+      "pair": [
+        "bat /bæt/",
+        "bad /bæd/"
+      ],
+      "sound": "Âm cuối /t/ (vô thanh) vs /d/ (hữu thanh)",
+      "desc": "Phân biệt bật hơi cuối từ và rung thanh quản",
+      "words": [
+        {
+          "word": "bat",
+          "ipa": "/bæt/",
+          "meaning": "con dơi / gậy bóng chày",
+          "example": "A bat flies at night."
+        },
+        {
+          "word": "bad",
+          "ipa": "/bæd/",
+          "meaning": "xấu / tồi tệ",
+          "example": "Eating too much sugar is bad for health."
+        }
+      ]
+    },
+    {
+      "id": "mp_05",
+      "pair": [
+        "pull /pʊl/",
+        "pool /puːl/"
+      ],
+      "sound": "Âm /ʊ/ ngắn vs /uː/ dài",
+      "desc": "Phân biệt tròn môi nhẹ và chu môi kéo dài",
+      "words": [
+        {
+          "word": "pull",
+          "ipa": "/pʊl/",
+          "meaning": "kéo",
+          "example": "Pull the door to open it."
+        },
+        {
+          "word": "pool",
+          "ipa": "/puːl/",
+          "meaning": "hồ bơi",
+          "example": "Let's go swimming in the pool."
+        }
+      ]
+    },
+    {
+      "id": "mp_06",
+      "pair": [
+        "fan /fæn/",
+        "van /væn/"
+      ],
+      "sound": "Âm /f/ vô thanh vs /v/ hữu thanh",
+      "desc": "Phân biệt răng trên chạm môi dưới có rung và không rung",
+      "words": [
+        {
+          "word": "fan",
+          "ipa": "/fæn/",
+          "meaning": "cái quạt / người hâm mộ",
+          "example": "Turn on the fan, please."
+        },
+        {
+          "word": "van",
+          "ipa": "/væn/",
+          "meaning": "xe tải nhỏ / xe van",
+          "example": "They loaded the boxes into the van."
+        }
+      ]
+    },
+    {
+      "id": "mp_07",
+      "pair": [
+        "light /laɪt/",
+        "right /raɪt/"
+      ],
+      "sound": "Âm /l/ (chạm nướu) vs /r/ (uốn lưỡi)",
+      "desc": "Phân biệt đầu lưỡi chạm nướu trên và uốn lưỡi không chạm",
+      "words": [
+        {
+          "word": "light",
+          "ipa": "/laɪt/",
+          "meaning": "ánh sáng / nhẹ",
+          "example": "The morning light entered the room."
+        },
+        {
+          "word": "right",
+          "ipa": "/raɪt/",
+          "meaning": "đúng / bên phải",
+          "example": "Turn right at the traffic lights."
+        }
+      ]
+    },
+    {
+      "id": "mp_08",
+      "pair": [
+        "seat /siːt/",
+        "sit /sɪt/"
+      ],
+      "sound": "Âm /iː/ dài vs /ɪ/ ngắn",
+      "desc": "Kéo căng miệng cười vs thả lỏng dứt khoát",
+      "words": [
+        {
+          "word": "seat",
+          "ipa": "/siːt/",
+          "meaning": "chỗ ngồi",
+          "example": "Please take a comfortable seat."
+        },
+        {
+          "word": "sit",
+          "ipa": "/sɪt/",
+          "meaning": "ngồi xuống",
+          "example": "You can sit here next to me."
+        }
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "id": "daily_greeting",
+      "title": "Giao Tiếp & Chào Hỏi Hàng Ngày",
+      "level": "Cơ Bản (A1 - A2)",
+      "sentences": [
+        {
+          "text": "Good morning, how are you doing today?",
+          "vi": "Chào buổi sáng, hôm nay bạn thế nào?",
+          "ipa": "/ɡʊd ˈmɔː.nɪŋ haʊ ɑːr juː ˈduː.ɪŋ təˈdeɪ/"
+        },
+        {
+          "text": "Nice to meet you. My name is Alex.",
+          "vi": "Rất vui được gặp bạn. Tên tôi là Alex.",
+          "ipa": "/naɪs tuː miːt juː maɪ neɪm ɪz ˈæl.ɪks/"
+        },
+        {
+          "text": "Could you please help me with this task?",
+          "vi": "Bạn có thể vui lòng giúp tôi việc này được không?",
+          "ipa": "/kʊd juː pliːz help miː wɪð ðɪs tɑːsk/"
+        },
+        {
+          "text": "Thank you very much for your kind support.",
+          "vi": "Cảm ơn bạn rất nhiều vì sự hỗ trợ nhiệt tình.",
+          "ipa": "/θæŋk juː ˈver.i mʌtʃ fɔːr jɔːr kaɪnd səˈpɔːt/"
+        },
+        {
+          "text": "Have a wonderful weekend with your family.",
+          "vi": "Chúc bạn một cuối tuần tuyệt vời bên gia đình.",
+          "ipa": "/hæv ə ˈwʌn.də.fəl ˈwiːk.end wɪð jɔːr ˈfæm.əl.i/"
+        }
+      ]
+    },
+    {
+      "id": "ielts_part1_work",
+      "title": "IELTS Speaking Part 1: Công Việc & Học Tập",
+      "level": "Trung Cấp (B1 - B2)",
+      "sentences": [
+        {
+          "text": "I am currently working as a software developer in a tech company.",
+          "vi": "Hiện tại tôi đang làm kỹ sư phần mềm tại một công ty công nghệ.",
+          "ipa": "/aɪ æm ˈkʌr.ənt.li ˈwɜː.kɪŋ æz ə ˈsɒft.weər dɪˈvel.ə.pər/"
+        },
+        {
+          "text": "I really enjoy my job because it is challenging and creative.",
+          "vi": "Tôi thực sự yêu thích công việc của mình vì nó đầy thử thách và sáng tạo.",
+          "ipa": "/aɪ ˈrɪə.li ɪnˈdʒɔɪ maɪ dʒɒb bɪˈkɒz ɪt ɪz ˈtʃæl.ɪn.dʒɪŋ ænd kriˈeɪ.tɪv/"
+        },
+        {
+          "text": "In the future, I plan to improve my communication skills.",
+          "vi": "Trong tương lai, tôi dự định cải thiện kỹ năng giao tiếp của mình.",
+          "ipa": "/ɪn ðə ˈfjuː.tʃər aɪ plæn tuː ɪmˈpruːv maɪ kəˌmjuː.nɪˈkeɪ.ʃən skɪlz/"
+        },
+        {
+          "text": "My major at university was information technology and data science.",
+          "vi": "Chuyên ngành đại học của tôi là công nghệ thông tin và khoa học dữ liệu.",
+          "ipa": "/maɪ ˈmeɪ.dʒər æt ˌjuː.nɪˈvɜː.sə.ti wɒz ˌɪn.fəˈmeɪ.ʃən tekˈnɒl.ə.dʒi/"
+        }
+      ]
+    },
+    {
+      "id": "travel_restaurant",
+      "title": "Du Lịch & Gọi Món Nhà Hàng",
+      "level": "Giao Tiếp Thực Tế (A2 - B1)",
+      "sentences": [
+        {
+          "text": "Excuse me, could we have the menu and some water please?",
+          "vi": "Xin lỗi, cho chúng tôi xem thực đơn và một ít nước được không?",
+          "ipa": "/ɪkˈskjuːz miː kʊd wiː hæv ðə ˈmen.juː ænd sʌm ˈwɔː.tər pliːz/"
+        },
+        {
+          "text": "What do you recommend for the main course today?",
+          "vi": "Bạn gợi ý món gì cho bữa chính ngày hôm nay?",
+          "ipa": "/wɒt duː juː ˌrek.əˈmend fɔːr ðə meɪn kɔːs təˈdeɪ/"
+        },
+        {
+          "text": "Can I pay by credit card or cash?",
+          "vi": "Tôi có thể thanh toán bằng thẻ tín dụng hay tiền mặt?",
+          "ipa": "/kæn aɪ peɪ baɪ ˈkred.ɪt kɑːd ɔːr kæʃ/"
+        },
+        {
+          "text": "How long does it take to get to the airport by taxi?",
+          "vi": "Mất bao lâu để đi taxi đến sân bay?",
+          "ipa": "/haʊ lɒŋ dʌz ɪt teɪk tuː ɡet tuː ði ˈeə.pɔːt baɪ ˈtæk.si/"
+        }
+      ]
+    }
+  ],
+  "shadowing": [
+    {
+      "id": "sh_01",
+      "title": "Tự tin trong giao tiếp tiếng Anh (Confidence in Speaking)",
+      "speaker": "Bản ngữ US (Giọng chuẩn, truyền cảm)",
+      "audioText": "Practice speaking English every single day without fear of making mistakes. Consistency is the real key to natural fluency.",
+      "translation": "Hãy luyện nói tiếng Anh mỗi ngày mà không sợ mắc lỗi. Sự kiên trì chính là chìa khóa thực sự dẫn đến sự lưu loát tự nhiên.",
+      "duration": "6s"
+    },
+    {
+      "id": "sh_02",
+      "title": "Thói quen đọc sách mỗi ngày (The Power of Daily Reading)",
+      "speaker": "Bản ngữ UK (Giọng chuẩn Cambridge)",
+      "audioText": "Reading books helps expand your vocabulary and broadens your understanding of different cultures across the world.",
+      "translation": "Đọc sách giúp mở rộng vốn từ vựng và nâng cao hiểu biết của bạn về các nền văn hóa khác nhau trên toàn thế giới.",
+      "duration": "8s"
+    },
+    {
+      "id": "sh_03",
+      "title": "Tầm quan trọng của ngữ điệu (Mastering Intonation)",
+      "speaker": "Bản ngữ US (Ngữ điệu tự nhiên)",
+      "audioText": "When you speak with appropriate intonation and rhythm, listeners will understand your emotions and key ideas much more clearly.",
+      "translation": "Khi bạn nói với ngữ điệu và nhịp điệu phù hợp, người nghe sẽ thấu hiểu cảm xúc và ý chính của bạn rõ ràng hơn rất nhiều.",
+      "duration": "9s"
+    }
+  ]
+}
