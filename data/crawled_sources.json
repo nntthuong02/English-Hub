@@ -490,5 +490,47 @@
         "status": "crawled"
       }
     ]
+  },
+  "baitaptracnghiem": {
+    "name": "BaiTapTracNghiem.com",
+    "description": "Kho 1500+ câu trắc nghiệm tiếng Anh trực tuyến đa dạng, hỗ trợ đề luyện tập trộn các thì và phân loại theo từng chuyên đề ngữ pháp.",
+    "baseUrl": "https://baitaptracnghiem.com/danh-sach-bai-tap/bai-tap-tieng-anh",
+    "categories": [
+      {
+        "id": "bttn_tenses",
+        "title": "Bài tập Trộn Các Thì trong Tiếng Anh",
+        "url": "https://baitaptracnghiem.com/danh-sach-bai-tap/bai-tap-tieng-anh",
+        "count": 150,
+        "status": "crawled"
+      },
+      {
+        "id": "bttn_passive",
+        "title": "Bài tập Câu Bị Động (Passive Voice)",
+        "url": "https://baitaptracnghiem.com/danh-sach-bai-tap/bai-tap-tieng-anh",
+        "count": 120,
+        "status": "crawled"
+      },
+      {
+        "id": "bttn_cond",
+        "title": "Bài tập Câu Điều Kiện (Conditionals)",
+        "url": "https://baitaptracnghiem.com/danh-sach-bai-tap/bai-tap-tieng-anh",
+        "count": 100,
+        "status": "crawled"
+      },
+      {
+        "id": "bttn_rel",
+        "title": "Bài tập Mệnh Đề Quan Hệ (Relative Clauses)",
+        "url": "https://baitaptracnghiem.com/danh-sach-bai-tap/bai-tap-tieng-anh",
+        "count": 110,
+        "status": "crawled"
+      },
+      {
+        "id": "bttn_prep",
+        "title": "Bài tập Giới Từ Chỉ Thời Gian & Nơi Chốn",
+        "url": "https://baitaptracnghiem.com/danh-sach-bai-tap/bai-tap-tieng-anh",
+        "count": 90,
+        "status": "crawled"
+      }
+    ]
   }
 }

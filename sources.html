@@ -34,12 +34,15 @@
     </div>
 
     <!-- Source Tabs Selector -->
-    <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem; border-bottom: 2px solid var(--surface-border); padding-bottom: 0.5rem;">
+    <div style="display: flex; gap: 0.8rem; margin-bottom: 1.5rem; border-bottom: 2px solid var(--surface-border); padding-bottom: 0.5rem; flex-wrap:wrap;">
       <button id="tab-btn-lg" class="btn btn-primary" onclick="switchSourceTab('lg')">
         <i class="fa-solid fa-globe"></i> LanguageGuide.org (23 Chủ đề)
       </button>
       <button id="tab-btn-ta123" class="btn btn-outline" onclick="switchSourceTab('ta123')">
         <i class="fa-solid fa-image"></i> TiengAnh123.com (42 Chủ đề)
+      </button>
+      <button id="tab-btn-bttn" class="btn btn-outline" onclick="switchSourceTab('bttn')">
+        <i class="fa-solid fa-pen-to-square"></i> BaiTapTracNghiem.com (Đề Trộn)
       </button>
     </div>
 
@@ -90,6 +93,9 @@
       currentTab = tab;
       document.getElementById('tab-btn-lg').className = tab === 'lg' ? 'btn btn-primary' : 'btn btn-outline';
       document.getElementById('tab-btn-ta123').className = tab === 'ta123' ? 'btn btn-primary' : 'btn btn-outline';
+      if (document.getElementById('tab-btn-bttn')) {
+        document.getElementById('tab-btn-bttn').className = tab === 'bttn' ? 'btn btn-primary' : 'btn btn-outline';
+      }
       renderSources();
     }
 
@@ -98,7 +104,10 @@
       const container = document.getElementById('sources-container');
       container.innerHTML = '';
 
-      const dataset = currentTab === 'lg' ? allSources.languageguide.categories : allSources.tienganh123.categories;
+      let dataset = [];
+      if (currentTab === 'lg') dataset = allSources.languageguide.categories;
+      else if (currentTab === 'ta123') dataset = allSources.tienganh123.categories;
+      else if (currentTab === 'bttn' && allSources.baitaptracnghiem) dataset = allSources.baitaptracnghiem.categories;
       const query = (document.getElementById('source-search').value || '').toLowerCase();
 
       const filtered = dataset.filter(c => c.title.toLowerCase().includes(query) || (c.group && c.group.toLowerCase().includes(query)));

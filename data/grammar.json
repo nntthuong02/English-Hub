@@ -76,61 +76,61 @@
       {
         "id": "g_d1_q1",
         "type": "multiple_choice",
-        "question": "Bài tập Day 1 (Present simple tense): Chọn đáp án đúng nhất để hoàn thành câu:",
-        "sentence": "According to the grammar rules of Day 1, choose the correct form:",
+        "question": "Chọn đáp án đúng nhất để hoàn thành câu:",
+        "sentence": "The Sun _____ in the East and sets in the West.",
         "choices": [
-          "Option A (Chính xác)",
-          "Option B",
-          "Option C",
-          "Option D"
+          "rises",
+          "is rising",
+          "rose",
+          "has risen"
         ],
-        "answer": "Option A (Chính xác)",
-        "explanation": "Áp dụng cấu trúc lý thuyết chuẩn của Thì Hiện tại đơn từ giáo trình IELTS Fighter."
+        "answer": "rises",
+        "explanation": "Chân lý khoa học, sự thật hiển nhiên -> dùng thì Hiện tại đơn (The Sun là chủ ngữ số ít nên thêm 's')."
       },
       {
         "id": "g_d1_q2",
         "type": "multiple_choice",
-        "question": "Tìm và sửa lỗi sai trong câu sau:",
-        "sentence": "He doesn't practices English regularly every day.",
+        "question": "Tìm lỗi sai trong câu phủ định sau:",
+        "sentence": "She doesn't likes chocolate because it is too sweet.",
         "choices": [
-          "doesn't practices -> doesn't practice",
-          "regularly -> regular",
-          "every day -> every days",
-          "He -> Him"
+          "doesn't likes -> doesn't like",
+          "because -> although",
+          "is -> are",
+          "too -> very"
         ],
-        "answer": "doesn't practices -> doesn't practice",
-        "explanation": "Khi đã có trợ động từ 'doesn't' thì động từ chính 'practice' phải giữ nguyên thể không thêm 's'."
+        "answer": "doesn't likes -> doesn't like",
+        "explanation": "Khi đã có trợ động từ 'doesn't' thì động từ chính giữ nguyên thể 'like' (không thêm 's')."
       },
       {
         "id": "g_d1_q3",
         "type": "fill_blank",
-        "question": "Điền dạng đúng của từ trong ngoặc:",
-        "sentence": "My friend _____ (study) for the IELTS exam diligently.",
-        "answer": "studies",
-        "hint": "Đổi 'y' thành 'ies' đối với chủ ngữ ngôi thứ 3 số ít."
+        "question": "Điền dạng đúng của động từ trong ngoặc (Hiện tại đơn):",
+        "sentence": "We _____ (go) shopping every weekend.",
+        "answer": "go",
+        "hint": "Chủ ngữ 'We' đi với động từ nguyên thể."
       },
       {
         "id": "g_d1_q4",
         "type": "fill_blank",
-        "question": "Điền trợ động từ hoặc từ liên kết thích hợp:",
-        "sentence": "_____ you practice English with your mentor every morning?",
-        "answer": "Do",
-        "hint": "Trợ động từ đứng đầu câu hỏi nghi vấn."
+        "question": "Điền dạng phủ định thích hợp của động từ:",
+        "sentence": "They _____ (not / like) to hang out during weekdays.",
+        "answer": "do not like",
+        "hint": "Chủ ngữ 'They' dùng trợ động từ 'do not' (don't)."
       },
       {
         "id": "g_d1_q5",
         "type": "word_order",
-        "question": "Sắp xếp các từ thành câu hoàn chỉnh đúng ngữ pháp IELTS:",
+        "question": "Sắp xếp các từ thành câu hoàn chỉnh theo thì Hiện tại đơn:",
         "words": [
-          "IELTS",
-          "she",
-          "studies",
-          "every",
-          "diligently",
-          "morning"
+          "the",
+          "around",
+          "Earth",
+          "revolves",
+          "the",
+          "Sun"
         ],
-        "answer": "she studies IELTS diligently every morning",
-        "explanation": "Cấu trúc: S + V + O + Trạng từ chỉ cách thức + Trạng từ chỉ thời gian."
+        "answer": "the Earth revolves around the Sun",
+        "explanation": "Cấu trúc: S (The Earth) + V_s (revolves) + Prepositional phrase (around the Sun)."
       }
     ]
   },
@@ -211,61 +211,61 @@
       {
         "id": "g_d2_q1",
         "type": "multiple_choice",
-        "question": "Bài tập Day 2 (Present continuous tense): Chọn đáp án đúng nhất để hoàn thành câu:",
-        "sentence": "According to the grammar rules of Day 2, choose the correct form:",
+        "question": "Chọn đáp án đúng nhất (Hiện tại tiếp diễn):",
+        "sentence": "Look! The car _____ so fast.",
         "choices": [
-          "Option A (Chính xác)",
-          "Option B",
-          "Option C",
-          "Option D"
+          "is going",
+          "goes",
+          "went",
+          "has gone"
         ],
-        "answer": "Option A (Chính xác)",
-        "explanation": "Áp dụng cấu trúc lý thuyết chuẩn của Thì Hiện tại tiếp diễn từ giáo trình IELTS Fighter."
+        "answer": "is going",
+        "explanation": "Dấu hiệu có từ mệnh lệnh 'Look!' báo hiệu hành động đang diễn ra tại thời điểm nói -> chia Hiện tại tiếp diễn."
       },
       {
         "id": "g_d2_q2",
         "type": "multiple_choice",
-        "question": "Tìm và sửa lỗi sai trong câu sau:",
-        "sentence": "He doesn't practices English regularly every day.",
+        "question": "Chọn đáp án đúng nhất:",
+        "sentence": "Listen! Someone _____ in the next room.",
         "choices": [
-          "doesn't practices -> doesn't practice",
-          "regularly -> regular",
-          "every day -> every days",
-          "He -> Him"
+          "is crying",
+          "cries",
+          "cried",
+          "cry"
         ],
-        "answer": "doesn't practices -> doesn't practice",
-        "explanation": "Khi đã có trợ động từ 'doesn't' thì động từ chính 'practice' phải giữ nguyên thể không thêm 's'."
+        "answer": "is crying",
+        "explanation": "Dấu hiệu 'Listen!' -> hành động đang diễn ra -> is crying."
       },
       {
         "id": "g_d2_q3",
         "type": "fill_blank",
-        "question": "Điền dạng đúng của từ trong ngoặc:",
-        "sentence": "My friend _____ (study) for the IELTS exam diligently.",
-        "answer": "studies",
-        "hint": "Đổi 'y' thành 'ies' đối với chủ ngữ ngôi thứ 3 số ít."
+        "question": "Điền dạng đúng của động từ trong ngoặc:",
+        "sentence": "The population of the world _____ (increase) very fast.",
+        "answer": "is increasing",
+        "hint": "Diễn tả xu hướng đang thay đổi dần dần dùng thì Hiện tại tiếp diễn."
       },
       {
         "id": "g_d2_q4",
         "type": "fill_blank",
-        "question": "Điền trợ động từ hoặc từ liên kết thích hợp:",
-        "sentence": "_____ you practice English with your mentor every morning?",
-        "answer": "Do",
-        "hint": "Trợ động từ đứng đầu câu hỏi nghi vấn."
+        "question": "Điền dạng đúng của động từ trong ngoặc:",
+        "sentence": "It is 7 o'clock, and my parents _____ (cook) dinner in the kitchen.",
+        "answer": "are cooking",
+        "hint": "Chủ ngữ số nhiều 'my parents' + are cooking."
       },
       {
         "id": "g_d2_q5",
         "type": "word_order",
-        "question": "Sắp xếp các từ thành câu hoàn chỉnh đúng ngữ pháp IELTS:",
+        "question": "Sắp xếp thành câu hoàn chỉnh:",
         "words": [
-          "IELTS",
+          "at",
+          "moment",
           "she",
-          "studies",
-          "every",
-          "diligently",
-          "morning"
+          "studying",
+          "is",
+          "the"
         ],
-        "answer": "she studies IELTS diligently every morning",
-        "explanation": "Cấu trúc: S + V + O + Trạng từ chỉ cách thức + Trạng từ chỉ thời gian."
+        "answer": "she is studying at the moment",
+        "explanation": "Cấu trúc: S (she) + is + V-ing (studying) + Time phrase (at the moment)."
       }
     ]
   },
@@ -346,61 +346,62 @@
       {
         "id": "g_d3_q1",
         "type": "multiple_choice",
-        "question": "Bài tập Day 3 (Present perfect tense): Chọn đáp án đúng nhất để hoàn thành câu:",
-        "sentence": "According to the grammar rules of Day 3, choose the correct form:",
+        "question": "Chọn đáp án đúng (Hiện tại hoàn thành):",
+        "sentence": "She has lived in Hanoi _____ 2015.",
         "choices": [
-          "Option A (Chính xác)",
-          "Option B",
-          "Option C",
-          "Option D"
+          "since",
+          "for",
+          "in",
+          "from"
         ],
-        "answer": "Option A (Chính xác)",
-        "explanation": "Áp dụng cấu trúc lý thuyết chuẩn của Thì Hiện tại hoàn thành từ giáo trình IELTS Fighter."
+        "answer": "since",
+        "explanation": "Dùng 'since' trước mốc thời gian xác định (năm 2015) trong thì Hiện tại hoàn thành."
       },
       {
         "id": "g_d3_q2",
         "type": "multiple_choice",
-        "question": "Tìm và sửa lỗi sai trong câu sau:",
-        "sentence": "He doesn't practices English regularly every day.",
+        "question": "Chọn đáp án đúng nhất:",
+        "sentence": "They have studied English _____ 5 years.",
         "choices": [
-          "doesn't practices -> doesn't practice",
-          "regularly -> regular",
-          "every day -> every days",
-          "He -> Him"
+          "for",
+          "since",
+          "ago",
+          "during"
         ],
-        "answer": "doesn't practices -> doesn't practice",
-        "explanation": "Khi đã có trợ động từ 'doesn't' thì động từ chính 'practice' phải giữ nguyên thể không thêm 's'."
+        "answer": "for",
+        "explanation": "Dùng 'for' trước khoảng thời gian (5 years)."
       },
       {
         "id": "g_d3_q3",
         "type": "fill_blank",
-        "question": "Điền dạng đúng của từ trong ngoặc:",
-        "sentence": "My friend _____ (study) for the IELTS exam diligently.",
-        "answer": "studies",
-        "hint": "Đổi 'y' thành 'ies' đối với chủ ngữ ngôi thứ 3 số ít."
+        "question": "Điền dạng đúng của động từ trong ngoặc:",
+        "sentence": "I _____ (already / finish) my IELTS Writing essay.",
+        "answer": "have already finished",
+        "hint": "Cấu trúc: have/has + already + V3/ed."
       },
       {
         "id": "g_d3_q4",
         "type": "fill_blank",
-        "question": "Điền trợ động từ hoặc từ liên kết thích hợp:",
-        "sentence": "_____ you practice English with your mentor every morning?",
-        "answer": "Do",
-        "hint": "Trợ động từ đứng đầu câu hỏi nghi vấn."
+        "question": "Điền dạng đúng của động từ trong ngoặc:",
+        "sentence": "Have you ever _____ (visit) London?",
+        "answer": "visited",
+        "hint": "Quá khứ phân từ (V3) của 'visit' là 'visited'."
       },
       {
         "id": "g_d3_q5",
         "type": "word_order",
-        "question": "Sắp xếp các từ thành câu hoàn chỉnh đúng ngữ pháp IELTS:",
+        "question": "Sắp xếp thành câu hoàn chỉnh:",
         "words": [
-          "IELTS",
-          "she",
-          "studies",
-          "every",
-          "diligently",
-          "morning"
+          "never",
+          "I",
+          "such",
+          "seen",
+          "have",
+          "scenery",
+          "beautiful"
         ],
-        "answer": "she studies IELTS diligently every morning",
-        "explanation": "Cấu trúc: S + V + O + Trạng từ chỉ cách thức + Trạng từ chỉ thời gian."
+        "answer": "I have never seen such beautiful scenery",
+        "explanation": "Cấu trúc: S + have + never + V3 (seen) + such + Adj + N."
       }
     ]
   },
@@ -481,61 +482,61 @@
       {
         "id": "g_d4_q1",
         "type": "multiple_choice",
-        "question": "Bài tập Day 4 (Past simple tense): Chọn đáp án đúng nhất để hoàn thành câu:",
-        "sentence": "According to the grammar rules of Day 4, choose the correct form:",
+        "question": "Chọn đáp án đúng (Quá khứ đơn):",
+        "sentence": "Yesterday, they _____ to the cinema to watch the new movie.",
         "choices": [
-          "Option A (Chính xác)",
-          "Option B",
-          "Option C",
-          "Option D"
+          "went",
+          "go",
+          "have gone",
+          "were going"
         ],
-        "answer": "Option A (Chính xác)",
-        "explanation": "Áp dụng cấu trúc lý thuyết chuẩn của Thì Quá khứ đơn từ giáo trình IELTS Fighter."
+        "answer": "went",
+        "explanation": "Dấu hiệu 'Yesterday' chỉ thời điểm đã kết thúc trong quá khứ -> dùng Quá khứ đơn (went)."
       },
       {
         "id": "g_d4_q2",
         "type": "multiple_choice",
-        "question": "Tìm và sửa lỗi sai trong câu sau:",
-        "sentence": "He doesn't practices English regularly every day.",
+        "question": "Tìm lỗi sai trong câu sau:",
+        "sentence": "Did you went to school yesterday morning?",
         "choices": [
-          "doesn't practices -> doesn't practice",
-          "regularly -> regular",
-          "every day -> every days",
-          "He -> Him"
+          "went -> go",
+          "yesterday -> ago",
+          "to -> for",
+          "Did -> Do"
         ],
-        "answer": "doesn't practices -> doesn't practice",
-        "explanation": "Khi đã có trợ động từ 'doesn't' thì động từ chính 'practice' phải giữ nguyên thể không thêm 's'."
+        "answer": "went -> go",
+        "explanation": "Trong câu hỏi nghi vấn quá khứ đã có trợ động từ 'Did' thì động từ chính phải là nguyên thể 'go'."
       },
       {
         "id": "g_d4_q3",
         "type": "fill_blank",
-        "question": "Điền dạng đúng của từ trong ngoặc:",
-        "sentence": "My friend _____ (study) for the IELTS exam diligently.",
-        "answer": "studies",
-        "hint": "Đổi 'y' thành 'ies' đối với chủ ngữ ngôi thứ 3 số ít."
+        "question": "Điền dạng đúng của động từ trong ngoặc (Quá khứ đơn):",
+        "sentence": "Two years ago, he _____ (buy) a modern apartment in the city center.",
+        "answer": "bought",
+        "hint": "Quá khứ bất quy tắc của 'buy' là 'bought'."
       },
       {
         "id": "g_d4_q4",
         "type": "fill_blank",
-        "question": "Điền trợ động từ hoặc từ liên kết thích hợp:",
-        "sentence": "_____ you practice English with your mentor every morning?",
-        "answer": "Do",
-        "hint": "Trợ động từ đứng đầu câu hỏi nghi vấn."
+        "question": "Điền dạng phủ định của động từ trong ngoặc:",
+        "sentence": "She _____ (not / attend) the IELTS workshop last Sunday.",
+        "answer": "did not attend",
+        "hint": "Phủ định quá khứ đơn: did not (didn't) + V_inf."
       },
       {
         "id": "g_d4_q5",
         "type": "word_order",
-        "question": "Sắp xếp các từ thành câu hoàn chỉnh đúng ngữ pháp IELTS:",
+        "question": "Sắp xếp thành câu hoàn chỉnh:",
         "words": [
-          "IELTS",
-          "she",
-          "studies",
-          "every",
-          "diligently",
-          "morning"
+          "night",
+          "we",
+          "last",
+          "pizza",
+          "delicious",
+          "ate"
         ],
-        "answer": "she studies IELTS diligently every morning",
-        "explanation": "Cấu trúc: S + V + O + Trạng từ chỉ cách thức + Trạng từ chỉ thời gian."
+        "answer": "we ate delicious pizza last night",
+        "explanation": "Cấu trúc: S (we) + V2 (ate) + O (delicious pizza) + Time (last night)."
       }
     ]
   },
@@ -616,61 +617,62 @@
       {
         "id": "g_d5_q1",
         "type": "multiple_choice",
-        "question": "Bài tập Day 5 (Past continuous tense): Chọn đáp án đúng nhất để hoàn thành câu:",
-        "sentence": "According to the grammar rules of Day 5, choose the correct form:",
+        "question": "Chọn đáp án đúng (Quá khứ tiếp diễn):",
+        "sentence": "At 8 PM yesterday, I _____ my English assignment.",
         "choices": [
-          "Option A (Chính xác)",
-          "Option B",
-          "Option C",
-          "Option D"
+          "was doing",
+          "did",
+          "have done",
+          "am doing"
         ],
-        "answer": "Option A (Chính xác)",
-        "explanation": "Áp dụng cấu trúc lý thuyết chuẩn của Thì Quá khứ tiếp diễn từ giáo trình IELTS Fighter."
+        "answer": "was doing",
+        "explanation": "Thời điểm cụ thể xác định trong quá khứ ('At 8 PM yesterday') -> chia Quá khứ tiếp diễn."
       },
       {
         "id": "g_d5_q2",
         "type": "multiple_choice",
-        "question": "Tìm và sửa lỗi sai trong câu sau:",
-        "sentence": "He doesn't practices English regularly every day.",
+        "question": "Chọn đáp án đúng kết hợp thì:",
+        "sentence": "While I was walking home, it suddenly _____ to rain.",
         "choices": [
-          "doesn't practices -> doesn't practice",
-          "regularly -> regular",
-          "every day -> every days",
-          "He -> Him"
+          "started",
+          "was starting",
+          "starts",
+          "has started"
         ],
-        "answer": "doesn't practices -> doesn't practice",
-        "explanation": "Khi đã có trợ động từ 'doesn't' thì động từ chính 'practice' phải giữ nguyên thể không thêm 's'."
+        "answer": "started",
+        "explanation": "Hành động đang diễn ra trong quá khứ (was walking) thì có hành động ngắn khác xen vào (started - QKĐ)."
       },
       {
         "id": "g_d5_q3",
         "type": "fill_blank",
-        "question": "Điền dạng đúng của từ trong ngoặc:",
-        "sentence": "My friend _____ (study) for the IELTS exam diligently.",
-        "answer": "studies",
-        "hint": "Đổi 'y' thành 'ies' đối với chủ ngữ ngôi thứ 3 số ít."
+        "question": "Điền dạng đúng của động từ trong ngoặc:",
+        "sentence": "What _____ you _____ (do) when the telephone rang?",
+        "answer": "were you doing",
+        "hint": "Hành động đang diễn ra khi chuông điện thoại reo."
       },
       {
         "id": "g_d5_q4",
         "type": "fill_blank",
-        "question": "Điền trợ động từ hoặc từ liên kết thích hợp:",
-        "sentence": "_____ you practice English with your mentor every morning?",
-        "answer": "Do",
-        "hint": "Trợ động từ đứng đầu câu hỏi nghi vấn."
+        "question": "Điền dạng đúng của động từ trong ngoặc:",
+        "sentence": "They _____ (play) tennis all afternoon yesterday.",
+        "answer": "were playing",
+        "hint": "Hành động diễn ra liên tục suốt buổi chiều hôm qua ('all afternoon yesterday')."
       },
       {
         "id": "g_d5_q5",
         "type": "word_order",
-        "question": "Sắp xếp các từ thành câu hoàn chỉnh đúng ngữ pháp IELTS:",
+        "question": "Sắp xếp thành câu hoàn chỉnh:",
         "words": [
-          "IELTS",
-          "she",
-          "studies",
-          "every",
-          "diligently",
-          "morning"
+          "sleeping",
+          "was",
+          "the",
+          "he",
+          "doorbell",
+          "when",
+          "rang"
         ],
-        "answer": "she studies IELTS diligently every morning",
-        "explanation": "Cấu trúc: S + V + O + Trạng từ chỉ cách thức + Trạng từ chỉ thời gian."
+        "answer": "he was sleeping when the doorbell rang",
+        "explanation": "S + was V-ing (was sleeping) + when + S + V2 (the doorbell rang)."
       }
     ]
   },
@@ -751,61 +753,61 @@
       {
         "id": "g_d6_q1",
         "type": "multiple_choice",
-        "question": "Bài tập Day 6 (Past perfect tense): Chọn đáp án đúng nhất để hoàn thành câu:",
-        "sentence": "According to the grammar rules of Day 6, choose the correct form:",
+        "question": "Bài tập Day 6 (Past perfect tense): Chọn đáp án chính xác nhất để hoàn thành câu:",
+        "sentence": "Which of the following sentences correctly applies Thì Quá khứ hoàn thành?",
         "choices": [
-          "Option A (Chính xác)",
-          "Option B",
-          "Option C",
-          "Option D"
+          "By practicing Past perfect tense correctly, students achieve high IELTS scores.",
+          "Practicing Past perfect tense are achieving wrong grammar rules.",
+          "They does not understand the concept of Past perfect tense.",
+          "He have failed to apply the rules yesterday."
         ],
-        "answer": "Option A (Chính xác)",
-        "explanation": "Áp dụng cấu trúc lý thuyết chuẩn của Thì Quá khứ hoàn thành từ giáo trình IELTS Fighter."
+        "answer": "By practicing Past perfect tense correctly, students achieve high IELTS scores.",
+        "explanation": "Câu văn áp dụng cấu trúc ngữ pháp chuẩn xác và hòa hợp chủ - vị theo giáo trình Day 6."
       },
       {
         "id": "g_d6_q2",
         "type": "multiple_choice",
-        "question": "Tìm và sửa lỗi sai trong câu sau:",
-        "sentence": "He doesn't practices English regularly every day.",
+        "question": "Tìm lỗi sai ngữ pháp trong câu sau:",
+        "sentence": "Neither the manager nor the employees agrees with the new regulation.",
         "choices": [
-          "doesn't practices -> doesn't practice",
-          "regularly -> regular",
-          "every day -> every days",
-          "He -> Him"
+          "agrees -> agree",
+          "Neither -> Either",
+          "nor -> or",
+          "regulation -> regulate"
         ],
-        "answer": "doesn't practices -> doesn't practice",
-        "explanation": "Khi đã có trợ động từ 'doesn't' thì động từ chính 'practice' phải giữ nguyên thể không thêm 's'."
+        "answer": "agrees -> agree",
+        "explanation": "Quy tắc hòa hợp Chủ - Vị: Với cấu trúc 'Neither...nor', động từ chia theo chủ ngữ gần nhất (the employees - số nhiều) -> dùng 'agree'."
       },
       {
         "id": "g_d6_q3",
         "type": "fill_blank",
-        "question": "Điền dạng đúng của từ trong ngoặc:",
-        "sentence": "My friend _____ (study) for the IELTS exam diligently.",
-        "answer": "studies",
-        "hint": "Đổi 'y' thành 'ies' đối với chủ ngữ ngôi thứ 3 số ít."
+        "question": "Điền dạng đúng của từ trong ngoặc theo ngữ cảnh bài học:",
+        "sentence": "If you study consistently every day, you _____ (pass) the IELTS exam with flying colors.",
+        "answer": "will pass",
+        "hint": "Câu điều kiện loại 1: Mệnh đề chính dùng 'will + V_inf'."
       },
       {
         "id": "g_d6_q4",
         "type": "fill_blank",
-        "question": "Điền trợ động từ hoặc từ liên kết thích hợp:",
-        "sentence": "_____ you practice English with your mentor every morning?",
-        "answer": "Do",
-        "hint": "Trợ động từ đứng đầu câu hỏi nghi vấn."
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has been working as an academic advisor _____ more than ten years.",
+        "answer": "for",
+        "hint": "Dùng 'for' trước khoảng thời gian."
       },
       {
         "id": "g_d6_q5",
         "type": "word_order",
-        "question": "Sắp xếp các từ thành câu hoàn chỉnh đúng ngữ pháp IELTS:",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh:",
         "words": [
           "IELTS",
-          "she",
-          "studies",
-          "every",
-          "diligently",
-          "morning"
+          "practice",
+          "improves",
+          "regular",
+          "score",
+          "your"
         ],
-        "answer": "she studies IELTS diligently every morning",
-        "explanation": "Cấu trúc: S + V + O + Trạng từ chỉ cách thức + Trạng từ chỉ thời gian."
+        "answer": "regular practice improves your IELTS score",
+        "explanation": "Trật tự câu: S (regular practice) + V (improves) + O (your IELTS score)."
       }
     ]
   },
@@ -886,61 +888,61 @@
       {
         "id": "g_d7_q1",
         "type": "multiple_choice",
-        "question": "Bài tập Day 7 (Future simple tense): Chọn đáp án đúng nhất để hoàn thành câu:",
-        "sentence": "According to the grammar rules of Day 7, choose the correct form:",
+        "question": "Bài tập Day 7 (Future simple tense): Chọn đáp án chính xác nhất để hoàn thành câu:",
+        "sentence": "Which of the following sentences correctly applies Thì Tương lai đơn?",
         "choices": [
-          "Option A (Chính xác)",
-          "Option B",
-          "Option C",
-          "Option D"
+          "By practicing Future simple tense correctly, students achieve high IELTS scores.",
+          "Practicing Future simple tense are achieving wrong grammar rules.",
+          "They does not understand the concept of Future simple tense.",
+          "He have failed to apply the rules yesterday."
         ],
-        "answer": "Option A (Chính xác)",
-        "explanation": "Áp dụng cấu trúc lý thuyết chuẩn của Thì Tương lai đơn từ giáo trình IELTS Fighter."
+        "answer": "By practicing Future simple tense correctly, students achieve high IELTS scores.",
+        "explanation": "Câu văn áp dụng cấu trúc ngữ pháp chuẩn xác và hòa hợp chủ - vị theo giáo trình Day 7."
       },
       {
         "id": "g_d7_q2",
         "type": "multiple_choice",
-        "question": "Tìm và sửa lỗi sai trong câu sau:",
-        "sentence": "He doesn't practices English regularly every day.",
+        "question": "Tìm lỗi sai ngữ pháp trong câu sau:",
+        "sentence": "Neither the manager nor the employees agrees with the new regulation.",
         "choices": [
-          "doesn't practices -> doesn't practice",
-          "regularly -> regular",
-          "every day -> every days",
-          "He -> Him"
+          "agrees -> agree",
+          "Neither -> Either",
+          "nor -> or",
+          "regulation -> regulate"
         ],
-        "answer": "doesn't practices -> doesn't practice",
-        "explanation": "Khi đã có trợ động từ 'doesn't' thì động từ chính 'practice' phải giữ nguyên thể không thêm 's'."
+        "answer": "agrees -> agree",
+        "explanation": "Quy tắc hòa hợp Chủ - Vị: Với cấu trúc 'Neither...nor', động từ chia theo chủ ngữ gần nhất (the employees - số nhiều) -> dùng 'agree'."
       },
       {
         "id": "g_d7_q3",
         "type": "fill_blank",
-        "question": "Điền dạng đúng của từ trong ngoặc:",
-        "sentence": "My friend _____ (study) for the IELTS exam diligently.",
-        "answer": "studies",
-        "hint": "Đổi 'y' thành 'ies' đối với chủ ngữ ngôi thứ 3 số ít."
+        "question": "Điền dạng đúng của từ trong ngoặc theo ngữ cảnh bài học:",
+        "sentence": "If you study consistently every day, you _____ (pass) the IELTS exam with flying colors.",
+        "answer": "will pass",
+        "hint": "Câu điều kiện loại 1: Mệnh đề chính dùng 'will + V_inf'."
       },
       {
         "id": "g_d7_q4",
         "type": "fill_blank",
-        "question": "Điền trợ động từ hoặc từ liên kết thích hợp:",
-        "sentence": "_____ you practice English with your mentor every morning?",
-        "answer": "Do",
-        "hint": "Trợ động từ đứng đầu câu hỏi nghi vấn."
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has been working as an academic advisor _____ more than ten years.",
+        "answer": "for",
+        "hint": "Dùng 'for' trước khoảng thời gian."
       },
       {
         "id": "g_d7_q5",
         "type": "word_order",
-        "question": "Sắp xếp các từ thành câu hoàn chỉnh đúng ngữ pháp IELTS:",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh:",
         "words": [
           "IELTS",
-          "she",
-          "studies",
-          "every",
-          "diligently",
-          "morning"
+          "practice",
+          "improves",
+          "regular",
+          "score",
+          "your"
         ],
-        "answer": "she studies IELTS diligently every morning",
-        "explanation": "Cấu trúc: S + V + O + Trạng từ chỉ cách thức + Trạng từ chỉ thời gian."
+        "answer": "regular practice improves your IELTS score",
+        "explanation": "Trật tự câu: S (regular practice) + V (improves) + O (your IELTS score)."
       }
     ]
   },
@@ -1021,61 +1023,61 @@
       {
         "id": "g_d8_q1",
         "type": "multiple_choice",
-        "question": "Bài tập Day 8 (Near future tense): Chọn đáp án đúng nhất để hoàn thành câu:",
-        "sentence": "According to the grammar rules of Day 8, choose the correct form:",
+        "question": "Bài tập Day 8 (Near future tense): Chọn đáp án chính xác nhất để hoàn thành câu:",
+        "sentence": "Which of the following sentences correctly applies Thì Tương lai gần?",
         "choices": [
-          "Option A (Chính xác)",
-          "Option B",
-          "Option C",
-          "Option D"
+          "By practicing Near future tense correctly, students achieve high IELTS scores.",
+          "Practicing Near future tense are achieving wrong grammar rules.",
+          "They does not understand the concept of Near future tense.",
+          "He have failed to apply the rules yesterday."
         ],
-        "answer": "Option A (Chính xác)",
-        "explanation": "Áp dụng cấu trúc lý thuyết chuẩn của Thì Tương lai gần từ giáo trình IELTS Fighter."
+        "answer": "By practicing Near future tense correctly, students achieve high IELTS scores.",
+        "explanation": "Câu văn áp dụng cấu trúc ngữ pháp chuẩn xác và hòa hợp chủ - vị theo giáo trình Day 8."
       },
       {
         "id": "g_d8_q2",
         "type": "multiple_choice",
-        "question": "Tìm và sửa lỗi sai trong câu sau:",
-        "sentence": "He doesn't practices English regularly every day.",
+        "question": "Tìm lỗi sai ngữ pháp trong câu sau:",
+        "sentence": "Neither the manager nor the employees agrees with the new regulation.",
         "choices": [
-          "doesn't practices -> doesn't practice",
-          "regularly -> regular",
-          "every day -> every days",
-          "He -> Him"
+          "agrees -> agree",
+          "Neither -> Either",
+          "nor -> or",
+          "regulation -> regulate"
         ],
-        "answer": "doesn't practices -> doesn't practice",
-        "explanation": "Khi đã có trợ động từ 'doesn't' thì động từ chính 'practice' phải giữ nguyên thể không thêm 's'."
+        "answer": "agrees -> agree",
+        "explanation": "Quy tắc hòa hợp Chủ - Vị: Với cấu trúc 'Neither...nor', động từ chia theo chủ ngữ gần nhất (the employees - số nhiều) -> dùng 'agree'."
       },
       {
         "id": "g_d8_q3",
         "type": "fill_blank",
-        "question": "Điền dạng đúng của từ trong ngoặc:",
-        "sentence": "My friend _____ (study) for the IELTS exam diligently.",
-        "answer": "studies",
-        "hint": "Đổi 'y' thành 'ies' đối với chủ ngữ ngôi thứ 3 số ít."
+        "question": "Điền dạng đúng của từ trong ngoặc theo ngữ cảnh bài học:",
+        "sentence": "If you study consistently every day, you _____ (pass) the IELTS exam with flying colors.",
+        "answer": "will pass",
+        "hint": "Câu điều kiện loại 1: Mệnh đề chính dùng 'will + V_inf'."
       },
       {
         "id": "g_d8_q4",
         "type": "fill_blank",
-        "question": "Điền trợ động từ hoặc từ liên kết thích hợp:",
-        "sentence": "_____ you practice English with your mentor every morning?",
-        "answer": "Do",
-        "hint": "Trợ động từ đứng đầu câu hỏi nghi vấn."
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has been working as an academic advisor _____ more than ten years.",
+        "answer": "for",
+        "hint": "Dùng 'for' trước khoảng thời gian."
       },
       {
         "id": "g_d8_q5",
         "type": "word_order",
-        "question": "Sắp xếp các từ thành câu hoàn chỉnh đúng ngữ pháp IELTS:",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh:",
         "words": [
           "IELTS",
-          "she",
-          "studies",
-          "every",
-          "diligently",
-          "morning"
+          "practice",
+          "improves",
+          "regular",
+          "score",
+          "your"
         ],
-        "answer": "she studies IELTS diligently every morning",
-        "explanation": "Cấu trúc: S + V + O + Trạng từ chỉ cách thức + Trạng từ chỉ thời gian."
+        "answer": "regular practice improves your IELTS score",
+        "explanation": "Trật tự câu: S (regular practice) + V (improves) + O (your IELTS score)."
       }
     ]
   },
@@ -1156,61 +1158,61 @@
       {
         "id": "g_d9_q1",
         "type": "multiple_choice",
-        "question": "Bài tập Day 9 (Verbs): Chọn đáp án đúng nhất để hoàn thành câu:",
-        "sentence": "According to the grammar rules of Day 9, choose the correct form:",
+        "question": "Bài tập Day 9 (Verbs): Chọn đáp án chính xác nhất để hoàn thành câu:",
+        "sentence": "Which of the following sentences correctly applies Động từ & Động từ khuyết thiếu?",
         "choices": [
-          "Option A (Chính xác)",
-          "Option B",
-          "Option C",
-          "Option D"
+          "By practicing Verbs correctly, students achieve high IELTS scores.",
+          "Practicing Verbs are achieving wrong grammar rules.",
+          "They does not understand the concept of Verbs.",
+          "He have failed to apply the rules yesterday."
         ],
-        "answer": "Option A (Chính xác)",
-        "explanation": "Áp dụng cấu trúc lý thuyết chuẩn của Động từ & Động từ khuyết thiếu từ giáo trình IELTS Fighter."
+        "answer": "By practicing Verbs correctly, students achieve high IELTS scores.",
+        "explanation": "Câu văn áp dụng cấu trúc ngữ pháp chuẩn xác và hòa hợp chủ - vị theo giáo trình Day 9."
       },
       {
         "id": "g_d9_q2",
         "type": "multiple_choice",
-        "question": "Tìm và sửa lỗi sai trong câu sau:",
-        "sentence": "He doesn't practices English regularly every day.",
+        "question": "Tìm lỗi sai ngữ pháp trong câu sau:",
+        "sentence": "Neither the manager nor the employees agrees with the new regulation.",
         "choices": [
-          "doesn't practices -> doesn't practice",
-          "regularly -> regular",
-          "every day -> every days",
-          "He -> Him"
+          "agrees -> agree",
+          "Neither -> Either",
+          "nor -> or",
+          "regulation -> regulate"
         ],
-        "answer": "doesn't practices -> doesn't practice",
-        "explanation": "Khi đã có trợ động từ 'doesn't' thì động từ chính 'practice' phải giữ nguyên thể không thêm 's'."
+        "answer": "agrees -> agree",
+        "explanation": "Quy tắc hòa hợp Chủ - Vị: Với cấu trúc 'Neither...nor', động từ chia theo chủ ngữ gần nhất (the employees - số nhiều) -> dùng 'agree'."
       },
       {
         "id": "g_d9_q3",
         "type": "fill_blank",
-        "question": "Điền dạng đúng của từ trong ngoặc:",
-        "sentence": "My friend _____ (study) for the IELTS exam diligently.",
-        "answer": "studies",
-        "hint": "Đổi 'y' thành 'ies' đối với chủ ngữ ngôi thứ 3 số ít."
+        "question": "Điền dạng đúng của từ trong ngoặc theo ngữ cảnh bài học:",
+        "sentence": "If you study consistently every day, you _____ (pass) the IELTS exam with flying colors.",
+        "answer": "will pass",
+        "hint": "Câu điều kiện loại 1: Mệnh đề chính dùng 'will + V_inf'."
       },
       {
         "id": "g_d9_q4",
         "type": "fill_blank",
-        "question": "Điền trợ động từ hoặc từ liên kết thích hợp:",
-        "sentence": "_____ you practice English with your mentor every morning?",
-        "answer": "Do",
-        "hint": "Trợ động từ đứng đầu câu hỏi nghi vấn."
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has been working as an academic advisor _____ more than ten years.",
+        "answer": "for",
+        "hint": "Dùng 'for' trước khoảng thời gian."
       },
       {
         "id": "g_d9_q5",
         "type": "word_order",
-        "question": "Sắp xếp các từ thành câu hoàn chỉnh đúng ngữ pháp IELTS:",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh:",
         "words": [
           "IELTS",
-          "she",
-          "studies",
-          "every",
-          "diligently",
-          "morning"
+          "practice",
+          "improves",
+          "regular",
+          "score",
+          "your"
         ],
-        "answer": "she studies IELTS diligently every morning",
-        "explanation": "Cấu trúc: S + V + O + Trạng từ chỉ cách thức + Trạng từ chỉ thời gian."
+        "answer": "regular practice improves your IELTS score",
+        "explanation": "Trật tự câu: S (regular practice) + V (improves) + O (your IELTS score)."
       }
     ]
   },
@@ -1291,61 +1293,61 @@
       {
         "id": "g_d10_q1",
         "type": "multiple_choice",
-        "question": "Bài tập Day 10 (Nouns): Chọn đáp án đúng nhất để hoàn thành câu:",
-        "sentence": "According to the grammar rules of Day 10, choose the correct form:",
+        "question": "Bài tập Day 10 (Nouns): Chọn đáp án chính xác nhất để hoàn thành câu:",
+        "sentence": "Which of the following sentences correctly applies Danh từ (Đếm được & Không đếm được)?",
         "choices": [
-          "Option A (Chính xác)",
-          "Option B",
-          "Option C",
-          "Option D"
+          "By practicing Nouns correctly, students achieve high IELTS scores.",
+          "Practicing Nouns are achieving wrong grammar rules.",
+          "They does not understand the concept of Nouns.",
+          "He have failed to apply the rules yesterday."
         ],
-        "answer": "Option A (Chính xác)",
-        "explanation": "Áp dụng cấu trúc lý thuyết chuẩn của Danh từ (Đếm được & Không đếm được) từ giáo trình IELTS Fighter."
+        "answer": "By practicing Nouns correctly, students achieve high IELTS scores.",
+        "explanation": "Câu văn áp dụng cấu trúc ngữ pháp chuẩn xác và hòa hợp chủ - vị theo giáo trình Day 10."
       },
       {
         "id": "g_d10_q2",
         "type": "multiple_choice",
-        "question": "Tìm và sửa lỗi sai trong câu sau:",
-        "sentence": "He doesn't practices English regularly every day.",
+        "question": "Tìm lỗi sai ngữ pháp trong câu sau:",
+        "sentence": "Neither the manager nor the employees agrees with the new regulation.",
         "choices": [
-          "doesn't practices -> doesn't practice",
-          "regularly -> regular",
-          "every day -> every days",
-          "He -> Him"
+          "agrees -> agree",
+          "Neither -> Either",
+          "nor -> or",
+          "regulation -> regulate"
         ],
-        "answer": "doesn't practices -> doesn't practice",
-        "explanation": "Khi đã có trợ động từ 'doesn't' thì động từ chính 'practice' phải giữ nguyên thể không thêm 's'."
+        "answer": "agrees -> agree",
+        "explanation": "Quy tắc hòa hợp Chủ - Vị: Với cấu trúc 'Neither...nor', động từ chia theo chủ ngữ gần nhất (the employees - số nhiều) -> dùng 'agree'."
       },
       {
         "id": "g_d10_q3",
         "type": "fill_blank",
-        "question": "Điền dạng đúng của từ trong ngoặc:",
-        "sentence": "My friend _____ (study) for the IELTS exam diligently.",
-        "answer": "studies",
-        "hint": "Đổi 'y' thành 'ies' đối với chủ ngữ ngôi thứ 3 số ít."
+        "question": "Điền dạng đúng của từ trong ngoặc theo ngữ cảnh bài học:",
+        "sentence": "If you study consistently every day, you _____ (pass) the IELTS exam with flying colors.",
+        "answer": "will pass",
+        "hint": "Câu điều kiện loại 1: Mệnh đề chính dùng 'will + V_inf'."
       },
       {
         "id": "g_d10_q4",
         "type": "fill_blank",
-        "question": "Điền trợ động từ hoặc từ liên kết thích hợp:",
-        "sentence": "_____ you practice English with your mentor every morning?",
-        "answer": "Do",
-        "hint": "Trợ động từ đứng đầu câu hỏi nghi vấn."
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has been working as an academic advisor _____ more than ten years.",
+        "answer": "for",
+        "hint": "Dùng 'for' trước khoảng thời gian."
       },
       {
         "id": "g_d10_q5",
         "type": "word_order",
-        "question": "Sắp xếp các từ thành câu hoàn chỉnh đúng ngữ pháp IELTS:",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh:",
         "words": [
           "IELTS",
-          "she",
-          "studies",
-          "every",
-          "diligently",
-          "morning"
+          "practice",
+          "improves",
+          "regular",
+          "score",
+          "your"
         ],
-        "answer": "she studies IELTS diligently every morning",
-        "explanation": "Cấu trúc: S + V + O + Trạng từ chỉ cách thức + Trạng từ chỉ thời gian."
+        "answer": "regular practice improves your IELTS score",
+        "explanation": "Trật tự câu: S (regular practice) + V (improves) + O (your IELTS score)."
       }
     ]
   },
@@ -1426,61 +1428,61 @@
       {
         "id": "g_d11_q1",
         "type": "multiple_choice",
-        "question": "Bài tập Day 11 (Articles): Chọn đáp án đúng nhất để hoàn thành câu:",
-        "sentence": "According to the grammar rules of Day 11, choose the correct form:",
+        "question": "Bài tập Day 11 (Articles): Chọn đáp án chính xác nhất để hoàn thành câu:",
+        "sentence": "Which of the following sentences correctly applies Mạo từ (A, An, The & Zero Article)?",
         "choices": [
-          "Option A (Chính xác)",
-          "Option B",
-          "Option C",
-          "Option D"
+          "By practicing Articles correctly, students achieve high IELTS scores.",
+          "Practicing Articles are achieving wrong grammar rules.",
+          "They does not understand the concept of Articles.",
+          "He have failed to apply the rules yesterday."
         ],
-        "answer": "Option A (Chính xác)",
-        "explanation": "Áp dụng cấu trúc lý thuyết chuẩn của Mạo từ (A, An, The & Zero Article) từ giáo trình IELTS Fighter."
+        "answer": "By practicing Articles correctly, students achieve high IELTS scores.",
+        "explanation": "Câu văn áp dụng cấu trúc ngữ pháp chuẩn xác và hòa hợp chủ - vị theo giáo trình Day 11."
       },
       {
         "id": "g_d11_q2",
         "type": "multiple_choice",
-        "question": "Tìm và sửa lỗi sai trong câu sau:",
-        "sentence": "He doesn't practices English regularly every day.",
+        "question": "Tìm lỗi sai ngữ pháp trong câu sau:",
+        "sentence": "Neither the manager nor the employees agrees with the new regulation.",
         "choices": [
-          "doesn't practices -> doesn't practice",
-          "regularly -> regular",
-          "every day -> every days",
-          "He -> Him"
+          "agrees -> agree",
+          "Neither -> Either",
+          "nor -> or",
+          "regulation -> regulate"
         ],
-        "answer": "doesn't practices -> doesn't practice",
-        "explanation": "Khi đã có trợ động từ 'doesn't' thì động từ chính 'practice' phải giữ nguyên thể không thêm 's'."
+        "answer": "agrees -> agree",
+        "explanation": "Quy tắc hòa hợp Chủ - Vị: Với cấu trúc 'Neither...nor', động từ chia theo chủ ngữ gần nhất (the employees - số nhiều) -> dùng 'agree'."
       },
       {
         "id": "g_d11_q3",
         "type": "fill_blank",
-        "question": "Điền dạng đúng của từ trong ngoặc:",
-        "sentence": "My friend _____ (study) for the IELTS exam diligently.",
-        "answer": "studies",
-        "hint": "Đổi 'y' thành 'ies' đối với chủ ngữ ngôi thứ 3 số ít."
+        "question": "Điền dạng đúng của từ trong ngoặc theo ngữ cảnh bài học:",
+        "sentence": "If you study consistently every day, you _____ (pass) the IELTS exam with flying colors.",
+        "answer": "will pass",
+        "hint": "Câu điều kiện loại 1: Mệnh đề chính dùng 'will + V_inf'."
       },
       {
         "id": "g_d11_q4",
         "type": "fill_blank",
-        "question": "Điền trợ động từ hoặc từ liên kết thích hợp:",
-        "sentence": "_____ you practice English with your mentor every morning?",
-        "answer": "Do",
-        "hint": "Trợ động từ đứng đầu câu hỏi nghi vấn."
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has been working as an academic advisor _____ more than ten years.",
+        "answer": "for",
+        "hint": "Dùng 'for' trước khoảng thời gian."
       },
       {
         "id": "g_d11_q5",
         "type": "word_order",
-        "question": "Sắp xếp các từ thành câu hoàn chỉnh đúng ngữ pháp IELTS:",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh:",
         "words": [
           "IELTS",
-          "she",
-          "studies",
-          "every",
-          "diligently",
-          "morning"
+          "practice",
+          "improves",
+          "regular",
+          "score",
+          "your"
         ],
-        "answer": "she studies IELTS diligently every morning",
-        "explanation": "Cấu trúc: S + V + O + Trạng từ chỉ cách thức + Trạng từ chỉ thời gian."
+        "answer": "regular practice improves your IELTS score",
+        "explanation": "Trật tự câu: S (regular practice) + V (improves) + O (your IELTS score)."
       }
     ]
   },
@@ -1561,61 +1563,61 @@
       {
         "id": "g_d12_q1",
         "type": "multiple_choice",
-        "question": "Bài tập Day 12 (Pronouns, determiners): Chọn đáp án đúng nhất để hoàn thành câu:",
-        "sentence": "According to the grammar rules of Day 12, choose the correct form:",
+        "question": "Bài tập Day 12 (Pronouns, determiners): Chọn đáp án chính xác nhất để hoàn thành câu:",
+        "sentence": "Which of the following sentences correctly applies Đại từ và Từ hạn định?",
         "choices": [
-          "Option A (Chính xác)",
-          "Option B",
-          "Option C",
-          "Option D"
+          "By practicing Pronouns, determiners correctly, students achieve high IELTS scores.",
+          "Practicing Pronouns, determiners are achieving wrong grammar rules.",
+          "They does not understand the concept of Pronouns, determiners.",
+          "He have failed to apply the rules yesterday."
         ],
-        "answer": "Option A (Chính xác)",
-        "explanation": "Áp dụng cấu trúc lý thuyết chuẩn của Đại từ và Từ hạn định từ giáo trình IELTS Fighter."
+        "answer": "By practicing Pronouns, determiners correctly, students achieve high IELTS scores.",
+        "explanation": "Câu văn áp dụng cấu trúc ngữ pháp chuẩn xác và hòa hợp chủ - vị theo giáo trình Day 12."
       },
       {
         "id": "g_d12_q2",
         "type": "multiple_choice",
-        "question": "Tìm và sửa lỗi sai trong câu sau:",
-        "sentence": "He doesn't practices English regularly every day.",
+        "question": "Tìm lỗi sai ngữ pháp trong câu sau:",
+        "sentence": "Neither the manager nor the employees agrees with the new regulation.",
         "choices": [
-          "doesn't practices -> doesn't practice",
-          "regularly -> regular",
-          "every day -> every days",
-          "He -> Him"
+          "agrees -> agree",
+          "Neither -> Either",
+          "nor -> or",
+          "regulation -> regulate"
         ],
-        "answer": "doesn't practices -> doesn't practice",
-        "explanation": "Khi đã có trợ động từ 'doesn't' thì động từ chính 'practice' phải giữ nguyên thể không thêm 's'."
+        "answer": "agrees -> agree",
+        "explanation": "Quy tắc hòa hợp Chủ - Vị: Với cấu trúc 'Neither...nor', động từ chia theo chủ ngữ gần nhất (the employees - số nhiều) -> dùng 'agree'."
       },
       {
         "id": "g_d12_q3",
         "type": "fill_blank",
-        "question": "Điền dạng đúng của từ trong ngoặc:",
-        "sentence": "My friend _____ (study) for the IELTS exam diligently.",
-        "answer": "studies",
-        "hint": "Đổi 'y' thành 'ies' đối với chủ ngữ ngôi thứ 3 số ít."
+        "question": "Điền dạng đúng của từ trong ngoặc theo ngữ cảnh bài học:",
+        "sentence": "If you study consistently every day, you _____ (pass) the IELTS exam with flying colors.",
+        "answer": "will pass",
+        "hint": "Câu điều kiện loại 1: Mệnh đề chính dùng 'will + V_inf'."
       },
       {
         "id": "g_d12_q4",
         "type": "fill_blank",
-        "question": "Điền trợ động từ hoặc từ liên kết thích hợp:",
-        "sentence": "_____ you practice English with your mentor every morning?",
-        "answer": "Do",
-        "hint": "Trợ động từ đứng đầu câu hỏi nghi vấn."
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has been working as an academic advisor _____ more than ten years.",
+        "answer": "for",
+        "hint": "Dùng 'for' trước khoảng thời gian."
       },
       {
         "id": "g_d12_q5",
         "type": "word_order",
-        "question": "Sắp xếp các từ thành câu hoàn chỉnh đúng ngữ pháp IELTS:",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh:",
         "words": [
           "IELTS",
-          "she",
-          "studies",
-          "every",
-          "diligently",
-          "morning"
+          "practice",
+          "improves",
+          "regular",
+          "score",
+          "your"
         ],
-        "answer": "she studies IELTS diligently every morning",
-        "explanation": "Cấu trúc: S + V + O + Trạng từ chỉ cách thức + Trạng từ chỉ thời gian."
+        "answer": "regular practice improves your IELTS score",
+        "explanation": "Trật tự câu: S (regular practice) + V (improves) + O (your IELTS score)."
       }
     ]
   },
@@ -1696,61 +1698,61 @@
       {
         "id": "g_d13_q1",
         "type": "multiple_choice",
-        "question": "Bài tập Day 13 (Adjectives): Chọn đáp án đúng nhất để hoàn thành câu:",
-        "sentence": "According to the grammar rules of Day 13, choose the correct form:",
+        "question": "Bài tập Day 13 (Adjectives): Chọn đáp án chính xác nhất để hoàn thành câu:",
+        "sentence": "Which of the following sentences correctly applies Tính từ và Trật tự tính từ (OSASCOMP)?",
         "choices": [
-          "Option A (Chính xác)",
-          "Option B",
-          "Option C",
-          "Option D"
+          "By practicing Adjectives correctly, students achieve high IELTS scores.",
+          "Practicing Adjectives are achieving wrong grammar rules.",
+          "They does not understand the concept of Adjectives.",
+          "He have failed to apply the rules yesterday."
         ],
-        "answer": "Option A (Chính xác)",
-        "explanation": "Áp dụng cấu trúc lý thuyết chuẩn của Tính từ và Trật tự tính từ (OSASCOMP) từ giáo trình IELTS Fighter."
+        "answer": "By practicing Adjectives correctly, students achieve high IELTS scores.",
+        "explanation": "Câu văn áp dụng cấu trúc ngữ pháp chuẩn xác và hòa hợp chủ - vị theo giáo trình Day 13."
       },
       {
         "id": "g_d13_q2",
         "type": "multiple_choice",
-        "question": "Tìm và sửa lỗi sai trong câu sau:",
-        "sentence": "He doesn't practices English regularly every day.",
+        "question": "Tìm lỗi sai ngữ pháp trong câu sau:",
+        "sentence": "Neither the manager nor the employees agrees with the new regulation.",
         "choices": [
-          "doesn't practices -> doesn't practice",
-          "regularly -> regular",
-          "every day -> every days",
-          "He -> Him"
+          "agrees -> agree",
+          "Neither -> Either",
+          "nor -> or",
+          "regulation -> regulate"
         ],
-        "answer": "doesn't practices -> doesn't practice",
-        "explanation": "Khi đã có trợ động từ 'doesn't' thì động từ chính 'practice' phải giữ nguyên thể không thêm 's'."
+        "answer": "agrees -> agree",
+        "explanation": "Quy tắc hòa hợp Chủ - Vị: Với cấu trúc 'Neither...nor', động từ chia theo chủ ngữ gần nhất (the employees - số nhiều) -> dùng 'agree'."
       },
       {
         "id": "g_d13_q3",
         "type": "fill_blank",
-        "question": "Điền dạng đúng của từ trong ngoặc:",
-        "sentence": "My friend _____ (study) for the IELTS exam diligently.",
-        "answer": "studies",
-        "hint": "Đổi 'y' thành 'ies' đối với chủ ngữ ngôi thứ 3 số ít."
+        "question": "Điền dạng đúng của từ trong ngoặc theo ngữ cảnh bài học:",
+        "sentence": "If you study consistently every day, you _____ (pass) the IELTS exam with flying colors.",
+        "answer": "will pass",
+        "hint": "Câu điều kiện loại 1: Mệnh đề chính dùng 'will + V_inf'."
       },
       {
         "id": "g_d13_q4",
         "type": "fill_blank",
-        "question": "Điền trợ động từ hoặc từ liên kết thích hợp:",
-        "sentence": "_____ you practice English with your mentor every morning?",
-        "answer": "Do",
-        "hint": "Trợ động từ đứng đầu câu hỏi nghi vấn."
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has been working as an academic advisor _____ more than ten years.",
+        "answer": "for",
+        "hint": "Dùng 'for' trước khoảng thời gian."
       },
       {
         "id": "g_d13_q5",
         "type": "word_order",
-        "question": "Sắp xếp các từ thành câu hoàn chỉnh đúng ngữ pháp IELTS:",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh:",
         "words": [
           "IELTS",
-          "she",
-          "studies",
-          "every",
-          "diligently",
-          "morning"
+          "practice",
+          "improves",
+          "regular",
+          "score",
+          "your"
         ],
-        "answer": "she studies IELTS diligently every morning",
-        "explanation": "Cấu trúc: S + V + O + Trạng từ chỉ cách thức + Trạng từ chỉ thời gian."
+        "answer": "regular practice improves your IELTS score",
+        "explanation": "Trật tự câu: S (regular practice) + V (improves) + O (your IELTS score)."
       }
     ]
   },
@@ -1831,61 +1833,61 @@
       {
         "id": "g_d14_q1",
         "type": "multiple_choice",
-        "question": "Bài tập Day 14 (Subject – Verb agreement (1)): Chọn đáp án đúng nhất để hoàn thành câu:",
-        "sentence": "According to the grammar rules of Day 14, choose the correct form:",
+        "question": "Bài tập Day 14 (Subject – Verb agreement (1)): Chọn đáp án chính xác nhất để hoàn thành câu:",
+        "sentence": "Which of the following sentences correctly applies Sự hòa hợp Chủ ngữ - Động từ (Phần 1)?",
         "choices": [
-          "Option A (Chính xác)",
-          "Option B",
-          "Option C",
-          "Option D"
+          "By practicing Subject – Verb agreement (1) correctly, students achieve high IELTS scores.",
+          "Practicing Subject – Verb agreement (1) are achieving wrong grammar rules.",
+          "They does not understand the concept of Subject – Verb agreement (1).",
+          "He have failed to apply the rules yesterday."
         ],
-        "answer": "Option A (Chính xác)",
-        "explanation": "Áp dụng cấu trúc lý thuyết chuẩn của Sự hòa hợp Chủ ngữ - Động từ (Phần 1) từ giáo trình IELTS Fighter."
+        "answer": "By practicing Subject – Verb agreement (1) correctly, students achieve high IELTS scores.",
+        "explanation": "Câu văn áp dụng cấu trúc ngữ pháp chuẩn xác và hòa hợp chủ - vị theo giáo trình Day 14."
       },
       {
         "id": "g_d14_q2",
         "type": "multiple_choice",
-        "question": "Tìm và sửa lỗi sai trong câu sau:",
-        "sentence": "He doesn't practices English regularly every day.",
+        "question": "Tìm lỗi sai ngữ pháp trong câu sau:",
+        "sentence": "Neither the manager nor the employees agrees with the new regulation.",
         "choices": [
-          "doesn't practices -> doesn't practice",
-          "regularly -> regular",
-          "every day -> every days",
-          "He -> Him"
+          "agrees -> agree",
+          "Neither -> Either",
+          "nor -> or",
+          "regulation -> regulate"
         ],
-        "answer": "doesn't practices -> doesn't practice",
-        "explanation": "Khi đã có trợ động từ 'doesn't' thì động từ chính 'practice' phải giữ nguyên thể không thêm 's'."
+        "answer": "agrees -> agree",
+        "explanation": "Quy tắc hòa hợp Chủ - Vị: Với cấu trúc 'Neither...nor', động từ chia theo chủ ngữ gần nhất (the employees - số nhiều) -> dùng 'agree'."
       },
       {
         "id": "g_d14_q3",
         "type": "fill_blank",
-        "question": "Điền dạng đúng của từ trong ngoặc:",
-        "sentence": "My friend _____ (study) for the IELTS exam diligently.",
-        "answer": "studies",
-        "hint": "Đổi 'y' thành 'ies' đối với chủ ngữ ngôi thứ 3 số ít."
+        "question": "Điền dạng đúng của từ trong ngoặc theo ngữ cảnh bài học:",
+        "sentence": "If you study consistently every day, you _____ (pass) the IELTS exam with flying colors.",
+        "answer": "will pass",
+        "hint": "Câu điều kiện loại 1: Mệnh đề chính dùng 'will + V_inf'."
       },
       {
         "id": "g_d14_q4",
         "type": "fill_blank",
-        "question": "Điền trợ động từ hoặc từ liên kết thích hợp:",
-        "sentence": "_____ you practice English with your mentor every morning?",
-        "answer": "Do",
-        "hint": "Trợ động từ đứng đầu câu hỏi nghi vấn."
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has been working as an academic advisor _____ more than ten years.",
+        "answer": "for",
+        "hint": "Dùng 'for' trước khoảng thời gian."
       },
       {
         "id": "g_d14_q5",
         "type": "word_order",
-        "question": "Sắp xếp các từ thành câu hoàn chỉnh đúng ngữ pháp IELTS:",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh:",
         "words": [
           "IELTS",
-          "she",
-          "studies",
-          "every",
-          "diligently",
-          "morning"
+          "practice",
+          "improves",
+          "regular",
+          "score",
+          "your"
         ],
-        "answer": "she studies IELTS diligently every morning",
-        "explanation": "Cấu trúc: S + V + O + Trạng từ chỉ cách thức + Trạng từ chỉ thời gian."
+        "answer": "regular practice improves your IELTS score",
+        "explanation": "Trật tự câu: S (regular practice) + V (improves) + O (your IELTS score)."
       }
     ]
   },
@@ -1966,61 +1968,61 @@
       {
         "id": "g_d15_q1",
         "type": "multiple_choice",
-        "question": "Bài tập Day 15 (Subject - Verb agreement (2)): Chọn đáp án đúng nhất để hoàn thành câu:",
-        "sentence": "According to the grammar rules of Day 15, choose the correct form:",
+        "question": "Bài tập Day 15 (Subject - Verb agreement (2)): Chọn đáp án chính xác nhất để hoàn thành câu:",
+        "sentence": "Which of the following sentences correctly applies Sự hòa hợp Chủ ngữ - Động từ (Phần 2)?",
         "choices": [
-          "Option A (Chính xác)",
-          "Option B",
-          "Option C",
-          "Option D"
+          "By practicing Subject - Verb agreement (2) correctly, students achieve high IELTS scores.",
+          "Practicing Subject - Verb agreement (2) are achieving wrong grammar rules.",
+          "They does not understand the concept of Subject - Verb agreement (2).",
+          "He have failed to apply the rules yesterday."
         ],
-        "answer": "Option A (Chính xác)",
-        "explanation": "Áp dụng cấu trúc lý thuyết chuẩn của Sự hòa hợp Chủ ngữ - Động từ (Phần 2) từ giáo trình IELTS Fighter."
+        "answer": "By practicing Subject - Verb agreement (2) correctly, students achieve high IELTS scores.",
+        "explanation": "Câu văn áp dụng cấu trúc ngữ pháp chuẩn xác và hòa hợp chủ - vị theo giáo trình Day 15."
       },
       {
         "id": "g_d15_q2",
         "type": "multiple_choice",
-        "question": "Tìm và sửa lỗi sai trong câu sau:",
-        "sentence": "He doesn't practices English regularly every day.",
+        "question": "Tìm lỗi sai ngữ pháp trong câu sau:",
+        "sentence": "Neither the manager nor the employees agrees with the new regulation.",
         "choices": [
-          "doesn't practices -> doesn't practice",
-          "regularly -> regular",
-          "every day -> every days",
-          "He -> Him"
+          "agrees -> agree",
+          "Neither -> Either",
+          "nor -> or",
+          "regulation -> regulate"
         ],
-        "answer": "doesn't practices -> doesn't practice",
-        "explanation": "Khi đã có trợ động từ 'doesn't' thì động từ chính 'practice' phải giữ nguyên thể không thêm 's'."
+        "answer": "agrees -> agree",
+        "explanation": "Quy tắc hòa hợp Chủ - Vị: Với cấu trúc 'Neither...nor', động từ chia theo chủ ngữ gần nhất (the employees - số nhiều) -> dùng 'agree'."
       },
       {
         "id": "g_d15_q3",
         "type": "fill_blank",
-        "question": "Điền dạng đúng của từ trong ngoặc:",
-        "sentence": "My friend _____ (study) for the IELTS exam diligently.",
-        "answer": "studies",
-        "hint": "Đổi 'y' thành 'ies' đối với chủ ngữ ngôi thứ 3 số ít."
+        "question": "Điền dạng đúng của từ trong ngoặc theo ngữ cảnh bài học:",
+        "sentence": "If you study consistently every day, you _____ (pass) the IELTS exam with flying colors.",
+        "answer": "will pass",
+        "hint": "Câu điều kiện loại 1: Mệnh đề chính dùng 'will + V_inf'."
       },
       {
         "id": "g_d15_q4",
         "type": "fill_blank",
-        "question": "Điền trợ động từ hoặc từ liên kết thích hợp:",
-        "sentence": "_____ you practice English with your mentor every morning?",
-        "answer": "Do",
-        "hint": "Trợ động từ đứng đầu câu hỏi nghi vấn."
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has been working as an academic advisor _____ more than ten years.",
+        "answer": "for",
+        "hint": "Dùng 'for' trước khoảng thời gian."
       },
       {
         "id": "g_d15_q5",
         "type": "word_order",
-        "question": "Sắp xếp các từ thành câu hoàn chỉnh đúng ngữ pháp IELTS:",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh:",
         "words": [
           "IELTS",
-          "she",
-          "studies",
-          "every",
-          "diligently",
-          "morning"
+          "practice",
+          "improves",
+          "regular",
+          "score",
+          "your"
         ],
-        "answer": "she studies IELTS diligently every morning",
-        "explanation": "Cấu trúc: S + V + O + Trạng từ chỉ cách thức + Trạng từ chỉ thời gian."
+        "answer": "regular practice improves your IELTS score",
+        "explanation": "Trật tự câu: S (regular practice) + V (improves) + O (your IELTS score)."
       }
     ]
   },
@@ -2101,61 +2103,61 @@
       {
         "id": "g_d16_q1",
         "type": "multiple_choice",
-        "question": "Bài tập Day 16 (Passive Voices): Chọn đáp án đúng nhất để hoàn thành câu:",
-        "sentence": "According to the grammar rules of Day 16, choose the correct form:",
+        "question": "Bài tập Day 16 (Passive Voices): Chọn đáp án chính xác nhất để hoàn thành câu:",
+        "sentence": "Which of the following sentences correctly applies Câu bị động toàn tập?",
         "choices": [
-          "Option A (Chính xác)",
-          "Option B",
-          "Option C",
-          "Option D"
+          "By practicing Passive Voices correctly, students achieve high IELTS scores.",
+          "Practicing Passive Voices are achieving wrong grammar rules.",
+          "They does not understand the concept of Passive Voices.",
+          "He have failed to apply the rules yesterday."
         ],
-        "answer": "Option A (Chính xác)",
-        "explanation": "Áp dụng cấu trúc lý thuyết chuẩn của Câu bị động toàn tập từ giáo trình IELTS Fighter."
+        "answer": "By practicing Passive Voices correctly, students achieve high IELTS scores.",
+        "explanation": "Câu văn áp dụng cấu trúc ngữ pháp chuẩn xác và hòa hợp chủ - vị theo giáo trình Day 16."
       },
       {
         "id": "g_d16_q2",
         "type": "multiple_choice",
-        "question": "Tìm và sửa lỗi sai trong câu sau:",
-        "sentence": "He doesn't practices English regularly every day.",
+        "question": "Tìm lỗi sai ngữ pháp trong câu sau:",
+        "sentence": "Neither the manager nor the employees agrees with the new regulation.",
         "choices": [
-          "doesn't practices -> doesn't practice",
-          "regularly -> regular",
-          "every day -> every days",
-          "He -> Him"
+          "agrees -> agree",
+          "Neither -> Either",
+          "nor -> or",
+          "regulation -> regulate"
         ],
-        "answer": "doesn't practices -> doesn't practice",
-        "explanation": "Khi đã có trợ động từ 'doesn't' thì động từ chính 'practice' phải giữ nguyên thể không thêm 's'."
+        "answer": "agrees -> agree",
+        "explanation": "Quy tắc hòa hợp Chủ - Vị: Với cấu trúc 'Neither...nor', động từ chia theo chủ ngữ gần nhất (the employees - số nhiều) -> dùng 'agree'."
       },
       {
         "id": "g_d16_q3",
         "type": "fill_blank",
-        "question": "Điền dạng đúng của từ trong ngoặc:",
-        "sentence": "My friend _____ (study) for the IELTS exam diligently.",
-        "answer": "studies",
-        "hint": "Đổi 'y' thành 'ies' đối với chủ ngữ ngôi thứ 3 số ít."
+        "question": "Điền dạng đúng của từ trong ngoặc theo ngữ cảnh bài học:",
+        "sentence": "If you study consistently every day, you _____ (pass) the IELTS exam with flying colors.",
+        "answer": "will pass",
+        "hint": "Câu điều kiện loại 1: Mệnh đề chính dùng 'will + V_inf'."
       },
       {
         "id": "g_d16_q4",
         "type": "fill_blank",
-        "question": "Điền trợ động từ hoặc từ liên kết thích hợp:",
-        "sentence": "_____ you practice English with your mentor every morning?",
-        "answer": "Do",
-        "hint": "Trợ động từ đứng đầu câu hỏi nghi vấn."
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has been working as an academic advisor _____ more than ten years.",
+        "answer": "for",
+        "hint": "Dùng 'for' trước khoảng thời gian."
       },
       {
         "id": "g_d16_q5",
         "type": "word_order",
-        "question": "Sắp xếp các từ thành câu hoàn chỉnh đúng ngữ pháp IELTS:",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh:",
         "words": [
           "IELTS",
-          "she",
-          "studies",
-          "every",
-          "diligently",
-          "morning"
+          "practice",
+          "improves",
+          "regular",
+          "score",
+          "your"
         ],
-        "answer": "she studies IELTS diligently every morning",
-        "explanation": "Cấu trúc: S + V + O + Trạng từ chỉ cách thức + Trạng từ chỉ thời gian."
+        "answer": "regular practice improves your IELTS score",
+        "explanation": "Trật tự câu: S (regular practice) + V (improves) + O (your IELTS score)."
       }
     ]
   },
@@ -2236,61 +2238,61 @@
       {
         "id": "g_d17_q1",
         "type": "multiple_choice",
-        "question": "Bài tập Day 17 (Relative clause): Chọn đáp án đúng nhất để hoàn thành câu:",
-        "sentence": "According to the grammar rules of Day 17, choose the correct form:",
+        "question": "Bài tập Day 17 (Relative clause): Chọn đáp án chính xác nhất để hoàn thành câu:",
+        "sentence": "Which of the following sentences correctly applies Mệnh đề quan hệ?",
         "choices": [
-          "Option A (Chính xác)",
-          "Option B",
-          "Option C",
-          "Option D"
+          "By practicing Relative clause correctly, students achieve high IELTS scores.",
+          "Practicing Relative clause are achieving wrong grammar rules.",
+          "They does not understand the concept of Relative clause.",
+          "He have failed to apply the rules yesterday."
         ],
-        "answer": "Option A (Chính xác)",
-        "explanation": "Áp dụng cấu trúc lý thuyết chuẩn của Mệnh đề quan hệ từ giáo trình IELTS Fighter."
+        "answer": "By practicing Relative clause correctly, students achieve high IELTS scores.",
+        "explanation": "Câu văn áp dụng cấu trúc ngữ pháp chuẩn xác và hòa hợp chủ - vị theo giáo trình Day 17."
       },
       {
         "id": "g_d17_q2",
         "type": "multiple_choice",
-        "question": "Tìm và sửa lỗi sai trong câu sau:",
-        "sentence": "He doesn't practices English regularly every day.",
+        "question": "Tìm lỗi sai ngữ pháp trong câu sau:",
+        "sentence": "Neither the manager nor the employees agrees with the new regulation.",
         "choices": [
-          "doesn't practices -> doesn't practice",
-          "regularly -> regular",
-          "every day -> every days",
-          "He -> Him"
+          "agrees -> agree",
+          "Neither -> Either",
+          "nor -> or",
+          "regulation -> regulate"
         ],
-        "answer": "doesn't practices -> doesn't practice",
-        "explanation": "Khi đã có trợ động từ 'doesn't' thì động từ chính 'practice' phải giữ nguyên thể không thêm 's'."
+        "answer": "agrees -> agree",
+        "explanation": "Quy tắc hòa hợp Chủ - Vị: Với cấu trúc 'Neither...nor', động từ chia theo chủ ngữ gần nhất (the employees - số nhiều) -> dùng 'agree'."
       },
       {
         "id": "g_d17_q3",
         "type": "fill_blank",
-        "question": "Điền dạng đúng của từ trong ngoặc:",
-        "sentence": "My friend _____ (study) for the IELTS exam diligently.",
-        "answer": "studies",
-        "hint": "Đổi 'y' thành 'ies' đối với chủ ngữ ngôi thứ 3 số ít."
+        "question": "Điền dạng đúng của từ trong ngoặc theo ngữ cảnh bài học:",
+        "sentence": "If you study consistently every day, you _____ (pass) the IELTS exam with flying colors.",
+        "answer": "will pass",
+        "hint": "Câu điều kiện loại 1: Mệnh đề chính dùng 'will + V_inf'."
       },
       {
         "id": "g_d17_q4",
         "type": "fill_blank",
-        "question": "Điền trợ động từ hoặc từ liên kết thích hợp:",
-        "sentence": "_____ you practice English with your mentor every morning?",
-        "answer": "Do",
-        "hint": "Trợ động từ đứng đầu câu hỏi nghi vấn."
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has been working as an academic advisor _____ more than ten years.",
+        "answer": "for",
+        "hint": "Dùng 'for' trước khoảng thời gian."
       },
       {
         "id": "g_d17_q5",
         "type": "word_order",
-        "question": "Sắp xếp các từ thành câu hoàn chỉnh đúng ngữ pháp IELTS:",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh:",
         "words": [
           "IELTS",
-          "she",
-          "studies",
-          "every",
-          "diligently",
-          "morning"
+          "practice",
+          "improves",
+          "regular",
+          "score",
+          "your"
         ],
-        "answer": "she studies IELTS diligently every morning",
-        "explanation": "Cấu trúc: S + V + O + Trạng từ chỉ cách thức + Trạng từ chỉ thời gian."
+        "answer": "regular practice improves your IELTS score",
+        "explanation": "Trật tự câu: S (regular practice) + V (improves) + O (your IELTS score)."
       }
     ]
   },
@@ -2371,61 +2373,61 @@
       {
         "id": "g_d18_q1",
         "type": "multiple_choice",
-        "question": "Bài tập Day 18 (Conjunctions): Chọn đáp án đúng nhất để hoàn thành câu:",
-        "sentence": "According to the grammar rules of Day 18, choose the correct form:",
+        "question": "Bài tập Day 18 (Conjunctions): Chọn đáp án chính xác nhất để hoàn thành câu:",
+        "sentence": "Which of the following sentences correctly applies Liên từ kết hợp & Liên từ phụ thuộc?",
         "choices": [
-          "Option A (Chính xác)",
-          "Option B",
-          "Option C",
-          "Option D"
+          "By practicing Conjunctions correctly, students achieve high IELTS scores.",
+          "Practicing Conjunctions are achieving wrong grammar rules.",
+          "They does not understand the concept of Conjunctions.",
+          "He have failed to apply the rules yesterday."
         ],
-        "answer": "Option A (Chính xác)",
-        "explanation": "Áp dụng cấu trúc lý thuyết chuẩn của Liên từ kết hợp & Liên từ phụ thuộc từ giáo trình IELTS Fighter."
+        "answer": "By practicing Conjunctions correctly, students achieve high IELTS scores.",
+        "explanation": "Câu văn áp dụng cấu trúc ngữ pháp chuẩn xác và hòa hợp chủ - vị theo giáo trình Day 18."
       },
       {
         "id": "g_d18_q2",
         "type": "multiple_choice",
-        "question": "Tìm và sửa lỗi sai trong câu sau:",
-        "sentence": "He doesn't practices English regularly every day.",
+        "question": "Tìm lỗi sai ngữ pháp trong câu sau:",
+        "sentence": "Neither the manager nor the employees agrees with the new regulation.",
         "choices": [
-          "doesn't practices -> doesn't practice",
-          "regularly -> regular",
-          "every day -> every days",
-          "He -> Him"
+          "agrees -> agree",
+          "Neither -> Either",
+          "nor -> or",
+          "regulation -> regulate"
         ],
-        "answer": "doesn't practices -> doesn't practice",
-        "explanation": "Khi đã có trợ động từ 'doesn't' thì động từ chính 'practice' phải giữ nguyên thể không thêm 's'."
+        "answer": "agrees -> agree",
+        "explanation": "Quy tắc hòa hợp Chủ - Vị: Với cấu trúc 'Neither...nor', động từ chia theo chủ ngữ gần nhất (the employees - số nhiều) -> dùng 'agree'."
       },
       {
         "id": "g_d18_q3",
         "type": "fill_blank",
-        "question": "Điền dạng đúng của từ trong ngoặc:",
-        "sentence": "My friend _____ (study) for the IELTS exam diligently.",
-        "answer": "studies",
-        "hint": "Đổi 'y' thành 'ies' đối với chủ ngữ ngôi thứ 3 số ít."
+        "question": "Điền dạng đúng của từ trong ngoặc theo ngữ cảnh bài học:",
+        "sentence": "If you study consistently every day, you _____ (pass) the IELTS exam with flying colors.",
+        "answer": "will pass",
+        "hint": "Câu điều kiện loại 1: Mệnh đề chính dùng 'will + V_inf'."
       },
       {
         "id": "g_d18_q4",
         "type": "fill_blank",
-        "question": "Điền trợ động từ hoặc từ liên kết thích hợp:",
-        "sentence": "_____ you practice English with your mentor every morning?",
-        "answer": "Do",
-        "hint": "Trợ động từ đứng đầu câu hỏi nghi vấn."
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has been working as an academic advisor _____ more than ten years.",
+        "answer": "for",
+        "hint": "Dùng 'for' trước khoảng thời gian."
       },
       {
         "id": "g_d18_q5",
         "type": "word_order",
-        "question": "Sắp xếp các từ thành câu hoàn chỉnh đúng ngữ pháp IELTS:",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh:",
         "words": [
           "IELTS",
-          "she",
-          "studies",
-          "every",
-          "diligently",
-          "morning"
+          "practice",
+          "improves",
+          "regular",
+          "score",
+          "your"
         ],
-        "answer": "she studies IELTS diligently every morning",
-        "explanation": "Cấu trúc: S + V + O + Trạng từ chỉ cách thức + Trạng từ chỉ thời gian."
+        "answer": "regular practice improves your IELTS score",
+        "explanation": "Trật tự câu: S (regular practice) + V (improves) + O (your IELTS score)."
       }
     ]
   },
@@ -2506,61 +2508,61 @@
       {
         "id": "g_d19_q1",
         "type": "multiple_choice",
-        "question": "Bài tập Day 19 (Conditional sentence): Chọn đáp án đúng nhất để hoàn thành câu:",
-        "sentence": "According to the grammar rules of Day 19, choose the correct form:",
+        "question": "Bài tập Day 19 (Conditional sentence): Chọn đáp án chính xác nhất để hoàn thành câu:",
+        "sentence": "Which of the following sentences correctly applies Câu điều kiện & Câu ước WISH?",
         "choices": [
-          "Option A (Chính xác)",
-          "Option B",
-          "Option C",
-          "Option D"
+          "By practicing Conditional sentence correctly, students achieve high IELTS scores.",
+          "Practicing Conditional sentence are achieving wrong grammar rules.",
+          "They does not understand the concept of Conditional sentence.",
+          "He have failed to apply the rules yesterday."
         ],
-        "answer": "Option A (Chính xác)",
-        "explanation": "Áp dụng cấu trúc lý thuyết chuẩn của Câu điều kiện & Câu ước WISH từ giáo trình IELTS Fighter."
+        "answer": "By practicing Conditional sentence correctly, students achieve high IELTS scores.",
+        "explanation": "Câu văn áp dụng cấu trúc ngữ pháp chuẩn xác và hòa hợp chủ - vị theo giáo trình Day 19."
       },
       {
         "id": "g_d19_q2",
         "type": "multiple_choice",
-        "question": "Tìm và sửa lỗi sai trong câu sau:",
-        "sentence": "He doesn't practices English regularly every day.",
+        "question": "Tìm lỗi sai ngữ pháp trong câu sau:",
+        "sentence": "Neither the manager nor the employees agrees with the new regulation.",
         "choices": [
-          "doesn't practices -> doesn't practice",
-          "regularly -> regular",
-          "every day -> every days",
-          "He -> Him"
+          "agrees -> agree",
+          "Neither -> Either",
+          "nor -> or",
+          "regulation -> regulate"
         ],
-        "answer": "doesn't practices -> doesn't practice",
-        "explanation": "Khi đã có trợ động từ 'doesn't' thì động từ chính 'practice' phải giữ nguyên thể không thêm 's'."
+        "answer": "agrees -> agree",
+        "explanation": "Quy tắc hòa hợp Chủ - Vị: Với cấu trúc 'Neither...nor', động từ chia theo chủ ngữ gần nhất (the employees - số nhiều) -> dùng 'agree'."
       },
       {
         "id": "g_d19_q3",
         "type": "fill_blank",
-        "question": "Điền dạng đúng của từ trong ngoặc:",
-        "sentence": "My friend _____ (study) for the IELTS exam diligently.",
-        "answer": "studies",
-        "hint": "Đổi 'y' thành 'ies' đối với chủ ngữ ngôi thứ 3 số ít."
+        "question": "Điền dạng đúng của từ trong ngoặc theo ngữ cảnh bài học:",
+        "sentence": "If you study consistently every day, you _____ (pass) the IELTS exam with flying colors.",
+        "answer": "will pass",
+        "hint": "Câu điều kiện loại 1: Mệnh đề chính dùng 'will + V_inf'."
       },
       {
         "id": "g_d19_q4",
         "type": "fill_blank",
-        "question": "Điền trợ động từ hoặc từ liên kết thích hợp:",
-        "sentence": "_____ you practice English with your mentor every morning?",
-        "answer": "Do",
-        "hint": "Trợ động từ đứng đầu câu hỏi nghi vấn."
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has been working as an academic advisor _____ more than ten years.",
+        "answer": "for",
+        "hint": "Dùng 'for' trước khoảng thời gian."
       },
       {
         "id": "g_d19_q5",
         "type": "word_order",
-        "question": "Sắp xếp các từ thành câu hoàn chỉnh đúng ngữ pháp IELTS:",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh:",
         "words": [
           "IELTS",
-          "she",
-          "studies",
-          "every",
-          "diligently",
-          "morning"
+          "practice",
+          "improves",
+          "regular",
+          "score",
+          "your"
         ],
-        "answer": "she studies IELTS diligently every morning",
-        "explanation": "Cấu trúc: S + V + O + Trạng từ chỉ cách thức + Trạng từ chỉ thời gian."
+        "answer": "regular practice improves your IELTS score",
+        "explanation": "Trật tự câu: S (regular practice) + V (improves) + O (your IELTS score)."
       }
     ]
   },
@@ -2641,61 +2643,61 @@
       {
         "id": "g_d20_q1",
         "type": "multiple_choice",
-        "question": "Bài tập Day 20 (Prepositions): Chọn đáp án đúng nhất để hoàn thành câu:",
-        "sentence": "According to the grammar rules of Day 20, choose the correct form:",
+        "question": "Bài tập Day 20 (Prepositions): Chọn đáp án chính xác nhất để hoàn thành câu:",
+        "sentence": "Which of the following sentences correctly applies Giới từ chỉ thời gian & Nơi chốn?",
         "choices": [
-          "Option A (Chính xác)",
-          "Option B",
-          "Option C",
-          "Option D"
+          "By practicing Prepositions correctly, students achieve high IELTS scores.",
+          "Practicing Prepositions are achieving wrong grammar rules.",
+          "They does not understand the concept of Prepositions.",
+          "He have failed to apply the rules yesterday."
         ],
-        "answer": "Option A (Chính xác)",
-        "explanation": "Áp dụng cấu trúc lý thuyết chuẩn của Giới từ chỉ thời gian & Nơi chốn từ giáo trình IELTS Fighter."
+        "answer": "By practicing Prepositions correctly, students achieve high IELTS scores.",
+        "explanation": "Câu văn áp dụng cấu trúc ngữ pháp chuẩn xác và hòa hợp chủ - vị theo giáo trình Day 20."
       },
       {
         "id": "g_d20_q2",
         "type": "multiple_choice",
-        "question": "Tìm và sửa lỗi sai trong câu sau:",
-        "sentence": "He doesn't practices English regularly every day.",
+        "question": "Tìm lỗi sai ngữ pháp trong câu sau:",
+        "sentence": "Neither the manager nor the employees agrees with the new regulation.",
         "choices": [
-          "doesn't practices -> doesn't practice",
-          "regularly -> regular",
-          "every day -> every days",
-          "He -> Him"
+          "agrees -> agree",
+          "Neither -> Either",
+          "nor -> or",
+          "regulation -> regulate"
         ],
-        "answer": "doesn't practices -> doesn't practice",
-        "explanation": "Khi đã có trợ động từ 'doesn't' thì động từ chính 'practice' phải giữ nguyên thể không thêm 's'."
+        "answer": "agrees -> agree",
+        "explanation": "Quy tắc hòa hợp Chủ - Vị: Với cấu trúc 'Neither...nor', động từ chia theo chủ ngữ gần nhất (the employees - số nhiều) -> dùng 'agree'."
       },
       {
         "id": "g_d20_q3",
         "type": "fill_blank",
-        "question": "Điền dạng đúng của từ trong ngoặc:",
-        "sentence": "My friend _____ (study) for the IELTS exam diligently.",
-        "answer": "studies",
-        "hint": "Đổi 'y' thành 'ies' đối với chủ ngữ ngôi thứ 3 số ít."
+        "question": "Điền dạng đúng của từ trong ngoặc theo ngữ cảnh bài học:",
+        "sentence": "If you study consistently every day, you _____ (pass) the IELTS exam with flying colors.",
+        "answer": "will pass",
+        "hint": "Câu điều kiện loại 1: Mệnh đề chính dùng 'will + V_inf'."
       },
       {
         "id": "g_d20_q4",
         "type": "fill_blank",
-        "question": "Điền trợ động từ hoặc từ liên kết thích hợp:",
-        "sentence": "_____ you practice English with your mentor every morning?",
-        "answer": "Do",
-        "hint": "Trợ động từ đứng đầu câu hỏi nghi vấn."
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has been working as an academic advisor _____ more than ten years.",
+        "answer": "for",
+        "hint": "Dùng 'for' trước khoảng thời gian."
       },
       {
         "id": "g_d20_q5",
         "type": "word_order",
-        "question": "Sắp xếp các từ thành câu hoàn chỉnh đúng ngữ pháp IELTS:",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh:",
         "words": [
           "IELTS",
-          "she",
-          "studies",
-          "every",
-          "diligently",
-          "morning"
+          "practice",
+          "improves",
+          "regular",
+          "score",
+          "your"
         ],
-        "answer": "she studies IELTS diligently every morning",
-        "explanation": "Cấu trúc: S + V + O + Trạng từ chỉ cách thức + Trạng từ chỉ thời gian."
+        "answer": "regular practice improves your IELTS score",
+        "explanation": "Trật tự câu: S (regular practice) + V (improves) + O (your IELTS score)."
       }
     ]
   },
@@ -2776,61 +2778,61 @@
       {
         "id": "g_d21_q1",
         "type": "multiple_choice",
-        "question": "Bài tập Day 21 (People): Chọn đáp án đúng nhất để hoàn thành câu:",
-        "sentence": "According to the grammar rules of Day 21, choose the correct form:",
+        "question": "Bài tập Day 21 (People): Chọn đáp án chính xác nhất để hoàn thành câu:",
+        "sentence": "Which of the following sentences correctly applies Chủ đề IELTS: Con người & Tính cách?",
         "choices": [
-          "Option A (Chính xác)",
-          "Option B",
-          "Option C",
-          "Option D"
+          "By practicing People correctly, students achieve high IELTS scores.",
+          "Practicing People are achieving wrong grammar rules.",
+          "They does not understand the concept of People.",
+          "He have failed to apply the rules yesterday."
         ],
-        "answer": "Option A (Chính xác)",
-        "explanation": "Áp dụng cấu trúc lý thuyết chuẩn của Chủ đề IELTS: Con người & Tính cách từ giáo trình IELTS Fighter."
+        "answer": "By practicing People correctly, students achieve high IELTS scores.",
+        "explanation": "Câu văn áp dụng cấu trúc ngữ pháp chuẩn xác và hòa hợp chủ - vị theo giáo trình Day 21."
       },
       {
         "id": "g_d21_q2",
         "type": "multiple_choice",
-        "question": "Tìm và sửa lỗi sai trong câu sau:",
-        "sentence": "He doesn't practices English regularly every day.",
+        "question": "Tìm lỗi sai ngữ pháp trong câu sau:",
+        "sentence": "Neither the manager nor the employees agrees with the new regulation.",
         "choices": [
-          "doesn't practices -> doesn't practice",
-          "regularly -> regular",
-          "every day -> every days",
-          "He -> Him"
+          "agrees -> agree",
+          "Neither -> Either",
+          "nor -> or",
+          "regulation -> regulate"
         ],
-        "answer": "doesn't practices -> doesn't practice",
-        "explanation": "Khi đã có trợ động từ 'doesn't' thì động từ chính 'practice' phải giữ nguyên thể không thêm 's'."
+        "answer": "agrees -> agree",
+        "explanation": "Quy tắc hòa hợp Chủ - Vị: Với cấu trúc 'Neither...nor', động từ chia theo chủ ngữ gần nhất (the employees - số nhiều) -> dùng 'agree'."
       },
       {
         "id": "g_d21_q3",
         "type": "fill_blank",
-        "question": "Điền dạng đúng của từ trong ngoặc:",
-        "sentence": "My friend _____ (study) for the IELTS exam diligently.",
-        "answer": "studies",
-        "hint": "Đổi 'y' thành 'ies' đối với chủ ngữ ngôi thứ 3 số ít."
+        "question": "Điền dạng đúng của từ trong ngoặc theo ngữ cảnh bài học:",
+        "sentence": "If you study consistently every day, you _____ (pass) the IELTS exam with flying colors.",
+        "answer": "will pass",
+        "hint": "Câu điều kiện loại 1: Mệnh đề chính dùng 'will + V_inf'."
       },
       {
         "id": "g_d21_q4",
         "type": "fill_blank",
-        "question": "Điền trợ động từ hoặc từ liên kết thích hợp:",
-        "sentence": "_____ you practice English with your mentor every morning?",
-        "answer": "Do",
-        "hint": "Trợ động từ đứng đầu câu hỏi nghi vấn."
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has been working as an academic advisor _____ more than ten years.",
+        "answer": "for",
+        "hint": "Dùng 'for' trước khoảng thời gian."
       },
       {
         "id": "g_d21_q5",
         "type": "word_order",
-        "question": "Sắp xếp các từ thành câu hoàn chỉnh đúng ngữ pháp IELTS:",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh:",
         "words": [
           "IELTS",
-          "she",
-          "studies",
-          "every",
-          "diligently",
-          "morning"
+          "practice",
+          "improves",
+          "regular",
+          "score",
+          "your"
         ],
-        "answer": "she studies IELTS diligently every morning",
-        "explanation": "Cấu trúc: S + V + O + Trạng từ chỉ cách thức + Trạng từ chỉ thời gian."
+        "answer": "regular practice improves your IELTS score",
+        "explanation": "Trật tự câu: S (regular practice) + V (improves) + O (your IELTS score)."
       }
     ]
   },
@@ -2911,61 +2913,61 @@
       {
         "id": "g_d22_q1",
         "type": "multiple_choice",
-        "question": "Bài tập Day 22 (Lifestyle): Chọn đáp án đúng nhất để hoàn thành câu:",
-        "sentence": "According to the grammar rules of Day 22, choose the correct form:",
+        "question": "Bài tập Day 22 (Lifestyle): Chọn đáp án chính xác nhất để hoàn thành câu:",
+        "sentence": "Which of the following sentences correctly applies Chủ đề IELTS: Lối sống & Thói quen?",
         "choices": [
-          "Option A (Chính xác)",
-          "Option B",
-          "Option C",
-          "Option D"
+          "By practicing Lifestyle correctly, students achieve high IELTS scores.",
+          "Practicing Lifestyle are achieving wrong grammar rules.",
+          "They does not understand the concept of Lifestyle.",
+          "He have failed to apply the rules yesterday."
         ],
-        "answer": "Option A (Chính xác)",
-        "explanation": "Áp dụng cấu trúc lý thuyết chuẩn của Chủ đề IELTS: Lối sống & Thói quen từ giáo trình IELTS Fighter."
+        "answer": "By practicing Lifestyle correctly, students achieve high IELTS scores.",
+        "explanation": "Câu văn áp dụng cấu trúc ngữ pháp chuẩn xác và hòa hợp chủ - vị theo giáo trình Day 22."
       },
       {
         "id": "g_d22_q2",
         "type": "multiple_choice",
-        "question": "Tìm và sửa lỗi sai trong câu sau:",
-        "sentence": "He doesn't practices English regularly every day.",
+        "question": "Tìm lỗi sai ngữ pháp trong câu sau:",
+        "sentence": "Neither the manager nor the employees agrees with the new regulation.",
         "choices": [
-          "doesn't practices -> doesn't practice",
-          "regularly -> regular",
-          "every day -> every days",
-          "He -> Him"
+          "agrees -> agree",
+          "Neither -> Either",
+          "nor -> or",
+          "regulation -> regulate"
         ],
-        "answer": "doesn't practices -> doesn't practice",
-        "explanation": "Khi đã có trợ động từ 'doesn't' thì động từ chính 'practice' phải giữ nguyên thể không thêm 's'."
+        "answer": "agrees -> agree",
+        "explanation": "Quy tắc hòa hợp Chủ - Vị: Với cấu trúc 'Neither...nor', động từ chia theo chủ ngữ gần nhất (the employees - số nhiều) -> dùng 'agree'."
       },
       {
         "id": "g_d22_q3",
         "type": "fill_blank",
-        "question": "Điền dạng đúng của từ trong ngoặc:",
-        "sentence": "My friend _____ (study) for the IELTS exam diligently.",
-        "answer": "studies",
-        "hint": "Đổi 'y' thành 'ies' đối với chủ ngữ ngôi thứ 3 số ít."
+        "question": "Điền dạng đúng của từ trong ngoặc theo ngữ cảnh bài học:",
+        "sentence": "If you study consistently every day, you _____ (pass) the IELTS exam with flying colors.",
+        "answer": "will pass",
+        "hint": "Câu điều kiện loại 1: Mệnh đề chính dùng 'will + V_inf'."
       },
       {
         "id": "g_d22_q4",
         "type": "fill_blank",
-        "question": "Điền trợ động từ hoặc từ liên kết thích hợp:",
-        "sentence": "_____ you practice English with your mentor every morning?",
-        "answer": "Do",
-        "hint": "Trợ động từ đứng đầu câu hỏi nghi vấn."
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has been working as an academic advisor _____ more than ten years.",
+        "answer": "for",
+        "hint": "Dùng 'for' trước khoảng thời gian."
       },
       {
         "id": "g_d22_q5",
         "type": "word_order",
-        "question": "Sắp xếp các từ thành câu hoàn chỉnh đúng ngữ pháp IELTS:",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh:",
         "words": [
           "IELTS",
-          "she",
-          "studies",
-          "every",
-          "diligently",
-          "morning"
+          "practice",
+          "improves",
+          "regular",
+          "score",
+          "your"
         ],
-        "answer": "she studies IELTS diligently every morning",
-        "explanation": "Cấu trúc: S + V + O + Trạng từ chỉ cách thức + Trạng từ chỉ thời gian."
+        "answer": "regular practice improves your IELTS score",
+        "explanation": "Trật tự câu: S (regular practice) + V (improves) + O (your IELTS score)."
       }
     ]
   },
@@ -3046,61 +3048,61 @@
       {
         "id": "g_d23_q1",
         "type": "multiple_choice",
-        "question": "Bài tập Day 23 (Communication): Chọn đáp án đúng nhất để hoàn thành câu:",
-        "sentence": "According to the grammar rules of Day 23, choose the correct form:",
+        "question": "Bài tập Day 23 (Communication): Chọn đáp án chính xác nhất để hoàn thành câu:",
+        "sentence": "Which of the following sentences correctly applies Chủ đề IELTS: Giao tiếp & Truyền thông?",
         "choices": [
-          "Option A (Chính xác)",
-          "Option B",
-          "Option C",
-          "Option D"
+          "By practicing Communication correctly, students achieve high IELTS scores.",
+          "Practicing Communication are achieving wrong grammar rules.",
+          "They does not understand the concept of Communication.",
+          "He have failed to apply the rules yesterday."
         ],
-        "answer": "Option A (Chính xác)",
-        "explanation": "Áp dụng cấu trúc lý thuyết chuẩn của Chủ đề IELTS: Giao tiếp & Truyền thông từ giáo trình IELTS Fighter."
+        "answer": "By practicing Communication correctly, students achieve high IELTS scores.",
+        "explanation": "Câu văn áp dụng cấu trúc ngữ pháp chuẩn xác và hòa hợp chủ - vị theo giáo trình Day 23."
       },
       {
         "id": "g_d23_q2",
         "type": "multiple_choice",
-        "question": "Tìm và sửa lỗi sai trong câu sau:",
-        "sentence": "He doesn't practices English regularly every day.",
+        "question": "Tìm lỗi sai ngữ pháp trong câu sau:",
+        "sentence": "Neither the manager nor the employees agrees with the new regulation.",
         "choices": [
-          "doesn't practices -> doesn't practice",
-          "regularly -> regular",
-          "every day -> every days",
-          "He -> Him"
+          "agrees -> agree",
+          "Neither -> Either",
+          "nor -> or",
+          "regulation -> regulate"
         ],
-        "answer": "doesn't practices -> doesn't practice",
-        "explanation": "Khi đã có trợ động từ 'doesn't' thì động từ chính 'practice' phải giữ nguyên thể không thêm 's'."
+        "answer": "agrees -> agree",
+        "explanation": "Quy tắc hòa hợp Chủ - Vị: Với cấu trúc 'Neither...nor', động từ chia theo chủ ngữ gần nhất (the employees - số nhiều) -> dùng 'agree'."
       },
       {
         "id": "g_d23_q3",
         "type": "fill_blank",
-        "question": "Điền dạng đúng của từ trong ngoặc:",
-        "sentence": "My friend _____ (study) for the IELTS exam diligently.",
-        "answer": "studies",
-        "hint": "Đổi 'y' thành 'ies' đối với chủ ngữ ngôi thứ 3 số ít."
+        "question": "Điền dạng đúng của từ trong ngoặc theo ngữ cảnh bài học:",
+        "sentence": "If you study consistently every day, you _____ (pass) the IELTS exam with flying colors.",
+        "answer": "will pass",
+        "hint": "Câu điều kiện loại 1: Mệnh đề chính dùng 'will + V_inf'."
       },
       {
         "id": "g_d23_q4",
         "type": "fill_blank",
-        "question": "Điền trợ động từ hoặc từ liên kết thích hợp:",
-        "sentence": "_____ you practice English with your mentor every morning?",
-        "answer": "Do",
-        "hint": "Trợ động từ đứng đầu câu hỏi nghi vấn."
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has been working as an academic advisor _____ more than ten years.",
+        "answer": "for",
+        "hint": "Dùng 'for' trước khoảng thời gian."
       },
       {
         "id": "g_d23_q5",
         "type": "word_order",
-        "question": "Sắp xếp các từ thành câu hoàn chỉnh đúng ngữ pháp IELTS:",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh:",
         "words": [
           "IELTS",
-          "she",
-          "studies",
-          "every",
-          "diligently",
-          "morning"
+          "practice",
+          "improves",
+          "regular",
+          "score",
+          "your"
         ],
-        "answer": "she studies IELTS diligently every morning",
-        "explanation": "Cấu trúc: S + V + O + Trạng từ chỉ cách thức + Trạng từ chỉ thời gian."
+        "answer": "regular practice improves your IELTS score",
+        "explanation": "Trật tự câu: S (regular practice) + V (improves) + O (your IELTS score)."
       }
     ]
   },
@@ -3181,61 +3183,61 @@
       {
         "id": "g_d24_q1",
         "type": "multiple_choice",
-        "question": "Bài tập Day 24 (History, Art, Culture): Chọn đáp án đúng nhất để hoàn thành câu:",
-        "sentence": "According to the grammar rules of Day 24, choose the correct form:",
+        "question": "Bài tập Day 24 (History, Art, Culture): Chọn đáp án chính xác nhất để hoàn thành câu:",
+        "sentence": "Which of the following sentences correctly applies Chủ đề IELTS: Lịch sử, Nghệ thuật & Văn hóa?",
         "choices": [
-          "Option A (Chính xác)",
-          "Option B",
-          "Option C",
-          "Option D"
+          "By practicing History, Art, Culture correctly, students achieve high IELTS scores.",
+          "Practicing History, Art, Culture are achieving wrong grammar rules.",
+          "They does not understand the concept of History, Art, Culture.",
+          "He have failed to apply the rules yesterday."
         ],
-        "answer": "Option A (Chính xác)",
-        "explanation": "Áp dụng cấu trúc lý thuyết chuẩn của Chủ đề IELTS: Lịch sử, Nghệ thuật & Văn hóa từ giáo trình IELTS Fighter."
+        "answer": "By practicing History, Art, Culture correctly, students achieve high IELTS scores.",
+        "explanation": "Câu văn áp dụng cấu trúc ngữ pháp chuẩn xác và hòa hợp chủ - vị theo giáo trình Day 24."
       },
       {
         "id": "g_d24_q2",
         "type": "multiple_choice",
-        "question": "Tìm và sửa lỗi sai trong câu sau:",
-        "sentence": "He doesn't practices English regularly every day.",
+        "question": "Tìm lỗi sai ngữ pháp trong câu sau:",
+        "sentence": "Neither the manager nor the employees agrees with the new regulation.",
         "choices": [
-          "doesn't practices -> doesn't practice",
-          "regularly -> regular",
-          "every day -> every days",
-          "He -> Him"
+          "agrees -> agree",
+          "Neither -> Either",
+          "nor -> or",
+          "regulation -> regulate"
         ],
-        "answer": "doesn't practices -> doesn't practice",
-        "explanation": "Khi đã có trợ động từ 'doesn't' thì động từ chính 'practice' phải giữ nguyên thể không thêm 's'."
+        "answer": "agrees -> agree",
+        "explanation": "Quy tắc hòa hợp Chủ - Vị: Với cấu trúc 'Neither...nor', động từ chia theo chủ ngữ gần nhất (the employees - số nhiều) -> dùng 'agree'."
       },
       {
         "id": "g_d24_q3",
         "type": "fill_blank",
-        "question": "Điền dạng đúng của từ trong ngoặc:",
-        "sentence": "My friend _____ (study) for the IELTS exam diligently.",
-        "answer": "studies",
-        "hint": "Đổi 'y' thành 'ies' đối với chủ ngữ ngôi thứ 3 số ít."
+        "question": "Điền dạng đúng của từ trong ngoặc theo ngữ cảnh bài học:",
+        "sentence": "If you study consistently every day, you _____ (pass) the IELTS exam with flying colors.",
+        "answer": "will pass",
+        "hint": "Câu điều kiện loại 1: Mệnh đề chính dùng 'will + V_inf'."
       },
       {
         "id": "g_d24_q4",
         "type": "fill_blank",
-        "question": "Điền trợ động từ hoặc từ liên kết thích hợp:",
-        "sentence": "_____ you practice English with your mentor every morning?",
-        "answer": "Do",
-        "hint": "Trợ động từ đứng đầu câu hỏi nghi vấn."
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has been working as an academic advisor _____ more than ten years.",
+        "answer": "for",
+        "hint": "Dùng 'for' trước khoảng thời gian."
       },
       {
         "id": "g_d24_q5",
         "type": "word_order",
-        "question": "Sắp xếp các từ thành câu hoàn chỉnh đúng ngữ pháp IELTS:",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh:",
         "words": [
           "IELTS",
-          "she",
-          "studies",
-          "every",
-          "diligently",
-          "morning"
+          "practice",
+          "improves",
+          "regular",
+          "score",
+          "your"
         ],
-        "answer": "she studies IELTS diligently every morning",
-        "explanation": "Cấu trúc: S + V + O + Trạng từ chỉ cách thức + Trạng từ chỉ thời gian."
+        "answer": "regular practice improves your IELTS score",
+        "explanation": "Trật tự câu: S (regular practice) + V (improves) + O (your IELTS score)."
       }
     ]
   },
@@ -3316,61 +3318,61 @@
       {
         "id": "g_d25_q1",
         "type": "multiple_choice",
-        "question": "Bài tập Day 25 (Entertainment, Art, Sports, The media): Chọn đáp án đúng nhất để hoàn thành câu:",
-        "sentence": "According to the grammar rules of Day 25, choose the correct form:",
+        "question": "Bài tập Day 25 (Entertainment, Art, Sports, The media): Chọn đáp án chính xác nhất để hoàn thành câu:",
+        "sentence": "Which of the following sentences correctly applies Chủ đề IELTS: Giải trí, Thể thao & Báo chí?",
         "choices": [
-          "Option A (Chính xác)",
-          "Option B",
-          "Option C",
-          "Option D"
+          "By practicing Entertainment, Art, Sports, The media correctly, students achieve high IELTS scores.",
+          "Practicing Entertainment, Art, Sports, The media are achieving wrong grammar rules.",
+          "They does not understand the concept of Entertainment, Art, Sports, The media.",
+          "He have failed to apply the rules yesterday."
         ],
-        "answer": "Option A (Chính xác)",
-        "explanation": "Áp dụng cấu trúc lý thuyết chuẩn của Chủ đề IELTS: Giải trí, Thể thao & Báo chí từ giáo trình IELTS Fighter."
+        "answer": "By practicing Entertainment, Art, Sports, The media correctly, students achieve high IELTS scores.",
+        "explanation": "Câu văn áp dụng cấu trúc ngữ pháp chuẩn xác và hòa hợp chủ - vị theo giáo trình Day 25."
       },
       {
         "id": "g_d25_q2",
         "type": "multiple_choice",
-        "question": "Tìm và sửa lỗi sai trong câu sau:",
-        "sentence": "He doesn't practices English regularly every day.",
+        "question": "Tìm lỗi sai ngữ pháp trong câu sau:",
+        "sentence": "Neither the manager nor the employees agrees with the new regulation.",
         "choices": [
-          "doesn't practices -> doesn't practice",
-          "regularly -> regular",
-          "every day -> every days",
-          "He -> Him"
+          "agrees -> agree",
+          "Neither -> Either",
+          "nor -> or",
+          "regulation -> regulate"
         ],
-        "answer": "doesn't practices -> doesn't practice",
-        "explanation": "Khi đã có trợ động từ 'doesn't' thì động từ chính 'practice' phải giữ nguyên thể không thêm 's'."
+        "answer": "agrees -> agree",
+        "explanation": "Quy tắc hòa hợp Chủ - Vị: Với cấu trúc 'Neither...nor', động từ chia theo chủ ngữ gần nhất (the employees - số nhiều) -> dùng 'agree'."
       },
       {
         "id": "g_d25_q3",
         "type": "fill_blank",
-        "question": "Điền dạng đúng của từ trong ngoặc:",
-        "sentence": "My friend _____ (study) for the IELTS exam diligently.",
-        "answer": "studies",
-        "hint": "Đổi 'y' thành 'ies' đối với chủ ngữ ngôi thứ 3 số ít."
+        "question": "Điền dạng đúng của từ trong ngoặc theo ngữ cảnh bài học:",
+        "sentence": "If you study consistently every day, you _____ (pass) the IELTS exam with flying colors.",
+        "answer": "will pass",
+        "hint": "Câu điều kiện loại 1: Mệnh đề chính dùng 'will + V_inf'."
       },
       {
         "id": "g_d25_q4",
         "type": "fill_blank",
-        "question": "Điền trợ động từ hoặc từ liên kết thích hợp:",
-        "sentence": "_____ you practice English with your mentor every morning?",
-        "answer": "Do",
-        "hint": "Trợ động từ đứng đầu câu hỏi nghi vấn."
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has been working as an academic advisor _____ more than ten years.",
+        "answer": "for",
+        "hint": "Dùng 'for' trước khoảng thời gian."
       },
       {
         "id": "g_d25_q5",
         "type": "word_order",
-        "question": "Sắp xếp các từ thành câu hoàn chỉnh đúng ngữ pháp IELTS:",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh:",
         "words": [
           "IELTS",
-          "she",
-          "studies",
-          "every",
-          "diligently",
-          "morning"
+          "practice",
+          "improves",
+          "regular",
+          "score",
+          "your"
         ],
-        "answer": "she studies IELTS diligently every morning",
-        "explanation": "Cấu trúc: S + V + O + Trạng từ chỉ cách thức + Trạng từ chỉ thời gian."
+        "answer": "regular practice improves your IELTS score",
+        "explanation": "Trật tự câu: S (regular practice) + V (improves) + O (your IELTS score)."
       }
     ]
   },
@@ -3451,61 +3453,61 @@
       {
         "id": "g_d26_q1",
         "type": "multiple_choice",
-        "question": "Bài tập Day 26 (Travel): Chọn đáp án đúng nhất để hoàn thành câu:",
-        "sentence": "According to the grammar rules of Day 26, choose the correct form:",
+        "question": "Bài tập Day 26 (Travel): Chọn đáp án chính xác nhất để hoàn thành câu:",
+        "sentence": "Which of the following sentences correctly applies Chủ đề IELTS: Du lịch & Giao thông?",
         "choices": [
-          "Option A (Chính xác)",
-          "Option B",
-          "Option C",
-          "Option D"
+          "By practicing Travel correctly, students achieve high IELTS scores.",
+          "Practicing Travel are achieving wrong grammar rules.",
+          "They does not understand the concept of Travel.",
+          "He have failed to apply the rules yesterday."
         ],
-        "answer": "Option A (Chính xác)",
-        "explanation": "Áp dụng cấu trúc lý thuyết chuẩn của Chủ đề IELTS: Du lịch & Giao thông từ giáo trình IELTS Fighter."
+        "answer": "By practicing Travel correctly, students achieve high IELTS scores.",
+        "explanation": "Câu văn áp dụng cấu trúc ngữ pháp chuẩn xác và hòa hợp chủ - vị theo giáo trình Day 26."
       },
       {
         "id": "g_d26_q2",
         "type": "multiple_choice",
-        "question": "Tìm và sửa lỗi sai trong câu sau:",
-        "sentence": "He doesn't practices English regularly every day.",
+        "question": "Tìm lỗi sai ngữ pháp trong câu sau:",
+        "sentence": "Neither the manager nor the employees agrees with the new regulation.",
         "choices": [
-          "doesn't practices -> doesn't practice",
-          "regularly -> regular",
-          "every day -> every days",
-          "He -> Him"
+          "agrees -> agree",
+          "Neither -> Either",
+          "nor -> or",
+          "regulation -> regulate"
         ],
-        "answer": "doesn't practices -> doesn't practice",
-        "explanation": "Khi đã có trợ động từ 'doesn't' thì động từ chính 'practice' phải giữ nguyên thể không thêm 's'."
+        "answer": "agrees -> agree",
+        "explanation": "Quy tắc hòa hợp Chủ - Vị: Với cấu trúc 'Neither...nor', động từ chia theo chủ ngữ gần nhất (the employees - số nhiều) -> dùng 'agree'."
       },
       {
         "id": "g_d26_q3",
         "type": "fill_blank",
-        "question": "Điền dạng đúng của từ trong ngoặc:",
-        "sentence": "My friend _____ (study) for the IELTS exam diligently.",
-        "answer": "studies",
-        "hint": "Đổi 'y' thành 'ies' đối với chủ ngữ ngôi thứ 3 số ít."
+        "question": "Điền dạng đúng của từ trong ngoặc theo ngữ cảnh bài học:",
+        "sentence": "If you study consistently every day, you _____ (pass) the IELTS exam with flying colors.",
+        "answer": "will pass",
+        "hint": "Câu điều kiện loại 1: Mệnh đề chính dùng 'will + V_inf'."
       },
       {
         "id": "g_d26_q4",
         "type": "fill_blank",
-        "question": "Điền trợ động từ hoặc từ liên kết thích hợp:",
-        "sentence": "_____ you practice English with your mentor every morning?",
-        "answer": "Do",
-        "hint": "Trợ động từ đứng đầu câu hỏi nghi vấn."
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has been working as an academic advisor _____ more than ten years.",
+        "answer": "for",
+        "hint": "Dùng 'for' trước khoảng thời gian."
       },
       {
         "id": "g_d26_q5",
         "type": "word_order",
-        "question": "Sắp xếp các từ thành câu hoàn chỉnh đúng ngữ pháp IELTS:",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh:",
         "words": [
           "IELTS",
-          "she",
-          "studies",
-          "every",
-          "diligently",
-          "morning"
+          "practice",
+          "improves",
+          "regular",
+          "score",
+          "your"
         ],
-        "answer": "she studies IELTS diligently every morning",
-        "explanation": "Cấu trúc: S + V + O + Trạng từ chỉ cách thức + Trạng từ chỉ thời gian."
+        "answer": "regular practice improves your IELTS score",
+        "explanation": "Trật tự câu: S (regular practice) + V (improves) + O (your IELTS score)."
       }
     ]
   },
@@ -3586,61 +3588,61 @@
       {
         "id": "g_d27_q1",
         "type": "multiple_choice",
-        "question": "Bài tập Day 27 (Shopping and consumerism): Chọn đáp án đúng nhất để hoàn thành câu:",
-        "sentence": "According to the grammar rules of Day 27, choose the correct form:",
+        "question": "Bài tập Day 27 (Shopping and consumerism): Chọn đáp án chính xác nhất để hoàn thành câu:",
+        "sentence": "Which of the following sentences correctly applies Chủ đề IELTS: Mua sắm & Tiêu dùng?",
         "choices": [
-          "Option A (Chính xác)",
-          "Option B",
-          "Option C",
-          "Option D"
+          "By practicing Shopping and consumerism correctly, students achieve high IELTS scores.",
+          "Practicing Shopping and consumerism are achieving wrong grammar rules.",
+          "They does not understand the concept of Shopping and consumerism.",
+          "He have failed to apply the rules yesterday."
         ],
-        "answer": "Option A (Chính xác)",
-        "explanation": "Áp dụng cấu trúc lý thuyết chuẩn của Chủ đề IELTS: Mua sắm & Tiêu dùng từ giáo trình IELTS Fighter."
+        "answer": "By practicing Shopping and consumerism correctly, students achieve high IELTS scores.",
+        "explanation": "Câu văn áp dụng cấu trúc ngữ pháp chuẩn xác và hòa hợp chủ - vị theo giáo trình Day 27."
       },
       {
         "id": "g_d27_q2",
         "type": "multiple_choice",
-        "question": "Tìm và sửa lỗi sai trong câu sau:",
-        "sentence": "He doesn't practices English regularly every day.",
+        "question": "Tìm lỗi sai ngữ pháp trong câu sau:",
+        "sentence": "Neither the manager nor the employees agrees with the new regulation.",
         "choices": [
-          "doesn't practices -> doesn't practice",
-          "regularly -> regular",
-          "every day -> every days",
-          "He -> Him"
+          "agrees -> agree",
+          "Neither -> Either",
+          "nor -> or",
+          "regulation -> regulate"
         ],
-        "answer": "doesn't practices -> doesn't practice",
-        "explanation": "Khi đã có trợ động từ 'doesn't' thì động từ chính 'practice' phải giữ nguyên thể không thêm 's'."
+        "answer": "agrees -> agree",
+        "explanation": "Quy tắc hòa hợp Chủ - Vị: Với cấu trúc 'Neither...nor', động từ chia theo chủ ngữ gần nhất (the employees - số nhiều) -> dùng 'agree'."
       },
       {
         "id": "g_d27_q3",
         "type": "fill_blank",
-        "question": "Điền dạng đúng của từ trong ngoặc:",
-        "sentence": "My friend _____ (study) for the IELTS exam diligently.",
-        "answer": "studies",
-        "hint": "Đổi 'y' thành 'ies' đối với chủ ngữ ngôi thứ 3 số ít."
+        "question": "Điền dạng đúng của từ trong ngoặc theo ngữ cảnh bài học:",
+        "sentence": "If you study consistently every day, you _____ (pass) the IELTS exam with flying colors.",
+        "answer": "will pass",
+        "hint": "Câu điều kiện loại 1: Mệnh đề chính dùng 'will + V_inf'."
       },
       {
         "id": "g_d27_q4",
         "type": "fill_blank",
-        "question": "Điền trợ động từ hoặc từ liên kết thích hợp:",
-        "sentence": "_____ you practice English with your mentor every morning?",
-        "answer": "Do",
-        "hint": "Trợ động từ đứng đầu câu hỏi nghi vấn."
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has been working as an academic advisor _____ more than ten years.",
+        "answer": "for",
+        "hint": "Dùng 'for' trước khoảng thời gian."
       },
       {
         "id": "g_d27_q5",
         "type": "word_order",
-        "question": "Sắp xếp các từ thành câu hoàn chỉnh đúng ngữ pháp IELTS:",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh:",
         "words": [
           "IELTS",
-          "she",
-          "studies",
-          "every",
-          "diligently",
-          "morning"
+          "practice",
+          "improves",
+          "regular",
+          "score",
+          "your"
         ],
-        "answer": "she studies IELTS diligently every morning",
-        "explanation": "Cấu trúc: S + V + O + Trạng từ chỉ cách thức + Trạng từ chỉ thời gian."
+        "answer": "regular practice improves your IELTS score",
+        "explanation": "Trật tự câu: S (regular practice) + V (improves) + O (your IELTS score)."
       }
     ]
   },
@@ -3721,61 +3723,61 @@
       {
         "id": "g_d28_q1",
         "type": "multiple_choice",
-        "question": "Bài tập Day 28 (Environment): Chọn đáp án đúng nhất để hoàn thành câu:",
-        "sentence": "According to the grammar rules of Day 28, choose the correct form:",
+        "question": "Bài tập Day 28 (Environment): Chọn đáp án chính xác nhất để hoàn thành câu:",
+        "sentence": "Which of the following sentences correctly applies Chủ đề IELTS: Môi trường & Khí hậu?",
         "choices": [
-          "Option A (Chính xác)",
-          "Option B",
-          "Option C",
-          "Option D"
+          "By practicing Environment correctly, students achieve high IELTS scores.",
+          "Practicing Environment are achieving wrong grammar rules.",
+          "They does not understand the concept of Environment.",
+          "He have failed to apply the rules yesterday."
         ],
-        "answer": "Option A (Chính xác)",
-        "explanation": "Áp dụng cấu trúc lý thuyết chuẩn của Chủ đề IELTS: Môi trường & Khí hậu từ giáo trình IELTS Fighter."
+        "answer": "By practicing Environment correctly, students achieve high IELTS scores.",
+        "explanation": "Câu văn áp dụng cấu trúc ngữ pháp chuẩn xác và hòa hợp chủ - vị theo giáo trình Day 28."
       },
       {
         "id": "g_d28_q2",
         "type": "multiple_choice",
-        "question": "Tìm và sửa lỗi sai trong câu sau:",
-        "sentence": "He doesn't practices English regularly every day.",
+        "question": "Tìm lỗi sai ngữ pháp trong câu sau:",
+        "sentence": "Neither the manager nor the employees agrees with the new regulation.",
         "choices": [
-          "doesn't practices -> doesn't practice",
-          "regularly -> regular",
-          "every day -> every days",
-          "He -> Him"
+          "agrees -> agree",
+          "Neither -> Either",
+          "nor -> or",
+          "regulation -> regulate"
         ],
-        "answer": "doesn't practices -> doesn't practice",
-        "explanation": "Khi đã có trợ động từ 'doesn't' thì động từ chính 'practice' phải giữ nguyên thể không thêm 's'."
+        "answer": "agrees -> agree",
+        "explanation": "Quy tắc hòa hợp Chủ - Vị: Với cấu trúc 'Neither...nor', động từ chia theo chủ ngữ gần nhất (the employees - số nhiều) -> dùng 'agree'."
       },
       {
         "id": "g_d28_q3",
         "type": "fill_blank",
-        "question": "Điền dạng đúng của từ trong ngoặc:",
-        "sentence": "My friend _____ (study) for the IELTS exam diligently.",
-        "answer": "studies",
-        "hint": "Đổi 'y' thành 'ies' đối với chủ ngữ ngôi thứ 3 số ít."
+        "question": "Điền dạng đúng của từ trong ngoặc theo ngữ cảnh bài học:",
+        "sentence": "If you study consistently every day, you _____ (pass) the IELTS exam with flying colors.",
+        "answer": "will pass",
+        "hint": "Câu điều kiện loại 1: Mệnh đề chính dùng 'will + V_inf'."
       },
       {
         "id": "g_d28_q4",
         "type": "fill_blank",
-        "question": "Điền trợ động từ hoặc từ liên kết thích hợp:",
-        "sentence": "_____ you practice English with your mentor every morning?",
-        "answer": "Do",
-        "hint": "Trợ động từ đứng đầu câu hỏi nghi vấn."
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has been working as an academic advisor _____ more than ten years.",
+        "answer": "for",
+        "hint": "Dùng 'for' trước khoảng thời gian."
       },
       {
         "id": "g_d28_q5",
         "type": "word_order",
-        "question": "Sắp xếp các từ thành câu hoàn chỉnh đúng ngữ pháp IELTS:",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh:",
         "words": [
           "IELTS",
-          "she",
-          "studies",
-          "every",
-          "diligently",
-          "morning"
+          "practice",
+          "improves",
+          "regular",
+          "score",
+          "your"
         ],
-        "answer": "she studies IELTS diligently every morning",
-        "explanation": "Cấu trúc: S + V + O + Trạng từ chỉ cách thức + Trạng từ chỉ thời gian."
+        "answer": "regular practice improves your IELTS score",
+        "explanation": "Trật tự câu: S (regular practice) + V (improves) + O (your IELTS score)."
       }
     ]
   },
@@ -3856,61 +3858,61 @@
       {
         "id": "g_d29_q1",
         "type": "multiple_choice",
-        "question": "Bài tập Day 29 (Law & Crime): Chọn đáp án đúng nhất để hoàn thành câu:",
-        "sentence": "According to the grammar rules of Day 29, choose the correct form:",
+        "question": "Bài tập Day 29 (Law & Crime): Chọn đáp án chính xác nhất để hoàn thành câu:",
+        "sentence": "Which of the following sentences correctly applies Chủ đề IELTS: Luật pháp & Tội phạm?",
         "choices": [
-          "Option A (Chính xác)",
-          "Option B",
-          "Option C",
-          "Option D"
+          "By practicing Law & Crime correctly, students achieve high IELTS scores.",
+          "Practicing Law & Crime are achieving wrong grammar rules.",
+          "They does not understand the concept of Law & Crime.",
+          "He have failed to apply the rules yesterday."
         ],
-        "answer": "Option A (Chính xác)",
-        "explanation": "Áp dụng cấu trúc lý thuyết chuẩn của Chủ đề IELTS: Luật pháp & Tội phạm từ giáo trình IELTS Fighter."
+        "answer": "By practicing Law & Crime correctly, students achieve high IELTS scores.",
+        "explanation": "Câu văn áp dụng cấu trúc ngữ pháp chuẩn xác và hòa hợp chủ - vị theo giáo trình Day 29."
       },
       {
         "id": "g_d29_q2",
         "type": "multiple_choice",
-        "question": "Tìm và sửa lỗi sai trong câu sau:",
-        "sentence": "He doesn't practices English regularly every day.",
+        "question": "Tìm lỗi sai ngữ pháp trong câu sau:",
+        "sentence": "Neither the manager nor the employees agrees with the new regulation.",
         "choices": [
-          "doesn't practices -> doesn't practice",
-          "regularly -> regular",
-          "every day -> every days",
-          "He -> Him"
+          "agrees -> agree",
+          "Neither -> Either",
+          "nor -> or",
+          "regulation -> regulate"
         ],
-        "answer": "doesn't practices -> doesn't practice",
-        "explanation": "Khi đã có trợ động từ 'doesn't' thì động từ chính 'practice' phải giữ nguyên thể không thêm 's'."
+        "answer": "agrees -> agree",
+        "explanation": "Quy tắc hòa hợp Chủ - Vị: Với cấu trúc 'Neither...nor', động từ chia theo chủ ngữ gần nhất (the employees - số nhiều) -> dùng 'agree'."
       },
       {
         "id": "g_d29_q3",
         "type": "fill_blank",
-        "question": "Điền dạng đúng của từ trong ngoặc:",
-        "sentence": "My friend _____ (study) for the IELTS exam diligently.",
-        "answer": "studies",
-        "hint": "Đổi 'y' thành 'ies' đối với chủ ngữ ngôi thứ 3 số ít."
+        "question": "Điền dạng đúng của từ trong ngoặc theo ngữ cảnh bài học:",
+        "sentence": "If you study consistently every day, you _____ (pass) the IELTS exam with flying colors.",
+        "answer": "will pass",
+        "hint": "Câu điều kiện loại 1: Mệnh đề chính dùng 'will + V_inf'."
       },
       {
         "id": "g_d29_q4",
         "type": "fill_blank",
-        "question": "Điền trợ động từ hoặc từ liên kết thích hợp:",
-        "sentence": "_____ you practice English with your mentor every morning?",
-        "answer": "Do",
-        "hint": "Trợ động từ đứng đầu câu hỏi nghi vấn."
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has been working as an academic advisor _____ more than ten years.",
+        "answer": "for",
+        "hint": "Dùng 'for' trước khoảng thời gian."
       },
       {
         "id": "g_d29_q5",
         "type": "word_order",
-        "question": "Sắp xếp các từ thành câu hoàn chỉnh đúng ngữ pháp IELTS:",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh:",
         "words": [
           "IELTS",
-          "she",
-          "studies",
-          "every",
-          "diligently",
-          "morning"
+          "practice",
+          "improves",
+          "regular",
+          "score",
+          "your"
         ],
-        "answer": "she studies IELTS diligently every morning",
-        "explanation": "Cấu trúc: S + V + O + Trạng từ chỉ cách thức + Trạng từ chỉ thời gian."
+        "answer": "regular practice improves your IELTS score",
+        "explanation": "Trật tự câu: S (regular practice) + V (improves) + O (your IELTS score)."
       }
     ]
   },
@@ -3991,61 +3993,61 @@
       {
         "id": "g_d30_q1",
         "type": "multiple_choice",
-        "question": "Bài tập Day 30 (Media): Chọn đáp án đúng nhất để hoàn thành câu:",
-        "sentence": "According to the grammar rules of Day 30, choose the correct form:",
+        "question": "Bài tập Day 30 (Media): Chọn đáp án chính xác nhất để hoàn thành câu:",
+        "sentence": "Which of the following sentences correctly applies Chủ đề IELTS: Truyền thông & Xã hội hiện đại?",
         "choices": [
-          "Option A (Chính xác)",
-          "Option B",
-          "Option C",
-          "Option D"
+          "By practicing Media correctly, students achieve high IELTS scores.",
+          "Practicing Media are achieving wrong grammar rules.",
+          "They does not understand the concept of Media.",
+          "He have failed to apply the rules yesterday."
         ],
-        "answer": "Option A (Chính xác)",
-        "explanation": "Áp dụng cấu trúc lý thuyết chuẩn của Chủ đề IELTS: Truyền thông & Xã hội hiện đại từ giáo trình IELTS Fighter."
+        "answer": "By practicing Media correctly, students achieve high IELTS scores.",
+        "explanation": "Câu văn áp dụng cấu trúc ngữ pháp chuẩn xác và hòa hợp chủ - vị theo giáo trình Day 30."
       },
       {
         "id": "g_d30_q2",
         "type": "multiple_choice",
-        "question": "Tìm và sửa lỗi sai trong câu sau:",
-        "sentence": "He doesn't practices English regularly every day.",
+        "question": "Tìm lỗi sai ngữ pháp trong câu sau:",
+        "sentence": "Neither the manager nor the employees agrees with the new regulation.",
         "choices": [
-          "doesn't practices -> doesn't practice",
-          "regularly -> regular",
-          "every day -> every days",
-          "He -> Him"
+          "agrees -> agree",
+          "Neither -> Either",
+          "nor -> or",
+          "regulation -> regulate"
         ],
-        "answer": "doesn't practices -> doesn't practice",
-        "explanation": "Khi đã có trợ động từ 'doesn't' thì động từ chính 'practice' phải giữ nguyên thể không thêm 's'."
+        "answer": "agrees -> agree",
+        "explanation": "Quy tắc hòa hợp Chủ - Vị: Với cấu trúc 'Neither...nor', động từ chia theo chủ ngữ gần nhất (the employees - số nhiều) -> dùng 'agree'."
       },
       {
         "id": "g_d30_q3",
         "type": "fill_blank",
-        "question": "Điền dạng đúng của từ trong ngoặc:",
-        "sentence": "My friend _____ (study) for the IELTS exam diligently.",
-        "answer": "studies",
-        "hint": "Đổi 'y' thành 'ies' đối với chủ ngữ ngôi thứ 3 số ít."
+        "question": "Điền dạng đúng của từ trong ngoặc theo ngữ cảnh bài học:",
+        "sentence": "If you study consistently every day, you _____ (pass) the IELTS exam with flying colors.",
+        "answer": "will pass",
+        "hint": "Câu điều kiện loại 1: Mệnh đề chính dùng 'will + V_inf'."
       },
       {
         "id": "g_d30_q4",
         "type": "fill_blank",
-        "question": "Điền trợ động từ hoặc từ liên kết thích hợp:",
-        "sentence": "_____ you practice English with your mentor every morning?",
-        "answer": "Do",
-        "hint": "Trợ động từ đứng đầu câu hỏi nghi vấn."
+        "question": "Điền từ thích hợp vào chỗ trống:",
+        "sentence": "She has been working as an academic advisor _____ more than ten years.",
+        "answer": "for",
+        "hint": "Dùng 'for' trước khoảng thời gian."
       },
       {
         "id": "g_d30_q5",
         "type": "word_order",
-        "question": "Sắp xếp các từ thành câu hoàn chỉnh đúng ngữ pháp IELTS:",
+        "question": "Sắp xếp các từ sau thành câu hoàn chỉnh:",
         "words": [
           "IELTS",
-          "she",
-          "studies",
-          "every",
-          "diligently",
-          "morning"
+          "practice",
+          "improves",
+          "regular",
+          "score",
+          "your"
         ],
-        "answer": "she studies IELTS diligently every morning",
-        "explanation": "Cấu trúc: S + V + O + Trạng từ chỉ cách thức + Trạng từ chỉ thời gian."
+        "answer": "regular practice improves your IELTS score",
+        "explanation": "Trật tự câu: S (regular practice) + V (improves) + O (your IELTS score)."
       }
     ]
   }
