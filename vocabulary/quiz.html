@@ -78,8 +78,9 @@
     /* Listening Challenge Grid (LanguageGuide Style) */
     .lg-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
       gap: 1.2rem;
+      margin-top: 1.5rem;
     }
     .lg-card {
       background: var(--surface);
@@ -99,16 +100,16 @@
     .lg-card.correct-pick {
       border-color: var(--success) !important;
       box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.3) !important;
-      background: #f0fdf4;
+      background: #f0fdf4 !important;
     }
     .lg-card.wrong-pick {
       border-color: var(--danger) !important;
       animation: shake 0.4s ease;
-      background: #fff1f2;
+      background: #fff1f2 !important;
     }
     .lg-img-box {
       width: 100%;
-      height: 150px;
+      height: 160px;
       background: #e2e8f0;
       display: flex;
       align-items: center;
@@ -119,6 +120,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      display: block;
     }
 
     /* Standard Multiple Choice */
@@ -181,7 +183,7 @@
       <li><a href="../phonetics/index.html"><i class="fa-solid fa-volume-high"></i> Ngữ Âm & Trọng Âm</a></li>
       <li><a href="../speaking/index.html"><i class="fa-solid fa-microphone-lines"></i> Luyện Nói</a></li>
       <li><a href="../stats/index.html"><i class="fa-solid fa-chart-line"></i> Thống Kê</a></li>
-      <li><a href="../sources.html"><i class="fa-solid fa-link"></i> Nguồn Crawl</a></li>
+      <li><a href="../docs/methods.html"><i class="fa-solid fa-brain"></i> Phương Pháp Học</a></li>
     </ul>
     <div id="nav-user-badge" class="user-profile-badge"></div>
   </nav>
@@ -191,7 +193,7 @@
     <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1.5rem;">
       <a href="index.html" class="btn btn-outline"><i class="fa-solid fa-arrow-left"></i> Về danh mục từ vựng</a>
       <div id="quiz-header-badge" style="font-weight:700; color:var(--text-muted);">
-        Chủ đề: Trái cây
+        Chủ đề: Từ Vựng
       </div>
     </div>
 
@@ -199,8 +201,8 @@
     <div style="background:linear-gradient(135deg, #1e1b4b 0%, #312e81 100%); color:white; border-radius:var(--radius-md); padding:1.8rem 2rem; margin-bottom:2rem; box-shadow:var(--shadow-md);">
       <div style="margin-bottom:1.2rem;">
         <span class="badge" style="background:rgba(255,255,255,0.2); color:white; margin-bottom:0.4rem;" id="active-cat-name">Chủ đề từ vựng</span>
-        <h1 id="quiz-title" style="font-size:1.7rem; font-weight:800;">Luyện Tập & Thử Thách Từ Vựng</h1>
-        <p style="opacity:0.95; font-size:0.95rem; margin-top:0.3rem;">Chọn một trong 3 hình thức luyện tập bên dưới để tăng phản xạ nghe và ghi nhớ từ:</p>
+        <h1 id="quiz-title" style="font-size:1.7rem; font-weight:800; margin:0.3rem 0;">Luyện Tập & Thử Thách Từ Vựng</h1>
+        <p style="opacity:0.95; font-size:0.95rem; margin:0;">Chọn một trong 3 hình thức luyện tập bên dưới để tăng phản xạ nghe và ghi nhớ từ:</p>
       </div>
 
       <!-- 3 Mode Buttons -->
@@ -235,7 +237,9 @@
       </div>
 
       <!-- Image Options Grid -->
-      <div id="lg-options-grid" class="lg-grid"></div>
+      <div id="lg-options-grid" class="lg-grid">
+        <!-- Rendered by JS -->
+      </div>
     </div>
 
     <!-- ==================== MODE 2: MATCHING GAME (2 COLUMNS) ==================== -->
@@ -318,7 +322,7 @@
 
     let allWords = [];
     let currentCategoryWords = [];
-    let currentMode = 'listening_image'; // 'listening_image', 'matching', 'standard'
+    let currentMode = 'listening_image';
 
     function initData(data) {
       allWords = data || [];
@@ -329,9 +333,9 @@
         currentCategoryWords = allWords;
       }
 
-      const catLabel = currentCategoryWords.length > 0 && currentCategoryWords[0].categoryLabel ? currentCategoryWords[0].categoryLabel : category;
-      document.getElementById('active-cat-name').innerText = category === 'all' ? 'Tất cả chủ đề' : `Chủ đề: ${catLabel} (${currentCategoryWords.length} từ)`;
-      document.getElementById('quiz-header-badge').innerText = `Chủ đề: ${catLabel}`;
+      const catLabel = (currentCategoryWords.length > 0 && currentCategoryWords[0].categoryLabel) ? currentCategoryWords[0].categoryLabel : category;
+      document.getElementById('active-cat-name').innerText = category === 'all' ? 'Tất cả chủ đề' : 'Chủ đề: ' + catLabel + ' (' + currentCategoryWords.length + ' từ)';
+      document.getElementById('quiz-header-badge').innerText = 'Chủ đề: ' + catLabel;
 
       switchQuizMode('listening_image');
     }
@@ -341,7 +345,8 @@
     } else {
       fetch('../data/vocabulary.json')
         .then(res => res.json())
-        .then(data => initData(data));
+        .then(data => initData(data))
+        .catch(err => console.error(err));
     }
 
     function switchQuizMode(mode) {
@@ -378,7 +383,6 @@
     let lgTargetWord = null;
 
     function initListeningImageGame() {
-      // Prioritize words that have images, or take category words
       const pool = currentCategoryWords.length >= 4 ? currentCategoryWords : allWords;
       const shuffled = [...pool].sort(() => 0.5 - Math.random());
       lgQuestions = shuffled.slice(0, Math.min(10, shuffled.length));
@@ -389,44 +393,50 @@
 
     function renderListeningQuestion() {
       if (lgIndex >= lgQuestions.length) {
-        alert(`Chúc mừng bạn đã hoàn thành thử thách nghe! Điểm số: ${lgScore} / ${lgQuestions.length}`);
-        DB.addQuizResult(user.username, 'vocab_listening', `Nghe & Chọn Ảnh: ${category}`, lgScore, lgQuestions.length, []);
+        alert('Chúc mừng bạn đã hoàn thành thử thách nghe! Điểm số: ' + lgScore + ' / ' + lgQuestions.length);
+        DB.addQuizResult(user.username, 'vocab_listening', 'Nghe & Chọn Ảnh: ' + category, lgScore, lgQuestions.length, []);
         return initListeningImageGame();
       }
 
       lgTargetWord = lgQuestions[lgIndex];
-      document.getElementById('lg-progress').innerText = `Câu ${lgIndex + 1} / ${lgQuestions.length} — Điểm số: ${lgScore}`;
+      document.getElementById('lg-progress').innerText = 'Câu ' + (lgIndex + 1) + ' / ' + lgQuestions.length + ' — Điểm số: ' + lgScore;
 
       // Pick 3 distractors from same category or general pool
-      const distractors = currentCategoryWords.filter(w => w.id !== lgTargetWord.id).sort(() => 0.5 - Math.random()).slice(0, 3);
+      const otherWords = allWords.filter(w => w.id !== lgTargetWord.id);
+      const categoryDistractors = currentCategoryWords.filter(w => w.id !== lgTargetWord.id);
+      const distractorPool = categoryDistractors.length >= 3 ? categoryDistractors : otherWords;
+      const distractors = [...distractorPool].sort(() => 0.5 - Math.random()).slice(0, 3);
       const choices = [lgTargetWord, ...distractors].sort(() => 0.5 - Math.random());
 
       const grid = document.getElementById('lg-options-grid');
-      grid.innerHTML = choices.map(item => {
-        const hasImg = item.imageUrl && item.imageUrl.trim() !== '';
-        return `
-          <div class="lg-card" onclick="pickListeningCard(this, '${item.id}')">
-            <div class="lg-img-box">
-              ${hasImg ? `
-                <img src="${item.imageUrl}" alt="${item.word}" onerror="this.outerHTML='<div style=\'width:100%; height:100%; background:linear-gradient(135deg, #1e40af 0%, #3b82f6 100%); color:white; font-weight:800; font-size:1.1rem; display:flex; align-items:center; justify-content:center; gap:0.4rem;\'>${item.word}</div>'">
-              ` : `
-                <div style="width:100%; height:100%; background:linear-gradient(135deg, #1e40af 0%, #3b82f6 100%); color:white; font-weight:800; font-size:1.15rem; display:flex; align-items:center; justify-content:center; gap:0.4rem;">
-                  ${item.word}
-                </div>
-              `}
-            </div>
-            <div style="padding:0.9rem;">
-              <div style="font-weight:800; font-size:1.1rem; color:var(--primary);">${item.word}</div>
-              <div style="font-size:0.85rem; color:var(--text-muted);">${item.meaning_vi}</div>
-            </div>
+      grid.innerHTML = '';
+
+      choices.forEach(item => {
+        const card = document.createElement('div');
+        card.className = 'lg-card';
+        card.onclick = () => pickListeningCard(card, item.id);
+
+        let imgHtml = '';
+        if (item.imageUrl && item.imageUrl.trim() !== '') {
+          imgHtml = '<img src="' + item.imageUrl + '" alt="' + item.word + '" onerror="this.onerror=null; this.src=\'https://images.unsplash.com/photo-1546519638-68e109498ffc?w=400&q=80\';">';
+        } else {
+          imgHtml = '<div style="width:100%; height:100%; background:linear-gradient(135deg, #1e40af 0%, #3b82f6 100%); color:white; font-weight:800; font-size:1.15rem; display:flex; align-items:center; justify-content:center;">' + item.word + '</div>';
+        }
+
+        card.innerHTML = `
+          <div class="lg-img-box">${imgHtml}</div>
+          <div style="padding:0.9rem;">
+            <div style="font-weight:800; font-size:1.15rem; color:var(--primary); margin-bottom:0.2rem;">${item.word}</div>
+            <div style="font-size:0.88rem; color:var(--text-muted);">${item.meaning_vi}</div>
           </div>
         `;
-      }).join('');
+        grid.appendChild(card);
+      });
 
       // Auto play target audio
       setTimeout(() => {
         speakWord(lgTargetWord.word);
-      }, 300);
+      }, 400);
     }
 
     function playCurrentAudio() {
@@ -447,6 +457,9 @@
       } else {
         cardEl.classList.add('wrong-pick');
         speakWord("Try again");
+        setTimeout(() => {
+          cardEl.classList.remove('wrong-pick');
+        }, 1000);
       }
     }
 
@@ -466,9 +479,8 @@
       selectedEn = null;
       selectedVi = null;
 
-      document.getElementById('matching-status').innerText = `Đã ghép đúng: 0 / ${matchPairs.length} cặp từ`;
+      document.getElementById('matching-status').innerText = 'Đã ghép đúng: 0 / ' + matchPairs.length + ' cặp từ';
 
-      // Shuffle English and Vietnamese separately
       const enList = [...matchPairs].sort(() => 0.5 - Math.random());
       const viList = [...matchPairs].sort(() => 0.5 - Math.random());
 
@@ -488,40 +500,38 @@
     }
 
     function selectMatchEn(id, word) {
-      if (document.getElementById(`match-en-${id}`).classList.contains('matched')) return;
+      if (document.getElementById('match-en-' + id).classList.contains('matched')) return;
       speakWord(word);
 
-      // Deselect old
       document.querySelectorAll('#matching-col-en .match-card').forEach(c => c.classList.remove('selected'));
       selectedEn = id;
-      document.getElementById(`match-en-${id}`).classList.add('selected');
+      document.getElementById('match-en-' + id).classList.add('selected');
 
       checkMatchPair();
     }
 
     function selectMatchVi(id) {
-      if (document.getElementById(`match-vi-${id}`).classList.contains('matched')) return;
+      if (document.getElementById('match-vi-' + id).classList.contains('matched')) return;
 
       document.querySelectorAll('#matching-col-vi .match-card').forEach(c => c.classList.remove('selected'));
       selectedVi = id;
-      document.getElementById(`match-vi-${id}`).classList.add('selected');
+      document.getElementById('match-vi-' + id).classList.add('selected');
 
       checkMatchPair();
     }
 
     function checkMatchPair() {
       if (selectedEn && selectedVi) {
-        const cardEn = document.getElementById(`match-en-${selectedEn}`);
-        const cardVi = document.getElementById(`match-vi-${selectedVi}`);
+        const cardEn = document.getElementById('match-en-' + selectedEn);
+        const cardVi = document.getElementById('match-vi-' + selectedVi);
 
         if (selectedEn === selectedVi) {
-          // Matched!
           cardEn.classList.remove('selected');
           cardVi.classList.remove('selected');
           cardEn.classList.add('matched');
           cardVi.classList.add('matched');
           matchedCount++;
-          document.getElementById('matching-status').innerText = `Đã ghép đúng: ${matchedCount} / ${matchPairs.length} cặp từ`;
+          document.getElementById('matching-status').innerText = 'Đã ghép đúng: ' + matchedCount + ' / ' + matchPairs.length + ' cặp từ';
 
           selectedEn = null;
           selectedVi = null;
@@ -529,11 +539,10 @@
           if (matchedCount === matchPairs.length) {
             setTimeout(() => {
               alert("Tuyệt vời! Bạn đã ghép chính xác tất cả các cặp từ!");
-              DB.addQuizResult(user.username, 'vocab_matching', `Nối Cặp Từ: ${category}`, matchPairs.length, matchPairs.length, []);
+              DB.addQuizResult(user.username, 'vocab_matching', 'Nối Cặp Từ: ' + category, matchPairs.length, matchPairs.length, []);
             }, 500);
           }
         } else {
-          // Wrong shake
           cardEn.classList.add('wrong-shake');
           cardVi.classList.add('wrong-shake');
           setTimeout(() => {
@@ -572,7 +581,7 @@
           meaning_vi: item.meaning_vi,
           exampleSentence: item.exampleSentence || '',
           exampleTranslation: item.exampleTranslation || '',
-          question: `Từ "${item.word}" ${item.phonetic ? '(' + item.phonetic + ')' : ''} có nghĩa tiếng Việt là gì?`,
+          question: 'Từ "' + item.word + '" ' + (item.phonetic ? '(' + item.phonetic + ')' : '') + ' có nghĩa tiếng Việt là gì?',
           choices: choices,
           answer: item.meaning_vi
         };
@@ -644,11 +653,11 @@
 
       const q = stdQuestions[qIdx];
       q.choices.forEach(c => {
-        const btn = document.getElementById(`btn-opt-${qIdx}-${c}`);
+        const btn = document.getElementById('btn-opt-' + qIdx + '-' + c);
         if (btn) btn.classList.remove('selected');
       });
 
-      const selectedBtn = document.getElementById(`btn-opt-${qIdx}-${selectedValue}`);
+      const selectedBtn = document.getElementById('btn-opt-' + qIdx + '-' + selectedValue);
       if (selectedBtn) selectedBtn.classList.add('selected');
     }
 
@@ -662,13 +671,13 @@
 
       stdQuestions.forEach((q, idx) => {
         const userChoice = stdAnswers[idx];
-        const card = document.getElementById(`qcard-${idx}`);
-        const expBox = document.getElementById(`exp-box-${idx}`);
+        const card = document.getElementById('qcard-' + idx);
+        const expBox = document.getElementById('exp-box-' + idx);
 
         expBox.style.display = 'block';
 
         q.choices.forEach(c => {
-          const btn = document.getElementById(`btn-opt-${idx}-${c}`);
+          const btn = document.getElementById('btn-opt-' + idx + '-' + c);
           if (btn) {
             btn.disabled = true;
             if (c === q.answer) {
@@ -697,10 +706,10 @@
       const resCard = document.getElementById('result-summary-card');
       resCard.style.display = 'block';
       const percent = Math.round((score / stdQuestions.length) * 100);
-      document.getElementById('score-text-detail').innerText = `Bạn đạt: ${score} / ${stdQuestions.length} câu đúng (${percent}%)`;
+      document.getElementById('score-text-detail').innerText = 'Bạn đạt: ' + score + ' / ' + stdQuestions.length + ' câu đúng (' + percent + '%)';
       document.getElementById('submit-bar').style.display = 'none';
 
-      DB.addQuizResult(user.username, 'vocabulary', `Từ Vựng: ${category}`, score, stdQuestions.length, mistakes);
+      DB.addQuizResult(user.username, 'vocabulary', 'Từ Vựng: ' + category, score, stdQuestions.length, mistakes);
       window.scrollTo({ top: 150, behavior: 'smooth' });
     }
   </script>
