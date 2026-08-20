@@ -178,10 +178,22 @@
     function generateVocabQuiz() {
       if (!allWords || allWords.length === 0) return;
 
-      const filtered = category === 'all' ? allWords : allWords.filter(w => w.category === category);
-      const pool = (filtered.length >= 10) ? filtered : allWords;
+      // Strictly filter words belonging ONLY to the selected category (if not 'all')
+      let filtered = allWords;
+      if (category && category !== 'all') {
+        filtered = allWords.filter(w => w.category === category);
+        if (filtered.length === 0) filtered = allWords;
+      }
+
+      // If category has N words, test up to all N words of that category
+      const pool = filtered;
       const shuffled = [...pool].sort(() => 0.5 - Math.random());
-      const selected = shuffled.slice(0, 10);
+      const maxCount = Math.min(pool.length, 20); // Test up to 20 words or all words in this topic
+      const selected = (category === 'all') ? shuffled.slice(0, 10) : shuffled.slice(0, maxCount);
+
+      const catLabel = selected.length > 0 && selected[0].categoryLabel ? selected[0].categoryLabel : category;
+      document.getElementById('cat-badge').innerText = category === 'all' ? 'Tất cả chủ đề (10 câu ngẫu nhiên)' : `Chủ đề: ${catLabel}`;
+      document.getElementById('vocab-quiz-title').innerText = category === 'all' ? 'Trắc Nghiệm Tổng Hợp Từ Vựng' : `Trắc Nghiệm Chủ Đề: ${catLabel}`;
 
       activeQuestions = selected.map((item, idx) => {
         // Collect 3 distinct distractors with meaning_vi
