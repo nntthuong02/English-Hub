@@ -1,11 +1,10 @@
-
-// Unified Storage Management (Firestore + LocalStorage Sync Adapter)
+// Database Manager with Cloud Firestore & LocalStorage Dual-Sync
 const DB = {
   _getKey(userId, collection) {
     return `eh_${userId}_${collection}`;
   },
 
-  initUser(userId) {
+  async initUser(userId) {
     const key = `eh_profile_${userId}`;
     let profile = JSON.parse(localStorage.getItem(key) || '{}');
     if (!profile.createdAt) {
@@ -17,15 +16,28 @@ const DB = {
       };
       localStorage.setItem(key, JSON.stringify(profile));
     }
+
+    // Sync user profile to Firestore
+    if (window.isFirebaseActive && window.firestoreDb) {
+      try {
+        await window.firestoreDb.collection('users').doc(userId).set({
+          ...profile,
+          lastLogin: new Date().toISOString()
+        }, { merge: true });
+        console.log(`[Firestore] Synced user profile for: ${userId}`);
+      } catch(err) {
+        console.warn("[Firestore] Error syncing user:", err);
+      }
+    }
   },
 
-  // Vocabulary progress: { [wordId]: { learned: true, correct: 0, wrong: 0, lastReviewed: string } }
+  // Vocabulary progress
   getVocabProgress(userId) {
     const raw = localStorage.getItem(this._getKey(userId, 'vocab_progress'));
     return raw ? JSON.parse(raw) : {};
   },
 
-  saveVocabProgress(userId, wordId, isLearned, isCorrect = null) {
+  async saveVocabProgress(userId, wordId, isLearned, isCorrect = null) {
     const data = this.getVocabProgress(userId);
     if (!data[wordId]) {
       data[wordId] = { learned: false, correct: 0, wrong: 0, lastReviewed: new Date().toISOString() };
@@ -37,20 +49,25 @@ const DB = {
 
     localStorage.setItem(this._getKey(userId, 'vocab_progress'), JSON.stringify(data));
 
-    // Optional Firestore sync
+    // Push to Firestore Cloud
     if (window.isFirebaseActive && window.firestoreDb) {
-      window.firestoreDb.collection('users').doc(userId).collection('vocab_progress').doc(wordId).set(data[wordId], { merge: true });
+      try {
+        await window.firestoreDb.collection('users').doc(userId)
+          .collection('vocab_progress').doc(wordId).set(data[wordId], { merge: true });
+      } catch(err) {
+        console.warn("[Firestore] Error updating vocab_progress:", err);
+      }
     }
     return data[wordId];
   },
 
-  // Grammar progress: { [day]: { completed: true, score: 90, attempts: 2 } }
+  // Grammar progress
   getGrammarProgress(userId) {
     const raw = localStorage.getItem(this._getKey(userId, 'grammar_progress'));
     return raw ? JSON.parse(raw) : {};
   },
 
-  saveGrammarProgress(userId, day, score) {
+  async saveGrammarProgress(userId, day, score) {
     const data = this.getGrammarProgress(userId);
     if (!data[day]) {
       data[day] = { completed: true, bestScore: score, attempts: 1, lastCompleted: new Date().toISOString() };
@@ -62,35 +79,48 @@ const DB = {
     }
     localStorage.setItem(this._getKey(userId, 'grammar_progress'), JSON.stringify(data));
 
+    // Push to Firestore Cloud
     if (window.isFirebaseActive && window.firestoreDb) {
-      window.firestoreDb.collection('users').doc(userId).collection('grammar_progress').doc(`day_${day}`).set(data[day], { merge: true });
+      try {
+        await window.firestoreDb.collection('users').doc(userId)
+          .collection('grammar_progress').doc(`day_${day}`).set(data[day], { merge: true });
+        console.log(`[Firestore] Saved grammar progress for Day ${day}`);
+      } catch(err) {
+        console.warn("[Firestore] Error updating grammar_progress:", err);
+      }
     }
   },
 
   // Quiz History
-  addQuizResult(userId, type, topic, score, total, mistakes = []) {
+  async addQuizResult(userId, type, topic, score, total, mistakes = []) {
     const key = this._getKey(userId, 'quiz_history');
     const list = JSON.parse(localStorage.getItem(key) || '[]');
     const record = {
       id: 'qz_' + Date.now(),
-      type, // 'vocab' or 'grammar'
+      type,
       topic,
       score,
       total,
       percent: Math.round((score / total) * 100),
-      mistakes, // array of items/questions failed
+      mistakes,
       date: new Date().toISOString()
     };
     list.unshift(record);
     localStorage.setItem(key, JSON.stringify(list));
 
-    // Also update Mistake Bank
     if (mistakes && mistakes.length > 0) {
       this.recordMistakes(userId, type, mistakes);
     }
 
+    // Push to Firestore Cloud
     if (window.isFirebaseActive && window.firestoreDb) {
-      window.firestoreDb.collection('users').doc(userId).collection('quiz_history').add(record);
+      try {
+        await window.firestoreDb.collection('users').doc(userId)
+          .collection('quiz_history').doc(record.id).set(record);
+        console.log(`[Firestore] Recorded quiz history: ${record.id}`);
+      } catch(err) {
+        console.warn("[Firestore] Error recording quiz:", err);
+      }
     }
     return record;
   },
@@ -99,8 +129,8 @@ const DB = {
     return JSON.parse(localStorage.getItem(this._getKey(userId, 'quiz_history')) || '[]');
   },
 
-  // Mistake bank for retrying
-  recordMistakes(userId, type, mistakeItems) {
+  // Mistake bank
+  async recordMistakes(userId, type, mistakeItems) {
     const key = this._getKey(userId, 'mistake_bank');
     let bank = JSON.parse(localStorage.getItem(key) || '[]');
     mistakeItems.forEach(item => {
@@ -112,20 +142,37 @@ const DB = {
       }
     });
     localStorage.setItem(key, JSON.stringify(bank));
+
+    if (window.isFirebaseActive && window.firestoreDb) {
+      try {
+        await window.firestoreDb.collection('users').doc(userId)
+          .collection('meta').doc('mistake_bank').set({ items: bank, updatedAt: new Date().toISOString() });
+      } catch(err) {
+        console.warn("[Firestore] Error updating mistake bank:", err);
+      }
+    }
   },
 
   getMistakes(userId) {
     return JSON.parse(localStorage.getItem(this._getKey(userId, 'mistake_bank')) || '[]');
   },
 
-  resolveMistake(userId, itemId) {
+  async resolveMistake(userId, itemId) {
     const key = this._getKey(userId, 'mistake_bank');
     let bank = JSON.parse(localStorage.getItem(key) || '[]');
     bank = bank.filter(b => b.id !== itemId);
     localStorage.setItem(key, JSON.stringify(bank));
+
+    if (window.isFirebaseActive && window.firestoreDb) {
+      try {
+        await window.firestoreDb.collection('users').doc(userId)
+          .collection('meta').doc('mistake_bank').set({ items: bank, updatedAt: new Date().toISOString() });
+      } catch(err) {
+        console.warn("[Firestore] Error resolving mistake:", err);
+      }
+    }
   },
 
-  // Overall Stats summary
   getStats(userId) {
     const vocabProg = this.getVocabProgress(userId);
     const grammarProg = this.getGrammarProgress(userId);

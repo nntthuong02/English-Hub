@@ -1,29 +1,29 @@
-
-// Firebase Configuration Template
-// Người dùng có thể điền thông số từ Firebase Console vào đây
+// Firebase Configuration & Initialization
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_AUTH_DOMAIN.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyDn8H0ez6A3I6LkFlndBz2IcAtpLFOPrBk",
+  authDomain: "english-hub-d8edd.firebaseapp.com",
+  projectId: "english-hub-d8edd",
+  storageBucket: "english-hub-d8edd.firebasestorage.app",
+  messagingSenderId: "1046646888060",
+  appId: "1:1046646888060:web:b851875cb9f7ac644c9bf9"
 };
 
 let db = null;
 let isFirebaseActive = false;
 
 try {
-  if (typeof firebase !== 'undefined' && firebase.initializeApp && firebaseConfig.apiKey !== "YOUR_API_KEY") {
-    firebase.initializeApp(firebaseConfig);
+  if (typeof firebase !== 'undefined') {
+    if (!firebase.apps.length) {
+      firebase.initializeApp(firebaseConfig);
+    }
     db = firebase.firestore();
     isFirebaseActive = true;
-    console.log("Firebase Firestore initialized successfully!");
+    console.log("✅ Firebase Cloud Firestore connected successfully to project: english-hub-d8edd");
   } else {
-    console.log("Running in offline-friendly LocalStorage mode (Sync to Firebase enabled once config is provided).");
+    console.log("Firebase SDK not loaded, running in LocalStorage mode.");
   }
 } catch(e) {
-  console.warn("Firebase init note:", e);
+  console.warn("Firebase initialization warning:", e);
 }
 
 window.isFirebaseActive = isFirebaseActive;
