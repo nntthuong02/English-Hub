@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phương Pháp Học Tiếng Anh Khoa Học — English Hub</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+  <style>
+    .method-card {
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      border-radius: var(--radius-md);
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: var(--shadow-sm);
+      border-left: 5px solid var(--primary);
+      transition: all 0.2s ease;
+    }
+    .method-card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+    .tag-research {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: #e0e7ff;
+      color: var(--primary);
+      font-size: 0.85rem;
+      font-weight: 700;
+      padding: 0.3rem 0.8rem;
+      border-radius: 50px;
+      margin-bottom: 0.8rem;
+    }
+    .app-badge {
+      background: #f0fdf4;
+      border: 1px solid #86efac;
+      color: #166534;
+      padding: 0.8rem 1.2rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.92rem;
+      margin-top: 1rem;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="../dashboard.html" class="nav-brand">
+      <i class="fa-solid fa-graduation-cap"></i>
+      <span>English Hub</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../dashboard.html"><i class="fa-solid fa-house"></i> Trang chủ</a></li>
+      <li><a href="../vocabulary/index.html"><i class="fa-solid fa-book-open"></i> Từ Vựng</a></li>
+      <li><a href="../grammar/index.html"><i class="fa-solid fa-pen-nib"></i> Ngữ Pháp</a></li>
+      <li><a href="../phonetics/index.html"><i class="fa-solid fa-volume-high"></i> Ngữ Âm & Trọng Âm</a></li>
+      <li><a href="../stats/index.html"><i class="fa-solid fa-chart-line"></i> Thống Kê</a></li>
+      <li><a href="methods.html" class="active"><i class="fa-solid fa-brain"></i> Phương Pháp Học</a></li>
+      <li><a href="../sources.html"><i class="fa-solid fa-link"></i> Nguồn Crawl</a></li>
+    </ul>
+    <div id="nav-user-badge" class="user-profile-badge"></div>
+  </nav>
+
+  <div class="container" style="max-width: 950px;">
+    <!-- Top Action -->
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1.5rem;">
+      <a href="../dashboard.html" class="btn btn-outline"><i class="fa-solid fa-arrow-left"></i> Về Bảng Điều Khiển</a>
+      <a href="../vocabulary/index.html" class="btn btn-primary"><i class="fa-solid fa-bolt"></i> Bắt đầu Luyện Tập Ngay</a>
+    </div>
+
+    <!-- Header Banner -->
+    <div style="background:linear-gradient(135deg, #1e1b4b 0%, #312e81 100%); color:white; border-radius:var(--radius-md); padding:2.2rem 2.5rem; margin-bottom:2.5rem; box-shadow:var(--shadow-md);">
+      <span class="badge" style="background:rgba(255,255,255,0.2); color:white; margin-bottom:0.4rem;">
+        <i class="fa-solid fa-microscope"></i> Cơ Sở Khoa Học & Ngữ Học Nhận Thức
+      </span>
+      <h1 style="font-size:2rem; font-weight:800; margin-bottom:0.6rem;">8 Phương Pháp Học Tiếng Anh Chuẩn Khoa Học</h1>
+      <p style="opacity:0.95; font-size:1.02rem; line-height:1.6; max-width:780px;">
+        Tổng hợp các công trình nghiên cứu nổi tiếng thế giới về Thụ đắc ngôn ngữ (Language Acquisition), Khoa học thần kinh (Neuroscience) và Tâm lý học nhận thức được ứng dụng trực tiếp trong nền tảng English Hub.
+      </p>
+    </div>
+
+    <!-- 1. Spaced Repetition (SRS) -->
+    <div class="method-card" style="border-left-color: #3b82f6;">
+      <div class="tag-research"><i class="fa-solid fa-scroll"></i> Nghiên cứu: Hermann Ebbinghaus (1885) & GS. Piotr Woźniak (SuperMemo/Anki)</div>
+      <h2 style="font-size:1.4rem; font-weight:800; color:var(--primary); margin-bottom:0.6rem;">
+        1. Spaced Repetition System (SRS) — Lặp Lại Ngắt Quãng
+      </h2>
+      <p style="font-size:0.95rem; color:var(--text-main); line-height:1.6; margin-bottom:0.6rem;">
+        Theo <em>Đường cong lãng quên (Forgetting Curve)</em> của Hermann Ebbinghaus, não bộ sẽ quên tới 70% kiến thức mới chỉ sau 24-48 giờ nếu không có sự gợi nhớ. Thuật toán SRS tính toán chính xác thời điểm "ngay trước khi bạn chuẩn bị quên" để nhắc lại. Khoảng cách ôn tập sẽ tăng dần: 1 ngày ➜ 3 ngày ➜ 7 ngày ➜ 14 ngày ➜ 30 ngày để đưa từ vựng vào <strong>Trí nhớ dài hạn vĩnh viễn (Long-term Memory)</strong>.
+      </p>
+      <div class="app-badge">
+        <strong>🚀 Ứng dụng trong English Hub:</strong> Hệ thống Thẻ Flashcard 3D và Ngân hàng Lỗi sai (Mistake Bank) tự động lưu các từ và câu làm sai để lên lịch ôn tập ngắt quãng.
+      </div>
+    </div>
+
+    <!-- 2. Comprehensible Input -->
+    <div class="method-card" style="border-left-color: #059669;">
+      <div class="tag-research" style="background:#d1fae5; color:#059669;"><i class="fa-solid fa-user-graduate"></i> Nghiên cứu: GS. Stephen Krashen (University of Southern California - USC)</div>
+      <h2 style="font-size:1.4rem; font-weight:800; color:#059669; margin-bottom:0.6rem;">
+        2. Comprehensible Input (Đầu Vào Nghe Hiểu $i + 1$)
+      </h2>
+      <p style="font-size:0.95rem; color:var(--text-main); line-height:1.6; margin-bottom:0.6rem;">
+        Con người thụ đắc ngôn ngữ tự nhiên không phải qua việc học thuộc lòng quy tắc ngữ pháp khô khan, mà bằng cách tiếp nhận <strong>"Đầu vào có thể hiểu được" (Comprehensible Input)</strong> ở mức độ $i+1$ ($i$ là trình độ hiện tại, và $+1$ là kiến thức mới vừa tầm hiểu qua ngữ cảnh). Khi cảm xúc thoải mái (Bộ lọc cảm xúc - Affective Filter hạ thấp), ngôn ngữ sẽ tự động thẩm thấu vào tiềm thức.
+      </p>
+      <div class="app-badge" style="background:#f0fdf4; border-color:#86efac; color:#166534;">
+        <strong>🚀 Ứng dụng trong English Hub:</strong> 30 Ngày Ngữ Pháp IELTS Fighter thiết kế lộ trình tăng tiến mượt mà từ Thì cơ bản đến Mệnh đề phức tạp kèm câu ví dụ thực tế.
+      </div>
+    </div>
+
+    <!-- 3. Active Recall & Testing Effect -->
+    <div class="method-card" style="border-left-color: #d97706;">
+      <div class="tag-research" style="background:#fef3c7; color:#b45309;"><i class="fa-solid fa-newspaper"></i> Nghiên cứu: Roediger & Karpicke (Công bố trên Tạp chí Khoa học Science, 2006)</div>
+      <h2 style="font-size:1.4rem; font-weight:800; color:#b45309; margin-bottom:0.6rem;">
+        3. Active Recall & Testing Effect — Chủ Động Gợi Nhớ & Hiệu Ứng Kiểm Tra
+      </h2>
+      <p style="font-size:0.95rem; color:var(--text-main); line-height:1.6; margin-bottom:0.6rem;">
+        Việc chủ động tự "kéo" thông tin từ não bộ ra ngoài (Active Recall) thông qua câu đố hoặc bài kiểm tra tạo ra các liên kết nơ-ron thần kinh mạnh hơn <strong>300%</strong> so với việc chỉ đọc lại sách vở một cách thụ động (Passive Reading).
+      </p>
+      <div class="app-badge">
+        <strong>🚀 Ứng dụng trong English Hub:</strong> Giao diện Full Exam View với các dạng bài Trắc nghiệm 4 phương án, Nối cặp từ song ngữ 2 cột và Điền từ khuyết.
+      </div>
+    </div>
+
+    <!-- 4. Dual Coding Theory -->
+    <div class="method-card" style="border-left-color: #7c3aed;">
+      <div class="tag-research" style="background:#ede9fe; color:#6d28d9;"><i class="fa-solid fa-eye"></i> Nghiên cứu: Thuyết Mã Hóa Kép của GS. Allan Paivio (1971, 1986)</div>
+      <h2 style="font-size:1.4rem; font-weight:800; color:#6d28d9; margin-bottom:0.6rem;">
+        4. Dual Coding Theory — Thuyết Mã Hóa Kép (Hình Ảnh + Âm Thanh)
+      </h2>
+      <p style="font-size:0.95rem; color:var(--text-main); line-height:1.6; margin-bottom:0.6rem;">
+        Não bộ xử lý thông tin qua 2 kênh độc lập: Kênh thị giác (Visual) và Kênh thính giác/ngôn ngữ (Verbal/Auditory). Khi một từ vựng được học đồng thời bằng <strong>Hình ảnh minh họa thực tế + Giọng đọc âm thanh bản xứ + Chữ viết ký hiệu IPA</strong>, tốc độ ghi nhớ tăng gấp đôi và kích hoạt cả 2 bán cầu não.
+      </p>
+      <div class="app-badge">
+        <strong>🚀 Ứng dụng trong English Hub:</strong> Chế độ <em>Nghe & Chọn Ảnh LanguageGuide</em> kết hợp giọng đọc WebSpeech TTS chuẩn US và hình ảnh minh họa chất lượng cao.
+      </div>
+    </div>
+
+    <!-- 5. Shadowing Technique -->
+    <div class="method-card" style="border-left-color: #0284c7;">
+      <div class="tag-research" style="background:#e0f2fe; color:#0369a1;"><i class="fa-solid fa-microphone-lines"></i> Nghiên cứu: GS. Ngôn ngữ học Alexander Arguelles</div>
+      <h2 style="font-size:1.4rem; font-weight:800; color:#0369a1; margin-bottom:0.6rem;">
+        5. Shadowing Technique — Kỹ Thuật Cái Bóng
+      </h2>
+      <p style="font-size:0.95rem; color:var(--text-main); line-height:1.6; margin-bottom:0.6rem;">
+        Lắng nghe người bản xứ phát âm và nhắc lại ngay lập tức (độ trễ khoảng 0.5s) như một chiếc bóng. Phương pháp này kích hoạt vùng vỏ não vận động (Motor Cortex) và vùng Broca, giúp tạo phản xạ cơ miệng, bắt chước ngữ điệu (Intonation), trọng âm và nhịp điệu chuẩn xác.
+      </p>
+      <div class="app-badge">
+        <strong>🚀 Ứng dụng trong English Hub:</strong> Nút nghe phát âm 🔊 trên từng câu ví dụ ngữ pháp, từ vựng và bảng 44 âm IPA (ZIM Academy).
+      </div>
+    </div>
+
+    <!-- 6. Interleaving Practice -->
+    <div class="method-card" style="border-left-color: #dc2626;">
+      <div class="tag-research" style="background:#fee2e2; color:#b91c1c;"><i class="fa-solid fa-shuffle"></i> Nghiên cứu: Robert Bjork & Nate Kornell (Cognitive Psychology)</div>
+      <h2 style="font-size:1.4rem; font-weight:800; color:#b91c1c; margin-bottom:0.6rem;">
+        6. Interleaving Practice — Luyện Tập Xen Kẽ (Đề Trộn)
+      </h2>
+      <p style="font-size:0.95rem; color:var(--text-main); line-height:1.6; margin-bottom:0.6rem;">
+        Làm bài tập của cùng một chủ đề (Blocked Practice) khiến não bộ làm theo quán tính. Ngược lại, <strong>luyện tập xen kẽ các thì và các dạng ngữ pháp khác nhau (Interleaving Practice)</strong> buộc não bộ phải liên tục phân tích ngữ cảnh, phát hiện dấu hiệu nhận biết, từ đó tăng 40% khả năng giải đề trong bài thi thực tế.
+      </p>
+      <div class="app-badge">
+        <strong>🚀 Ứng dụng trong English Hub:</strong> Module <code>Luyện Đề Trộn Ngữ Pháp & Các Thì</code> (nguồn BaiTapTracNghiem.com) tại <code>grammar/mixed.html</code>.
+      </div>
+    </div>
+
+    <!-- 7. The Lexical Approach & Chunking -->
+    <div class="method-card" style="border-left-color: #0d9488;">
+      <div class="tag-research" style="background:#ccfbf1; color:#0f766e;"><i class="fa-solid fa-cubes"></i> Nghiên cứu: Michael Lewis (1993) & George Miller (1956)</div>
+      <h2 style="font-size:1.4rem; font-weight:800; color:#0f766e; margin-bottom:0.6rem;">
+        7. The Lexical Approach & Chunking — Học Theo Cụm Từ Cố Định
+      </h2>
+      <p style="font-size:0.95rem; color:var(--text-main); line-height:1.6; margin-bottom:0.6rem;">
+        Não bộ con người lưu trữ và truy xuất ngôn ngữ dưới dạng các cụm từ (Collocations / Lexical Chunks) thay vì từng từ đơn lẻ. Học theo cụm (vd: <em>make a decision, in terms of, take into account</em>) giúp nói trôi chảy và loại bỏ hoàn toàn thói quen dịch từ tiếng mẹ đẻ.
+      </p>
+      <div class="app-badge">
+        <strong>🚀 Ứng dụng trong English Hub:</strong> Phần ví dụ câu thực hành và dạng bài sắp xếp từ (Word Order) trong từng bài học ngữ pháp.
+      </div>
+    </div>
+
+    <!-- 8. Feynman Technique -->
+    <div class="method-card" style="border-left-color: #4f46e5;">
+      <div class="tag-research" style="background:#e0e7ff; color:#4338ca;"><i class="fa-solid fa-award"></i> Nghiên cứu: Nhà Vật lý đạt giải Nobel Richard Feynman</div>
+      <h2 style="font-size:1.4rem; font-weight:800; color:#4338ca; margin-bottom:0.6rem;">
+        8. Feynman Technique — Đơn Giản Hóa Để Hiểu Sâu Bản Chất
+      </h2>
+      <p style="font-size:0.95rem; color:var(--text-main); line-height:1.6; margin-bottom:0.6rem;">
+        Để hiểu sâu một kiến thức phức tạp, hãy chia nhỏ và giải thích lại bằng ngôn ngữ đơn giản, trực quan nhất. Mọi bài học ngữ pháp và ngữ âm trong hệ thống đều được tóm tắt thành các <strong>Công thức vàng & Dấu hiệu nhận biết cốt lõi</strong> để ghi nhớ trong 3 giây.
+      </p>
+      <div class="app-badge">
+        <strong>🚀 Ứng dụng trong English Hub:</strong> 5 phần chuẩn hóa trong bài học lý thuyết và bảng 15 quy tắc trọng âm ZIM Academy.
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    English Hub © 2026 — Tài liệu nghiên cứu phương pháp học tiếng Anh chuẩn khoa học.
+  </footer>
+
+  <script src="../js/firebase-config.js"></script>
+  <script src="../js/db.js"></script>
+  <script src="../js/auth.js"></script>
+  <script>
+    Auth.requireAuth();
+    Auth.updateNavbar();
+  </script>
+</body>
+</html>

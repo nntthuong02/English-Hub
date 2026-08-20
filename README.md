@@ -150,3 +150,14 @@ Trang chủ: https://www.tienganh123.com/tu-vung-tieng-anh-bang-hinh-anh
    - Mở file `js/firebase-config.js`
    - Điền thông tin cấu hình từ Firebase Console của bạn vào `firebaseConfig`.
    - Hệ thống sẽ tự động đồng bộ sang Firestore!
+
+## 📚 Phương Pháp Học Tiếng Anh Theo Nghiên Cứu Khoa Học
+Chi tiết tại tài liệu [docs/ENGLISH_LEARNING_METHODS.md](docs/ENGLISH_LEARNING_METHODS.md) và giao diện trực tuyến [`docs/methods.html`](docs/methods.html):
+1. **Spaced Repetition System (SRS)** — Lặp lại ngắt quãng theo đường cong lãng quên Ebbinghaus.
+2. **Comprehensible Input ($i+1$)** — Thuyết đầu vào nghe hiểu của GS. Stephen Krashen.
+3. **Active Recall & Testing Effect** — Chủ động gợi nhớ qua câu đố & bài thi (Science 2006).
+4. **Dual Coding Theory** — Thuyết mã hóa kép Hình ảnh + Âm thanh (Allan Paivio & LanguageGuide).
+5. **Shadowing Technique** — Kỹ thuật cái bóng rèn luyện cơ miệng & ngữ điệu (Alexander Arguelles).
+6. **Interleaving Practice** — Luyện tập xen kẽ đề trộn các thì và cấu trúc ngữ pháp.
+7. **The Lexical Approach & Chunking** — Học theo cụm từ cố định (Michael Lewis).
+8. **Feynman Technique** — Đơn giản hóa kiến thức để nắm chắc bản chất.
