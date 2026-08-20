@@ -44,6 +44,27 @@
       <input type="text" id="cat-search" class="btn btn-outline" style="flex:1; min-width:250px; text-align:left; background:var(--surface);" placeholder="🔍 Tìm kiếm từ hoặc chủ đề..." oninput="filterCategories()">
     </div>
 
+        <!-- LanguageGuide New Modes Highlight Banner -->
+    <div style="background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%); color:white; border-radius:var(--radius-md); padding:1.6rem 2rem; margin-bottom:2rem; box-shadow:var(--shadow-md); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1.2rem;">
+      <div style="max-width:650px;">
+        <span class="badge" style="background:rgba(255,255,255,0.2); color:white; margin-bottom:0.4rem;">
+          <i class="fa-solid fa-sparkles"></i> Phương Pháp Mới Chuẩn LanguageGuide.org
+        </span>
+        <h2 style="font-size:1.4rem; font-weight:800; margin:0 0 0.3rem 0;">Luyện Từ Vựng Kiểu Mới: Nghe & Chọn Ảnh + Nối Cặp Song Ngữ</h2>
+        <p style="opacity:0.9; font-size:0.95rem; margin:0;">
+          Luyện phản xạ thính giác 🔊 (nghe từ đoán ảnh trực quan) và trò chơi nối 2 cột từ vựng Anh - Việt theo từng chủ đề.
+        </p>
+      </div>
+      <div style="display:flex; gap:0.6rem; flex-wrap:wrap;">
+        <a href="quiz.html?cat=fruits" class="btn" style="background:#22c55e; color:white; font-weight:800;">
+          <i class="fa-solid fa-headphones"></i> Thử Thách Trái Cây
+        </a>
+        <a href="quiz.html?cat=all" class="btn btn-outline" style="color:white; border-color:rgba(255,255,255,0.5);">
+          <i class="fa-solid fa-shuffle"></i> Tất Cả Chủ Đề
+        </a>
+      </div>
+    </div>
+
     <!-- Category Grid -->
     <div id="categories-grid" class="grid-cols-3">
       <!-- Injected by JS -->
