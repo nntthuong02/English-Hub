@@ -59,6 +59,7 @@
 
   <script src="../js/firebase-config.js"></script>
   <script src="../js/db.js"></script>
+  <script src="../data/vocabulary-data.js"></script>
   <script src="../js/auth.js"></script>
   <script>
     const user = Auth.requireAuth();
@@ -70,13 +71,19 @@
     let score = 0;
     let mistakes = [];
 
-    fetch('../data/vocabulary.json')
-      .then(res => res.json())
-      .then(data => {
-        allWords = data;
-        generateQuiz();
-        renderQuestion();
-      });
+    function initVocabQuiz(data) {
+      allWords = data;
+      generateQuiz();
+      renderQuestion();
+    }
+    if (window.VOCABULARY_DATA) {
+      initVocabQuiz(window.VOCABULARY_DATA);
+    } else {
+      fetch('../data/vocabulary.json')
+        .then(res => res.json())
+        .then(data => initVocabQuiz(data))
+        .catch(e => console.error(e));
+    }
 
     function generateQuiz() {
       // Pick 10 random words

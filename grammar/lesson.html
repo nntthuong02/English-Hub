@@ -71,6 +71,7 @@
 
   <script src="../js/firebase-config.js"></script>
   <script src="../js/db.js"></script>
+  <script src="../data/grammar-data.js"></script>
   <script src="../js/auth.js"></script>
   <script>
     Auth.requireAuth();
@@ -79,12 +80,18 @@
     const urlParams = new URLSearchParams(window.location.search);
     const day = parseInt(urlParams.get('day') || '1');
 
-    fetch('../data/grammar.json')
-      .then(res => res.json())
-      .then(days => {
-        const item = days.find(d => d.day === day) || days[0];
-        renderLesson(item);
-      });
+    function initLesson(days) {
+      const item = days.find(d => d.day === day) || days[0];
+      renderLesson(item);
+    }
+    if (window.GRAMMAR_DATA) {
+      initLesson(window.GRAMMAR_DATA);
+    } else {
+      fetch('../data/grammar.json')
+        .then(res => res.json())
+        .then(days => initLesson(days))
+        .catch(e => console.error(e));
+    }
 
     function renderLesson(item) {
       document.getElementById('lesson-day').innerText = `DAY ${item.day < 10 ? '0' + item.day : item.day}`;

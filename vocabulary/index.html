@@ -56,6 +56,7 @@
 
   <script src="../js/firebase-config.js"></script>
   <script src="../js/db.js"></script>
+  <script src="../data/vocabulary-data.js"></script>
   <script src="../js/auth.js"></script>
   <script>
     const user = Auth.requireAuth();
@@ -64,13 +65,19 @@
     let allWords = [];
     let categoriesMap = {};
 
-    fetch('../data/vocabulary.json')
-      .then(res => res.json())
-      .then(data => {
-        allWords = data;
-        processCategories();
-        renderCategories();
-      });
+    function initVocab(data) {
+      allWords = data;
+      processCategories();
+      renderCategories();
+    }
+    if (window.VOCABULARY_DATA) {
+      initVocab(window.VOCABULARY_DATA);
+    } else {
+      fetch('../data/vocabulary.json')
+        .then(res => res.json())
+        .then(data => initVocab(data))
+        .catch(e => console.error(e));
+    }
 
     function processCategories() {
       const userProgress = DB.getVocabProgress(user.username);

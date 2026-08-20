@@ -79,6 +79,7 @@
 
   <script src="../js/firebase-config.js"></script>
   <script src="../js/db.js"></script>
+  <script src="../data/vocabulary-data.js"></script>
   <script src="../js/auth.js"></script>
   <script>
     const user = Auth.requireAuth();
@@ -90,13 +91,19 @@
     const urlParams = new URLSearchParams(window.location.search);
     const catFilter = urlParams.get('cat');
 
-    fetch('../data/vocabulary.json')
-      .then(res => res.json())
-      .then(data => {
-        words = catFilter ? data.filter(w => w.category === catFilter) : data;
-        if (words.length === 0) words = data;
-        renderCard();
-      });
+    function initDeck(data) {
+      words = catFilter ? data.filter(w => w.category === catFilter) : data;
+      if (words.length === 0) words = data;
+      renderCard();
+    }
+    if (window.VOCABULARY_DATA) {
+      initDeck(window.VOCABULARY_DATA);
+    } else {
+      fetch('../data/vocabulary.json')
+        .then(res => res.json())
+        .then(data => initDeck(data))
+        .catch(e => console.error(e));
+    }
 
     function renderCard() {
       const w = words[currentIndex];

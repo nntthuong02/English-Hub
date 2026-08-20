@@ -59,6 +59,7 @@
 
   <script src="../js/firebase-config.js"></script>
   <script src="../js/db.js"></script>
+  <script src="../data/grammar-data.js"></script>
   <script src="../js/auth.js"></script>
   <script>
     const user = Auth.requireAuth();
@@ -73,13 +74,19 @@
     let score = 0;
     let mistakes = [];
 
-    fetch('../data/grammar.json')
-      .then(res => res.json())
-      .then(days => {
-        currentLesson = days.find(d => d.day === day) || days[0];
-        questions = currentLesson.exercises;
-        renderGrammarQuestion();
-      });
+    function initQuiz(days) {
+      currentLesson = days.find(d => d.day === day) || days[0];
+      questions = currentLesson.exercises;
+      renderGrammarQuestion();
+    }
+    if (window.GRAMMAR_DATA) {
+      initQuiz(window.GRAMMAR_DATA);
+    } else {
+      fetch('../data/grammar.json')
+        .then(res => res.json())
+        .then(days => initQuiz(days))
+        .catch(e => console.error(e));
+    }
 
     function renderGrammarQuestion() {
       const q = questions[currentIndex];

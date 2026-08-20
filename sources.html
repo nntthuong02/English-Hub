@@ -60,6 +60,7 @@
 
   <script src="js/firebase-config.js"></script>
   <script src="js/db.js"></script>
+  <script src="data/sources-data.js"></script>
   <script src="js/auth.js"></script>
   <script>
     Auth.requireAuth();
@@ -68,13 +69,18 @@
     let allSources = null;
     let currentTab = 'lg';
 
-    fetch('data/crawled_sources.json')
-      .then(res => res.json())
-      .then(data => {
-        allSources = data;
-        renderSources();
-      })
-      .catch(e => console.error("Error loading sources:", e));
+    if (window.SOURCES_DATA) {
+      allSources = window.SOURCES_DATA;
+      renderSources();
+    } else {
+      fetch('data/crawled_sources.json')
+        .then(res => res.json())
+        .then(data => {
+          allSources = data;
+          renderSources();
+        })
+        .catch(e => console.error("Error loading sources:", e));
+    }
 
     function switchSourceTab(tab) {
       currentTab = tab;
