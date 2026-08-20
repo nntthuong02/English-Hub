@@ -3,9 +3,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard — English Hub</title>
+  <title>Bảng Điều Khiển — English Hub</title>
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+  <style>
+    .hub-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+    .hub-card {
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      border-radius: var(--radius-md);
+      padding: 1.8rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.25s ease;
+      box-shadow: var(--shadow-sm);
+      position: relative;
+      overflow: hidden;
+    }
+    .hub-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+    .hub-card-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.2rem;
+      margin-bottom: 1.2rem;
+    }
+    .hub-icon {
+      width: 60px;
+      height: 60px;
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      flex-shrink: 0;
+    }
+    .hub-actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.6rem;
+      margin-top: 1.2rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid var(--surface-border);
+    }
+    .quick-pill {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      padding: 0.6rem 0.8rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.88rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.15s ease;
+      text-align: center;
+    }
+    .quick-pill:hover {
+      transform: translateY(-1px);
+    }
+    .stat-badge {
+      font-size: 0.78rem;
+      font-weight: 800;
+      padding: 0.25rem 0.6rem;
+      border-radius: 50px;
+      display: inline-block;
+      margin-bottom: 0.3rem;
+    }
+  </style>
 </head>
 <body>
   <nav class="navbar">
@@ -16,7 +93,7 @@
     <ul class="nav-links">
       <li><a href="dashboard.html" class="active"><i class="fa-solid fa-house"></i> Trang chủ</a></li>
       <li><a href="vocabulary/index.html"><i class="fa-solid fa-book-open"></i> Từ Vựng</a></li>
-      <li><a href="grammar/index.html"><i class="fa-solid fa-pen-nib"></i> Ngữ Pháp (30 Ngày)</a></li>
+      <li><a href="grammar/index.html"><i class="fa-solid fa-pen-nib"></i> Ngữ Pháp</a></li>
       <li><a href="phonetics/index.html"><i class="fa-solid fa-volume-high"></i> Ngữ Âm & Trọng Âm</a></li>
       <li><a href="speaking/index.html"><i class="fa-solid fa-microphone-lines"></i> Luyện Nói</a></li>
       <li><a href="stats/index.html"><i class="fa-solid fa-chart-line"></i> Thống Kê</a></li>
@@ -26,173 +103,229 @@
     <div id="nav-user-badge" class="user-profile-badge"></div>
   </nav>
 
-  <div class="container">
-    <!-- Welcome Header -->
-    <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); color: white; border-radius: var(--radius-lg); padding: 2.2rem; margin-bottom: 2rem; box-shadow: var(--shadow-md); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem;">
-      <div>
-        <span class="badge" style="background: rgba(255,255,255,0.2); color: white; margin-bottom: 0.6rem;">Lộ trình học chuẩn IELTS</span>
-        <h1 id="welcome-title" style="font-size: 2rem; font-weight: 800; margin-bottom: 0.4rem;">Chào mừng trở lại!</h1>
-        <p style="opacity: 0.9; font-size: 1rem;">Hôm nay bạn muốn nâng cao vốn từ vựng hay chinh phục bài ngữ pháp mới?</p>
-      </div>
-      <div style="display: flex; gap: 0.75rem;">
-        <a href="vocabulary/learn.html" class="btn" style="background: white; color: var(--primary);">
-          <i class="fa-solid fa-bolt"></i> Học từ vựng ngay
-        </a>
-        <a href="grammar/mixed.html" class="btn" style="background: rgba(255,255,255,0.15); color: white; border: 1px solid rgba(255,255,255,0.3);"><i class="fa-solid fa-shuffle"></i> Luyện Đề Trộn</a>
-        <a href="grammar/index.html" class="btn btn-outline" style="color: white; border-color: rgba(255,255,255,0.4);">
-          <i class="fa-solid fa-calendar-check"></i> 30 Ngày Ngữ Pháp
-        </a>
-      </div>
-    </div>
-
-    <!-- Quick Stats Cards -->
-    <div class="grid-cols-4" style="margin-bottom: 2.5rem;">
-      <div class="card">
-        <div style="display: flex; align-items: center; gap: 1rem;">
-          <div style="width: 48px; height: 48px; border-radius: var(--radius-sm); background: var(--primary-light); color: var(--primary); display: flex; align-items: center; justify-content: center; font-size: 1.4rem;">
-            <i class="fa-solid fa-book"></i>
-          </div>
-          <div>
-            <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">Từ vựng đã học</div>
-            <div id="stat-words" style="font-size: 1.5rem; font-weight: 800; color: var(--text-main);">0 / 1020</div>
-          </div>
+  <div class="container" style="max-width: 1100px;">
+    <!-- Welcome Header & Live Stats Banner -->
+    <div style="background: linear-gradient(135deg, #1e1b4b 0%, #312e81 60%, #4338ca 100%); color:white; border-radius:var(--radius-md); padding:2.2rem 2.5rem; margin-bottom:2.5rem; box-shadow:var(--shadow-md);">
+      <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:1.5rem;">
+        <div>
+          <span class="badge" style="background:rgba(255,255,255,0.2); color:white; margin-bottom:0.4rem;">
+            <i class="fa-solid fa-shield-halved"></i> Hệ Thống Toàn Diện: Nghe • Nói • Đọc • Viết • Ngữ Pháp
+          </span>
+          <h1 id="welcome-title" style="font-size:2rem; font-weight:800; margin:0.3rem 0 0.5rem 0;">Chào mừng trở lại!</h1>
+          <p style="opacity:0.95; font-size:1.02rem; margin:0; max-width:650px;">
+            Hãy chọn một trong 4 kỹ năng cốt lõi bên dưới để bắt đầu học lý thuyết hoặc làm bài tập thực hành.
+          </p>
         </div>
-      </div>
 
-      <div class="card">
-        <div style="display: flex; align-items: center; gap: 1rem;">
-          <div style="width: 48px; height: 48px; border-radius: var(--radius-sm); background: var(--success-light); color: var(--success); display: flex; align-items: center; justify-content: center; font-size: 1.4rem;">
-            <i class="fa-solid fa-check-circle"></i>
+        <div style="display:flex; gap:1.2rem; background:rgba(255,255,255,0.1); padding:1rem 1.4rem; border-radius:var(--radius-sm); border:1px solid rgba(255,255,255,0.2);">
+          <div style="text-align:center;">
+            <div style="font-size:0.82rem; opacity:0.8;">CHUỖI NGÀY HỌC</div>
+            <div id="streak-count" style="font-size:1.6rem; font-weight:800; color:#fbbf24;"><i class="fa-solid fa-fire"></i> 1 ngày</div>
           </div>
-          <div>
-            <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">Bài ngữ pháp xong</div>
-            <div id="stat-grammar" style="font-size: 1.5rem; font-weight: 800; color: var(--text-main);">0 / 30</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div style="display: flex; align-items: center; gap: 1rem;">
-          <div style="width: 48px; height: 48px; border-radius: var(--radius-sm); background: rgba(76, 201, 240, 0.15); color: var(--accent); display: flex; align-items: center; justify-content: center; font-size: 1.4rem;">
-            <i class="fa-solid fa-award"></i>
-          </div>
-          <div>
-            <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">Bài kiểm tra đã làm</div>
-            <div id="stat-tests" style="font-size: 1.5rem; font-weight: 800; color: var(--text-main);">0</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div style="display: flex; align-items: center; gap: 1rem;">
-          <div style="width: 48px; height: 48px; border-radius: var(--radius-sm); background: var(--danger-light); color: var(--danger); display: flex; align-items: center; justify-content: center; font-size: 1.4rem;">
-            <i class="fa-solid fa-rotate-left"></i>
-          </div>
-          <div>
-            <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">Cần làm lại (câu sai)</div>
-            <div id="stat-mistakes" style="font-size: 1.5rem; font-weight: 800; color: var(--danger);">0 câu</div>
+          <div style="width:1px; background:rgba(255,255,255,0.2);"></div>
+          <div style="text-align:center;">
+            <div style="font-size:0.82rem; opacity:0.8;">BÀI ĐÃ HOÀN THÀNH</div>
+            <div id="completed-count" style="font-size:1.6rem; font-weight:800; color:#4ade80;">0 bài</div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Feature Modules Grid -->
-    <h2 style="font-size: 1.4rem; font-weight: 800; margin-bottom: 1.2rem;">Chương Trình Học Tập</h2>
-    <div class="grid-cols-3" style="margin-bottom: 3rem;">
-      <!-- Module 1: Từ Vựng -->
-      <div class="card card-hover" style="display:flex; flex-direction:column; justify-content:space-between;">
-        <div>
-          <div style="font-size: 2.2rem; color: var(--primary); margin-bottom: 1rem;"><i class="fa-solid fa-images"></i></div>
-          <h3 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 0.5rem;">Từ Vựng Hình Ảnh</h3>
-          <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.5; margin-bottom: 1.2rem;">
-            1000+ từ vựng phong phú được crawl từ LanguageGuide & TiengAnh123 kèm hình ảnh sinh động, phiên âm IPA, audio chuẩn và bài tập trắc nghiệm 4 dạng.
-          </p>
-        </div>
-        <div style="display: flex; gap: 0.5rem;">
-          <a href="vocabulary/learn.html" class="btn btn-primary" style="flex: 1;"><i class="fa-solid fa-layer-group"></i> Flashcard</a>
-          <a href="vocabulary/quiz.html" class="btn btn-outline"><i class="fa-solid fa-puzzle-piece"></i> Quiz</a>
-        </div>
-      </div>
+    <!-- Quick Navigation Hub -->
+    <div style="margin-bottom:1.5rem;">
+      <h2 style="font-size:1.4rem; font-weight:800; color:var(--text-main); margin-bottom:0.4rem;">
+        <i class="fa-solid fa-compass" style="color:var(--primary);"></i> Trung Tâm Điều Hướng 4 Kỹ Năng Cốt Lõi
+      </h2>
+      <p style="color:var(--text-muted); font-size:0.95rem; margin:0;">
+        Bấm trực tiếp vào các nút hành động để vào thẳng trang <strong>Học Lý Thuyết</strong> hoặc <strong>Luyện Bài Tập</strong>:
+      </p>
+    </div>
 
-      <!-- Module 2: Ngữ Pháp -->
-      <div class="card card-hover" style="display:flex; flex-direction:column; justify-content:space-between;">
+    <!-- 4 Core Hub Cards Grid -->
+    <div class="hub-grid">
+      
+      <!-- Card 1: Từ Vựng (Vocabulary) -->
+      <div class="hub-card" style="border-top: 4px solid #3b82f6;">
         <div>
-          <div style="font-size: 2.2rem; color: var(--secondary); margin-bottom: 1rem;"><i class="fa-solid fa-graduation-cap"></i></div>
-          <h3 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 0.5rem;">30 Ngày Ngữ Pháp IELTS</h3>
-          <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.5; margin-bottom: 1.2rem;">
-            Lộ trình 30 ngày bao phủ toàn diện 8 thì cơ bản, từ loại, câu bị động, mệnh đề quan hệ, điều kiện và ngữ pháp chuyên đề IELTS 7.0+.
-          </p>
-        </div>
-        <div style="display: flex; gap: 0.5rem;">
-          <a href="grammar/index.html" class="btn btn-primary" style="flex: 1;"><i class="fa-solid fa-list-ol"></i> 30 Ngày</a>
-          <a href="grammar/lesson.html?day=1" class="btn btn-outline"><i class="fa-solid fa-play"></i> Day 1</a>
-        </div>
-      </div>
-
-            <!-- Module 4: Ngữ Âm & Trọng Âm -->
-      <div class="card card-hover" style="display:flex; flex-direction:column; justify-content:space-between; border-top: 4px solid #0d9488;">
-        <div>
-          <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom: 1rem;">
-            <div style="font-size: 2.2rem; color: #0d9488;"><i class="fa-solid fa-volume-high"></i></div>
-            <span class="badge" style="background:#ccfbf1; color:#0f766e; font-weight:700;">ZIM & VietJack</span>
+          <div class="hub-card-header">
+            <div class="hub-icon" style="background:#eff6ff; color:#2563eb;">
+              <i class="fa-solid fa-book-open"></i>
+            </div>
+            <div>
+              <span class="stat-badge" style="background:#dbeafe; color:#1e40af;">1020 TỪ • 23 CHỦ ĐỀ</span>
+              <h3 style="font-size:1.3rem; font-weight:800; color:var(--text-main); margin:0;">1. Từ Vựng & Thẻ 3D</h3>
+              <p style="font-size:0.85rem; color:var(--text-muted); margin:0.2rem 0 0 0;">Nguồn: LanguageGuide.org & Unsplash HD</p>
+            </div>
           </div>
-          <h3 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 0.5rem;">Ngữ Âm & Trọng Âm</h3>
-          <p style="color: var(--text-muted); font-size: 0.92rem; line-height: 1.5; margin-bottom: 1.2rem;">
-            Trọn bộ lý thuyết 44 âm IPA (20 nguyên âm, 24 phụ âm, quy tắc đuôi -ed, -s/-es từ ZIM) và 200 câu trắc nghiệm chia 4 bộ đề từ VietJack.
+          <p style="font-size:0.92rem; color:var(--text-main); line-height:1.5; margin:0;">
+            Học từ vựng qua hình ảnh trực quan, thẻ Flashcard 3D lặp lại ngắt quãng (SRS) và các thử thách nghe nhận diện hình ảnh.
           </p>
         </div>
-        <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
-          <a href="phonetics/theory.html" class="btn" style="background:#0d9488; color:white; flex:1; text-align:center; font-size:0.9rem; padding:0.6rem 0.8rem;">
-            <i class="fa-solid fa-book-open"></i> Học Lý Thuyết IPA
+
+        <div class="hub-actions">
+          <a href="vocabulary/learn.html?cat=fruits" class="quick-pill" style="background:#2563eb; color:white;">
+            <i class="fa-solid fa-layer-group"></i> Học Flashcard 3D
           </a>
-          <a href="phonetics/index.html" class="btn btn-outline" style="border-color:#0d9488; color:#0d9488; flex:1; text-align:center; font-size:0.9rem; padding:0.6rem 0.8rem;">
-            <i class="fa-solid fa-pen-to-square"></i> Luyện Đề (50c)
+          <a href="vocabulary/quiz.html?cat=fruits" class="quick-pill" style="background:#eff6ff; color:#1d4ed8; border:1px solid #bfdbfe;">
+            <i class="fa-solid fa-headphones"></i> Luyện Nghe & Nối Từ
+          </a>
+          <a href="vocabulary/index.html" class="quick-pill" style="grid-column: span 2; background:var(--bg); color:var(--text-main); border:1px solid var(--surface-border);">
+            <i class="fa-solid fa-list-ul"></i> Xem Danh Mục 23 Chủ Đề
           </a>
         </div>
       </div>
 
-      <!-- Module 3: Luyện Nói (Coming soon / placeholder) -->
-      <div class="card card-hover" style="display:flex; flex-direction:column; justify-content:space-between; opacity: 0.9;">
+      <!-- Card 2: Ngữ Pháp (Grammar) -->
+      <div class="hub-card" style="border-top: 4px solid #059669;">
         <div>
-          <div style="font-size: 2.2rem; color: var(--accent); margin-bottom: 1rem;"><i class="fa-solid fa-microphone-lines"></i></div>
-          <div style="display: flex; align-items:center; gap:0.5rem; margin-bottom: 0.5rem;">
-            <h3 style="font-size: 1.25rem; font-weight: 800;">Luyện Nói & Phát Âm</h3>
-            <span class="badge" style="background:#fef3c7; color:#b45309;">Update Sau</span>
+          <div class="hub-card-header">
+            <div class="hub-icon" style="background:#ecfdf5; color:#059669;">
+              <i class="fa-solid fa-pen-nib"></i>
+            </div>
+            <div>
+              <span class="stat-badge" style="background:#d1fae5; color:#065f46;">30 DAY IELTS • 5 PHẦN CHUẨN</span>
+              <h3 style="font-size:1.3rem; font-weight:800; color:var(--text-main); margin:0;">2. Ngữ Pháp IELTS</h3>
+              <p style="font-size:0.85rem; color:var(--text-muted); margin:0.2rem 0 0 0;">Nguồn: IELTS Fighter & BaiTapTracNghiem</p>
+            </div>
           </div>
-          <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.5; margin-bottom: 1.2rem;">
-            Nhận diện giọng nói AI và phản xạ đàm thoại tiếng Anh thực tế (đang được hoàn thiện theo lộ trình).
+          <p style="font-size:0.92rem; color:var(--text-main); line-height:1.5; margin:0;">
+            Giáo trình 30 ngày từ Thì cơ bản đến Mệnh đề nâng cao, luyện đề theo 8 chủ đề và đề trộn ngẫu nhiên phản xạ nhanh.
           </p>
         </div>
-        <button class="btn btn-outline" disabled style="cursor: not-allowed; opacity: 0.6;">
-          <i class="fa-solid fa-lock"></i> Đang phát triển
-        </button>
+
+        <div class="hub-actions">
+          <a href="grammar/lesson.html?day=1" class="quick-pill" style="background:#059669; color:white;">
+            <i class="fa-solid fa-book-bookmark"></i> Học Lý Thuyết 30 Day
+          </a>
+          <a href="grammar/mixed.html" class="quick-pill" style="background:#ecfdf5; color:#047857; border:1px solid #a7f3d0;">
+            <i class="fa-solid fa-shuffle"></i> Luyện Đề Trộn Các Thì
+          </a>
+          <a href="grammar/index.html" class="quick-pill" style="grid-column: span 2; background:var(--bg); color:var(--text-main); border:1px solid var(--surface-border);">
+            <i class="fa-solid fa-map-location-dot"></i> Lộ Trình 30 Ngày Chi Tiết
+          </a>
+        </div>
       </div>
-    </div>
-    <!-- Scientific Methods Banner -->
-    <div class="card" style="margin-top:2.5rem; background:linear-gradient(135deg, #1e1b4b 0%, #312e81 100%); color:white; padding:2rem; border-radius:var(--radius-md); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1.5rem;">
-      <div style="max-width:650px;">
-        <span class="badge" style="background:rgba(255,255,255,0.2); color:white; margin-bottom:0.4rem;">
-          <i class="fa-solid fa-microscope"></i> Cơ Sở Khoa Học & Ngữ Học
-        </span>
-        <h3 style="font-size:1.4rem; font-weight:800; margin-bottom:0.4rem;">8 Phương Pháp Học Tiếng Anh Theo Nghiên Cứu Khoa Học</h3>
-        <p style="opacity:0.9; font-size:0.95rem; margin:0; line-height:1.5;">
-          Khám phá các nguyên lý khoa học đằng sau hệ thống: Lặp lại ngắt quãng (SRS), Thuyết đầu vào nghe hiểu (Krashen $i+1$), Chủ động gợi nhớ (Active Recall), Thuyết mã hóa kép (LanguageGuide) và Luyện tập xen kẽ.
-        </p>
+
+      <!-- Card 3: Ngữ Âm & Trọng Âm (Phonetics & Stress) -->
+      <div class="hub-card" style="border-top: 4px solid #d97706;">
+        <div>
+          <div class="hub-card-header">
+            <div class="hub-icon" style="background:#fffbeb; color:#d97706;">
+              <i class="fa-solid fa-volume-high"></i>
+            </div>
+            <div>
+              <span class="stat-badge" style="background:#fef3c7; color:#92400e;">44 ÂM IPA • 400 CÂU THI</span>
+              <h3 style="font-size:1.3rem; font-weight:800; color:var(--text-main); margin:0;">3. Ngữ Âm & Trọng Âm</h3>
+              <p style="font-size:0.85rem; color:var(--text-muted); margin:0.2rem 0 0 0;">Nguồn: ZIM Academy & VietJack.com</p>
+            </div>
+          </div>
+          <p style="font-size:0.92rem; color:var(--text-main); line-height:1.5; margin:0;">
+            Lý thuyết 44 âm IPA, 15 quy tắc đánh trọng âm, quy tắc đuôi -ed/-s và 4 bộ đề trắc nghiệm chuẩn 50 câu/đề có đáp án giải thích.
+          </p>
+        </div>
+
+        <div class="hub-actions">
+          <a href="phonetics/theory.html" class="quick-pill" style="background:#d97706; color:white;">
+            <i class="fa-solid fa-graduation-cap"></i> Lý Thuyết IPA & Trọng Âm
+          </a>
+          <a href="phonetics/index.html" class="quick-pill" style="background:#fffbeb; color:#b45309; border:1px solid #fde68a;">
+            <i class="fa-solid fa-file-lines"></i> Luyện Bộ Đề 50 Câu
+          </a>
+          <a href="phonetics/theory.html" class="quick-pill" style="grid-column: span 2; background:var(--bg); color:var(--text-main); border:1px solid var(--surface-border);">
+            <i class="fa-solid fa-star"></i> Xem 15 Quy Tắc Vàng ZIM
+          </a>
+        </div>
       </div>
-      <a href="docs/methods.html" class="btn" style="background:white; color:#312e81; font-weight:800; padding:0.8rem 1.6rem; border-radius:var(--radius-sm); white-space:nowrap;">
-        <i class="fa-solid fa-book-open"></i> Đọc Tài Liệu Phương Pháp
-      </a>
+
+      <!-- Card 4: Luyện Nói & Chấm Điểm (Speaking & Pronunciation) -->
+      <div class="hub-card" style="border-top: 4px solid #9333ea;">
+        <div>
+          <div class="hub-card-header">
+            <div class="hub-icon" style="background:#f3e8ff; color:#9333ea;">
+              <i class="fa-solid fa-microphone-lines"></i>
+            </div>
+            <div>
+              <span class="stat-badge" style="background:#f3e8ff; color:#7e22ce;">WEB SPEECH • REAL-TIME 🎙️</span>
+              <h3 style="font-size:1.3rem; font-weight:800; color:var(--text-main); margin:0;">4. Luyện Nói & Chấm Điểm</h3>
+              <p style="font-size:0.85rem; color:var(--text-muted); margin:0.2rem 0 0 0;">Nhận diện giọng nói & Thu âm Shadowing</p>
+            </div>
+          </div>
+          <p style="font-size:0.92rem; color:var(--text-main); line-height:1.5; margin:0;">
+            Luyện phát âm 1000+ từ vựng, phân biệt cặp âm Minimal Pairs, luyện nói câu giao tiếp IELTS và thu âm đối chiếu ngữ điệu bản xứ.
+          </p>
+        </div>
+
+        <div class="hub-actions">
+          <a href="speaking/index.html" class="quick-pill" style="background:#9333ea; color:white;">
+            <i class="fa-solid fa-microphone"></i> Luyện Phát Âm 1000 Từ
+          </a>
+          <a href="speaking/index.html" class="quick-pill" style="background:#f3e8ff; color:#7e22ce; border:1px solid #d8b4fe;">
+            <i class="fa-solid fa-comments"></i> Luyện Câu IELTS
+          </a>
+          <a href="speaking/index.html" class="quick-pill" style="grid-column: span 2; background:var(--bg); color:var(--text-main); border:1px solid var(--surface-border);">
+            <i class="fa-solid fa-circle-nodes"></i> Thu Âm Shadowing Đối Chiếu
+          </a>
+        </div>
+      </div>
+
     </div>
+
+    <!-- Secondary Utilities Row: Stats, Methods, Crawled Sources -->
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:1.5rem; margin-bottom:2.5rem;">
+      
+      <!-- Utility 1: Mistake Bank & Stats -->
+      <div class="card" style="padding:1.5rem; display:flex; align-items:center; justify-content:space-between; border-left:4px solid #ef4444;">
+        <div>
+          <h4 style="font-size:1.1rem; font-weight:800; color:var(--text-main); margin:0 0 0.3rem 0;">
+            <i class="fa-solid fa-clock-rotate-left" style="color:#ef4444;"></i> Ngân Hàng Lỗi Sai & Thống Kê
+          </h4>
+          <p style="font-size:0.88rem; color:var(--text-muted); margin:0;">
+            Tự động lưu các câu làm sai để ôn tập lại ngắt quãng (SRS).
+          </p>
+        </div>
+        <a href="stats/index.html" class="btn btn-outline" style="padding:0.5rem 0.9rem; font-size:0.85rem; border-color:#ef4444; color:#ef4444; white-space:nowrap;">
+          Xem Lỗi Sai
+        </a>
+      </div>
+
+      <!-- Utility 2: Scientific Methods -->
+      <div class="card" style="padding:1.5rem; display:flex; align-items:center; justify-content:space-between; border-left:4px solid #4338ca;">
+        <div>
+          <h4 style="font-size:1.1rem; font-weight:800; color:var(--text-main); margin:0 0 0.3rem 0;">
+            <i class="fa-solid fa-brain" style="color:#4338ca;"></i> 8 Phương Pháp Học Khoa Học
+          </h4>
+          <p style="font-size:0.88rem; color:var(--text-muted); margin:0;">
+            Nghiên cứu của Krashen $i+1$, Ebbinghaus SRS, Dual Coding...
+          </p>
+        </div>
+        <a href="docs/methods.html" class="btn btn-outline" style="padding:0.5rem 0.9rem; font-size:0.85rem; border-color:#4338ca; color:#4338ca; white-space:nowrap;">
+          Đọc Tài Liệu
+        </a>
+      </div>
+
+      <!-- Utility 3: Sources -->
+      <div class="card" style="padding:1.5rem; display:flex; align-items:center; justify-content:space-between; border-left:4px solid #0284c7;">
+        <div>
+          <h4 style="font-size:1.1rem; font-weight:800; color:var(--text-main); margin:0 0 0.3rem 0;">
+            <i class="fa-solid fa-link" style="color:#0284c7;"></i> Nguồn Dữ Liệu Crawl Chuẩn
+          </h4>
+          <p style="font-size:0.88rem; color:var(--text-muted); margin:0;">
+            VietJack, ZIM Academy, BaiTapTracNghiem, LanguageGuide.
+          </p>
+        </div>
+        <a href="sources.html" class="btn btn-outline" style="padding:0.5rem 0.9rem; font-size:0.85rem; border-color:#0284c7; color:#0284c7; white-space:nowrap;">
+          Xem Nguồn
+        </a>
+      </div>
+
+    </div>
+
   </div>
 
   <footer>
-    English Hub © 2026 — Thiết kế tối ưu cho học viên IELTS & Tiếng Anh giao tiếp.
+    English Hub © 2026 — Nền tảng học tiếng Anh toàn diện 4 kỹ năng Nghe • Nói • Đọc • Viết • Ngữ Pháp.
   </footer>
 
-    <!-- Firebase App & Firestore SDKs -->
-  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
   <script src="js/firebase-config.js"></script>
   <script src="js/db.js"></script>
   <script src="js/auth.js"></script>
@@ -201,13 +334,16 @@
     Auth.updateNavbar();
 
     if (user) {
-      document.getElementById('welcome-title').innerText = `Chào mừng trở lại, ${user.displayName}!`;
+      document.getElementById('welcome-title').innerText = `Chào mừng trở lại, ${user.displayName || user.username || 'bạn'}! 👋`;
       
-      const stats = DB.getStats(user.username);
-      document.getElementById('stat-words').innerText = `${stats.totalLearnedVocab} / 1020`;
-      document.getElementById('stat-grammar').innerText = `${stats.totalGrammarDone} / 30`;
-      document.getElementById('stat-tests').innerText = stats.totalQuizzes;
-      document.getElementById('stat-mistakes').innerText = `${stats.mistakesCount} câu`;
+      DB.getUserProgress(user.username).then(progress => {
+        if (progress) {
+          const streak = progress.streak || 1;
+          const completed = (progress.grammarCompleted ? progress.grammarCompleted.length : 0) + (progress.vocabMastered ? progress.vocabMastered.length : 0);
+          document.getElementById('streak-count').innerHTML = `<i class="fa-solid fa-fire"></i> ${streak} ngày`;
+          document.getElementById('completed-count').innerText = `${completed} bài`;
+        }
+      });
     }
   </script>
 </body>
