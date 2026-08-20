@@ -6,6 +6,10 @@
   <title>Lý Thuyết Ngữ Pháp — English Hub</title>
   <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
 </head>
 <body>
   <nav class="navbar">
@@ -23,82 +27,98 @@
     <div id="nav-user-badge" class="user-profile-badge"></div>
   </nav>
 
-  <div class="container" style="max-width: 920px;">
+  <div class="container" style="max-width: 960px;">
+    <!-- Navigation row -->
     <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1.5rem;">
       <a href="index.html" class="btn btn-outline"><i class="fa-solid fa-arrow-left"></i> Trở về 30 ngày</a>
-      <a id="start-quiz-btn" href="quiz.html?day=1" class="btn btn-primary"><i class="fa-solid fa-pen"></i> Làm bài tập ngay</a>
+      <a id="start-quiz-btn" href="quiz.html?day=1" class="btn btn-primary" style="padding:0.65rem 1.4rem; font-size:1rem;">
+        <i class="fa-solid fa-pen-to-square"></i> V. Làm Bài Tập Thực Hành (Quiz)
+      </a>
     </div>
 
     <div class="card" style="padding:2.5rem; margin-bottom:2rem; box-shadow:var(--shadow-md);">
       <div style="display:flex; gap:0.5rem; align-items:center; margin-bottom:0.8rem;">
         <span class="badge badge-primary" id="lesson-day">DAY 01</span>
         <span class="badge badge-success" id="lesson-level">A1-A2</span>
-        <span class="badge" style="background:#e0f2fe; color:#0369a1;" id="lesson-source">Sách IELTS Fighter</span>
+        <span class="badge" style="background:#e0f2fe; color:#0369a1;" id="lesson-source">Sách IELTS Fighter — Trang 4</span>
       </div>
-      <h1 id="lesson-title" style="font-size:2.2rem; font-weight:800; color:var(--primary); margin-bottom:0.3rem;">Present Simple Tense</h1>
-      <h2 id="lesson-title-vi" style="font-size:1.25rem; font-weight:600; color:var(--text-muted); margin-bottom:1.5rem;">Thì Hiện tại đơn</h2>
+      <h1 id="lesson-title" style="font-size:2.2rem; font-weight:800; color:var(--primary); margin-bottom:0.3rem;">Present simple tense</h1>
+      <h2 id="lesson-title-vi" style="font-size:1.3rem; font-weight:600; color:var(--text-muted); margin-bottom:1.5rem;">(Thì Hiện tại đơn)</h2>
 
-      <hr style="border:0; border-top:1px solid var(--surface-border); margin-bottom:1.8rem;">
+      <hr style="border:0; border-top:1px solid var(--surface-border); margin-bottom:2rem;">
 
-      <!-- I. Overview -->
-      <div style="margin-bottom:2.2rem;">
-        <h3 style="font-size:1.25rem; font-weight:700; margin-bottom:0.6rem; color:var(--primary);">
-          <i class="fa-solid fa-circle-info"></i> I. Tổng Quan & Định Nghĩa
+      <!-- SECTION I: CÔNG THỨC & LƯU Ý -->
+      <div style="margin-bottom:2.5rem;">
+        <h3 style="font-size:1.3rem; font-weight:800; margin-bottom:1rem; color:var(--primary);">
+          <i class="fa-solid fa-table-list"></i> I. CÔNG THỨC
         </h3>
-        <p id="lesson-overview" style="line-height:1.65; color:var(--text-main); font-size:1rem;"></p>
+        <div id="formulas-container" style="display:flex; flex-direction:column; gap:1.2rem;"></div>
+
+        <!-- LƯU Ý -->
+        <div style="margin-top:1.5rem; background:#fffbeb; border-left:4px solid var(--warning); padding:1.2rem 1.5rem; border-radius:0 var(--radius-sm) var(--radius-sm) 0;">
+          <h4 style="font-size:1.05rem; font-weight:800; color:#b45309; margin-bottom:0.6rem;">
+            <i class="fa-solid fa-triangle-exclamation"></i> LƯU Ý QUAN TRỌNG
+          </h4>
+          <ul id="notes-list" style="padding-left:1.3rem; line-height:1.75; font-size:0.95rem; color:#78350f;"></ul>
+        </div>
       </div>
 
-      <!-- II. Formulas Table -->
-      <div style="margin-bottom:2.2rem;">
-        <h3 style="font-size:1.25rem; font-weight:700; margin-bottom:0.8rem; color:var(--primary);">
-          <i class="fa-solid fa-table-list"></i> II. Cấu Trúc & Công Thức
+      <!-- SECTION II: DẤU HIỆU NHẬN BIẾT -->
+      <div style="margin-bottom:2.5rem; background:linear-gradient(135deg, rgba(76, 201, 240, 0.08) 0%, rgba(67, 97, 238, 0.04) 100%); border:1px solid rgba(76, 201, 240, 0.3); border-radius:var(--radius-md); padding:1.8rem;">
+        <h3 style="font-size:1.3rem; font-weight:800; margin-bottom:0.8rem; color:#0284c7;">
+          <i class="fa-solid fa-magnifying-glass-chart"></i> II. DẤU HIỆU NHẬN BIẾT
         </h3>
-        <div id="formulas-list" style="display:flex; flex-direction:column; gap:0.85rem;"></div>
+        <p style="font-size:0.92rem; color:var(--text-muted); margin-bottom:1rem;">Các từ / cụm từ then chốt giúp bạn nhận diện ngay thì và cấu trúc khi làm bài thi:</p>
+        <div id="signal-words-box" style="display:flex; flex-wrap:wrap; gap:0.6rem;"></div>
       </div>
 
-      <!-- III. Signal Words (DẤU HIỆU NHẬN BIẾT) -->
-      <div style="margin-bottom:2.2rem; background:linear-gradient(135deg, rgba(76, 201, 240, 0.1) 0%, rgba(67, 97, 238, 0.05) 100%); border:1px solid rgba(76, 201, 240, 0.3); border-radius:var(--radius-md); padding:1.5rem;">
-        <h3 style="font-size:1.25rem; font-weight:700; margin-bottom:0.8rem; color:#0284c7;">
-          <i class="fa-solid fa-magnifying-glass-chart"></i> III. Dấu Hiệu Nhận Biết (Signal Words)
+      <!-- SECTION III: CHỨC NĂNG THÌ & VÍ DỤ PHÂN TÍCH -->
+      <div style="margin-bottom:2.5rem;">
+        <h3 style="font-size:1.3rem; font-weight:800; margin-bottom:1rem; color:var(--secondary);">
+          <i class="fa-solid fa-brain"></i> III. CHỨC NĂNG THÌ & PHÂN TÍCH VÍ DỤ
         </h3>
-        <p style="font-size:0.9rem; color:var(--text-muted); margin-bottom:0.8rem;">Các từ / cụm từ then chốt giúp bạn nhận diện ngay thì và cấu trúc khi làm bài thi:</p>
-        <div id="signal-words-box" style="display:flex; flex-wrap:wrap; gap:0.5rem;"></div>
+        <div id="functions-container" style="display:flex; flex-direction:column; gap:1rem;"></div>
       </div>
 
-      <!-- IV. Rules -->
-      <div style="margin-bottom:2.2rem;">
-        <h3 style="font-size:1.25rem; font-weight:700; margin-bottom:0.8rem; color:var(--warning);">
-          <i class="fa-solid fa-lightbulb"></i> IV. Quy Tắc & Lưu Ý Quan Trọng
+      <!-- SECTION IV: CÁCH SỬ DỤNG TRONG IELTS -->
+      <div style="margin-bottom:2.5rem; background:var(--bg); border:1px solid var(--surface-border); border-radius:var(--radius-md); padding:1.8rem;">
+        <h3 style="font-size:1.3rem; font-weight:800; margin-bottom:1.2rem; color:#4338ca;">
+          <i class="fa-solid fa-award"></i> IV. CÁCH SỬ DỤNG TRONG IELTS
         </h3>
-        <ul id="rules-list" style="padding-left:1.5rem; line-height:1.8; color:var(--text-main);"></ul>
+        
+        <div style="margin-bottom:1.2rem;">
+          <h4 style="font-size:1.05rem; font-weight:700; color:var(--primary); margin-bottom:0.5rem;">
+            <i class="fa-solid fa-microphone"></i> a. Mở đầu Speaking Part 1 / 2 / 3 & Writing Task 1 / 2:
+          </h4>
+          <ul id="ielts-speaking-list" style="padding-left:1.3rem; line-height:1.75; font-size:0.95rem; color:var(--text-main);"></ul>
+        </div>
+
+        <div>
+          <h4 style="font-size:1.05rem; font-weight:700; color:var(--secondary); margin-bottom:0.5rem;">
+            <i class="fa-solid fa-pen-nib"></i> b. Mô tả sự thật khách quan trong Speaking / Writing:
+          </h4>
+          <ul id="ielts-writing-list" style="padding-left:1.3rem; line-height:1.75; font-size:0.95rem; color:var(--text-main);"></ul>
+        </div>
       </div>
 
-      <!-- V. Examples -->
-      <div style="margin-bottom:2.2rem;">
-        <h3 style="font-size:1.25rem; font-weight:700; margin-bottom:0.8rem; color:var(--success);">
-          <i class="fa-solid fa-quote-left"></i> V. Ví Dụ Minh Họa Chuẩn IELTS
+      <!-- SECTION V: LUYỆN TẬP (Callout) -->
+      <div style="text-align:center; background:linear-gradient(135deg, var(--primary-light) 0%, #ede9fe 100%); border-radius:var(--radius-md); padding:2rem; border:1px solid rgba(67, 97, 238, 0.2);">
+        <h3 style="font-size:1.3rem; font-weight:800; color:var(--primary); margin-bottom:0.5rem;">
+          <i class="fa-solid fa-circle-check"></i> V. LUYỆN TẬP & CỦNG CỐ KIẾN THỨC
         </h3>
-        <div id="examples-list" style="display:flex; flex-direction:column; gap:0.75rem;"></div>
+        <p style="color:var(--text-muted); margin-bottom:1.2rem;">Làm bài tập trắc nghiệm, tìm lỗi sai, điền từ và sắp xếp câu để tự động chấm điểm và lưu tiến trình.</p>
+        <a id="bottom-quiz-btn" href="quiz.html?day=1" class="btn btn-primary" style="padding:0.75rem 2rem; font-size:1.05rem;">
+          <i class="fa-solid fa-play"></i> Bắt đầu làm bài tập Day này
+        </a>
       </div>
 
-      <!-- VI. IELTS Application -->
-      <div style="margin-bottom:1rem; background:var(--bg); border:1px solid var(--surface-border); border-radius:var(--radius-md); padding:1.5rem;">
-        <h3 style="font-size:1.25rem; font-weight:700; margin-bottom:0.8rem; color:var(--secondary);">
-          <i class="fa-solid fa-award"></i> VI. Ứng Dụng Trong Bài Thi IELTS Speaking & Writing
-        </h3>
-        <div id="ielts-app-box" style="line-height:1.7; font-size:0.95rem; color:var(--text-main);"></div>
-      </div>
     </div>
   </div>
 
   <footer>
-    English Hub © 2026 — Giáo trình chuẩn hóa 30 Ngày Ngữ Pháp IELTS Fighter.
+    English Hub © 2026 — Giáo trình chuẩn hóa 30 Ngày Phủ Xanh IELTS Fighter.
   </footer>
 
-    <!-- Firebase App & Firestore SDKs -->
-  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
   <script src="../js/firebase-config.js"></script>
   <script src="../js/db.js"></script>
   <script src="../data/grammar-data.js"></script>
@@ -128,55 +148,70 @@
       document.getElementById('lesson-day').innerText = `DAY ${item.day < 10 ? '0' + item.day : item.day}`;
       document.getElementById('lesson-level').innerText = item.level;
       document.getElementById('lesson-title').innerText = item.title;
-      document.getElementById('lesson-title-vi').innerText = item.titleVi;
-      document.getElementById('lesson-source').innerText = item.theory.pdfSource || 'IELTS Fighter';
+      document.getElementById('lesson-title-vi').innerText = `(${item.titleVi})`;
+      document.getElementById('lesson-source').innerText = item.theory.pdfSource || `Sách IELTS Fighter — Trang ${item.pageInPdf}`;
       document.getElementById('start-quiz-btn').href = `quiz.html?day=${item.day}`;
-      document.getElementById('lesson-overview').innerText = item.theory.overview;
+      document.getElementById('bottom-quiz-btn').href = `quiz.html?day=${item.day}`;
 
-      // Formulas
-      const fList = document.getElementById('formulas-list');
-      fList.innerHTML = item.theory.formulas.map(f => `
-        <div style="background:var(--bg); border:1px solid var(--surface-border); border-radius:var(--radius-sm); padding:1.2rem;">
-          <div style="font-weight:700; color:var(--primary); margin-bottom:0.3rem;">${f.type}:</div>
-          <div style="font-family:monospace; font-size:1.05rem; font-weight:700; background:var(--surface); padding:0.5rem 0.9rem; border-radius:6px; border:1px dashed var(--primary); margin-bottom:0.5rem; display:inline-block;">${f.rule}</div>
-          <div style="color:var(--text-muted); font-size:0.92rem;"><strong>Ví dụ:</strong> ${f.example}</div>
+      // I. Formulas
+      const fContainer = document.getElementById('formulas-container');
+      fContainer.innerHTML = item.theory.formulas.map(f => `
+        <div style="background:var(--bg); border:1px solid var(--surface-border); border-radius:var(--radius-sm); padding:1.3rem;">
+          <h4 style="font-size:1.05rem; font-weight:800; color:var(--primary); margin-bottom:0.8rem;">${f.category}</h4>
+          <div style="display:grid; grid-template-columns: 1fr 1fr; gap:1rem; margin-bottom:0.8rem;">
+            <div style="background:var(--surface); border:1px solid var(--surface-border); border-radius:var(--radius-sm); padding:0.8rem 1rem;">
+              <strong style="color:var(--secondary); display:block; margin-bottom:0.3rem;">Động từ "to be":</strong>
+              <div style="font-family:monospace; font-weight:700; color:var(--primary);">${f.tobe}</div>
+            </div>
+            <div style="background:var(--surface); border:1px solid var(--surface-border); border-radius:var(--radius-sm); padding:0.8rem 1rem;">
+              <strong style="color:var(--secondary); display:block; margin-bottom:0.3rem;">Động từ chỉ hành động:</strong>
+              <div style="font-family:monospace; font-weight:700; color:var(--primary);">${f.actionVerb}</div>
+            </div>
+          </div>
+          <div>
+            <strong style="font-size:0.88rem; color:var(--text-muted);">Ví dụ minh họa:</strong>
+            <ul style="padding-left:1.2rem; font-size:0.92rem; color:var(--text-main); margin-top:0.3rem; line-height:1.6;">
+              ${f.examples.map(ex => `<li>${ex}</li>`).join('')}
+            </ul>
+          </div>
         </div>
       `).join('');
 
-      // Signal Words (Dấu hiệu nhận biết)
+      // Notes
+      const nList = document.getElementById('notes-list');
+      nList.innerHTML = item.theory.notes.map(n => `<li>${n}</li>`).join('');
+
+      // II. Signal Words
       const swBox = document.getElementById('signal-words-box');
       const sigs = item.theory.signalWords || [];
       swBox.innerHTML = sigs.map(s => `
-        <span style="background:var(--surface); border:1px solid #7dd3fc; color:#0369a1; padding:0.4rem 0.8rem; border-radius:50px; font-size:0.88rem; font-weight:600; box-shadow:var(--shadow-sm);">
+        <span style="background:var(--surface); border:1px solid #7dd3fc; color:#0369a1; padding:0.4rem 0.9rem; border-radius:50px; font-size:0.9rem; font-weight:600; box-shadow:var(--shadow-sm);">
           <i class="fa-solid fa-tag" style="font-size:0.75rem; margin-right:0.3rem;"></i> ${s}
         </span>
       `).join('');
 
-      // Rules
-      const rList = document.getElementById('rules-list');
-      rList.innerHTML = item.theory.rules.map(r => `<li>${r}</li>`).join('');
-
-      // Examples
-      const eList = document.getElementById('examples-list');
-      eList.innerHTML = item.theory.examples.map(ex => `
-        <div style="background:var(--success-light); border-left:4px solid var(--success); padding:0.85rem 1.2rem; border-radius:0 var(--radius-sm) var(--radius-sm) 0;">
-          <div style="font-weight:700; color:var(--text-main); font-size:1rem;">${ex.en}</div>
-          <div style="color:var(--text-muted); font-size:0.9rem; margin-top:0.2rem;">${ex.vi}</div>
+      // III. Functions & Analysis
+      const funcContainer = document.getElementById('functions-container');
+      funcContainer.innerHTML = item.theory.functions.map((fn, idx) => `
+        <div style="background:var(--bg); border:1px solid var(--surface-border); border-radius:var(--radius-sm); padding:1.2rem;">
+          <h4 style="font-size:1rem; font-weight:800; color:var(--text-main); margin-bottom:0.4rem;">${fn.title}</h4>
+          <div style="background:var(--success-light); border-left:3px solid var(--success); padding:0.6rem 1rem; border-radius:0 4px 4px 0; font-weight:700; color:var(--text-main); margin-bottom:0.4rem;">
+            ${fn.example}
+          </div>
+          <div style="font-size:0.9rem; color:var(--text-muted);">
+            <i class="fa-solid fa-arrow-right" style="color:var(--primary); font-size:0.8rem; margin-right:0.3rem;"></i> <strong>Phân tích:</strong> ${fn.analysis}
+          </div>
         </div>
       `).join('');
 
-      // IELTS Application
-      const ieltsBox = document.getElementById('ielts-app-box');
-      if (item.theory.ieltsApplication) {
-        ieltsBox.innerHTML = `
-          <div style="margin-bottom:0.6rem;">
-            <strong style="color:var(--primary);"><i class="fa-solid fa-microphone"></i> IELTS Speaking:</strong> ${item.theory.ieltsApplication.speaking}
-          </div>
-          <div>
-            <strong style="color:var(--secondary);"><i class="fa-solid fa-pen-fancy"></i> IELTS Writing:</strong> ${item.theory.ieltsApplication.writing}
-          </div>
-        `;
-      }
+      // IV. IELTS Application
+      const spkList = document.getElementById('ielts-speaking-list');
+      const spkData = item.theory.ieltsApplication.speaking;
+      spkList.innerHTML = Array.isArray(spkData) ? spkData.map(s => `<li>${s}</li>`).join('') : `<li>${spkData}</li>`;
+
+      const wrtList = document.getElementById('ielts-writing-list');
+      const wrtData = item.theory.ieltsApplication.writing;
+      wrtList.innerHTML = Array.isArray(wrtData) ? wrtData.map(w => `<li>${w}</li>`).join('') : `<li>${wrtData}</li>`;
     }
   </script>
 </body>
