@@ -3,9 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kiểm Tra Ngữ Pháp — English Hub</title>
+  <title>Luyện Tập Ngữ Pháp — English Hub</title>
   <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+  <style>
+    .q-card {
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      transition: all 0.2s ease;
+    }
+    .q-card.correct-card {
+      border: 2px solid var(--success);
+      background: #f0fdf4;
+    }
+    .q-card.wrong-card {
+      border: 2px solid var(--danger);
+      background: #fff1f2;
+    }
+    .opt-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      width: 100%;
+      text-align: left;
+      padding: 0.85rem 1.2rem;
+      border: 1px solid var(--surface-border);
+      border-radius: var(--radius-sm);
+      background: var(--bg);
+      cursor: pointer;
+      font-size: 1rem;
+      transition: all 0.15s ease;
+      margin-bottom: 0.5rem;
+    }
+    .opt-btn:hover:not(:disabled) {
+      border-color: var(--primary);
+      background: var(--primary-light);
+    }
+    .opt-btn.selected {
+      border-color: var(--primary);
+      background: #e0e7ff;
+      font-weight: 700;
+    }
+    .opt-btn.is-correct {
+      border-color: var(--success) !important;
+      background: #dcfce7 !important;
+      color: #166534 !important;
+      font-weight: 700;
+    }
+    .opt-btn.is-wrong {
+      border-color: var(--danger) !important;
+      background: #fee2e2 !important;
+      color: #991b1b !important;
+      text-decoration: line-through;
+    }
+    .explanation-box {
+      margin-top: 1rem;
+      background: white;
+      border-left: 4px solid var(--secondary);
+      padding: 1rem;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      font-size: 0.92rem;
+      color: var(--text-main);
+      display: none;
+    }
+  </style>
 </head>
 <body>
   <nav class="navbar">
@@ -17,50 +85,65 @@
       <li><a href="../dashboard.html"><i class="fa-solid fa-house"></i> Trang chủ</a></li>
       <li><a href="../vocabulary/index.html"><i class="fa-solid fa-book-open"></i> Từ Vựng</a></li>
       <li><a href="index.html" class="active"><i class="fa-solid fa-pen-nib"></i> Ngữ Pháp</a></li>
+      <li><a href="../phonetics/index.html"><i class="fa-solid fa-volume-high"></i> Ngữ Âm & Trọng Âm</a></li>
       <li><a href="../stats/index.html"><i class="fa-solid fa-chart-line"></i> Thống Kê</a></li>
       <li><a href="../sources.html"><i class="fa-solid fa-link"></i> Nguồn Crawl</a></li>
     </ul>
     <div id="nav-user-badge" class="user-profile-badge"></div>
   </nav>
 
-  <div class="container" style="max-width: 800px;">
-    <!-- Header -->
+  <div class="container" style="max-width: 900px;">
     <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1.5rem;">
-      <a href="index.html" class="btn btn-outline"><i class="fa-solid fa-arrow-left"></i> Trở về lộ trình</a>
-      <div id="quiz-progress" style="font-weight:700; color:var(--text-muted);">Câu hỏi 1 / 5</div>
-    </div>
-
-    <!-- Quiz Box -->
-    <div id="grammar-quiz-box" class="quiz-box">
-      <!-- Injected by JS -->
-    </div>
-
-    <!-- Result Screen -->
-    <div id="grammar-result-box" class="quiz-box" style="display:none; text-align:center;">
-      <div style="font-size:3.5rem; color:var(--success); margin-bottom:1rem;"><i class="fa-solid fa-clipboard-check"></i></div>
-      <h2 style="font-size:2rem; font-weight:800; margin-bottom:0.5rem;">Kết Quả Bài Kiểm Tra</h2>
-      <p style="color:var(--text-muted); font-size:1.1rem; margin-bottom:1.5rem;" id="grammar-score-text"></p>
-
-      <div id="grammar-mistakes-box" style="text-align:left; margin-bottom:2rem; display:none;">
-        <h3 style="font-size:1.1rem; color:var(--danger); margin-bottom:0.8rem;"><i class="fa-solid fa-triangle-exclamation"></i> Giải thích các câu bạn làm sai:</h3>
-        <div id="grammar-mistakes-list"></div>
-      </div>
-
-      <div style="display:flex; gap:1rem; justify-content:center;">
-        <button class="btn btn-primary" onclick="restartGrammarQuiz()"><i class="fa-solid fa-rotate-right"></i> Làm lại bài</button>
-        <a id="next-day-btn" href="lesson.html?day=2" class="btn btn-success"><i class="fa-solid fa-forward"></i> Bài học tiếp theo</a>
+      <a id="back-lesson-link" href="lesson.html?day=1" class="btn btn-outline"><i class="fa-solid fa-arrow-left"></i> Về bài lý thuyết</a>
+      <div id="answered-count-badge" style="font-weight:700; font-size:0.95rem; color:var(--primary);">
+        Đã làm: 0 / 5 câu
       </div>
     </div>
+
+    <!-- Banner -->
+    <div style="background:linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); color:white; border-radius:var(--radius-md); padding:1.8rem 2rem; margin-bottom:2rem; box-shadow:var(--shadow-md); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+      <div>
+        <span class="badge" style="background:rgba(255,255,255,0.2); color:white; margin-bottom:0.4rem;" id="quiz-day-badge">DAY 01</span>
+        <h1 id="quiz-header-title" style="font-size:1.6rem; font-weight:800;">Bài Tập Ngữ Pháp</h1>
+        <p id="quiz-header-sub" style="opacity:0.95; font-size:0.95rem;">Làm đầy đủ các câu hỏi và bấm nộp bài để xem đáp án kèm giải thích chi tiết.</p>
+      </div>
+    </div>
+
+    <!-- Result Banner (Hidden initially) -->
+    <div id="result-summary-card" class="card" style="display:none; padding:2rem; text-align:center; margin-bottom:2rem; background:linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%); border:2px solid var(--success);">
+      <div style="font-size:3rem; color:var(--success); margin-bottom:0.5rem;"><i class="fa-solid fa-circle-check"></i></div>
+      <h2 style="font-size:1.8rem; font-weight:800; color:#166534; margin-bottom:0.3rem;">Kết Quả Bài Làm</h2>
+      <p id="score-text-detail" style="font-size:1.25rem; font-weight:700; color:var(--text-main); margin-bottom:1rem;"></p>
+      <p style="color:#15803d; font-size:0.95rem;">Toàn bộ đáp án đúng và lời giải thích ngữ pháp đã được mở khóa bên dưới từng câu hỏi.</p>
+      <div style="margin-top:1.2rem; display:flex; gap:1rem; justify-content:center;">
+        <button class="btn btn-primary" onclick="reloadQuiz()"><i class="fa-solid fa-rotate-right"></i> Làm lại bài này</button>
+        <a id="next-day-link" href="lesson.html?day=2" class="btn btn-outline"><i class="fa-solid fa-arrow-right"></i> Học Day tiếp theo</a>
+      </div>
+    </div>
+
+    <!-- Form Container -->
+    <form id="quiz-form" onsubmit="submitGrammarQuiz(event)">
+      <div id="questions-list-container">
+        <!-- Injected by JS -->
+      </div>
+
+      <!-- Submit Bar -->
+      <div id="submit-bar" style="position:sticky; bottom:1.5rem; background:var(--surface); border:2px solid var(--primary); border-radius:var(--radius-md); padding:1.2rem 2rem; box-shadow:var(--shadow-lg); display:flex; justify-content:space-between; align-items:center; z-index:50;">
+        <div>
+          <span style="font-weight:700; color:var(--text-main); font-size:1.05rem;">Kiểm tra kỹ trước khi nộp bài</span>
+          <p style="font-size:0.85rem; color:var(--text-muted); margin:0;">Hệ thống sẽ tự động chấm điểm và hiển thị giải thích chi tiết.</p>
+        </div>
+        <button type="submit" id="btn-submit-exam" class="btn btn-primary" style="padding:0.85rem 2.2rem; font-size:1.1rem; font-weight:800;">
+          <i class="fa-solid fa-paper-plane"></i> Nộp Bài Chấm Điểm
+        </button>
+      </div>
+    </form>
   </div>
 
   <footer>
-    English Hub © 2026 — Chấm điểm & lưu trữ tiến trình ngữ pháp.
+    English Hub © 2026 — Luyện tập ngữ pháp IELTS 30 ngày.
   </footer>
 
-    <!-- Firebase App & Firestore SDKs -->
-  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
   <script src="../js/firebase-config.js"></script>
   <script src="../js/db.js"></script>
   <script src="../data/grammar-data.js"></script>
@@ -72,191 +155,224 @@
     const urlParams = new URLSearchParams(window.location.search);
     const day = parseInt(urlParams.get('day') || '1');
 
+    let activeQuestions = [];
+    let userAnswers = {};
+    let isSubmitted = false;
     let currentLesson = null;
-    let questions = [];
-    let currentIndex = 0;
-    let score = 0;
-    let mistakes = [];
 
     function initQuiz(days) {
       currentLesson = days.find(d => d.day === day) || days[0];
-      questions = currentLesson.exercises;
-      renderGrammarQuestion();
+      activeQuestions = currentLesson.exercises || [];
+
+      document.getElementById('quiz-day-badge').innerText = `DAY ${currentLesson.day < 10 ? '0' + currentLesson.day : currentLesson.day}`;
+      document.getElementById('quiz-header-title').innerText = `Bài Tập: ${currentLesson.title}`;
+      document.getElementById('quiz-header-sub').innerText = `Chuyên đề: ${currentLesson.titleVi} — Chuẩn sách IELTS Fighter`;
+      document.getElementById('back-lesson-link').href = `lesson.html?day=${currentLesson.day}`;
+      document.getElementById('next-day-link').href = `lesson.html?day=${Math.min(30, currentLesson.day + 1)}`;
+
+      renderQuestions();
+      updateProgress();
     }
+
     if (window.GRAMMAR_DATA) {
       initQuiz(window.GRAMMAR_DATA);
     } else {
       fetch('../data/grammar.json')
         .then(res => res.json())
-        .then(days => initQuiz(days))
-        .catch(e => console.error(e));
+        .then(days => initQuiz(days));
     }
 
-    function renderGrammarQuestion() {
-      const q = questions[currentIndex];
-      if (!q) return showGrammarResults();
+    function renderQuestions() {
+      const container = document.getElementById('questions-list-container');
+      container.innerHTML = activeQuestions.map((q, idx) => {
+        let questionBody = '';
 
-      document.getElementById('quiz-progress').innerText = `Câu hỏi ${currentIndex + 1} / ${questions.length}`;
-      const box = document.getElementById('grammar-quiz-box');
+        if (q.type === 'multiple_choice') {
+          questionBody = `
+            <div style="background:var(--bg); border:1px solid var(--surface-border); border-radius:var(--radius-sm); padding:1rem 1.2rem; font-size:1.1rem; font-weight:700; margin-bottom:1.2rem; color:var(--primary); line-height:1.5;">
+              ${q.sentence}
+            </div>
+            <div style="display:grid; grid-template-columns: 1fr 1fr; gap:0.8rem;">
+              ${q.choices.map((choice, cIdx) => {
+                const letter = String.fromCharCode(65 + cIdx);
+                const cleanChoice = choice.replace(/^[A-D]\.\s*/, '');
+                return `
+                  <button type="button" class="opt-btn" id="btn-opt-${idx}-${choice.replace(/'/g, "\\'")}" onclick="chooseOption(${idx}, '${choice.replace(/'/g, "\\'")}')">
+                    <span style="font-weight:800; color:var(--primary);">${letter}.</span>
+                    <span>${cleanChoice}</span>
+                  </button>
+                `;
+              }).join('')}
+            </div>
+          `;
+        } else if (q.type === 'fill_blank') {
+          questionBody = `
+            <div style="background:var(--bg); border:1px solid var(--surface-border); border-radius:var(--radius-sm); padding:1rem 1.2rem; font-size:1.1rem; font-weight:700; margin-bottom:1.2rem; color:var(--primary); line-height:1.5;">
+              ${q.sentence}
+            </div>
+            <div style="margin-bottom:0.8rem;">
+              <input type="text" class="btn btn-outline" id="input-ans-${idx}" style="width:100%; text-align:left; background:var(--bg); padding:0.8rem 1.2rem; font-size:1rem;" placeholder="Nhập đáp án của bạn..." oninput="recordInputAns(${idx}, this.value)">
+            </div>
+            ${q.hint ? `<div style="font-size:0.88rem; color:var(--text-muted);"><i class="fa-solid fa-lightbulb" style="color:#d97706;"></i> Gợi ý: ${q.hint}</div>` : ''}
+          `;
+        } else if (q.type === 'word_order') {
+          questionBody = `
+            <div style="margin-bottom:0.8rem;">
+              <label style="display:block; font-size:0.9rem; font-weight:600; color:var(--text-muted); margin-bottom:0.4rem;">Các từ cho trước:</label>
+              <div style="display:flex; flex-wrap:wrap; gap:0.4rem; margin-bottom:1rem;">
+                ${q.words.map(w => `<span class="badge" style="background:#e0e7ff; color:var(--primary); font-size:0.95rem; padding:0.4rem 0.8rem;">${w}</span>`).join('')}
+              </div>
+              <input type="text" class="btn btn-outline" id="input-ans-${idx}" style="width:100%; text-align:left; background:var(--bg); padding:0.8rem 1.2rem; font-size:1rem;" placeholder="Gõ lại câu hoàn chỉnh..." oninput="recordInputAns(${idx}, this.value)">
+            </div>
+          `;
+        }
 
-      if (q.type === 'multiple_choice') {
-        box.innerHTML = `
-          <div style="margin-bottom:1.2rem;">
-            <span class="badge badge-primary">DAY ${currentLesson.day} — ${currentLesson.title}</span>
-          </div>
-          <h3 style="font-size:1.15rem; font-weight:700; margin-bottom:0.8rem;">${q.question}</h3>
-          <div style="background:var(--bg); border:1px solid var(--surface-border); border-radius:var(--radius-sm); padding:1rem; font-size:1.1rem; font-weight:600; margin-bottom:1.5rem; color:var(--primary);">
-            ${q.sentence}
-          </div>
+        return `
+          <div class="q-card" id="qcard-${idx}">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.8rem;">
+              <span class="badge badge-primary" style="font-size:0.85rem;">CÂU ${idx + 1}</span>
+              <span style="font-size:0.82rem; color:var(--text-muted);">${q.type === 'multiple_choice' ? 'Trắc nghiệm' : (q.type === 'fill_blank' ? 'Điền từ' : 'Sắp xếp câu')}</span>
+            </div>
 
-          <div>
-            ${q.choices.map((choice, i) => `
-              <button class="choice-btn" onclick="submitGrammarChoice(this, '${choice}', '${q.answer}')">
-                <span><strong>${String.fromCharCode(65 + i)}.</strong></span>
-                <span>${choice}</span>
-              </button>
-            `).join('')}
+            <h3 style="font-size:1.1rem; font-weight:700; margin-bottom:1rem; color:var(--text-main);">
+              ${q.question}
+            </h3>
+
+            ${questionBody}
+
+            <!-- Explanation box (Revealed after submission) -->
+            <div class="explanation-box" id="exp-box-${idx}">
+              <div style="font-size:0.95rem; margin-bottom:0.4rem;">
+                <strong>Đáp án đúng:</strong> <span style="color:var(--success); font-weight:800; font-size:1.05rem;">${q.answer}</span>
+              </div>
+              <div style="line-height:1.5;">
+                <strong>💡 Giải thích chi tiết:</strong> ${q.explanation || q.hint || 'Áp dụng quy tắc ngữ pháp chuẩn'}
+              </div>
+            </div>
           </div>
         `;
-      } else if (q.type === 'fill_blank') {
-        box.innerHTML = `
-          <div style="margin-bottom:1.2rem;">
-            <span class="badge badge-primary">DAY ${currentLesson.day} — ${currentLesson.title}</span>
-          </div>
-          <h3 style="font-size:1.15rem; font-weight:700; margin-bottom:0.8rem;">${q.question}</h3>
-          <div style="background:var(--bg); border:1px solid var(--surface-border); border-radius:var(--radius-sm); padding:1rem; font-size:1.1rem; font-weight:600; margin-bottom:1.2rem; color:var(--primary);">
-            ${q.sentence}
-          </div>
-          <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:1rem;">💡 Gợi ý: ${q.hint || ''}</p>
-
-          <div style="display:flex; gap:0.5rem;">
-            <input type="text" id="fill-input" class="btn btn-outline" style="flex:1; text-align:left; background:var(--surface);" placeholder="Nhập đáp án của bạn..." autofocus>
-            <button class="btn btn-primary" onclick="submitFillBlank('${q.answer}')">Gửi đáp án</button>
-          </div>
-        `;
-      } else if (q.type === 'word_order') {
-        box.innerHTML = `
-          <div style="margin-bottom:1.2rem;">
-            <span class="badge badge-primary">DAY ${currentLesson.day} — ${currentLesson.title}</span>
-          </div>
-          <h3 style="font-size:1.15rem; font-weight:700; margin-bottom:0.8rem;">${q.question}</h3>
-          <div id="word-order-tray" style="display:flex; flex-wrap:wrap; gap:0.5rem; margin-bottom:1.2rem;">
-            ${q.words.map(w => `
-              <button class="btn btn-outline" style="padding:0.4rem 0.8rem;" onclick="addWordToAnswer(this, '${w}')">${w}</button>
-            `).join('')}
-          </div>
-
-          <div style="margin-bottom:1.2rem;">
-            <label style="display:block; font-size:0.85rem; font-weight:600; margin-bottom:0.4rem;">Câu hoàn chỉnh của bạn:</label>
-            <div id="word-answer-display" style="background:var(--bg); border:1px solid var(--surface-border); border-radius:var(--radius-sm); padding:1rem; min-height:48px; font-weight:700; color:var(--primary);"></div>
-          </div>
-
-          <div style="display:flex; gap:0.5rem;">
-            <button class="btn btn-outline" onclick="resetWordOrder()">Xóa làm lại</button>
-            <button class="btn btn-primary" style="flex:1;" onclick="submitWordOrder('${q.answer}')">Kiểm tra câu</button>
-          </div>
-        `;
-      }
+      }).join('');
     }
 
-    function submitGrammarChoice(btn, selected, correct) {
-      const q = questions[currentIndex];
-      const allBtns = document.querySelectorAll('.choice-btn');
-      allBtns.forEach(b => b.disabled = true);
+    function chooseOption(qIdx, selectedValue) {
+      if (isSubmitted) return;
+      userAnswers[qIdx] = selectedValue;
 
-      if (selected === correct) {
-        btn.classList.add('correct');
-        score++;
+      const q = activeQuestions[qIdx];
+      q.choices.forEach(c => {
+        const btn = document.getElementById(`btn-opt-${qIdx}-${c}`);
+        if (btn) btn.classList.remove('selected');
+      });
+
+      const selectedBtn = document.getElementById(`btn-opt-${qIdx}-${selectedValue}`);
+      if (selectedBtn) selectedBtn.classList.add('selected');
+
+      updateProgress();
+    }
+
+    function recordInputAns(qIdx, val) {
+      if (isSubmitted) return;
+      if (val.trim()) {
+        userAnswers[qIdx] = val.trim();
       } else {
-        btn.classList.add('wrong');
-        allBtns.forEach(b => {
-          if (b.innerText.includes(correct)) b.classList.add('correct');
-        });
-        mistakes.push(q);
+        delete userAnswers[qIdx];
+      }
+      updateProgress();
+    }
+
+    function updateProgress() {
+      const count = Object.keys(userAnswers).length;
+      document.getElementById('answered-count-badge').innerHTML = `
+        <i class="fa-solid fa-circle-check" style="color:var(--primary);"></i> Đã làm: <strong>${count}</strong> / ${activeQuestions.length} câu
+      `;
+    }
+
+    function submitGrammarQuiz(e) {
+      e.preventDefault();
+      if (isSubmitted) return;
+
+      const answeredCount = Object.keys(userAnswers).length;
+      if (answeredCount < activeQuestions.length) {
+        if (!confirm(`Bạn mới làm ${answeredCount}/${activeQuestions.length} câu. Bạn có chắc chắn muốn nộp bài chấm điểm ngay không?`)) {
+          return;
+        }
       }
 
-      setTimeout(() => {
-        currentIndex++;
-        renderGrammarQuestion();
-      }, 1000);
+      isSubmitted = true;
+      let score = 0;
+      let mistakes = [];
+
+      activeQuestions.forEach((q, idx) => {
+        const userChoice = (userAnswers[idx] || '').trim().toLowerCase();
+        const correctChoice = q.answer.trim().toLowerCase();
+        const card = document.getElementById(`qcard-${idx}`);
+        const expBox = document.getElementById(`exp-box-${idx}`);
+
+        expBox.style.display = 'block';
+
+        if (q.type === 'multiple_choice') {
+          q.choices.forEach(c => {
+            const btn = document.getElementById(`btn-opt-${idx}-${c}`);
+            if (btn) {
+              btn.disabled = true;
+              if (c.toLowerCase() === correctChoice || btn.innerText.toLowerCase().includes(correctChoice)) {
+                btn.classList.add('is-correct');
+              } else if (c.toLowerCase() === userChoice) {
+                btn.classList.add('is-wrong');
+              }
+            }
+          });
+
+          if (userChoice === correctChoice || (userAnswers[idx] && userAnswers[idx].includes(q.answer))) {
+            score++;
+            card.classList.add('correct-card');
+          } else {
+            card.classList.add('wrong-card');
+            mistakes.push(q);
+          }
+        } else {
+          // Fill blank or word order
+          const input = document.getElementById(`input-ans-${idx}`);
+          if (input) input.disabled = true;
+
+          // compare ignoring punctuation & space
+          const cleanUser = userChoice.replace(/[^a-zA-Z0-9]/g, '');
+          const cleanCorrect = correctChoice.replace(/[^a-zA-Z0-9]/g, '');
+
+          if (cleanUser === cleanCorrect) {
+            score++;
+            card.classList.add('correct-card');
+            if (input) input.style.borderColor = 'var(--success)';
+          } else {
+            card.classList.add('wrong-card');
+            if (input) input.style.borderColor = 'var(--danger)';
+            mistakes.push(q);
+          }
+        }
+      });
+
+      // Show result banner
+      const resCard = document.getElementById('result-summary-card');
+      resCard.style.display = 'block';
+      const percent = Math.round((score / activeQuestions.length) * 100);
+      document.getElementById('score-text-detail').innerText = `Bạn đạt: ${score} / ${activeQuestions.length} câu đúng (${percent}%)`;
+      document.getElementById('submit-bar').style.display = 'none';
+
+      // Save to Firebase
+      DB.saveGrammarProgress(user.username, currentLesson.day, score, activeQuestions.length);
+      DB.addQuizResult(user.username, 'grammar_day', `Ngữ Pháp Day ${currentLesson.day}: ${currentLesson.titleVi}`, score, activeQuestions.length, mistakes);
+
+      window.scrollTo({ top: 150, behavior: 'smooth' });
     }
 
-    function submitFillBlank(correct) {
-      const val = (document.getElementById('fill-input').value || '').trim().toLowerCase();
-      const q = questions[currentIndex];
-      if (val === correct.toLowerCase()) {
-        score++;
-      } else {
-        mistakes.push({ ...q, userAnswer: val });
-      }
-      currentIndex++;
-      renderGrammarQuestion();
-    }
-
-    let builtWords = [];
-    function addWordToAnswer(btn, word) {
-      builtWords.push(word);
-      btn.style.display = 'none';
-      document.getElementById('word-answer-display').innerText = builtWords.join(' ');
-    }
-
-    function resetWordOrder() {
-      builtWords = [];
-      document.getElementById('word-answer-display').innerText = '';
-      const tray = document.getElementById('word-order-tray');
-      if (tray) {
-        const btns = tray.querySelectorAll('button');
-        btns.forEach(b => b.style.display = 'inline-flex');
-      }
-    }
-
-    function submitWordOrder(correct) {
-      const myAns = builtWords.join(' ').trim().toLowerCase();
-      const q = questions[currentIndex];
-      if (myAns === correct.toLowerCase()) {
-        score++;
-      } else {
-        mistakes.push({ ...q, userAnswer: myAns });
-      }
-      builtWords = [];
-      currentIndex++;
-      renderGrammarQuestion();
-    }
-
-    function showGrammarResults() {
-      document.getElementById('grammar-quiz-box').style.display = 'none';
-      const resBox = document.getElementById('grammar-result-box');
-      resBox.style.display = 'block';
-
-      const percent = Math.round((score / questions.length) * 100);
-      document.getElementById('grammar-score-text').innerText = `Bạn đã hoàn thành với số điểm: ${score} / ${questions.length} (${percent}%)`;
-      document.getElementById('next-day-btn').href = `lesson.html?day=${Math.min(30, currentLesson.day + 1)}`;
-
-      // Save grammar completion
-      DB.saveGrammarProgress(user.username, currentLesson.day, percent);
-      DB.addQuizResult(user.username, 'grammar', `Day ${currentLesson.day} - ${currentLesson.title}`, score, questions.length, mistakes);
-
-      if (mistakes.length > 0) {
-        const mBox = document.getElementById('grammar-mistakes-box');
-        const mList = document.getElementById('grammar-mistakes-list');
-        mBox.style.display = 'block';
-        mList.innerHTML = mistakes.map(m => `
-          <div style="background:var(--bg); border:1px solid var(--surface-border); border-radius:var(--radius-sm); padding:1rem; margin-bottom:0.8rem;">
-            <div style="font-weight:700; color:var(--danger); margin-bottom:0.3rem;">Câu hỏi: ${m.sentence || m.question}</div>
-            <div style="font-size:0.9rem; margin-bottom:0.2rem;"><strong>Đáp án đúng:</strong> <span style="color:var(--success);">${m.answer}</span></div>
-            <div style="font-size:0.85rem; color:var(--text-muted);"><strong>Giải thích:</strong> ${m.explanation || m.hint || 'Quy tắc ngữ pháp chuẩn'}</div>
-          </div>
-        `).join('');
-      }
-    }
-
-    function restartGrammarQuiz() {
-      document.getElementById('grammar-result-box').style.display = 'none';
-      document.getElementById('grammar-quiz-box').style.display = 'block';
-      currentIndex = 0;
-      score = 0;
-      mistakes = [];
-      renderGrammarQuestion();
+    function reloadQuiz() {
+      userAnswers = {};
+      isSubmitted = false;
+      document.getElementById('result-summary-card').style.display = 'none';
+      document.getElementById('submit-bar').style.display = 'flex';
+      renderQuestions();
+      updateProgress();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   </script>
 </body>
