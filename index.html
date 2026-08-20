@@ -14,47 +14,32 @@
 <body>
   <div class="container" style="display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 85vh;">
     <div style="text-align: center; margin-bottom: 2rem;">
-      <div style="font-size: 3rem; color: var(--primary); margin-bottom: 0.5rem;"><i class="fa-solid fa-graduation-cap"></i></div>
-      <h1 style="font-size: 2.2rem; font-weight: 800; color: var(--primary);">English Hub</h1>
-      <p style="color: var(--text-muted); font-size: 1.05rem;">Bảo mật đăng nhập bằng <strong>Firebase Authentication</strong></p>
+      <div style="font-size: 3.2rem; color: var(--primary); margin-bottom: 0.5rem;"><i class="fa-solid fa-graduation-cap"></i></div>
+      <h1 style="font-size: 2.3rem; font-weight: 800; color: var(--primary);">English Hub</h1>
+      <p style="color: var(--text-muted); font-size: 1.05rem;">Học Tiếng Anh Trực Quan: Từ Vựng Hình Ảnh & 30 Ngày Ngữ Pháp IELTS</p>
     </div>
 
-    <div class="card" style="width: 100%; max-width: 480px; box-shadow: var(--shadow-lg); padding: 2.5rem;">
-      <div style="display:flex; align-items:center; justify-content:center; gap:0.5rem; color:var(--success); font-weight:700; font-size:0.95rem; margin-bottom:1.5rem; background:var(--success-light); padding:0.6rem; border-radius:var(--radius-sm);">
-        <i class="fa-solid fa-shield-halved"></i> Mật khẩu được mã hóa an toàn trên Firebase
-      </div>
-
-      <!-- Quick Fill Account Buttons -->
-      <div style="margin-bottom:1.2rem;">
-        <label style="display:block; font-size:0.85rem; font-weight:600; color:var(--text-muted); margin-bottom:0.5rem;">Chọn nhanh tài khoản:</label>
-        <div style="display:grid; grid-template-columns: repeat(5, 1fr); gap:0.4rem;">
-          <button type="button" class="btn btn-outline" style="padding:0.3rem;" onclick="selectAccount('user01')">01</button>
-          <button type="button" class="btn btn-outline" style="padding:0.3rem;" onclick="selectAccount('user02')">02</button>
-          <button type="button" class="btn btn-outline" style="padding:0.3rem;" onclick="selectAccount('user03')">03</button>
-          <button type="button" class="btn btn-outline" style="padding:0.3rem;" onclick="selectAccount('user04')">04</button>
-          <button type="button" class="btn btn-outline" style="padding:0.3rem;" onclick="selectAccount('user05')">05</button>
-          <button type="button" class="btn btn-outline" style="padding:0.3rem;" onclick="selectAccount('user06')">06</button>
-          <button type="button" class="btn btn-outline" style="padding:0.3rem;" onclick="selectAccount('user07')">07</button>
-          <button type="button" class="btn btn-outline" style="padding:0.3rem;" onclick="selectAccount('user08')">08</button>
-          <button type="button" class="btn btn-outline" style="padding:0.3rem;" onclick="selectAccount('user09')">09</button>
-          <button type="button" class="btn btn-outline" style="padding:0.3rem;" onclick="selectAccount('user10')">10</button>
-        </div>
-      </div>
+    <div class="card" style="width: 100%; max-width: 440px; box-shadow: var(--shadow-lg); padding: 2.5rem;">
+      <h2 style="font-size: 1.35rem; font-weight: 800; margin-bottom: 1.5rem; text-align: center;">Đăng Nhập Tài Khoản</h2>
 
       <form id="login-form" onsubmit="handleLogin(event)">
-        <div style="margin-bottom: 1rem;">
-          <label style="display: block; font-weight: 600; font-size: 0.9rem; margin-bottom: 0.4rem;">Email hoặc Tên đăng nhập:</label>
-          <input type="text" id="username" class="btn btn-outline" style="width: 100%; text-align: left; background: var(--bg);" placeholder="vd: user01 hoặc user01@email.com" required>
+        <div style="margin-bottom: 1.2rem;">
+          <label style="display: block; font-weight: 600; font-size: 0.9rem; margin-bottom: 0.4rem;">
+            <i class="fa-solid fa-envelope" style="color: var(--primary);"></i> Email hoặc Tên đăng nhập:
+          </label>
+          <input type="text" id="username" class="btn btn-outline" style="width: 100%; text-align: left; background: var(--bg); font-size: 0.95rem; padding: 0.75rem 1rem;" placeholder="Nhập email tài khoản của bạn" required autofocus>
         </div>
-        <div style="margin-bottom: 1.5rem;">
-          <label style="display: block; font-weight: 600; font-size: 0.9rem; margin-bottom: 0.4rem;">Mật khẩu:</label>
-          <input type="password" id="password" class="btn btn-outline" style="width: 100%; text-align: left; background: var(--bg);" placeholder="Nhập mật khẩu bạn đã tạo" required>
+        <div style="margin-bottom: 1.8rem;">
+          <label style="display: block; font-weight: 600; font-size: 0.9rem; margin-bottom: 0.4rem;">
+            <i class="fa-solid fa-lock" style="color: var(--primary);"></i> Mật khẩu:
+          </label>
+          <input type="password" id="password" class="btn btn-outline" style="width: 100%; text-align: left; background: var(--bg); font-size: 0.95rem; padding: 0.75rem 1rem;" placeholder="Nhập mật khẩu" required>
         </div>
         <button type="submit" id="submit-btn" class="btn btn-primary" style="width: 100%; padding: 0.85rem; font-size: 1rem;">
           <i class="fa-solid fa-right-to-bracket"></i> Đăng Nhập
         </button>
       </form>
-      <div id="login-err" style="color: var(--danger); font-size: 0.9rem; margin-top: 0.8rem; text-align: center; display: none;"></div>
+      <div id="login-err" style="color: var(--danger); font-size: 0.9rem; margin-top: 1rem; text-align: center; display: none;"></div>
     </div>
   </div>
 
@@ -66,11 +51,6 @@
   <script src="js/db.js"></script>
   <script src="js/auth.js"></script>
   <script>
-    function selectAccount(name) {
-      document.getElementById('username').value = name;
-      document.getElementById('password').focus();
-    }
-
     async function handleLogin(e) {
       e.preventDefault();
       const u = document.getElementById('username').value.trim();
